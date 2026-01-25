@@ -1,0 +1,6 @@
+[project]
+name = "hyperliquid-docs"
+version = "0.1.0"
+description = "Community mirror of Hyperliquid documentation, auto-synced from Gitbook"
+requires-python = ">=3.11"
+dependencies = ["requests>=2.32"]
