@@ -1,0 +1,19 @@
+# Staking and trading account linking issues
+
+### Do I need to link a trading and staking account if I trade and stake on the same account?&#x20;
+
+* No, this linking feature is only for users who want to trade and stake on separate accounts&#x20;
+
+### Can I change the trading account that is linked?
+
+* No, linking is permanent. Unlinking is not supported
+
+### Will my staking account continue to receive [staking discounts](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees#staking-tiers)?
+
+* No, the staking user will not receive any staking-related fee discount after being linked to a trading account
+
+### Why can’t I set up my staking and trading account link?
+
+* Linking requires the trading account to send an action first. The staking account then finalizes the link
+
+Please refer to the Docs section for more information: <https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees#staking-linking>

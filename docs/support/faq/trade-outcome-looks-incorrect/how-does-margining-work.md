@@ -1,0 +1,10 @@
+# How does margining work?
+
+Situation: Why didn’t my margin become available after I closed a Perps position? I closed a Perps position that showed 1,000 USDC in margin, but after closing, my Available Balance increased by <1,000 USDC. Where did the rest go?
+
+### Reasoning
+
+* This typically happens if you're using cross margin and have other open positions with negative unrealized pnl.
+* In cross margin mode, all your positions share a common pool of margin. When you close one position, the funds (\~1,000 USDC in this example) are not released directly into your Available Balance if other open positions with negative unrealized pnl still require margin because they didn’t meet the initial margin requirements. New margin, be it through closing a position or depositing USDC, goes toward these existing positions.&#x20;
+* So while the 1,000 USDC is still part of your Total Balance, only a portion becomes available to trade, depending on your overall margin requirements.
+* Please refer to the Docs to understand how Margining works: <https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margining#unrealized-pnl-and-transfer-margin-requirements>
