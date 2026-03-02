@@ -812,14 +812,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-03-02T12:22:20.954478",
-    "duration_seconds": 78.138008,
+    "completed_at": "2026-03-02T15:22:30.684389",
+    "duration_seconds": 79.40665,
     "pages_discovered": 135,
     "pages_fetched": 135,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-03-02T12:22:20.954503",
+  "last_updated": "2026-03-02T15:22:30.684414",
   "base_url": "https://raw.githubusercontent.com/vaniiiii/hyperliquid-docs/main/docs/",
   "github_repository": "vaniiiii/hyperliquid-docs",
   "github_ref": "main",
