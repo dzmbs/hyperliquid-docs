@@ -1,8 +1,8 @@
 # hyperliquid-docs
 
-[![docs updated](https://img.shields.io/github/last-commit/vaniiiii/hyperliquid-docs/main?label=docs%20updated&color=brightgreen)](https://github.com/vaniiiii/hyperliquid-docs/commits/main)
+[![docs updated](https://img.shields.io/github/last-commit/dzmbs/hyperliquid-docs/main?label=docs%20updated&color=brightgreen)](https://github.com/dzmbs/hyperliquid-docs/commits/main)
 [![pages](https://img.shields.io/badge/pages-135-blue)](docs/)
-[![sync](https://img.shields.io/badge/sync-every%203h-orange)](https://github.com/vaniiiii/hyperliquid-docs/actions)
+[![sync](https://img.shields.io/badge/sync-every%203h-orange)](https://github.com/dzmbs/hyperliquid-docs/actions)
 
 Community mirror of [Hyperliquid](https://hyperliquid.gitbook.io/hyperliquid-docs) documentation, automatically synced every 3 hours.
 
@@ -36,7 +36,7 @@ A [GitHub Action](.github/workflows/update-docs.yml) runs every 3 hours:
 ### Claude Code
 Clone into your project or reference as context:
 ```bash
-git clone https://github.com/vaniiiii/hyperliquid-docs.git
+git clone https://github.com/dzmbs/hyperliquid-docs.git
 ```
 The `CLAUDE.md` file tells Claude where to find everything.
 
