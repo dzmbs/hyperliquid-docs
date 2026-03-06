@@ -93,8 +93,8 @@
     "for-developers/api/exchange-endpoint.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/exchange-endpoint",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/exchange-endpoint.md",
-      "hash": "2186680134882c9fd270f47d26a123400c3ce0fae60f218b8810dd432b5d5fc4",
-      "last_updated": "2026-03-01T16:07:34.879723"
+      "hash": "b3e4b4d2afc150447685eb2959cb0f78762151412764c0a54ac976055782a0b0",
+      "last_updated": "2026-03-06T21:13:09.749612"
     },
     "for-developers/api/hip-3-deployer-actions.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions",
@@ -171,8 +171,8 @@
     "for-developers/api/websocket/subscriptions.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/websocket/subscriptions",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/websocket/subscriptions.md",
-      "hash": "5baf378efb9831e35d1d43dfa41c0dbd97f522c5a0c95edb0f288fa236bf9056",
-      "last_updated": "2026-03-01T16:07:49.352853"
+      "hash": "887be828a9992089804c312b0c30eb439fec37f45f5911c6ac3222c8a2fd0755",
+      "last_updated": "2026-03-06T21:13:21.056932"
     },
     "for-developers/api/websocket/timeouts-and-heartbeats.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/websocket/timeouts-and-heartbeats",
@@ -818,14 +818,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-03-06T18:22:00.809792",
-    "duration_seconds": 135.429107,
+    "completed_at": "2026-03-06T21:15:17.678116",
+    "duration_seconds": 148.846577,
     "pages_discovered": 136,
     "pages_fetched": 136,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-03-06T18:22:00.809815",
+  "last_updated": "2026-03-06T21:15:17.678134",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",

@@ -1094,3 +1094,31 @@ Same effect as UserDexAbstraction above, but only works if setting the value fro
 
 {% endtab %}
 {% endtabs %}
+
+## Claim rewards
+
+<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
+
+#### Headers
+
+| Name                                           | Type   | Description        |
+| ---------------------------------------------- | ------ | ------------------ |
+| Content-Type<mark style="color:red;">\*</mark> | String | "application/json" |
+
+#### Request Body
+
+| Name                                        | Type   | Description                                              |
+| ------------------------------------------- | ------ | -------------------------------------------------------- |
+| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "claimRewards"</p><p>}</p>          |
+| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds |
+| signature<mark style="color:red;">\*</mark> | Object |                                                          |
+
+{% tabs %}
+{% tab title="200: OK Successful Response" %}
+
+```json
+{'status': 'ok', 'response': {'type': 'default'}}
+```
+
+{% endtab %}
+{% endtabs %}

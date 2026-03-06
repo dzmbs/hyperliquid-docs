@@ -77,6 +77,10 @@ The subscription object contains the details of the specific feed you want to su
 19. `bbo` :
     * Subscription message: `{ "type": "bbo", "coin": "<coin>" }`
     * Data format: `WsBbo`
+20. `spotState`
+    * Subscription message: `{ "type": "spotState", "user": "<address>", "isPortfolioMargin": bool }`
+    * Data format: `WsSpotState`&#x20;
+    * `isPortfolioMargin` is an optional argument
 
 ### Data formats
 
@@ -102,6 +106,7 @@ The `data` field format depends on the subscription type:
 * `WsUserFundings` : Funding payments snapshot followed by funding payments on the hour
 * `WsUserNonFundingLedgerUpdates`: Ledger updates not including funding payments: withdrawals, deposits, transfers, and liquidations
 * `WsBbo` : Bbo updates that are sent only if the bbo changes on a block
+* `WsSpotState` : Spot state update.
 
 For the streaming user endpoints such as `WsUserFills`,`WsUserFundings` the first message has `isSnapshot: true` and the following streaming updates have `isSnapshot: false`.&#x20;
 
@@ -362,6 +367,23 @@ interface TwapStates {
   dex: string;
   user: string;
   states: Array<[number, TwapState]>;
+}
+
+interface WsSpotState {
+  user: string;
+  spotState: SpotState;
+}
+
+interface SpotState {
+  balances: Array<UserBalance>;
+}
+
+interface UserBalance {
+  coin: string;
+  token: number;
+  hold: string;
+  total: string;
+  entryNtl: string;
 }
 ```
 
