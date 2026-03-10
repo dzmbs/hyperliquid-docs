@@ -45,8 +45,8 @@
     "builder-tools/hypercore-tools.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/builder-tools/hypercore-tools",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/builder-tools/hypercore-tools.md",
-      "hash": "60203075f8200d27fb5b1beb37b31642d05b37f8992080e6d516888f540732ea",
-      "last_updated": "2026-03-01T16:07:24.684602"
+      "hash": "db3d9ac6022c7a14cc349f4f17a5fee2b213dc260893d74a63785bfa4537afbb",
+      "last_updated": "2026-03-10T03:50:55.491609"
     },
     "builder-tools/hyperevm-tools.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/builder-tools/hyperevm-tools",
@@ -818,14 +818,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-03-10T00:42:31.143139",
-    "duration_seconds": 127.112868,
+    "completed_at": "2026-03-10T03:52:14.787347",
+    "duration_seconds": 87.023848,
     "pages_discovered": 136,
     "pages_fetched": 136,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-03-10T00:42:31.143165",
+  "last_updated": "2026-03-10T03:52:14.787368",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",

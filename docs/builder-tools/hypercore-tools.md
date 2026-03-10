@@ -9,6 +9,7 @@
 * DefiLlama (note that TVL is tracked differently on order books and AMMs): <https://defillama.com/perps/chains/hyperliquid>
 * Flowscan: <https://www.flowscan.xyz/>
 * HyperDash: <https://legacy.hyperdash.com/>
+* HyperTracker: <https://app.coinmarketman.com/hypertracker>
 * Laevitas: <https://app.laevitas.ch/exchanges/perpswaps/HYPERLIQUID/screener>
 * Velo: <https://velo.xyz/futures/>
 
@@ -25,7 +26,6 @@
   * Rust SDK by community member, Infinite Field: <https://github.com/infinitefield/hypersdk>
   * Typescript SDKs by community members: <https://github.com/nktkas/hyperliquid>, <https://github.com/nomeida/hyperliquid>
 * CCXT integrations in multiple languages that conform with the standard CCXT API: <https://docs.ccxt.com/#/exchanges/hyperliquid>
-* CoinMarketMan: <https://app.coinmarketman.com/hypertracker>
 * Dwellir (gRPC): <https://www.dwellir.com/docs/hyperliquid/grpc/>
 * Dwellir (websocket): <https://www.dwellir.com/docs/hyperliquid/websocket-api>
 * Hydromancer (non-rate-limited APIs and indexing): <https://docs.hydromancer.xyz/>
