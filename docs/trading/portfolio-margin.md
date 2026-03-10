@@ -14,6 +14,14 @@ Under portfolio margin, eligible collateral assets have an LTV (loan-to-value) r
 
 Borrowed assets accrue interest continuously, and are indexed hourly to match the perp funding interval. Portfolio margin users pay interest on borrowed assets and earn interest on idle assets according to the same rate. During pre-alpha, the borrow interest rate for stablecoins is set at `0.05 + 4.75 * max(0, utilization - 0.8)` APY, compounded continuously depending on the instantaneous value of `utilization = total_borrowed_value / total_supplied_value` . Earned interest is accrued proportionally to all suppliers. The protocol retains 10% of borrowed interest as a buffer for future liquidations.
 
+### Example: Carry trade
+
+The carry trade becomes significantly more capital efficient with portfolio margin, as there is no trading cost to rebalance over signifcant price ranges. A portfolio margin account's spot borrow and perps pnl offset each other for accounting. The trader still needs to account for external factors such as funding, interest, and drift between spot and perp prices.
+
+For example, a user holds 1 BTC in spot and shorts 1 BTC-USDC perp at 10x leverage. If BTC's price is 100k, the user only pays interest on the 1/10 initial margin but earns funding on the full 100k position. If BTC's price moves down to 50k, the trader has unrealized pnl in USDC. The trader can choose to maintain the notional value of the trade by buying more spot BTC and increasing the perp short. If BTC's price moves up to 150k, portfolio margin automatically borrows 50k USDC against the spot BTC, now worth 150k. The user can sell BTC and close the perp position to maintain the notional exposure of the funding trade. If BTC's price moves up to 200k, the trader must reduce the notional exposure of the funding trade to avoid a borrow-lend liquidation.
+
+Note that the hedged price range increased dramatically compared to the same trade without portfolio margin, where the perp leg is collateralized by USDC.  &#x20;
+
 ### Liquidations
 
 Portfolio margin is a generalization of cross margin. Instead of margining all perp positions within one DEX together, all cross margin perp positions and spot balances are collectively margined together within one account. Sub-accounts are still treated separately under portfolio margin.&#x20;

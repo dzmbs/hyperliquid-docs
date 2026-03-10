@@ -337,3 +337,47 @@ Note: This returns the status of the Dutch auction for spot pair deployments bet
 
 {% endtab %}
 {% endtabs %}
+
+## Retrieve outcome metadata (testnet-only)
+
+<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/info`
+
+**Headers**
+
+| Name                                           | Value              |
+| ---------------------------------------------- | ------------------ |
+| Content-Type<mark style="color:red;">\*</mark> | "application/json" |
+
+**Body**
+
+| Name                                   | Type   | Description   |
+| -------------------------------------- | ------ | ------------- |
+| type<mark style="color:red;">\*</mark> | String | "outcomeMeta" |
+
+**Response**
+
+{% tabs %}
+{% tab title="200: OK Successful Response" %}
+
+```json
+{
+  "outcomes": [
+    {
+      "outcome": 123,
+      "name": "Recurring",
+      "description": "class:priceBinary|underlying:HYPE|expiry:20260310-1100|targetPrice:34.5|period:3m",
+      "sideSpecs": [
+        {
+          "name": "Yes"
+        },
+        {
+          "name": "No"
+        }
+      ]
+    }
+  ]
+}
+```
+
+{% endtab %}
+{% endtabs %}

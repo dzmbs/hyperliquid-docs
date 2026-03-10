@@ -69,8 +69,8 @@
     "for-developers/api/asset-ids.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/asset-ids",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/asset-ids.md",
-      "hash": "f27338f96864eba93e060df48f0f23b4ff36cc2af45a06e3d81db4fa025cdd5f",
-      "last_updated": "2026-03-01T16:07:30.018025"
+      "hash": "e5ae8bf8069c1ab673a371c6d82ab573fa7dfe966bf80c3301ae132cf5747e19",
+      "last_updated": "2026-03-10T12:22:05.755090"
     },
     "for-developers/api/bridge2.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/bridge2",
@@ -117,8 +117,8 @@
     "for-developers/api/info-endpoint/spot.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint/spot",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint/spot.md",
-      "hash": "2adadc6be0e87971da39a1e50f57cbd064e6c7e1d1d496f16980ab3459027102",
-      "last_updated": "2026-03-01T16:07:38.739404"
+      "hash": "d53a1bf483ed3e991baf48d2da137b11e0b71d3e529e2af68b9238b991122404",
+      "last_updated": "2026-03-10T12:22:14.279315"
     },
     "for-developers/api/nonces-and-api-wallets.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/nonces-and-api-wallets",
@@ -771,8 +771,8 @@
     "trading/portfolio-margin.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin.md",
-      "hash": "938a190bd8b769d2d5e45de5fd7e2a1c4df0b1d254c4ac5c0a0dc7c9c83ccfc7",
-      "last_updated": "2026-03-01T16:09:52.645110"
+      "hash": "6cadcb93159c35ab29581b8a50e79c0c140d263c6793e735d650bfa436b3d2c0",
+      "last_updated": "2026-03-10T12:24:08.170126"
     },
     "trading/robust-price-indices.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/robust-price-indices",
@@ -818,14 +818,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-03-10T09:23:09.944704",
-    "duration_seconds": 78.707437,
+    "completed_at": "2026-03-10T12:24:15.184163",
+    "duration_seconds": 145.399914,
     "pages_discovered": 136,
     "pages_fetched": 136,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-03-10T09:23:09.944731",
+  "last_updated": "2026-03-10T12:24:15.184187",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
