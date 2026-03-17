@@ -1009,3 +1009,43 @@ Note that predicted funding rates is only supported for the first perp dex.
 
 {% endtab %}
 {% endtabs %}
+
+## Retrieve concise perp annotations
+
+<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/info`
+
+#### Headers
+
+| Name                                           | Type   | Description        |
+| ---------------------------------------------- | ------ | ------------------ |
+| Content-Type<mark style="color:red;">\*</mark> | String | "application/json" |
+
+#### Request Body
+
+| Name                                   | Type   | Description              |
+| -------------------------------------- | ------ | ------------------------ |
+| type<mark style="color:red;">\*</mark> | String | "perpConciseAnnotations" |
+
+{% tabs %}
+{% tab title="200: OK" %}
+
+```json
+[    
+    [
+        "dex:CATS",
+        {
+            "category": "indices",
+            "keywords": ["meow"]
+        }
+    ],
+    [
+        "dex:DOGS",
+        {
+            "category": "indices"
+        }
+    ]
+]
+```
+
+{% endtab %}
+{% endtabs %}
