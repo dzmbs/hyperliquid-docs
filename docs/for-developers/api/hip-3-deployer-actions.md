@@ -241,6 +241,8 @@ type SetPerpAnnotation {
   coin: string;
   category: string;
   description: string;
+  displayName: string | null;
+  keywords: Array<string>;
 }
 ```
 
