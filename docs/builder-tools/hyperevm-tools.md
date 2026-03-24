@@ -84,6 +84,7 @@
 
 * Blocksense: <https://coda.io/@georgi-zlatarev/blocksense-hyperevm-price-feeds>
 * Chainlink: <https://data.chain.link/feeds>
+* DIA: <https://www.diadata.org/docs/guides/chain-specific-guide/hyperevm>
 * Pyth: <https://docs.pyth.network/price-feeds/contract-addresses/evm>
 * Redstone: [https://app.redstone.finance/app/feeds/?](https://app.redstone.finance/app/feeds/?page=1\&sortBy=popularity\&sortDesc=false\&perPage=32\&networks=999,998)
 * Seda: <https://docs.seda.xyz/home/for-developers/deployments>
