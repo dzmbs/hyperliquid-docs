@@ -45,8 +45,8 @@
     "builder-tools/hypercore-tools.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/builder-tools/hypercore-tools",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/builder-tools/hypercore-tools.md",
-      "hash": "db3d9ac6022c7a14cc349f4f17a5fee2b213dc260893d74a63785bfa4537afbb",
-      "last_updated": "2026-03-10T03:50:55.491609"
+      "hash": "4606b7c6ffeec6f109f82286d12624bb8682eb21da589db7fb8d9843d9f7e7be",
+      "last_updated": "2026-03-31T04:02:35.866044"
     },
     "builder-tools/hyperevm-tools.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/builder-tools/hyperevm-tools",
@@ -111,14 +111,14 @@
     "for-developers/api/info-endpoint/perpetuals.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint/perpetuals",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint/perpetuals.md",
-      "hash": "dae07f2a0810cddf39cbebff6ec320ab2dcb15d8ef540daaf6a1147ba14b77bf",
-      "last_updated": "2026-03-17T03:52:46.479843"
+      "hash": "817def4d30d85cda9527112b6f410efaf9ad52bbb73bc50a8856f355b444a4a2",
+      "last_updated": "2026-03-31T04:02:45.813773"
     },
     "for-developers/api/info-endpoint/spot.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint/spot",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint/spot.md",
-      "hash": "d53a1bf483ed3e991baf48d2da137b11e0b71d3e529e2af68b9238b991122404",
-      "last_updated": "2026-03-10T12:22:14.279315"
+      "hash": "a11dcde1c2b0a5452de8e15b794458600e4bef482e35fe2c8ebfd303f471b8b4",
+      "last_updated": "2026-03-31T04:02:46.376549"
     },
     "for-developers/api/nonces-and-api-wallets.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/nonces-and-api-wallets",
@@ -824,14 +824,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-03-31T00:50:33.584354",
-    "duration_seconds": 112.459985,
+    "completed_at": "2026-03-31T04:04:46.327722",
+    "duration_seconds": 141.917226,
     "pages_discovered": 137,
     "pages_fetched": 137,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-03-31T00:50:33.584377",
+  "last_updated": "2026-03-31T04:04:46.327748",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",

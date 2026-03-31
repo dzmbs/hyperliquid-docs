@@ -39,6 +39,7 @@
 ### Indexing
 
 * Allium: <https://docs.allium.so/historical-chains/supported-blockchains/hyperliquid>
+* Hydromancer historical data: <https://docs.hydromancer.xyz/reservoir>
 * HypeDexer by Enigma: <https://www.hypedexer.com/>
 * SonarX: <https://docs.sonarx.com/datasets/HYPERLIQUID/Hyperliquid>
 

@@ -146,7 +146,9 @@
 
 <mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/info`
 
-See a user's token balances
+See a user's token balances.&#x20;
+
+Under unified account or portfolio margin, this is the source of truth for trading account balance across spot and perps.
 
 #### Headers
 

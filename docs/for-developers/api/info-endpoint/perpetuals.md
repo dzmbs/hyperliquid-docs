@@ -331,7 +331,9 @@
 
 <mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/info`
 
-See a user's open positions and margin summary for perpetuals trading
+See a user's open positions and margin summary for perpetuals trading.
+
+Under unified account or portfolio margin, use spot balances endpoint instead for trading account balance across spot and perps.
 
 #### Headers
 
