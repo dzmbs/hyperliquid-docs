@@ -69,6 +69,10 @@ A "staking user" and a "trading user" can be linked so that the staking user's H
 * Linking requires the trading user to send an action first, and then the staking user to finalize the link. See "Link Staking" at app.hyperliquid.xyz/portfolio for details.&#x20;
 * No action is required if you plan to trade and stake from the same address.&#x20;
 
+### Outcome Tokens (testnet only)
+
+Outcome token trading only charges fees when closing or settling, not when opening outcome positions.&#x20;
+
 ### Fee formula for developers
 
 ```typescript
