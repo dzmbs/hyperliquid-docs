@@ -711,8 +711,8 @@
     "trading/funding.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/funding",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/funding.md",
-      "hash": "e10b031b378597316770f586535223e5d369a314496a35cd3de884ba623e6b33",
-      "last_updated": "2026-03-01T16:09:39.267633"
+      "hash": "abc7be100718673f02997c752d938292004ad5644ee0ae295487f16dc586dd39",
+      "last_updated": "2026-04-08T04:05:12.779782"
     },
     "trading/hyperps.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/hyperps",
@@ -824,14 +824,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-04-08T00:51:26.683688",
-    "duration_seconds": 89.071445,
+    "completed_at": "2026-04-08T04:05:31.291785",
+    "duration_seconds": 157.866275,
     "pages_discovered": 137,
     "pages_fetched": 137,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-04-08T00:51:26.683708",
+  "last_updated": "2026-04-08T04:05:31.291807",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",

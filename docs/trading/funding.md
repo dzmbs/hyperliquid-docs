@@ -28,9 +28,13 @@ As described in the [clearinghouse](https://hyperliquid.gitbook.io/hyperliquid-d
 
 where&#x20;
 
-`impact_price_difference = max(impact_bid_px - oracle_px, 0) - max(oracle_px - impact_ask_px, 0)`&#x20;
+`impact_price_difference = max(impact_bid_px - oracle_px, 0) - max(oracle_px - impact_ask_px, 0)` .
 
 and `impact_bid_px` and `impact_ask_px` are the average execution prices to trade`impact_notional_usd` on the bid and ask sides, respectively. See the contract specifications for the impact notional used, as well as other contract specific parameters.
+
+For HIP-3 perps, a more responsive premium formula is used to allow deployers to express a larger range of funding behaviors using the funding rate multiplier and interest rate:
+
+`premium = (0.5 * (impact_bid_px + impact_ask_px) / oracle_px) - 1` .
 
 Funding on Hyperliquid is capped at 4%/hour. Note that this is much less aggressive capping than CEX counterparts. The funding cap and funding interval do not depend on the asset.&#x20;
 
