@@ -141,8 +141,8 @@
     "for-developers/api/priority-fees.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees.md",
-      "hash": "3e6f0915bfe9250f6c71bd243687fdd4f8d8846e3efec7d564278b49bdf1cb0d",
-      "last_updated": "2026-04-13T06:57:08.790910"
+      "hash": "36d45db50b0ac9104e1d020da5fdda97f193d693bcb99b5d416b28b78f2a45d0",
+      "last_updated": "2026-04-13T09:45:58.054952"
     },
     "for-developers/api/rate-limits-and-user-limits.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/rate-limits-and-user-limits",
@@ -339,8 +339,8 @@
     "hypercore/vaults/for-vault-leaders-legacy.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/for-vault-leaders-legacy",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/for-vault-leaders-legacy.md",
-      "hash": "e66ff793c61ef94a6ee134c0b9d219709fe2fd888f4f0b405f35b0ddf731ec7e",
-      "last_updated": "2026-03-01T16:08:23.273336"
+      "hash": "951cfa385ee5ca4c2fa8d88f69509684c0939e0aacae7421de6fd7d8849c76c2",
+      "last_updated": "2026-04-13T09:46:29.319438"
     },
     "hypercore/vaults/hypercore-vaults-legacy.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/hypercore-vaults-legacy",
@@ -830,14 +830,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-04-13T06:58:55.496897",
-    "duration_seconds": 129.020755,
+    "completed_at": "2026-04-13T09:47:56.890984",
+    "duration_seconds": 146.16516,
     "pages_discovered": 138,
     "pages_fetched": 138,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-04-13T06:58:55.496918",
+  "last_updated": "2026-04-13T09:47:56.891007",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",

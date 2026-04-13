@@ -11,7 +11,7 @@ Anyone can create a vault:&#x20;
 1. Choose a name and write a description for your vault. Note that this cannot be changed later.&#x20;
 2. Deposit a minimum of 100 USDC into your vault.
 
-Creating a vault requires a 100 USDC gas fee, which is distributed to the protocol in the same manner as trading fees.
+Creating a vault requires a 10k USDC gas fee, which is distributed to the protocol in the same manner as trading fees.
 
 To ensure vault leaders have skin in the game, you must maintain ≥5% of the vault at all times. You cannot withdraw from your vault if it would cause your share to fall below 5%.&#x20;
 

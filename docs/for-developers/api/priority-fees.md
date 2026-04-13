@@ -18,4 +18,4 @@ Order priority reduces the need for market makers to hyper-optimize their order 
 
 Order priority applies only to sending data. For prioritization of reading data, see the previous section on gossip priority. Similar to gossip priority auctions, order priority fees are burned.
 
-Note: priority fee paid will be included in user fills before the feature is enabled on mainnet
+Priority fee paid can be read from the `user_fills` file written by the nodes as field `priorityGas` .
