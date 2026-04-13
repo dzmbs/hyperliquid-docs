@@ -12,7 +12,7 @@ Gossip priority reduces the need for market makers to hyper-optimize their infra
 
 ### Order (write) priority
 
-Orders can be sent with grouping of the form `{"p": 12345}` where the rate is interpreted as a fraction `p / 100000000.0`. The rate is charged from undelegated staking balance as a fraction of the filled notional, converted to HYPE using the spot mark price. Currently, priority grouping is only supported for order actions where every order is IOC and HIP-3. The max priority rate is 20bps, i.e. `p = 200000`. Under order priority, all cancels are prioritized before all immediately executable orders. However, higher priority orders are prioritized before lower priority orders as a linear function of priority rate.&#x20;
+Orders can be sent with grouping of the form `{"p": 12345}` where the rate is interpreted as a fraction `p / 100000000.0`. The rate is charged from undelegated staking balance as a fraction of the filled notional, converted to HYPE using the spot mark price. Currently, priority grouping is only supported for order actions where every order is IOC and HIP-3. The max priority rate is 8bps, i.e. `p = 80000`. Under order priority, all cancels are prioritized before all immediately executable orders. However, higher priority orders are prioritized before lower priority orders as a linear function of priority rate.&#x20;
 
 Order priority reduces the need for market makers to hyper-optimize their order entry and connectivity, and instead focus on the strategy itself. It further protects makers and allows responsiveness to price moves driven by traditional venues.
 
