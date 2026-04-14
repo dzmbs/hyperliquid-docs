@@ -2,13 +2,17 @@
 
 ### Gossip (read) priority
 
-There are 5 independent Dutch auctions synced to the same 3 minute schedule. The auction indices are optionally interpreted by nodes as an ordering for their peers when sending data with `split_client_blocks: true`. As documented in the node repository, these are the fastest transaction inputs to execution, broadcast even before they are executed by the L1. The foundation non-validator will opt into respecting the gossip priority auction ordering.&#x20;
+Background: latency-sensitive users may find `split_client_blocks: true` useful, as it streams transactions to be committed hundreds of milliseconds before they are included in client blocks. As documented in the node repository, these are the fastest transaction inputs to execution, broadcast even before they are executed by the L1. The tradeoff with the faster input data is that the results from execution are not yet available. However, with simple actions like orders, the consumer can stream estimated account values for all users to predict execution results with reasonable accuracy.
 
-The lower auction indices are strictly prioritized over higher indices. The prioritization applies to all data in the mempool transactions stream equally. The ordering should be relatively consistent in expectation but is subject to variance from the p2p consensus network. Gossip priority applies only to reading data. For prioritization of sending data, see the section below on order priority. Nodes respecting gossip priority will use the previous auction winners relative to that node's current execution state. Similar to token, spot, and perp deployment auctions, fees are burned.
+There are 5 independent Dutch auctions synced to the same 3 minute schedule. The auction indices are optionally interpreted by nodes as an ordering for their peers when sending data with `split_client_blocks: true`. The foundation non-validator will opt into respecting the gossip priority auction ordering.&#x20;
+
+The lower auction indices are strictly prioritized over higher indices. The prioritization applies to all data in the mempool transactions stream equally. The ordering should be relatively consistent in expectation but is subject to variance from the p2p consensus network. Gossip priority applies only to reading data. For prioritization of sending data, see the section below on order priority. Nodes respecting gossip priority will use the previous auction winners relative to that node's current execution state. Similar to token, spot, and perp deployment auctions, fees come out of spot balance are burned.
 
 The previous auction winners (i.e., current gossip priority ordering) and current auction statuses can be queried using the info request `{ "type": "gossipPriorityAuctionStatus"}`.&#x20;
 
-Gossip priority reduces the need for market makers to hyper-optimize their infrastructure to remain competitive. To participate in the auction, users send action `{"type": "gossipPriorityBid", "slotId": 0, "ip": "1.2.3.4", "maxGas": 100000000}` where gas is wei of HYPE charged from spot balance. Each auction resets to 10 times the previous winning price of that slot, and have a minimum price of `0.1 HYPE`. Any address may bid on behalf of any IP address.
+Gossip priority reduces the need for market makers to hyper-optimize their infrastructure to remain competitive. To participate in the auction, users send action `{"type": "gossipPriorityBid", "slotId": 0, "ip": "1.2.3.4", "maxGas": 100000000}` where gas is wei of HYPE charged from spot balance. Each auction resets to 10 times the previous winning price of that slot, and have a minimum price of `0.1 HYPE`. Any address may bid on behalf of any IP address.&#x20;
+
+The current empirical effect of gossip priority on mainnet is approximately 10 ms reduction in latency per auction slot.
 
 ### Order (write) priority
 
@@ -19,3 +23,5 @@ Order priority reduces the need for market makers to hyper-optimize their order 
 Order priority applies only to sending data. For prioritization of reading data, see the previous section on gossip priority. Similar to gossip priority auctions, order priority fees are burned.
 
 Priority fee paid can be read from the `user_fills` file written by the nodes as field `priorityGas` .
+
+The current empirical effect of order priority fees on mainnet is approximately 45 ms reduction in end-to-end latency per 1 bp of priority fee paid.
