@@ -26,7 +26,7 @@
 * Dual block architecture: <https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/dual-block-architecture>
 * Python SDK example: [\
   https://github.com/hyperliquid-dex/hyperliquid-python-sdk/blob/master/examples/basic\_evm\_use\_big\_blocks.py](https://github.com/hyperliquid-dex/hyperliquid-python-sdk/blob/master/examples/basic_evm_use_big_blocks.py)
-* Vercel: <https://hyperevm-block-toggle.vercel.app>
+* Interface from community member, ikalgo: <https://hyperevmblocktoggle.xyz/>
 
 ### Cross-chain messaging
 

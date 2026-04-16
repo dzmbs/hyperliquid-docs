@@ -51,8 +51,8 @@
     "builder-tools/hyperevm-tools.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/builder-tools/hyperevm-tools",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/builder-tools/hyperevm-tools.md",
-      "hash": "93299f9909a40a4e5ad32fb4007cfd0255fa6e225f45df85416233f1da946dac",
-      "last_updated": "2026-03-24T09:25:59.938428"
+      "hash": "6a3d9a40e25a30ba9566be9937f46933e2901a62213e5bb4a9c4897d3d2821e0",
+      "last_updated": "2026-04-16T04:08:22.469173"
     },
     "for-developers/api.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api",
@@ -830,14 +830,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-04-16T00:58:37.698704",
-    "duration_seconds": 146.946524,
+    "completed_at": "2026-04-16T04:10:10.339544",
+    "duration_seconds": 121.260284,
     "pages_discovered": 138,
     "pages_fetched": 138,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-04-16T00:58:37.698727",
+  "last_updated": "2026-04-16T04:10:10.339565",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
