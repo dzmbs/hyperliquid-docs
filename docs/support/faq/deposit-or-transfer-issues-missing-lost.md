@@ -16,12 +16,20 @@
 [deposited-via-solana-network](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-solana-network)
 {% endcontent-ref %}
 
-{% content-ref url="deposit-or-transfer-issues-missing-lost/deposited-via-plasma-network" %}
-[deposited-via-plasma-network](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-plasma-network)
+{% content-ref url="deposit-or-transfer-issues-missing-lost/deposited-via-avalanche-network" %}
+[deposited-via-avalanche-network](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-avalanche-network)
+{% endcontent-ref %}
+
+{% content-ref url="deposit-or-transfer-issues-missing-lost/deposited-via-base-network" %}
+[deposited-via-base-network](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-base-network)
 {% endcontent-ref %}
 
 {% content-ref url="deposit-or-transfer-issues-missing-lost/deposited-via-monad-network" %}
 [deposited-via-monad-network](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-monad-network)
+{% endcontent-ref %}
+
+{% content-ref url="deposit-or-transfer-issues-missing-lost/deposited-via-plasma-network" %}
+[deposited-via-plasma-network](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-plasma-network)
 {% endcontent-ref %}
 
 {% content-ref url="deposit-or-transfer-issues-missing-lost/transfer-or-deposit-to-usdc-perps-missing" %}
