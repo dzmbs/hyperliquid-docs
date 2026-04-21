@@ -141,8 +141,8 @@
     "for-developers/api/priority-fees.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees.md",
-      "hash": "fe3b682339bf6e5a63a72d84c137e65cb0d3c074c325b8cb688630cb28985b7e",
-      "last_updated": "2026-04-17T18:26:01.121348"
+      "hash": "eea7d33418fb8c50c0f715d028c8d0b283f903ec482d8245ec72238307ca95c8",
+      "last_updated": "2026-04-21T12:34:43.186422"
     },
     "for-developers/api/rate-limits-and-user-limits.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/rate-limits-and-user-limits",
@@ -842,14 +842,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-04-21T09:40:38.176258",
-    "duration_seconds": 82.624844,
+    "completed_at": "2026-04-21T12:36:25.865038",
+    "duration_seconds": 128.029962,
     "pages_discovered": 140,
     "pages_fetched": 140,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-04-21T09:40:38.176281",
+  "last_updated": "2026-04-21T12:36:25.865065",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
