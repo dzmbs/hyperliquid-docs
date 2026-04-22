@@ -261,8 +261,8 @@
     "hypercore.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore.md",
-      "hash": "983d0bed8a0b1c2282c5929c595396b412a1d7169fda86ea8afaacd97ad96856",
-      "last_updated": "2026-03-01T16:08:07.011426"
+      "hash": "3532c469377fbfce453e36c81f5ea2fbbb44af25683c447396fd7af060868cd6",
+      "last_updated": "2026-04-22T21:24:38.167672"
     },
     "hypercore/aligned-quote-assets.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets",
@@ -369,8 +369,8 @@
     "hyperliquid-improvement-proposals-hips.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips.md",
-      "hash": "5ae96f438c5056e2b9d192615591c6df7e57d9ff8b6163d77ec2b8ed27acff74",
-      "last_updated": "2026-03-01T16:08:29.439242"
+      "hash": "223df30fa0f4a766f3f9b31194a3e78cd9817d4bd4736d80bf76f302e3deb770",
+      "last_updated": "2026-04-22T21:25:00.949363"
     },
     "hyperliquid-improvement-proposals-hips/frontend-checks.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/frontend-checks",
@@ -399,8 +399,8 @@
     "onboarding.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding.md",
-      "hash": "372a747e7f85a4d44557cbf0c634acda486b7e5e668c3590062bd8f5a50a6b3b",
-      "last_updated": "2026-03-01T16:08:35.814374"
+      "hash": "4567a47cb408d6b169cb58b45a9976985a14f78fd2f0142bc6c857986d2cc38a",
+      "last_updated": "2026-04-22T21:25:07.629237"
     },
     "onboarding/connect-mobile-via-qr-code.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/connect-mobile-via-qr-code",
@@ -681,8 +681,8 @@
     "trading.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading.md",
-      "hash": "465af418eb6271edbc4ac8019206c5a890192d127e5afaf96d857404faad0aab",
-      "last_updated": "2026-03-14T18:16:41.896434"
+      "hash": "efae3a4949195f727593ac32d3e717c55d64c857c1776f746b86b1189605b39a",
+      "last_updated": "2026-04-22T21:26:07.728566"
     },
     "trading/account-abstraction-modes.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes",
@@ -825,8 +825,8 @@
     "validators.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/validators",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/validators.md",
-      "hash": "5ca69df878cc7fc5b015ce69594d32ac739732bc87f32beb7d3f5ee4bf9f5be7",
-      "last_updated": "2026-03-01T16:09:58.096136"
+      "hash": "4d9a589d40a5716d2136e2d904186a4e1798d8ba90426eadd9ff879930018683",
+      "last_updated": "2026-04-22T21:26:38.118889"
     },
     "validators/delegation-program.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/validators/delegation-program",
@@ -842,14 +842,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-04-22T18:34:29.295358",
-    "duration_seconds": 124.003451,
+    "completed_at": "2026-04-22T21:26:41.578976",
+    "duration_seconds": 185.355395,
     "pages_discovered": 140,
     "pages_fetched": 140,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-04-22T18:34:29.295380",
+  "last_updated": "2026-04-22T21:26:41.578998",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
