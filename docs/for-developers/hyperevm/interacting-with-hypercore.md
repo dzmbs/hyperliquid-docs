@@ -74,3 +74,21 @@ Happy building. Any feedback is appreciated.
 {% file src="<https://2356094849-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FyUdp569E6w18GdfqlGvJ%2Fuploads%2FaHYLOESgEVGMyYE9aaH8%2FL1Read.sol?alt=media&token=681c5dcf-2480-4fd0-b03e-cd8537b50b1e>" %}
 
 {% file src="<https://2356094849-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FyUdp569E6w18GdfqlGvJ%2Fuploads%2F0DoQSkfSDinTzGSYRoQL%2FCoreWriter.sol?alt=media&token=9454dc50-8251-49f6-891e-f5ea78afda79>" %}
+
+
+---
+
+# Agent Instructions: Querying This Documentation
+
+If you need additional information that is not directly available in this page, you can query the documentation dynamically by asking a question.
+
+Perform an HTTP GET request on the current page URL with the `ask` query parameter:
+
+```
+GET https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore.md?ask=<question>
+```
+
+The question should be specific, self-contained, and written in natural language.
+The response will contain a direct answer to the question and relevant excerpts and sources from the documentation.
+
+Use this mechanism when the answer is not explicitly present in the current page, you need clarification or additional context, or you want to retrieve related documentation sections.

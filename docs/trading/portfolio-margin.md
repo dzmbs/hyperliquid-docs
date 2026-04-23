@@ -61,3 +61,21 @@ The account becomes liquidatable when portfolio\_margin\_ratio > 0.95. All notio
 During mainnet pre-alpha, the caps per user will begin at `borrow_cap(USDC) = 1000` and `supply_cap(HYPE) = 200`. After borrow caps are hit, additional margin used must be supplied by the user using the settlement asset regardless of whether portfolio margin is active. Therefore, the best way to test the full portfolio margin behavior is to use small test accounts.
 
 Depending on the order of oracle price updates, either perp positions or spot borrows may be liquidated first. In other words, once portfolio margin ratio is liquidatable, users should not expect a deterministic liquidation sequence.
+
+
+---
+
+# Agent Instructions: Querying This Documentation
+
+If you need additional information that is not directly available in this page, you can query the documentation dynamically by asking a question.
+
+Perform an HTTP GET request on the current page URL with the `ask` query parameter:
+
+```
+GET https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin.md?ask=<question>
+```
+
+The question should be specific, self-contained, and written in natural language.
+The response will contain a direct answer to the question and relevant excerpts and sources from the documentation.
+
+Use this mechanism when the answer is not explicitly present in the current page, you need clarification or additional context, or you want to retrieve related documentation sections.

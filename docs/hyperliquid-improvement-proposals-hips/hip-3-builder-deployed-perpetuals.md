@@ -60,3 +60,21 @@ In the most likely outcome, slashing never happens on mainnet. A large amount of
 IMPORTANT: Enabling cross margin on an asset is irreversible. Deployers should carefully consider the conditions below before enabling.
 
 Despite the system-level protection, users still take greater risk when using cross margin across DEXs with different deployers. To better protect users, mainnet validators will enforce that HIP-3 deployers only enable cross margin on assets that satisfy defined eligibility standards, including: sufficient observable liquidity, a reliable external oracle source, and resilience to price manipulation. In particular, each time the \`externalPerpPx\` of an asset moves more than 50% relative to the start of day price, validators will conduct a review to determine whether the deployer should be slashed due to manipulation. Assets where 50% daily moves are expected more than once a month are ineligible for cross margin and are subject to deployer slashing.
+
+
+---
+
+# Agent Instructions: Querying This Documentation
+
+If you need additional information that is not directly available in this page, you can query the documentation dynamically by asking a question.
+
+Perform an HTTP GET request on the current page URL with the `ask` query parameter:
+
+```
+GET https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals.md?ask=<question>
+```
+
+The question should be specific, self-contained, and written in natural language.
+The response will contain a direct answer to the question and relevant excerpts and sources from the documentation.
+
+Use this mechanism when the answer is not explicitly present in the current page, you need clarification or additional context, or you want to retrieve related documentation sections.
