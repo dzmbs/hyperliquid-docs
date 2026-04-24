@@ -8,13 +8,13 @@
 
 ### **Situation 1: I see this error “Invalid transaction envelope type: specified type “0x2” but included a gasPrice instead of maxFeePerGas and maxPriorityFeePerGas”** <a href="#gas-issue-metamask" id="gas-issue-metamask"></a>
 
-* This is a known issue with MetaMask; you can try a different wallet like Rabby <https://support.rabby.io/hc/en-us/articles/11477459275279-How-to-migrate-from-other-wallets-to-Rabby-Wallet>
+* This is a known issue with MetaMask; you can try a different wallet like Rabby: <https://support.rabby.io/en/articles/14120403-migrating-from-metamask-or-other-wallets>
 
 ### **Situation 2: Why does my wallet indicate that I have insufficient ETH balance for transactions when I do in my wallet?** <a href="#eth-gas-issues" id="eth-gas-issues"></a>
 
 * You don't need ETH for gas on the HyperEVM. You need HYPE for gas on the HyperEVM
 * Usually this means you didn't add the HyperEVM network properly to your wallet extension. Please follow the instructions here: <https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/how-to-use-the-hyperevm#how-do-i-add-the-hyperevm-to-my-wallet-extension>
-* Your wallet extension may not support the HyperEVM as a custom network. Consider switching to Rabby, which supports the HyperEVM as an integrated network: <https://support.rabby.io/hc/en-us/articles/11477459275279-How-to-migrate-from-other-wallets-to-Rabby-Wallet>
+* Your wallet extension may not support the HyperEVM as a custom network. Consider switching to Rabby, which supports the HyperEVM as an integrated network: <https://support.rabby.io/en/articles/14120403-migrating-from-metamask-or-other-wallets>
 
 
 ---

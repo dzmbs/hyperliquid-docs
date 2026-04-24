@@ -37,7 +37,7 @@ Sending from the HyperEVM to your Spot balances costs gas in HYPE on the HyperEV
 
 Various teams are building applications, tooling, etc. on the HyperEVM. There are many community initiatives to track new releases on the HyperEVM, including:
 
-<https://www.hypurr.co/ecosystem-projects>,[ https://hyperliquid.wiki/](https://hyperliquid.wiki/),[ https://data.asxn.xyz/dashboard/hyperliquid-ecosystem](https://data.asxn.xyz/dashboard/hyperliquid-ecosystem), <https://hl.eco/>, and the #hyperevm-eco channel in <https://discord.gg/hyperliquid>&#x20;
+<https://www.hypurr.co/ecosystem-projects>, <https://data.asxn.xyz/dashboard/hyperliquid-ecosystem>, <https://hl.eco/>, and the #hyperevm-eco channel in <https://discord.gg/hyperliquid>&#x20;
 
 ### How does the HyperEVM interact with the rest of the Hyperliquid blockchain?&#x20;
 
@@ -57,7 +57,7 @@ First confirm with the CEX that they support the HyperEVM. Note that the HyperEV
 
 There are many different bridges / swaps, including:&#x20;
 
-* LayerZero: <https://www.hyperbridge.xyz/>
+* Stargate (Powered by LayerZero): <https://stargate.finance/>
 * DeBridge: [https://app.debridge.finance/](https://app.debridge.finance/?inputChain=1\&outputChain=999\&inputCurrency=\&outputCurrency=\&dlnMode=simple)
 * Gas.zip: <https://www.gas.zip/>
 * Jumper: <https://jumper.exchange/>

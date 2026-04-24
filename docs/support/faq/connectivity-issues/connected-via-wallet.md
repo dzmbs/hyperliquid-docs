@@ -17,7 +17,7 @@ If you’re experiencing issues connecting your wallet to Hyperliquid, such as a
 * Ledger "Transfer Failed" error on the HyperEVM: Update to the latest Ledger software/firmware
 * Reinstall your wallet extension: Make sure you have your seed phrase or private key backed up before doing this
 
-Lastly, you can try switching to Rabby Wallet, which often works more smoothly with Hyperliquid. Your trades, history, and address remain the same even if you use a new wallet extension. <https://support.rabby.io/hc/en-us/articles/11477459275279-How-to-migrate-from-other-wallets-to-Rabby-Wallet>
+Lastly, you can try switching to Rabby Wallet, which often works more smoothly with Hyperliquid. Your trades, history, and address remain the same even if you use a new wallet extension. <https://support.rabby.io/en/articles/14120403-migrating-from-metamask-or-other-wallets>
 
 
 ---

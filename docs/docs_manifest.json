@@ -357,8 +357,8 @@
     "hyperevm.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm.md",
-      "hash": "f5f5bddb8b2a21e68268b135d3a658fdad8c4e97b4c69100e6a5f4682b6f8428",
-      "last_updated": "2026-04-23T15:43:54.833698"
+      "hash": "665d746187d87feea4418a7f895edb3ea2f96349675fcdb1fd41f03c11a18dcf",
+      "last_updated": "2026-04-24T04:11:10.433760"
     },
     "hyperevm/tools-for-hyperevm-builders.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm/tools-for-hyperevm-builders",
@@ -411,8 +411,8 @@
     "onboarding/export-your-email-wallet.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/export-your-email-wallet",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/export-your-email-wallet.md",
-      "hash": "ff42befdfe51199564405203c70b392471876cc65d54fd98fd082f7478bfbd6e",
-      "last_updated": "2026-04-23T15:44:15.725372"
+      "hash": "b4451d2d2de1080cee01c7a1b0d4fbde00ff38882ca0d210dc7c1c5217d3c32f",
+      "last_updated": "2026-04-24T04:11:18.296942"
     },
     "onboarding/how-to-stake-hype.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/how-to-stake-hype",
@@ -429,14 +429,14 @@
     "onboarding/how-to-use-the-hyperevm.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/how-to-use-the-hyperevm",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/how-to-use-the-hyperevm.md",
-      "hash": "3d9c8f954fa4e0cac8f04bd372eb9989f4d55338f56e1cb9632d193f4a274955",
-      "last_updated": "2026-04-23T15:44:18.615863"
+      "hash": "a5094d4134ca779c2cad32ce7e3a6f14aef5077628366f3b6dbfa57853854050",
+      "last_updated": "2026-04-24T04:11:21.630961"
     },
     "onboarding/testnet-faucet.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/testnet-faucet",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/testnet-faucet.md",
-      "hash": "3d87c5a1527a2b772f91da45ceb94904f4cb6b5caa6a4f35d527e810419bbeec",
-      "last_updated": "2026-04-23T15:44:19.287873"
+      "hash": "6a1512d11cd07401300fcc0fc5402c272d0e9f85470b01a223c1e98c7219e9ab",
+      "last_updated": "2026-04-24T04:11:22.479978"
     },
     "points.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/points",
@@ -501,8 +501,8 @@
     "support/faq/connectivity-issues/connected-via-wallet.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/connectivity-issues/connected-via-wallet",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/connectivity-issues/connected-via-wallet.md",
-      "hash": "476b397e3102eada25e2b5225f548ae9859960f71fe33eae40e9897dcc213130",
-      "last_updated": "2026-04-23T15:44:35.120840"
+      "hash": "88a323eba05ae4d6f29974b893417e71520ad015b87a98deb0bce99c568c2597",
+      "last_updated": "2026-04-24T04:11:36.350233"
     },
     "support/faq/deposit-or-transfer-issues-missing-lost.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost",
@@ -585,14 +585,14 @@
     "support/faq/hyperevm-issues/cant-see-my-hyperevm-assets-in-wallet-extension.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/hyperevm-issues/cant-see-my-hyperevm-assets-in-wallet-extension",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/hyperevm-issues/cant-see-my-hyperevm-assets-in-wallet-extension.md",
-      "hash": "fe5efc24ddd21d222dfc5a26579aaa1e24f4c1f0a3d197cdb79d91a349e2f8b4",
-      "last_updated": "2026-04-23T15:44:52.820695"
+      "hash": "c7ffba56c800c60fac4603157ddf814787d3022286476726d97569acc76bca53",
+      "last_updated": "2026-04-24T04:11:56.616312"
     },
     "support/faq/hyperevm-issues/gas-problem-on-evm.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/hyperevm-issues/gas-problem-on-evm",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/hyperevm-issues/gas-problem-on-evm.md",
-      "hash": "23fabc4dfd842b274f1f5f9eb8444cd709708e459e11f2a03d059a072b9fa3ca",
-      "last_updated": "2026-04-23T15:44:53.678766"
+      "hash": "3a3c0cd4351b60849e52a323313a49d18e58a56b1ca296338f651fac145ce408",
+      "last_updated": "2026-04-24T04:11:57.384123"
     },
     "support/faq/i-got-scammed-hacked.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/i-got-scammed-hacked",
@@ -675,8 +675,8 @@
     "support/faq/withdrawal-issues/withdrawing-to-phantom-wallet.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/withdrawal-issues/withdrawing-to-phantom-wallet",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/withdrawal-issues/withdrawing-to-phantom-wallet.md",
-      "hash": "1346283d849332cad3f6ef0309802e4f32e7aa83f5f1ac831d358fdff98e6fca",
-      "last_updated": "2026-04-23T15:45:12.184203"
+      "hash": "cd108f2bbac72aa4fbcc38025a0307bf9762882fd27096d8b60d3150c612e818",
+      "last_updated": "2026-04-24T04:12:20.354127"
     },
     "trading.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading",
@@ -842,14 +842,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-04-24T00:58:34.665268",
-    "duration_seconds": 84.014361,
+    "completed_at": "2026-04-24T04:12:45.442990",
+    "duration_seconds": 152.972388,
     "pages_discovered": 140,
     "pages_fetched": 140,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-04-24T00:58:34.665288",
+  "last_updated": "2026-04-24T04:12:45.443014",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",

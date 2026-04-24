@@ -4,7 +4,7 @@ The Hyperliquid blockchain features two key parts: HyperCore and HyperEVM. The H
 
 ### What can I do on the HyperEVM?&#x20;
 
-Explore directories of apps, tools, and more built by community members: [ASXN](https://hyperscreener.asxn.xyz/ecosystem), [HypurrCo](https://www.hypurr.co/ecosystem-projects), [HL Eco](https://hl.eco/projects), and [Hyperliquid.wiki](https://hyperliquid.wiki/). Visit the [HyperEVM onboarding FAQ](https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/how-to-use-the-hyperevm) for more questions.&#x20;
+Explore directories of apps, tools, and more built by community members: [ASXN](https://hyperscreener.asxn.xyz/ecosystem), [HypurrCo](https://www.hypurr.co/ecosystem-projects), and [HL Eco](https://hl.eco/projects). Visit the [HyperEVM onboarding FAQ](https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/how-to-use-the-hyperevm) for more questions.&#x20;
 
 ### Why build on the HyperEVM?
 
