@@ -743,6 +743,41 @@ Add or remove funds from a vault.
 {% endtab %}
 {% endtabs %}
 
+## Deposit or withdraw from an HIP-3 DEX's backstop liquidator
+
+<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
+
+Add or remove funds from HIP-3 backstop liquidator address. `ntl` is an integer in units of 1e-6 quote tokens. Amount must be a multiple of 1000 quote tokens (i.e. `ntl % 1000000000 == 0`).
+
+Only principal amount is withdrawable, not pnl.&#x20;
+
+**Headers**
+
+| Name                                           | Value              |
+| ---------------------------------------------- | ------------------ |
+| Content-Type<mark style="color:red;">\*</mark> | `application/json` |
+
+**Body**
+
+| Name                                        | Type   | Description                                                                                                                                 |
+| ------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "hip3LiquidatorTransfer",</p><p>  "dex": string (e.g. "xyz"),</p><p>"ntl": number,<br>"isDeposit": boolean</p><p>}</p> |
+| nonce<mark style="color:red;">\*</mark>     | number | Recommended to use the current timestamp in milliseconds                                                                                    |
+| signature<mark style="color:red;">\*</mark> | Object |                                                                                                                                             |
+| expiresAfter                                | Number | Timestamp in milliseconds                                                                                                                   |
+
+**Response**
+
+{% tabs %}
+{% tab title="200" %}
+
+```json
+{'status': 'ok', 'response': {'type': 'default'}}
+```
+
+{% endtab %}
+{% endtabs %}
+
 ## Approve an API wallet
 
 <mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`

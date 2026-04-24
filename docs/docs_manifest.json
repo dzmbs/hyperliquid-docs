@@ -93,8 +93,8 @@
     "for-developers/api/exchange-endpoint.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/exchange-endpoint",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/exchange-endpoint.md",
-      "hash": "34282ed09ef93f984c8fcb252c0734cdc95315bb4359818add4dbc76ccce1272",
-      "last_updated": "2026-04-24T06:50:49.212807"
+      "hash": "fae259e98fa40c89ca290968f311d5baca00923029aa2a1b7708fcf970da5147",
+      "last_updated": "2026-04-24T09:41:45.978509"
     },
     "for-developers/api/hip-3-deployer-actions.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions",
@@ -141,8 +141,8 @@
     "for-developers/api/priority-fees.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees.md",
-      "hash": "9c1d8af6a0d1b83e19c211aa7363dd1beceb460c0660adc4a25900c358279b66",
-      "last_updated": "2026-04-23T15:43:21.853556"
+      "hash": "4ec3dd048a517dce43fb56a8b94021d74d712693ffb019c2d7c22b715178edf1",
+      "last_updated": "2026-04-24T09:41:52.867585"
     },
     "for-developers/api/rate-limits-and-user-limits.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/rate-limits-and-user-limits",
@@ -842,14 +842,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-04-24T06:52:29.934551",
-    "duration_seconds": 122.146358,
+    "completed_at": "2026-04-24T09:43:55.869486",
+    "duration_seconds": 152.666713,
     "pages_discovered": 140,
     "pages_fetched": 140,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-04-24T06:52:29.934570",
+  "last_updated": "2026-04-24T09:43:55.869512",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
