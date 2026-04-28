@@ -147,8 +147,8 @@
     "for-developers/api/rate-limits-and-user-limits.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/rate-limits-and-user-limits",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/rate-limits-and-user-limits.md",
-      "hash": "6c9fdca19f222108fe6fbe1857de4d36ed2fb122794b0e4f6dccf02d54846e2e",
-      "last_updated": "2026-04-23T15:43:22.745214"
+      "hash": "101ba965ae53b89f6f34698ddfc01627d1ad71604d1f922a0a8553fa558dffbc",
+      "last_updated": "2026-04-28T04:21:40.869047"
     },
     "for-developers/api/signing.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/signing",
@@ -723,8 +723,8 @@
     "trading/fees.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees.md",
-      "hash": "9d01be92c7c3f16f20b010785e46d867aa213b117134ef0b177021cd080a9545",
-      "last_updated": "2026-04-23T15:45:19.181020"
+      "hash": "c6af68425ea8dfb17d945a4e04e09ed418e0cbb0e6c1b01391ebdad68b07eab6",
+      "last_updated": "2026-04-28T04:23:19.432742"
     },
     "trading/funding.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/funding",
@@ -842,14 +842,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-04-28T01:02:01.498944",
-    "duration_seconds": 133.000764,
+    "completed_at": "2026-04-28T04:23:36.476089",
+    "duration_seconds": 142.416088,
     "pages_discovered": 140,
     "pages_fetched": 140,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-04-28T01:02:01.498974",
+  "last_updated": "2026-04-28T04:23:36.476113",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
