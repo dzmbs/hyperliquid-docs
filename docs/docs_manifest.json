@@ -723,8 +723,8 @@
     "trading/fees.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees.md",
-      "hash": "c6af68425ea8dfb17d945a4e04e09ed418e0cbb0e6c1b01391ebdad68b07eab6",
-      "last_updated": "2026-04-28T04:23:19.432742"
+      "hash": "befc849f89a7d2f3448b05d0975f4c281058839dec10c532fe7924493b30fb74",
+      "last_updated": "2026-04-29T09:52:07.682320"
     },
     "trading/funding.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/funding",
@@ -842,14 +842,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-04-29T07:02:46.256446",
-    "duration_seconds": 82.086993,
+    "completed_at": "2026-04-29T09:52:25.780270",
+    "duration_seconds": 160.779057,
     "pages_discovered": 140,
     "pages_fetched": 140,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-04-29T07:02:46.256468",
+  "last_updated": "2026-04-29T09:52:25.780291",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
