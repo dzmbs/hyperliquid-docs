@@ -4,7 +4,7 @@
 
 Background: latency-sensitive users may find `split_client_blocks: true` useful, as it streams transactions to be committed before they are included in client blocks. This can lead to 70-150ms improvement in latency when reading inputs. As documented in the node repository, these are the fastest transaction inputs to execution, broadcast even before they are executed by the L1. The tradeoff with the faster input data is that the results from execution are not yet available. However, with simple actions like orders, the consumer can stream estimated account values for all users to predict execution results with reasonable accuracy.
 
-There are 5 independent Dutch auctions synced to the same 3 minute schedule. The auction indices are optionally interpreted by nodes as an ordering for their peers when sending data. The priority ordering affects both split client blocks and normal client blocks that include responses. The foundation non-validator will opt into respecting the gossip priority auction ordering.&#x20;
+There are 2 independent Dutch auctions synced to the same 3 minute schedule. The auction indices are optionally interpreted by nodes as an ordering for their peers when sending data. The priority ordering affects both split client blocks and normal client blocks that include responses. The foundation non-validator will opt into respecting the gossip priority auction ordering.&#x20;
 
 The independent slot auctions are not additive, so an IP bidding multiple slots will be prioritized according to its lowest slot. For the auction to affect latency, the onchain IP must exactly match the IP seen by the peer sending data. Each auction's results only affect the duration of the following auction. For nodes that are connected via a chain of nodes to the validating network, note that each network hop may or may not respect the priority auction depending on how the parent node is configured.&#x20;
 
@@ -14,7 +14,7 @@ The previous auction winners (i.e., current gossip priority ordering) and curren
 
 Gossip priority reduces the need for market makers to hyper-optimize their infrastructure to remain competitive. To participate in the auction, users send action `{"type": "gossipPriorityBid", "slotId": 0, "ip": "1.2.3.4", "maxGas": 100000000}` where gas is wei of HYPE charged from spot balance. Each auction resets to 10 times the previous winning price of that slot, and have a minimum price of `0.1 HYPE`. Any address may bid on behalf of any IP address.&#x20;
 
-The current empirical effect of gossip priority on mainnet is approximately 10 ms reduction in latency per auction slot.
+The current empirical effect of gossip priority on mainnet is approximately 25 ms reduction in latency per auction slot.
 
 ### Order (write) priority
 
