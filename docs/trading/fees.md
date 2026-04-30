@@ -75,7 +75,7 @@ Outcome token trading only charges fees when closing or settling, not when openi
 
 1\. Minting, no one pays fee: no volume is counted
 
-2a. Normal Trade where only maker pays fee: both users get `px * sz`
+2a. Normal Trade where one side pays fee: both users get `fee_paying_px * sz`
 
 2b. Normal Trade where no one pays fee: no volume is counted
 
