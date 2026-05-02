@@ -1,5 +1,7 @@
 # Contract specifications
 
+### Crypto Perps
+
 Hyperliquid perpetuals are derivatives products without expiration date. Instead, they rely on funding payments to ensure convergence to the underlying spot price over time. See [Funding](/hyperliquid-docs/trading/funding.md) for more information.&#x20;
 
 Hyperliquid has one main style of margining for perpetual contracts: USDC margining, USDT denominated linear contracts. That is, the oracle price is denominated in USDT, but the collateral is USDC. This allows for the best combination of liquidity and accessibility. Note that no conversions with the USDC/USDT exchange rate are applied, so these contracts are technically quanto contracts where USDT pnl is denominated in USDC.
@@ -22,6 +24,12 @@ Hyperliquid's contract specifications are simpler than most platforms. There are
 | Funding impact notional     | <p>20000 USDC for BTC and ETH</p><p>6000 USDC for all other assets </p>                                                                    |
 | Maximum market order value  | $30,000,000 for max leverage >= 25, $5,000,000 for max leverage in \[20, 25), $2,000,000 for max leverage in \[10, 20), otherwise $500,000 |
 | Maximum limit order value   | 10 \* maximum market order value                                                                                                           |
+
+### Recurring outcomes
+
+Recurring outcomes are automatically deployed and settled by the protocol on a fixed cadence. The specification for the current instance of the recurring outcome is found in the `description` field of `outcomeMeta` , for example `"class:priceBinary|underlying:BTC|expiry:20260503-0600|targetPrice:78213|period:1d"` .
+
+The target price is computed using a linear interpolation between the mark price updates immediately before and immediately after the settlement timestamp. Precisely, the contract settles to YES if and only if `markPrice0 + (settlementTime - t0) / (t1 - t0) * (markPrice1 - markPrice0) ≥ targetPrice` where `t0` and `t1` are the timestamps of mark price updates immediately before and after `settlementTime`.
 
 
 ---
