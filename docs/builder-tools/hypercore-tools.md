@@ -4,7 +4,7 @@
 
 * ASXN (most comprehensive): <https://hyperscreener.asxn.xyz/home>
 * Artemis: <https://app.artemis.xyz/project/hyperliquid>
-* Blockliquidity: <https://blockliquidity.xyz/>
+* Blockliquidity: [https://blockliquidity.xyz/](< https://blockliquidity.xyz/>)
 * Coinalyze: <https://coinalyze.net/markets/?exchange=H>
 * DefiLlama (note that TVL is tracked differently on order books and AMMs): <https://defillama.com/perps/chains/hyperliquid>
 * Flowscan: <https://www.flowscan.xyz/>

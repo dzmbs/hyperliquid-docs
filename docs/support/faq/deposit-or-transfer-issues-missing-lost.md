@@ -1,39 +1,39 @@
 # Deposit or transfer issues (Missing / Lost)
 
-{% content-ref url="deposit-or-transfer-issues-missing-lost/deposited-via-arbitrum-network-usdc" %}
-[deposited-via-arbitrum-network-usdc](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-arbitrum-network-usdc)
+{% content-ref url="/pages/ZD2l4FZVBoGO5OYdD93z" %}
+[Deposited via Arbitrum network (USDC)](/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-arbitrum-network-usdc.md)
 {% endcontent-ref %}
 
-{% content-ref url="deposit-or-transfer-issues-missing-lost/deposited-via-bitcoin-network" %}
-[deposited-via-bitcoin-network](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-bitcoin-network)
+{% content-ref url="/pages/4qkCsASxUrY4vLcLv7mC" %}
+[Deposited via Bitcoin network](/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-bitcoin-network.md)
 {% endcontent-ref %}
 
-{% content-ref url="deposit-or-transfer-issues-missing-lost/deposited-via-ethereum-network" %}
-[deposited-via-ethereum-network](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-ethereum-network)
+{% content-ref url="/pages/csytZuwvMXmjLA93YZDC" %}
+[Deposited via Ethereum network](/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-ethereum-network.md)
 {% endcontent-ref %}
 
-{% content-ref url="deposit-or-transfer-issues-missing-lost/deposited-via-solana-network" %}
-[deposited-via-solana-network](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-solana-network)
+{% content-ref url="/pages/7cB5FEu4pOdAQeSgaPbb" %}
+[Deposited via Solana network](/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-solana-network.md)
 {% endcontent-ref %}
 
-{% content-ref url="deposit-or-transfer-issues-missing-lost/deposited-via-avalanche-network" %}
-[deposited-via-avalanche-network](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-avalanche-network)
+{% content-ref url="/pages/640Hfuq2lIGA8DRssoZK" %}
+[Deposited via Avalanche network](/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-avalanche-network.md)
 {% endcontent-ref %}
 
-{% content-ref url="deposit-or-transfer-issues-missing-lost/deposited-via-base-network" %}
-[deposited-via-base-network](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-base-network)
+{% content-ref url="/pages/SFA7L1AuOGZGIPXAlJPf" %}
+[Deposited via Base network](/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-base-network.md)
 {% endcontent-ref %}
 
-{% content-ref url="deposit-or-transfer-issues-missing-lost/deposited-via-monad-network" %}
-[deposited-via-monad-network](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-monad-network)
+{% content-ref url="/pages/Sj32IoNbm9uwUAB7c6op" %}
+[Deposited via Monad network](/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-monad-network.md)
 {% endcontent-ref %}
 
-{% content-ref url="deposit-or-transfer-issues-missing-lost/deposited-via-plasma-network" %}
-[deposited-via-plasma-network](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-plasma-network)
+{% content-ref url="/pages/lVkRAt0lertkirHxcCwZ" %}
+[Deposited via Plasma network](/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-plasma-network.md)
 {% endcontent-ref %}
 
-{% content-ref url="deposit-or-transfer-issues-missing-lost/transfer-or-deposit-to-usdc-perps-missing" %}
-[transfer-or-deposit-to-usdc-perps-missing](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/transfer-or-deposit-to-usdc-perps-missing)
+{% content-ref url="/pages/mQObR8KIRMMxvTM3HamG" %}
+[Transfer or deposit to USDC (Perps) missing](/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/transfer-or-deposit-to-usdc-perps-missing.md)
 {% endcontent-ref %}
 
 

@@ -14,7 +14,7 @@
 
 * Alchemy: <https://www.alchemy.com/hyperevm>
 * Altitude: <https://rpc.reachaltitude.xyz/>
-* Chainstack: <https://chainstack.com/build-better-with-hyperliquid/>
+* Chainstack: [https://chainstack.com/build-better-with-hyperliquid/](<https://chainstack.com/build-better-with-hyperliquid/&#xA;>)
 * Dwellir: <https://www.dwellir.com/networks/hyperliquid>
 * HypeRPC: <https://hyperpc.app/>
 * Nanoreth (how to build an archive node): <https://github.com/hl-archive-node/nanoreth/blob/51c43d6dbdf71e277da67bf618a71fe304aae372/README.md>
@@ -25,7 +25,7 @@
 
 * Dual block architecture: <https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/dual-block-architecture>
 * Python SDK example: [\
-  https://github.com/hyperliquid-dex/hyperliquid-python-sdk/blob/master/examples/basic\_evm\_use\_big\_blocks.py](https://github.com/hyperliquid-dex/hyperliquid-python-sdk/blob/master/examples/basic_evm_use_big_blocks.py)
+  https://github.com/hyperliquid-dex/hyperliquid-python-sdk/blob/master/examples/basic\_evm\_use\_big\_blocks.py](<&#xA;https://github.com/hyperliquid-dex/hyperliquid-python-sdk/blob/master/examples/basic_evm_use_big_blocks.py>)
 * Interface from community member, ikalgo: <https://hyperevmblocktoggle.xyz/>
 
 ### Cross-chain messaging
@@ -37,7 +37,7 @@
 ### DEX aggregator
 
 * GlueX: <https://gluex.xyz/chain/hyperevm>
-* Hyperbloom: [https://www.hyperbloom.xyz/ ](https://www.hyperbloom.xyz/)
+* Hyperbloom: [https://www.hyperbloom.xyz/ ](<https://www.hyperbloom.xyz/ >)
 * Hyperflow: <https://hyperflow.fun/bridge>
 * LiquidSwap: <https://liqd.ag/>
 * LlamaSwap: <https://swap.defillama.com/?chain=hyperevm>

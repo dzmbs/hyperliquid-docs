@@ -6,7 +6,7 @@ DEX abstraction is a setting for trading HIP-3 perps. To simplify user experienc
 
 * With DEX abstraction enabled, you will not see separate balances for each HIP-3 DEX in which you have positions or open orders.
 
-<div align="left"><figure><img src="https://223971011-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fjea34cXPWRf1o1Lan56O%2Fuploads%2F6beZVUkrjYmsFW9XPLmC%2Fimage.png?alt=media&#x26;token=8312560b-95cb-422a-af07-76374cd4cd81" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="/files/kzkkPogMXHLVtIRPLaed" alt=""><figcaption></figcaption></figure></div>
 
 * Collateral for USDC positions will come from your USDC (Perps) available balance. Collateral for non-USDC quote assets (E.g. USDT or USDH) will come from the respective spot balances.
 
@@ -14,7 +14,7 @@ DEX abstraction is a setting for trading HIP-3 perps. To simplify user experienc
 
 * With DEX abstraction disabled, you will see separate balances for each HIP-3 DEX. The balance can be used to open new positions just like the regular USDC perps balance you might be familiar with.
 
-<figure><img src="https://223971011-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fjea34cXPWRf1o1Lan56O%2Fuploads%2FX92Atov02nh2c5bxqg1v%2Fimage.png?alt=media&#x26;token=31844a4b-cd22-4837-a0f9-ba6982f9bf27" alt=""><figcaption></figcaption></figure>
+<figure><img src="/files/OvDqs1SXgOHOihyPxvfH" alt=""><figcaption></figcaption></figure>
 
 * To open a new position, you will need to first transfer funds to that HIP-3 DEX. You will see the "Transfer to Perps" option in your order form or "Perps to Spot Transfer" button on the Portfolio page after selecting a new HIP-3 asset in the token selector.&#x20;
 * When DEX abstraction is re-enabled, any available balance not used for positions or open orders is automatically transferred back to its respective Perps or Spot balance. E.g., USDC (Perps) xyz will be transferred to USDC (Perps).

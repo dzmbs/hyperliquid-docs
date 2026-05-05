@@ -1,23 +1,23 @@
 # Trade outcome looks incorrect
 
-{% content-ref url="trade-outcome-looks-incorrect/why-was-i-liquidated" %}
-[why-was-i-liquidated](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/why-was-i-liquidated)
+{% content-ref url="/pages/Y3MOtJdtJJGuIoqxeKd2" %}
+[Why was I liquidated?](/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/why-was-i-liquidated.md)
 {% endcontent-ref %}
 
-{% content-ref url="trade-outcome-looks-incorrect/how-does-margining-work" %}
-[how-does-margining-work](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/how-does-margining-work)
+{% content-ref url="/pages/jyUNICmaFUR04Tq9s3NF" %}
+[How does margining work?](/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/how-does-margining-work.md)
 {% endcontent-ref %}
 
-{% content-ref url="trade-outcome-looks-incorrect/my-tp-sl-did-not-execute-correctly" %}
-[my-tp-sl-did-not-execute-correctly](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/my-tp-sl-did-not-execute-correctly)
+{% content-ref url="/pages/f8Sn7FjnGTbckDajXrWb" %}
+[My TP/SL did not execute correctly](/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/my-tp-sl-did-not-execute-correctly.md)
 {% endcontent-ref %}
 
-{% content-ref url="trade-outcome-looks-incorrect/i-cant-sell-leftover-spot-assets" %}
-[i-cant-sell-leftover-spot-assets](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/i-cant-sell-leftover-spot-assets)
+{% content-ref url="/pages/WS53cnkHB8DwfHaUWfvs" %}
+[I can't sell leftover spot assets](/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/i-cant-sell-leftover-spot-assets.md)
 {% endcontent-ref %}
 
-{% content-ref url="trade-outcome-looks-incorrect/what-does-action-already-expired-mean" %}
-[what-does-action-already-expired-mean](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/what-does-action-already-expired-mean)
+{% content-ref url="/pages/nDMr6Nh9PWPRnteGsy7E" %}
+[What does "Action already expired" mean?](/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/what-does-action-already-expired-mean.md)
 {% endcontent-ref %}
 
 

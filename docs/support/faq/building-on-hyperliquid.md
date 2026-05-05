@@ -1,11 +1,11 @@
 # Building on Hyperliquid
 
-{% content-ref url="building-on-hyperliquid/i-have-api-related-questions" %}
-[i-have-api-related-questions](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/building-on-hyperliquid/i-have-api-related-questions)
+{% content-ref url="/pages/DWgjek9Kv8t20P32LxaE" %}
+[I have API related questions](/hyperliquid-docs/support/faq/building-on-hyperliquid/i-have-api-related-questions.md)
 {% endcontent-ref %}
 
-{% content-ref url="building-on-hyperliquid/i-want-to-deploy-a-spot-token-or-list-a-perp" %}
-[i-want-to-deploy-a-spot-token-or-list-a-perp](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/building-on-hyperliquid/i-want-to-deploy-a-spot-token-or-list-a-perp)
+{% content-ref url="/pages/RW3RZgMngLWjFDSqCa1T" %}
+[I want to deploy a spot token or list a perp](/hyperliquid-docs/support/faq/building-on-hyperliquid/i-want-to-deploy-a-spot-token-or-list-a-perp.md)
 {% endcontent-ref %}
 
 

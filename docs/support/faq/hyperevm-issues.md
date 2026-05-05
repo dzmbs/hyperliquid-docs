@@ -1,15 +1,15 @@
 # HyperEVM issues
 
-{% content-ref url="hyperevm-issues/accidentally-transferred-to-hyperevm" %}
-[accidentally-transferred-to-hyperevm](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/hyperevm-issues/accidentally-transferred-to-hyperevm)
+{% content-ref url="/pages/yM5Wdf4MOmf8G4Ru3bX0" %}
+[Accidentally transferred to HyperEVM](/hyperliquid-docs/support/faq/hyperevm-issues/accidentally-transferred-to-hyperevm.md)
 {% endcontent-ref %}
 
-{% content-ref url="hyperevm-issues/cant-see-my-hyperevm-assets-in-wallet-extension" %}
-[cant-see-my-hyperevm-assets-in-wallet-extension](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/hyperevm-issues/cant-see-my-hyperevm-assets-in-wallet-extension)
+{% content-ref url="/pages/hmUUBqR6JG7mmzD4agBW" %}
+[Can’t see my HyperEVM assets in wallet extension](/hyperliquid-docs/support/faq/hyperevm-issues/cant-see-my-hyperevm-assets-in-wallet-extension.md)
 {% endcontent-ref %}
 
-{% content-ref url="hyperevm-issues/gas-problem-on-evm" %}
-[gas-problem-on-evm](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/hyperevm-issues/gas-problem-on-evm)
+{% content-ref url="/pages/EUjqAfnOiHdmyS9Pg1vZ" %}
+[Gas problem on EVM](/hyperliquid-docs/support/faq/hyperevm-issues/gas-problem-on-evm.md)
 {% endcontent-ref %}
 
 
