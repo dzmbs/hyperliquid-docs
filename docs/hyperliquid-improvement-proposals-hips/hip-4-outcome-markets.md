@@ -1,5 +1,7 @@
 # HIP-4: Outcome markets
 
+### Overview
+
 Outcomes are fully collateralized contracts that settle within a fixed range. They are a general-purpose primitive that are useful for applications such as prediction markets and bounded options-like instruments.&#x20;
 
 Outcomes bring non-linearity, dated contracts, and an alternative form of derivative trading that does not involve leverage or liquidations. The outcome primitive expands the expressivity of HyperCore, while composing with other primitives such as portfolio margin and the HyperEVM.
@@ -7,6 +9,14 @@ Outcomes bring non-linearity, dated contracts, and an alternative form of deriva
 The first market is a recurring binary outcome that settles daily at 06:00 UTC to the BTC mark price on HyperCore mark prices. See the spec [here](/hyperliquid-docs/trading/contract-specifications.md#recurring-outcomes). Multi-outcome markets will be supported but not part of the initial mainnet release. Additional features and markets will be rolled out in stages.
 
 The outcome trading API is similar to spot, with key differences highlighted here: <https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/asset-ids>.
+
+### Mechanics
+
+Each outcome market consists of two sides, each with a token. Usually the tokens are labeled `Yes` and `No`. Settlement automatically converts either Yes to 1 quote token and No to 0 quote tokens, or vice versa.&#x20;
+
+The order books of Yes and No tokens for the same outcome are merged to share liquidity. For example, an order to buy Yes at price `p` is equivalent to an order to Sell No at price `1-p`. Advanced users may also manually split and merge outcomes. See [here](/hyperliquid-docs/for-developers/api/exchange-endpoint.md#split-outcome) for API examples.
+
+*Questions* are collections of outcomes that where exactly one outcome will settle to Yes, and all others will settle to No. Each outcome trades on a separate order book, but are linked by `negate` and `merge` operations. See [here](/hyperliquid-docs/for-developers/api/exchange-endpoint.md#negate-outcome) for API examples. In other words, users with No shares on different outcomes of the same question can redeem quote tokens before the underlying outcomes settle.
 
 
 ---

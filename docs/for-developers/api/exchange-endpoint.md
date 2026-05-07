@@ -1134,6 +1134,126 @@ Same effect as UserDexAbstraction above, but only works if setting the value fro
 {% endtab %}
 {% endtabs %}
 
+## Split outcome
+
+Split `X` quote tokens into `X` Yes and `X` No shares.&#x20;
+
+<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
+
+#### Headers
+
+| Name                                           | Type   | Description        |
+| ---------------------------------------------- | ------ | ------------------ |
+| Content-Type<mark style="color:red;">\*</mark> | String | "application/json" |
+
+#### Request Body
+
+| Name                                        | Type   | Description                                                                                                                    |
+| ------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "userOutcome",</p><p>  "splitOutcome": { "outcome": Number,  amount: String (e.g., "123.0") }</p><p>}</p> |
+| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                                                       |
+| signature<mark style="color:red;">\*</mark> | Object |                                                                                                                                |
+
+{% tabs %}
+{% tab title="200: OK Successful Response" %}
+
+```
+{'status': 'ok', 'response': {'type': 'default'}}
+```
+
+{% endtab %}
+{% endtabs %}
+
+## Merge outcome
+
+Merge `X` Yes and `X` No shares into `X` quote tokens.&#x20;
+
+<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
+
+#### Headers
+
+| Name                                           | Type   | Description        |
+| ---------------------------------------------- | ------ | ------------------ |
+| Content-Type<mark style="color:red;">\*</mark> | String | "application/json" |
+
+#### Request Body
+
+| Name                                        | Type   | Description                                                                                      |                                     |
+| ------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------ | ----------------------------------- |
+| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "userOutcome",</p><p>  "mergeOutcome": { "outcome": Number,  amount: String | null (null means max) }</p><p>}</p> |
+| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                         |                                     |
+| signature<mark style="color:red;">\*</mark> | Object |                                                                                                  |                                     |
+
+{% tabs %}
+{% tab title="200: OK Successful Response" %}
+
+```
+{'status': 'ok', 'response': {'type': 'default'}}
+```
+
+{% endtab %}
+{% endtabs %}
+
+## Merge question
+
+Merge `X` Yes shares from each outcome associated to the same question into `X` quote tokens.&#x20;
+
+<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
+
+#### Headers
+
+| Name                                           | Type   | Description        |
+| ---------------------------------------------- | ------ | ------------------ |
+| Content-Type<mark style="color:red;">\*</mark> | String | "application/json" |
+
+#### Request Body
+
+| Name                                        | Type   | Description                                                                                        |                                     |
+| ------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "userOutcome",</p><p>  "mergeQuestion": { "question": Number,  amount: String | null (null means max) }</p><p>}</p> |
+| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                           |                                     |
+| signature<mark style="color:red;">\*</mark> | Object |                                                                                                    |                                     |
+
+{% tabs %}
+{% tab title="200: OK Successful Response" %}
+
+```
+{'status': 'ok', 'response': {'type': 'default'}}
+```
+
+{% endtab %}
+{% endtabs %}
+
+## Negate outcome
+
+Convert `X` No shares from an outcome associated with a question into `X` Yes shares of every other outcome associated with the question.&#x20;
+
+<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
+
+#### Headers
+
+| Name                                           | Type   | Description        |
+| ---------------------------------------------- | ------ | ------------------ |
+| Content-Type<mark style="color:red;">\*</mark> | String | "application/json" |
+
+#### Request Body
+
+| Name                                        | Type   | Description                                                                                                                          |
+| ------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "userOutcome",</p><p>  "negateQuestion": { "question": Number, "outcome": Number,  amount: String }</p><p>}</p> |
+| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                                                             |
+| signature<mark style="color:red;">\*</mark> | Object |                                                                                                                                      |
+
+{% tabs %}
+{% tab title="200: OK Successful Response" %}
+
+```
+{'status': 'ok', 'response': {'type': 'default'}}
+```
+
+{% endtab %}
+{% endtabs %}
+
 ## Validator vote on risk-free rate for aligned quote asset
 
 <mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`

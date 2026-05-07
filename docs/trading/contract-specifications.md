@@ -27,9 +27,27 @@ Hyperliquid's contract specifications are simpler than most platforms. There are
 
 ### Recurring outcomes
 
-Recurring outcomes are automatically deployed and settled by the protocol on a fixed cadence. The specification for the current instance of the recurring outcome is found in the `description` field of `outcomeMeta` , for example `"class:priceBinary|underlying:BTC|expiry:20260503-0600|targetPrice:78213|period:1d"` .
+Recurring outcomes are automatically deployed and settled by the protocol on a fixed cadence. The specification for the current instance of the recurring outcome is found in the `description` field of `outcomeMeta` .
 
-The target price is computed using a linear interpolation between the mark price updates immediately before and immediately after the settlement timestamp. Precisely, the contract settles to YES if and only if `markPrice0 + (settlementTime - t0) / (t1 - t0) * (markPrice1 - markPrice0) ≥ targetPrice` where `t0` and `t1` are the timestamps of mark price updates immediately before and after `settlementTime`.
+#### Binary&#x20;
+
+```
+class:priceBinary|underlying:BTC|expiry:20260503-0600|targetPrice:78213|period:1d"
+```
+
+The target price is computed using a linear interpolation between the mark price updates immediately before and immediately after the settlement timestamp. Precisely, the contract settles to YES if and only if `markPrice0 + (settlementTime - t0) / (t1 - t0) * (markPrice1 - markPrice0) ≥ targetPrice` where `t0` and `t1` are the timestamps of mark price updates immediately before and after `settlementTime`
+
+#### Multi-price&#x20;
+
+```
+"class:priceBucket|underlying:BTC|expiry:20260507-0745|priceThresholds:81538,81783|period:15m"
+```
+
+There are three price buckets depending on the target price at the time of settlement: `< P1`, `[P1, P2)` and `≥ P2.` Exactly one of the 3 outcomes settles to 1, and the others settle to 0. The target price computation uses the same interpolation as binary markets described above.
+
+### Uniqueness
+
+There is guaranteed to be at most one recurring series for each `(seriesType, underlying, period)` combination.
 
 
 ---

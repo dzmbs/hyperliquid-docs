@@ -88,6 +88,9 @@ The subscription object contains the details of the specific feed you want to su
 22. `allDexsAssetCtxs`&#x20;
     1. Subscription message: `{ "type": "allDexsAssetCtxs" }`
     2. Data format: `WsAllDexsAssetCtxs`
+23. `outcomeMetaUpdates`
+    1. Subscription message: `{ "type": "outcomeMetaUpdates" }`
+    2. Data format: `WsOutcomeMetaUpdates`
 
 ### Data formats
 
@@ -116,6 +119,7 @@ The `data` field format depends on the subscription type:
 * `WsSpotState` : Spot state update.
 * `WsAllDexsClearinghouseState` : Clearinghouse states across all dexs for specific user
 * `WsAllDexsAssetCtxs` : Asset contexts across all dexs
+* `WsOutcomeMetaUpdates` : Changes to the outcome meta
 
 For the streaming user endpoints such as `WsUserFills`,`WsUserFundings` the first message has `isSnapshot: true` and the following streaming updates have `isSnapshot: false`.&#x20;
 
@@ -409,6 +413,34 @@ interface WsAllDexsClearinghouseState {
 interface WsAllDexsAssetCtxs {
   ctxs: Array<[string, Array<PerpsAssetCtx>]>;
 }
+
+type WsOutcomeMetaUpdates = [WsOutcomeMetaUpdate];
+
+type WsOutcomeMetaUpdate =
+  | { outcomeCreated: OutcomeSpec }
+  | { outcomeSettled: number }
+  | { questionUpdated: QuestionSpec }
+  | { questionSettled: number };
+
+type OutcomeSpec = {
+  outcome: number;
+  name: string;
+  description: string;
+  sideSpecs: [OutcomeSideSpec, OutcomeSideSpec];
+};
+
+type OutcomeSideSpec = {
+  name: string;
+};
+
+type QuestionSpec = {
+  question: number;
+  name: string;
+  description: string;
+  fallbackOutcome: number;
+  namedOutcomes: number[];
+  settledNamedOutcomes: number[];
+};
 ```
 
 <details>
