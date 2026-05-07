@@ -1238,11 +1238,11 @@ Convert `X` No shares from an outcome associated with a question into `X` Yes sh
 
 #### Request Body
 
-| Name                                        | Type   | Description                                                                                                                          |
-| ------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------ |
-| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "userOutcome",</p><p>  "negateQuestion": { "question": Number, "outcome": Number,  amount: String }</p><p>}</p> |
-| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                                                             |
-| signature<mark style="color:red;">\*</mark> | Object |                                                                                                                                      |
+| Name                                        | Type   | Description                                                                                                                         |
+| ------------------------------------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "userOutcome",</p><p>  "negateOutcome": { "question": Number, "outcome": Number,  amount: String }</p><p>}</p> |
+| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                                                            |
+| signature<mark style="color:red;">\*</mark> | Object |                                                                                                                                     |
 
 {% tabs %}
 {% tab title="200: OK Successful Response" %}

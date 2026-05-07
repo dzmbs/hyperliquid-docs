@@ -93,8 +93,8 @@
     "for-developers/api/exchange-endpoint.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/exchange-endpoint",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/exchange-endpoint.md",
-      "hash": "1879f8df14c09c76e23ab66a73a92aa2edfee195d61503cac7762221eec572d3",
-      "last_updated": "2026-05-07T09:56:43.678784"
+      "hash": "a96f8e3dcee8b11a28710bec7556909787c28874edcb91825a688ad6ff205801",
+      "last_updated": "2026-05-07T15:49:25.418705"
     },
     "for-developers/api/hip-3-deployer-actions.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions",
@@ -878,14 +878,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-05-07T12:52:16.688865",
-    "duration_seconds": 131.101176,
+    "completed_at": "2026-05-07T15:52:26.521102",
+    "duration_seconds": 202.147404,
     "pages_discovered": 146,
     "pages_fetched": 146,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-05-07T12:52:16.688886",
+  "last_updated": "2026-05-07T15:52:26.521127",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
