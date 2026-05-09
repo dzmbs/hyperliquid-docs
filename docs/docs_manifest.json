@@ -141,14 +141,14 @@
     "for-developers/api/optimizing-latency.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/optimizing-latency",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/optimizing-latency.md",
-      "hash": "ecdee51962984d8168fd313ca110d3c9f39377f58fcaddb760f62c13a0e009ad",
-      "last_updated": "2026-04-23T15:43:20.049432"
+      "hash": "a3687cc10feb94b5daaf292964e4377ec516334a30c8b05335d26f876ddedbdc",
+      "last_updated": "2026-05-09T12:30:04.418319"
     },
     "for-developers/api/priority-fees.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees.md",
-      "hash": "efdc7ca4660ca82fb5d66415dafac57b8bba7071780ef808dc5a75ea4ea9acce",
-      "last_updated": "2026-04-30T09:49:46.525721"
+      "hash": "2c598a6bd886ff3d816be02e917fbc1c58bf77ce210f4d0788a58d393bee3358",
+      "last_updated": "2026-05-09T12:30:05.240393"
     },
     "for-developers/api/rate-limits-and-user-limits.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/rate-limits-and-user-limits",
@@ -405,8 +405,8 @@
     "hyperliquid-improvement-proposals-hips/hip-4-outcome-markets.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets.md",
-      "hash": "10a07c1748aad33421285d38724a64e341311a4429ed2f7772563a4585289a72",
-      "last_updated": "2026-05-08T09:42:31.999367"
+      "hash": "6aff1fe5b79da948bcd7b581fe932985da5939534c67113b64304c46a9b9cb76",
+      "last_updated": "2026-05-09T12:30:41.928532"
     },
     "onboarding.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding",
@@ -878,14 +878,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-05-09T09:39:30.838394",
-    "duration_seconds": 88.005006,
+    "completed_at": "2026-05-09T12:31:43.812967",
+    "duration_seconds": 121.218552,
     "pages_discovered": 146,
     "pages_fetched": 146,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-05-09T09:39:30.838414",
+  "last_updated": "2026-05-09T12:31:43.812988",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",

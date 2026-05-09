@@ -14,7 +14,7 @@ The outcome trading API is similar to spot, with key differences highlighted her
 
 Each outcome market consists of two sides, each with a token. Usually the tokens are labeled `Yes` and `No`. Settlement automatically converts either Yes to 1 quote token and No to 0 quote tokens, or vice versa.&#x20;
 
-The order books of Yes and No tokens for the same outcome are merged to share liquidity. For example, an order to buy Yes at price `p` is equivalent to an order to Sell No at price `1-p`. Advanced users may also manually split and merge outcomes. See [here](/hyperliquid-docs/for-developers/api/exchange-endpoint.md#split-outcome) for API examples.
+The order books of Yes and No tokens for the same outcome are merged to share liquidity. For example, an order to buy Yes at price `p` is equivalent to an order to Sell No at price `1-p`. Under the merged book, price-time priority generalizes to price-side-time priority. In other words, *for orders at the same merged price level*, the resting sell orders are sorted before all resting buy dual orders. Advanced users may also manually split and merge outcomes to convert between primary and dual balances. See [here](/hyperliquid-docs/for-developers/api/exchange-endpoint.md#split-outcome) for API examples.
 
 Most operations abstract the dual book's liquidity from the user's perspective. However, there are a few examples whose ergonomics will be improved on a future network upgrade. For example, historical orders can return the primary and dual orders separately if a user sends an order that both matches and rests on the book.
 
