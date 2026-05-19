@@ -399,8 +399,8 @@
     "hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals.md",
-      "hash": "095869fcdc837363a55425b6fd0b0eb73e99be328d05b01aacaeb1db9ca65306",
-      "last_updated": "2026-05-19T16:11:47.844700"
+      "hash": "4a7a02a7bf98e3f0de777de107d3b1027680efbe147b1b8c0baee222af880192",
+      "last_updated": "2026-05-19T21:38:32.486358"
     },
     "hyperliquid-improvement-proposals-hips/hip-4-outcome-markets.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets",
@@ -884,14 +884,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-05-19T18:48:22.350755",
-    "duration_seconds": 87.093934,
+    "completed_at": "2026-05-19T21:39:38.738441",
+    "duration_seconds": 122.660522,
     "pages_discovered": 147,
     "pages_fetched": 147,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-05-19T18:48:22.350779",
+  "last_updated": "2026-05-19T21:39:38.738467",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
