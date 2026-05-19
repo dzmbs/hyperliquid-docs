@@ -93,8 +93,8 @@
     "for-developers/api/exchange-endpoint.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/exchange-endpoint",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/exchange-endpoint.md",
-      "hash": "a96f8e3dcee8b11a28710bec7556909787c28874edcb91825a688ad6ff205801",
-      "last_updated": "2026-05-07T15:49:25.418705"
+      "hash": "6118287755bd306e340278a115d5f6879c93d8513654c0e1830c7eec92eacfca",
+      "last_updated": "2026-05-19T07:27:21.389647"
     },
     "for-developers/api/hip-3-deployer-actions.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions",
@@ -273,8 +273,8 @@
     "hypercore/aligned-quote-assets.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets.md",
-      "hash": "b9d65ae2f30cb3b06b7aa343020dd6efdcc4389f5e9b8e70edf41f63966a455d",
-      "last_updated": "2026-05-14T12:49:53.471846"
+      "hash": "c2354376377b80c286863c590be5c50d4d34eefabd2de684eabe63b6a7e12c13",
+      "last_updated": "2026-05-19T07:27:45.992215"
     },
     "hypercore/api-servers.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/api-servers",
@@ -884,14 +884,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-05-19T04:32:14.909437",
-    "duration_seconds": 88.068963,
+    "completed_at": "2026-05-19T07:29:14.937630",
+    "duration_seconds": 135.559385,
     "pages_discovered": 147,
     "pages_fetched": 147,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-05-19T04:32:14.909465",
+  "last_updated": "2026-05-19T07:29:14.937662",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",

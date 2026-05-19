@@ -1282,6 +1282,34 @@ Convert `X` No shares from an outcome associated with a question into `X` Yes sh
 {% endtab %}
 {% endtabs %}
 
+## Authorize AQAv2 role
+
+<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
+
+#### Headers
+
+| Name                                           | Type   | Description        |
+| ---------------------------------------------- | ------ | ------------------ |
+| Content-Type<mark style="color:red;">\*</mark> | String | "application/json" |
+
+#### Request Body
+
+| Name                                        | Type   | Description                                                                                                        |                        |
+| ------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------ | ---------------------- |
+| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "authorizeAqav2Role",</p><p>  "token": number // e.g. 0 for USDC,</p><p>  "role": "technical" | "treasury"</p><p>}</p> |
+| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                                           |                        |
+| signature<mark style="color:red;">\*</mark> | Object |                                                                                                                    |                        |
+
+{% tabs %}
+{% tab title="200: OK Successful Response" %}
+
+```
+{'status': 'ok', 'response': {'type': 'default'}}
+```
+
+{% endtab %}
+{% endtabs %}
+
 ## Claim rewards
 
 <mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
