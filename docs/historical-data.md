@@ -26,13 +26,11 @@ head /tmp/SOL
 
 #### Trade data
 
-`s3://hl-mainnet-node-data/node_fills_by_block` has fills which are streamed via `--write-fills --batch-by-block` from a non-validating node. Older data is in a different format at `s3://hl-mainnet-node-data/node_fills)` and `s3://hl-mainnet-node-data/node_trades` . `node_fills` matches the API format, while `node_trades` does not.
+`s3://hl-mainnet-node-data/node_fills_by_block` has fills which are streamed via `--write-fills --batch-by-block` from a non-validating node. Older data is in a different format at `s3://hl-mainnet-node-data/node_fills` and `s3://hl-mainnet-node-data/node_trades` . `node_fills` matches the API format, while `node_trades` does not.
 
 #### Historical node data
 
-`s3://hl-mainnet-node-data/explorer_blocks` and `s3://hl-mainnet-node-data/replica_cmds` contain historical explorer blocks and L1 transactions.
-
-&#x20;`s3://hl-mainnet-node-data/misc_events_by_block` contains non-trade events such as transfers, staking, and funding.
+`s3://hl-mainnet-node-data/explorer_blocks`and `s3://hl-mainnet-node-data/replica_cmds` contain historical explorer blocks and L1 transactions. &#x20;
 
 
 ---
