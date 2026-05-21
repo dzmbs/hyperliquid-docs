@@ -35,6 +35,14 @@ type SpotDeployAction =
   | {
       type: "spotDeploy";
       enableAlignedQuoteToken: { token: number };
+    }
+  | {
+      type: "spotDeploy";
+      disableQuoteToken: { token: number };
+    }
+  | { /* note: must be sent after disableQuoteToken */ 
+      type: "spotDeploy";
+      disableAlignedQuoteToken: { token: number };
     };
 
 type RegisterToken2 = {
