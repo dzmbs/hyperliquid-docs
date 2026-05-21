@@ -6,7 +6,7 @@ The primary motivation behind the dual-block architecture is to decouple block s
 
 The HyperEVM "mempool" is still onchain state with respect to the umbrella L1 execution, but is split into two independent mempools that source transactions for the two block types. The two block types are interleaved with a unique increasing sequence of EVM block numbers. The onchain mempool implementation accepts only the next 8 nonces for each address. Transactions older than 1 day old in the mempool are pruned.&#x20;
 
-The initial configuration is set conservatively, and throughput is expected to increase over successive technical upgrades. Fast block duration is set to 1 seconds with a 2M gas limit. Slow block duration is set to 1 minute with a 30M gas limit.&#x20;
+The initial configuration is set conservatively, and throughput is expected to increase over successive technical upgrades. Fast block duration is set to 1 seconds with a 3M gas limit. Slow block duration is set to 1 minute with a 30M gas limit.&#x20;
 
 More precisely, in the definitions above, *block duration* of `x` means that the first L1 block for each value   of `l1_block_time % x` produces an EVM block.&#x20;
 
