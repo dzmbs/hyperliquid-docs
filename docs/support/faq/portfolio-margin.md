@@ -102,7 +102,7 @@ Health Factor indicates how much additional borrow capacity remains in the accou
 
 Calculation example:
 
-<table data-header-hidden><thead><tr><th width="275.5400390625">Asset</th><th>Balance</th><th>LTV</th><th>Weighted Value</th></tr></thead><tbody><tr><td><strong>Asset</strong></td><td><strong>Balance</strong></td><td><strong>LTV</strong></td><td><strong>Weighted Value</strong></td></tr><tr><td>BTC</td><td>1 @ $80,000</td><td>50%</td><td>$40,000</td></tr><tr><td>HYPE</td><td>100 @ $50</td><td>50%</td><td>$2,500</td></tr><tr><td><strong>Account value weighted by LTV</strong></td><td> </td><td> </td><td><strong>$45,000</strong></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="275.5400390625">Asset</th><th>Balance</th><th>LTV</th><th>Weighted Value</th></tr></thead><tbody><tr><td><strong>Asset</strong></td><td><strong>Balance</strong></td><td><strong>LTV</strong></td><td><strong>Weighted Value</strong></td></tr><tr><td>BTC</td><td>1 @ $80,000</td><td>50%</td><td>$40,000</td></tr><tr><td>HYPE</td><td>200 @ $50</td><td>50%</td><td>$5,000</td></tr><tr><td><strong>Account value weighted by LTV</strong></td><td> </td><td> </td><td><strong>$45,000</strong></td></tr></tbody></table>
 
 If Borrowed Amount: $42,000, Health Factor = 45,000 / 42,000 = 107.14%&#x20;
 

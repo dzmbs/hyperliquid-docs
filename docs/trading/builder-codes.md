@@ -4,7 +4,7 @@
 
 **Builder codes** allow builders to receive a fee on fills that they send on behalf of a user. They are set per-order for maximal flexibility. The user must approve a maximum builder fee for each builder, and can revoke permissions at any time. Builder codes are processed entirely onchain as part of the fee logic.
 
-In order to use builder codes, the end user would first approve a max fee for the builder address via the `ApproveBuilderFee` action. This action must be signed by the user's main wallet, not an agent/API wallet. The builder must have at least 100 USDC in perps account value.&#x20;
+In order to use builder codes, the end user would first approve a max fee for the builder address via the `ApproveBuilderFee` action. This action must be signed by the user's main wallet, not an agent/API wallet. The builder must have at least 100 USDC in perps account value and must use standard as the account abstraction mode.
 
 Builder codes currently only apply to fees that are collected in the quote or collateral asset. In other words, builder codes do not apply to the buying side of spot trades but apply to both sides of perp trades. Builder fees charged can be at most 0.1% on perps and 1% on spot.
 
