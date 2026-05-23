@@ -4,9 +4,9 @@ A user's *account abstraction mode* determines how spot and perps balances inter
 
 The supported modes are:
 
-1. Standard (recommended for market makers, high volume automated users, and deployers/builders): separate perp and spot balances, separate DEX balances. Cross margin applies to each DEX separately.&#x20;
-2. Unified account (recommended for most users): single balance for each asset. This balance collateralizes all cross margin positions in that asset and is unified with spot balance in that asset. For example, USDC balance is the single source for validator-operated perps, XYZ perps, and spot trading against USDC as a quote asset. USDH spot balance is the single source for KM perps, FLX perps, VNTL perps, and spot trading against USDH as a quote asset.&#x20;
-3. Portfolio margin (most capital efficient, currently in pre-alpha): single portfolio unifying all eligible assets, which are currently HYPE, BTC, USDH, USDC. See [Portfolio margin](/hyperliquid-docs/trading/portfolio-margin.md) for more details.&#x20;
+1. Unified account (recommended for most users): single balance for each asset. This balance collateralizes all cross margin positions in that asset and is unified with spot balance in that asset. For example, USDC balance is the single source for validator-operated perps, XYZ perps, and spot trading against USDC as a quote asset. USDH spot balance is the single source for KM perps, FLX perps, VNTL perps, and spot trading against USDH as a quote asset.&#x20;
+2. Portfolio margin (most capital efficient): single portfolio unifying all eligible assets, which are currently HYPE, BTC, USDH, USDC. See [Portfolio margin](/hyperliquid-docs/trading/portfolio-margin.md) for more details.&#x20;
+3. Manual / Standard (recommended for market makers, high volume automated users, and deployers/builders): separate perp and spot balances, separate DEX balances. Cross margin applies to each DEX separately.&#x20;
 
 There is one more mode that is not relevant to most users, included here for completeness:
 
@@ -14,11 +14,11 @@ There is one more mode that is not relevant to most users, included here for com
 
 Important details:
 
-1. Builder code addresses must be in Standard mode to accrue builder fees
+1. Builder code addresses must be in standard mode to accrue builder fees
 2. Portfolio margin and unified account are limited to 50k user actions per day. Standard mode has no such restrictions.
-3. For API users, unified account and portfolio margin shows all balances and holds in the spot clearinghouse state. Individual perp dex user states are not meaningful. &#x20;
+3. For API users, unified account and portfolio margin show all balances and holds in the spot clearinghouse state. Individual perp dex user states are not meaningful. &#x20;
 
-See Python SDK and [API docs](/hyperliquid-docs/for-developers/api.md) for examples on the agent- and user-signed actions for changing account abstraction modes. Automated traders can also use the Settings dropdown on app.hyperliquid.xyz to change their account abstraction modes. app.hyperliquid.xyz defaults to unified account, and Classic in "Account Unification Mode" refers to standard, DEX abstraction (which will be discontinued), or unified account.&#x20;
+See Python SDK and [API docs](/hyperliquid-docs/for-developers/api.md) for examples on the agent- and user-signed actions for changing account abstraction modes. &#x20;
 
 ### Unified Account Ratio
 

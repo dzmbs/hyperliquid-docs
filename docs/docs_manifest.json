@@ -717,8 +717,8 @@
     "trading/account-abstraction-modes.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes.md",
-      "hash": "3dca85b204ae82371d3fd30268a03caef52c88540f12974b2ebc83a7f498c3bf",
-      "last_updated": "2026-05-01T15:28:45.627461"
+      "hash": "c8e9e5dd481499cacaf5db703ccbc3621b3f38f25b76c495c1775610b107604b",
+      "last_updated": "2026-05-23T09:42:22.006682"
     },
     "trading/auto-deleveraging.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/auto-deleveraging",
@@ -884,14 +884,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-05-23T07:07:36.224786",
-    "duration_seconds": 84.515636,
+    "completed_at": "2026-05-23T09:42:44.672191",
+    "duration_seconds": 126.013031,
     "pages_discovered": 147,
     "pages_fetched": 147,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-05-23T07:07:36.224810",
+  "last_updated": "2026-05-23T09:42:44.672217",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
