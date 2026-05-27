@@ -340,7 +340,7 @@ Note: This returns the status of the Dutch auction for spot pair deployments bet
 {% endtab %}
 {% endtabs %}
 
-## Retrieve outcome metadata (testnet-only)
+## Retrieve outcome metadata
 
 <mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/info`
 
@@ -378,6 +378,52 @@ Note: This returns the status of the Dutch auction for spot pair deployments bet
       ]
     }
   ]
+}
+```
+
+{% endtab %}
+{% endtabs %}
+
+## Retrieve information about a settled outcome
+
+<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/info`
+
+**Headers**
+
+| Name                                           | Value              |
+| ---------------------------------------------- | ------------------ |
+| Content-Type<mark style="color:red;">\*</mark> | "application/json" |
+
+**Body**
+
+| Name                                      | Type   | Description      |
+| ----------------------------------------- | ------ | ---------------- |
+| type<mark style="color:red;">\*</mark>    | String | "settledOutcome" |
+| outcome<mark style="color:red;">\*</mark> | int    | outcome          |
+
+**Response**
+
+{% tabs %}
+{% tab title="200: OK Successful Response" %}
+
+```json
+{
+  "spec": {
+    "outcome": 95,
+    "name": "Recurring",
+    "description": "class:priceBinary|underlying:BTC|expiry:20260526-0600|targetPrice:77363|period:1d",
+    "sideSpecs": [
+      {
+        "name": "Yes"
+      },
+      {
+        "name": "No"
+      }
+    ],
+    "quoteToken": "USDC"
+  },
+  "settleFraction": "0.0",
+  "details": "price:76876.9"
 }
 ```
 
