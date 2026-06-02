@@ -9,6 +9,7 @@ Users can supply eligible quote assets to earn yield. This synergizes and compos
 IMPORTANT: Portfolio margin is a complex technical upgrade and requires bootstrapping the supply side for borrowable assets. Portfolio margin accounts will fall back to non-portfolio margin behavior when caps are hit. During alpha mode, the following requirements apply:&#x20;
 
 * Master account >$5M in weighted volume
+* USDT: 50M USDT global supply cap, 10M USDT global borrow cap, 5M USDT user supply cap, 1M USDT user borrow cap
 * USDH: 500M USDH global supply cap, 100M USDH global borrow cap, 5M USDH user supply cap, 1M USDH user borrow cap
 * USDC: 1B USDC global supply cap, 200M USDC global borrow cap, 50M USDC user supply cap, 10M USDC user borrow cap
 * HYPE: 10M HYPE global supply cap, 500k HYPE user supply cap

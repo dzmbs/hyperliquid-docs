@@ -831,8 +831,8 @@
     "trading/portfolio-margin.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin.md",
-      "hash": "69067567172b9c3fe917414d0c67283cd2298cce6c19cb2d7c55e7cffc723882",
-      "last_updated": "2026-05-07T09:58:56.972074"
+      "hash": "c449520be6e77207b7672b05d8815e0aa796526dc6ccc37f1c39038090897ae8",
+      "last_updated": "2026-06-02T07:55:01.256145"
     },
     "trading/robust-price-indices.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/robust-price-indices",
@@ -884,14 +884,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-06-02T04:38:00.121065",
-    "duration_seconds": 107.80213,
+    "completed_at": "2026-06-02T07:55:07.262517",
+    "duration_seconds": 115.448309,
     "pages_discovered": 147,
     "pages_fetched": 147,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-06-02T04:38:00.121119",
+  "last_updated": "2026-06-02T07:55:07.262539",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
