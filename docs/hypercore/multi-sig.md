@@ -4,13 +4,13 @@ HyperCore supports native multi-sig actions. This allows multiple private keys t
 
 The multi-sig workflow is described below:
 
-* To convert a user to a multi-sig user, the user sends a `ConvertToMultiSigUser` action with the authorized users and the minimum required number of authorized users required to sign an action. Authorized users must be existing users on Hyperliquid. Once a user has been converted into a multi-sig user, all its actions must be sent via multi-sig.&#x20;
+* To convert a user to a multi-sig user, the user sends a `ConvertToMultiSigUser` action with the authorized users and the minimum number of authorized users required to sign an action. Authorized users must be existing users on Hyperliquid. Once a user has been converted into a multi-sig user, all its actions must be sent via multi-sig.&#x20;
 * To send an action, each authorized user must sign a payload to produce a signature. A `MultiSig` action wraps around any normal action and includes a list of signatures from authorized users.&#x20;
-* The `MutiSig` payload also contains the target multi-sig user and the authorized user who will ultimately send the `MultiSig` action to the blockchain. The sender of the final action is also known as the `leader` (transaction lead address) of the multi-sig action.
+* The `MultiSig` payload also contains the target multi-sig user and the authorized user who will ultimately send the `MultiSig` action to the blockchain. The sender of the final action is also known as the `leader` (transaction lead address) of the multi-sig action.
   * When a multi-sig action is sent, only the nonce set of the authorized user who sent the transaction is validated and updated.
-  * Similarly to normal actions, the leader can also be an API wallet of an authorized user. In this case, the nonce of the API wallet is checked and updated.&#x20;
-* A multi-sig user's set of authorized users and/or the threshold may be updated by sending a `MultiSig` action wrapping a`ConvertToMultiSigUser` action describing the new state.
-* A multi-sig user can be converted back to a normal user by sending a `ConvertToMultiSigUser` via multi-sig. In this case, the set of authorized users can be set to empty and conversion to normal user will be performed.
+  * Similar to normal actions, the leader can also be an API wallet of an authorized user. In this case, the nonce of the API wallet is checked and updated.&#x20;
+* A multi-sig user's set of authorized users and/or the threshold may be updated by sending a `MultiSig` action wrapping a `ConvertToMultiSigUser` action describing the new state.
+* A multi-sig user can be converted back to a normal user by sending a `ConvertToMultiSigUser` via multi-sig. In this case, the set of authorized users can be set to empty and conversion to a normal user will be performed.
 
 Miscellaneous notes:&#x20;
 

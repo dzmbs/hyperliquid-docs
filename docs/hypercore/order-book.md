@@ -1,6 +1,6 @@
 # Order book
 
-HyperCore state includes an order book for each asset. The order book works similarly to centralized exchanges. Orders are added where price is an integer multiple of the tick size, and size is an integer multiple of lot size. Orders are matched in price-time priority.&#x20;
+HyperCore state includes an order book for each asset. The order book works similarly to that of centralized exchanges. Orders are added where price is an integer multiple of the tick size, and size is an integer multiple of lot size. Orders are matched in price-time priority.&#x20;
 
 Operations on order books for perp assets take a reference to the clearinghouse, as all positions and margin checks are handled there. Margin checks happen on the opening of a new order, and again for the resting side at the matching of each order. This ensures that the margining system is consistent despite oracle price fluctuations after the resting order is placed.
 

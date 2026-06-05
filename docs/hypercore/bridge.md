@@ -10,7 +10,7 @@ After the dispute period, finalization transactions are sent, which distribute t
 
 Withdrawals do not require any Arbitrum ETH from the user. Instead, a withdrawal gas fee of 1 USDC is paid by the user on Hyperliquid to cover the Arbitrum gas costs of the validators. &#x20;
 
-The bridge and its logic in relation to the L1 staking have been audited by Zellic. See the Hyperliquid Github repository for the full bridge code, and the [Audits](/hyperliquid-docs/audits.md) section for the audit reports.
+The bridge and its logic in relation to the L1 staking have been audited by Zellic. See the Hyperliquid GitHub repository for the full bridge code, and the [Audits](/hyperliquid-docs/audits.md) section for the audit reports.
 
 
 ---

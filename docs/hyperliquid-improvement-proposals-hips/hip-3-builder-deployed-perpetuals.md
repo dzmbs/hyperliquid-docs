@@ -29,7 +29,7 @@ Once all assets are settled, a deployer's required stake is free to be unstaked.
 
 While the oracle is completely general at the protocol level, perps make the most mathematical sense when there is a well-defined underlying asset or data feed which is difficult to manipulate and has underlying economic significance. Most price indices are not amenable as perp oracle sources. Deployers should consider edge cases carefully before listing markets, as they are subject to slashing for all listed markets on their DEX.
 
-### **Slashing**&#x20;
+### Slashing&#x20;
 
 Note: in all usages below, "slashing" is only in the context of HIP-3.&#x20;
 
@@ -47,7 +47,7 @@ The key factor is the effect of the deployer's actions on the protocol. Note tha
 
 Even attempted malicious deployer inputs that do not cause protocol issues are slashable. Similarly, inputs that do cause protocol issues but that are not irregular are not slashable. In particular, bugs under normal operation that are unrelated to the deployer inputs are not within scope of slashing. The interpretation of "irregular" inputs is to be determined by validator vote, and includes inputs that exploit edge cases or loopholes that circumvent system limits. All deployer transactions are onchain, and can be independently analyzed by any interested parties.&#x20;
 
-Some malicious behavior is valid by protocol definition, but incorrect by certain subjective interpretations. The slashing principle provides that the protocol should not intervene in subjective matters. The motivation is that while proof-of-stake blockchains could hard fork on undesirable state transitions, they very rarely do. Neutrality of the platform is an incredibly important feature to preserve. Relatedly, the slashed stake by the deployer is burned instead of being distributed to affected users. This is again based on proof-of-stake principles and prevents some forms of misaligned incentives between users and deployers. While the protocol layer does not enforce subjective irregularities, the downstream application and social layers can. Ultimately, the deployer's reputation and future success is always at stake.&#x20;
+Some malicious behavior is valid by protocol definition, but incorrect by certain subjective interpretations. The slashing principle provides that the protocol should not intervene in subjective matters. The motivation is that while proof-of-stake blockchains could hard fork on undesirable state transitions, they very rarely do. Neutrality of the platform is an incredibly important feature to preserve. Relatedly, the slashed stake by the deployer is burned instead of being distributed to affected users. This is again based on proof-of-stake principles and prevents some forms of misaligned incentives between users and deployers. While the protocol layer does not enforce subjective irregularities, the downstream application and social layers can. Ultimately, the deployer's reputation and future success are always at stake.&#x20;
 
 The amount slashed in a given instance is ultimately a stake-weighted median of validator votes. However, as a general guideline, irregular inputs that cause invalid state transitions or prolonged network downtime can be slashed up to 100%. Irregular inputs causing brief network downtime can be partially slashed up to 50%. Invalid inputs that cause network degradation or performance issues can be partially slashed up to 20%.&#x20;
 
@@ -55,15 +55,15 @@ Lastly, the slashing conditions are independent of the staker composition. There
 
 In the most likely outcome, slashing never happens on mainnet. A large amount of technical work has gone into making HIP-3 a self-contained and technically robust system. Barring implementation issues, HIP-3 inherits Hyperliquid's carefully designed mathematical solvency guarantees.
 
-### Cross Margin
+### Cross margin
 
 IMPORTANT: Enabling cross margin on an asset is irreversible. Deployers should carefully consider the conditions below before enabling.
 
 Despite the system-level protection, users still take greater risk when using cross margin across DEXs with different deployers. To better protect users, mainnet validators will enforce that HIP-3 deployers only enable cross margin on assets that satisfy defined eligibility standards, including: sufficient observable liquidity, a reliable external oracle source, and resilience to price manipulation. In particular, each time the \`externalPerpPx\` of an asset moves more than 50% relative to the start of day price, validators will conduct a review to determine whether the deployer should be slashed due to manipulation. Assets where 50% daily moves are expected more than once a month are ineligible for cross margin and are subject to deployer slashing.
 
-### Backstop Liquidator
+### Backstop liquidator
 
-Each HIP-3 dex is associated with a fully onchain strategy at `0x400..00 + {dex_index}` that takes over backstop liquidatable positions from the designated HIP-3 DEX. The onchain backstop liquidators only accept assets where cross margin is enabled, making those assets significantly less likely to experience ADL going forward during high volatility events. Each DEX’s onchain backstop liquidator is an independent user and falls back to ADL to mathematically guarantee solvency of the DEX.
+Each HIP-3 DEX is associated with a fully onchain strategy at `0x400..00 + {dex_index}` that takes over backstop liquidatable positions from the designated HIP-3 DEX. The onchain backstop liquidators only accept assets where cross margin is enabled, making those assets significantly less likely to experience ADL going forward during high volatility events. Each DEX’s onchain backstop liquidator is an independent user and falls back to ADL to mathematically guarantee solvency of the DEX.
 
 There is no action item for users. Once scaled out, the backstop liquidators will absorb undercollateralized positions while simultaneously avoiding bad debt and reducing the need for ADL.
 

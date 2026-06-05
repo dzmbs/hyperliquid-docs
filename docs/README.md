@@ -8,7 +8,7 @@ Hyperliquid is a performant blockchain built with the vision of a fully onchain 
 
 Hyperliquid is a layer one blockchain (L1) written and optimized from first principles.&#x20;
 
-Hyperliquid uses a custom consensus algorithm called HyperBFT inspired by Hotstuff and its successors. Both the algorithm and networking stack are optimized from the ground up to support the unique demands of the L1.&#x20;
+Hyperliquid uses a custom consensus algorithm called HyperBFT inspired by HotStuff and its successors. Both the algorithm and networking stack are optimized from the ground up to support the unique demands of the L1.&#x20;
 
 Hyperliquid state execution is split into two broad components: HyperCore and the HyperEVM. HyperCore includes fully onchain perpetual futures and spot order books. Every order, cancel, trade, and liquidation happens transparently with one-block finality inherited from HyperBFT. HyperCore currently supports 200k orders / second, with throughput constantly improving as the node software is further optimized.
 

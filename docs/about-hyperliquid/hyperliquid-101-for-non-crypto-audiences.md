@@ -8,9 +8,9 @@ In the same way that AWS provides the cloud infrastructure for developers to bui
 
 Hyperliquid modernizes market structure through:
 
-* Transparency: All transactions are recorded on a public ledger, meaning anyone can view and verify them in real-time.
+* Transparency: All transactions are recorded on a public ledger, meaning anyone can view and verify them in real time.
 * Open access: Anyone can use and build applications without centralized gatekeepers.
-* Resilience: A permissionless set of independent validators secure the network.&#x20;
+* Resilience: A permissionless set of independent validators secures the network.&#x20;
 * Performance: Up to 200,000 transactions per second can be processed. &#x20;
 
 Core development is led by Hyperliquid Labs, with multiple teams contributing to the blockchain and ecosystem. Development has been fully self-funded, with no VCs or external capital. Hyperliquid’s vision is to be the credibly neutral infrastructure for finance; building from a clean slate is a prerequisite for that neutrality.  <br>

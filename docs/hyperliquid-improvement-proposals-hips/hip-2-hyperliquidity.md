@@ -17,9 +17,9 @@ Hyperliquidity is parametrized by
 Each Hyperliquidity strategy has a price range defined recursively `px_0 = startPx`, `px_i = round(px_{i-1} * 1.003)`. The strategy updates on every block where the block time is at least 3 seconds since the previous update block. After each update:
 
 1. Strategy targets `nFull = floor(balance / orderSz)` full ask orders and a `balance % orderSz` partial ask order if the partial order is nonzero. To the extent that ALO orders are not rejected, these orders are ensured.
-2. Each fully filled tranche is modified to an order of side `orderSz` on the side with available balance, with the exception of the single partial order from (1) if it exists.
+2. Each fully filled tranche is modified to an order of size `orderSz` on the side with available balance, with the exception of the single partial order from (1) if it exists.
 
-The resulting strategy guarantees a 0.3% spread every 3 seconds. Like smart-contract based pools on general purpose chains, Hyperliquidity requires no maintenance in the form of user transactions. One key improvement is that Hyperliquidity participates in a general purpose order book. Active liquidity providers can join in liquidity provision alongside Hyperliquidity at any time, allowing markets to adapt to increasing demand for liquidity.
+The resulting strategy guarantees a 0.3% spread every 3 seconds. Like smart-contract based pools on general-purpose chains, Hyperliquidity requires no maintenance in the form of user transactions. One key improvement is that Hyperliquidity participates in a general-purpose order book. Active liquidity providers can join in liquidity provision alongside Hyperliquidity at any time, allowing markets to adapt to increasing demand for liquidity.
 
 
 ---

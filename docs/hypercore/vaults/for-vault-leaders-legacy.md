@@ -27,7 +27,7 @@ Vaults can trade validator-operated perps. They cannot trade spot or HIP-3 perps
 
 ### How do I close my vault?
 
-On your vault’s dedicated page, click the Leader Actions dropdown and select “Close Vault”. A modal will appear to confirm that you want to close your vault. All positions must be closed before the vault can close. All depositors will receive their share of the vault when it is closed.
+On your vault’s dedicated page, click the Leader Actions dropdown and select “Close Vault.” A modal will appear to confirm that you want to close your vault. All positions must be closed before the vault can close. All depositors will receive their share of the vault when it is closed.
 
 ### What happens to open positions in a vault when someone withdraws?
 

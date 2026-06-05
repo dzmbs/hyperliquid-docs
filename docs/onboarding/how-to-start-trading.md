@@ -9,7 +9,7 @@ If you choose to use a normal defi wallet, you need: &#x20;
 1. An EVM wallet
    * If you don’t already have an EVM wallet (e.g., Rabby, MetaMask, WalletConnect, Coinbase Wallet), you can set one up easily at <https://rabby.io/>.&#x20;
    * After downloading a wallet extension for your browser, create a new wallet.
-   * Your wallet has a secret recovery phrase – anyone with access to your password or seed phrase can access your funds. Do not share your private key with anyone. Best practice is to record your seed phrase and store it in a safe physical location.
+   * Your wallet has a secret recovery phrase – anyone with access to your private key or seed phrase can access your funds. Do not share these with anyone. Best practice is to record these and store them in a safe physical location.
 2. Collateral
    * USDC and ETH (gas to deposit) on Arbitrum, or
    * BTC on Bitcoin, ETH/ENA on Ethereum, SOL/2Z/BONK/FARTCOIN/PUMP/SPX on Solana, MON on Monad, or XPL on Plasma which can be traded for USDC on Hyperliquid
@@ -35,7 +35,7 @@ If you choose to connect to app.hyperliquid.xyz with a defi wallet:&#x20;
 2. Click the “Enable Trading” button. A pop-up will appear in your wallet extension asking you to sign a gas-less transaction. Press "Sign." &#x20;
 3. Deposit to Hyperliquid, choosing from USDC on Arbitrum, BTC on Bitcoin, ETH/ENA on Ethereum, SOL/2Z/BONK/FARTCOIN/PUMP/SPX on Solana, MON on Monad, or XPL on Plasma.
    1. For USDC: enter the amount you want to deposit and click “Deposit.” Confirm the transaction in your EVM wallet.&#x20;
-   2. For the others: send the spot asset to the destination address shown. Note that you will have to sell this asset for USDC, USDH, or USDT, depending on what quote asset is used for the assets you're interested in trading.&#x20;
+   2. For the others: send the spot asset to the destination address shown. Note that you will have to sell this asset for USDC, USDT, or whichever quote asset is used for the assets you're interested in trading.&#x20;
 4. You're now ready to trade.
 
 ### How do I trade perpetuals on Hyperliquid?

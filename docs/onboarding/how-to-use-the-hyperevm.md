@@ -75,9 +75,7 @@ Any application from other chains can already be built with the limited launch. 
 
 ### How do I set up an RPC? What RPCs are available?
 
-There is one rpc hosted at rpc.hyperliquid.xyz/evm
-
-Other builders are launching their own as well. Users may run a node, but it is not a requirement to serve an RPC, as all data is uploaded real-time to S3. See python SDK for an example: <https://github.com/hyperliquid-dex/hyperliquid-python-sdk/blob/master/examples/evm\\_block\\_indexer.py>
+There is one rpc hosted at rpc.hyperliquid.xyz/evm. Other builders are launching their own as well. Users may run a node, but it is not a requirement to serve an RPC, as all data is uploaded real-time to S3. See Python SDK for an example: <https://github.com/hyperliquid-dex/hyperliquid-python-sdk/blob/master/examples/evm\\_block\\_indexer.py>.
 
 ### How do I get gas on the HyperEVM?
 
@@ -85,7 +83,7 @@ The native token, HYPE, is the gas token on the HyperEVM. You can buy HYPE with 
 
 ### What version of the EVM is the HyperEVM based on?
 
-Cancun without blobs
+Cancun without blobs.
 
 ### What is the difference between the HyperEVM and other EVMs, like Ethereum?
 

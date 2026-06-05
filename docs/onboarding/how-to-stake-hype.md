@@ -14,7 +14,7 @@ You can use different websites to stake HYPE on HyperCore, including:&#x20;
 
 3. Choose a validator to stake to. Staking to a validator has a 1 day lockup.&#x20;
 
-To unstake, follow the same process in reverse
+To unstake, follow the same process in reverse:
 
 1. Unstake from a validator.
 2. Transfer from your Staking Balance to your Spot Balance. This takes 7 days.&#x20;
