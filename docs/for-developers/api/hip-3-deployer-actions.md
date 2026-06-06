@@ -60,6 +60,10 @@ type PerpDeployAction =
   | {
       type: "perpDeploy",
       setPerpAnnotation: SetPerpAnnotation
+  }
+  | {
+      type: "perpDeploy",
+      disableDex: string
   };
 ```
 
