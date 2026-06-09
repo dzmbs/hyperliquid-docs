@@ -41,7 +41,7 @@ The subscription object contains the details of the specific feed you want to su
    * Data format: `Candle[]`
 8. `l2Book`:
    * Subscription message: `{ "type": "l2Book", "coin": "<coin_symbol>" }`
-   * Optional parameters: nSigFigs: int, mantissa: int
+   * Optional parameters: `nSigFigs: int`, `mantissa: int` , `fast: boolean` (5 levels if fast, 20 levels if slow)
    * Data format: `WsBook`
 9. `trades`:
    * Subscription message: `{ "type": "trades", "coin": "<coin_symbol>" }`
