@@ -56,8 +56,10 @@ Offchain conditions are ultimately voted upon by validator quorum, as any such c
 
 ---
 
-# Agent Instructions: Querying This Documentation
+# Agent Instructions
+This documentation is published with GitBook. GitBook is the documentation platform designed so that both humans and AI agents can read, navigate, and reason over technical content effectively. Learn more at gitbook.com.
 
+## Querying This Documentation
 If you need additional information that is not directly available in this page, you can query the documentation dynamically by asking a question.
 
 Perform an HTTP GET request on the current page URL with the `ask` query parameter:

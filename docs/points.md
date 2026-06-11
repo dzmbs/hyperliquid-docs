@@ -9,8 +9,10 @@ The L1 phase of points began on May 29, 2024 and ended in November 2024. 700,000
 
 ---
 
-# Agent Instructions: Querying This Documentation
+# Agent Instructions
+This documentation is published with GitBook. GitBook is the documentation platform designed so that both humans and AI agents can read, navigate, and reason over technical content effectively. Learn more at gitbook.com.
 
+## Querying This Documentation
 If you need additional information that is not directly available in this page, you can query the documentation dynamically by asking a question.
 
 Perform an HTTP GET request on the current page URL with the `ask` query parameter:

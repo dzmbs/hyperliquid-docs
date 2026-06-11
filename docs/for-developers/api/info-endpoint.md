@@ -1311,50 +1311,6 @@ true
 {% endtab %}
 {% endtabs %}
 
-## Query aligned quote token status
-
-<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/info`
-
-#### Headers
-
-| Name                                           | Type   | Description        |
-| ---------------------------------------------- | ------ | ------------------ |
-| Content-Type<mark style="color:red;">\*</mark> | String | "application/json" |
-
-#### Request Body
-
-| Name                                    | Type   | Description             |
-| --------------------------------------- | ------ | ----------------------- |
-| type<mark style="color:red;">\*</mark>  | String | "alignedQuoteTokenInfo" |
-| token<mark style="color:red;">\*</mark> | Number | token index             |
-
-{% tabs %}
-{% tab title="200: OK" %}
-
-```json
-{
-    "isAligned": true,
-    "firstAlignedTime": 1758949452538,
-    "evmMintedSupply": "0.0",
-    "dailyAmountOwed": [
-        [
-            "2025-10-04",
-            "0.0"
-        ],
-        [
-            "2025-10-05",
-            "0.0"
-        ],
-        ...
-    ],
-    "predictedRate": "0.01"
-}
-
-```
-
-{% endtab %}
-{% endtabs %}
-
 ## Query borrow/lend user state
 
 <mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/info`
@@ -1532,8 +1488,10 @@ true
 
 ---
 
-# Agent Instructions: Querying This Documentation
+# Agent Instructions
+This documentation is published with GitBook. GitBook is the documentation platform designed so that both humans and AI agents can read, navigate, and reason over technical content effectively. Learn more at gitbook.com.
 
+## Querying This Documentation
 If you need additional information that is not directly available in this page, you can query the documentation dynamically by asking a question.
 
 Perform an HTTP GET request on the current page URL with the `ask` query parameter:
