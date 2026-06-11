@@ -10,7 +10,23 @@ Based on user and deployer feedback, the AQAv2 spec extends the designation of �
 
 AQAv2 will be a requirement for quote assets to be listed against HIP-4 and validator-operated perp markets on a future network upgrade. There is no trading fee or volume contribution benefit to AQAv2. Other quote assets will continue to be supported for other markets, including spot and HIP-3 perps.&#x20;
 
-AQAv2 allows specification of a “technical deployer” and a “treasury deployer.” The treasury deployer will designate a treasury address which will share 100% of the AQA rate (the cost-adjusted onchain reference rate oracle) with the protocol through the onchain AQA mechanic. This is twice the rate of revenue share of the existing AQA spec. The treasury deployer must stake 500k HYPE, which is slashable if the treasury address does not have sufficient balance for onchain revenue to be deducted. The technical deployer must stake 500k HYPE and ensure reliable mint, redemption, and cross-chain transfer infrastructure for the aligned quote asset. Both treasury and technical deployers require 6 months minimum notice before ceasing operation, during which their stake is slashable for the commitments above. The activation of AQAv2 is by validator vote, after both deployers have staked and sent the authorization transactions from the staking accounts. Under AQAv2, the linked HyperEVM contract that connects to HyperCore will also rebalance with the treasury address. The HyperEVM balance corresponding to minted HyperCore tokens will be held in a ratio of 9:1 between the treasury address and technical deployer’s linked EVM contract address, respectively.&#x20;
+AQAv2 allows specification of a “technical deployer” and a “treasury deployer.” The treasury deployer will designate a treasury address which will share 100% of the AQA rate (the cost-adjusted onchain reference rate oracle) with the protocol through the onchain AQA mechanic. This is twice the rate of revenue share of the existing AQA spec. The treasury deployer must stake 500k HYPE, which is slashable if the treasury address does not have sufficient balance for onchain revenue to be deducted. The technical deployer must stake 500k HYPE and ensure reliable mint, redemption, and cross-chain transfer infrastructure for the aligned quote asset. Both treasury and technical deployers require 6 months minimum notice before ceasing operation, during which their stake is slashable for the commitments above. The activation of AQAv2 is by validator vote, after both deployers have staked and sent the authorization transactions from the staking accounts. Under AQAv2, the linked HyperEVM contract that connects to HyperCore will also rebalance with the treasury address. The HyperEVM balance corresponding to minted HyperCore tokens will be held in a ratio of 9:1 between the treasury address and technical deployer’s linked EVM contract address, respectively. Reserve yield revenue accrues in 30 day intervals based on the block on each UTC date, automatically sent to the Assistance Fund 8 days after each interval completes. In the event that there is insufficient balance to deduct from the system interest address `0x50...00 + {token_index}` , the treasury deployer's stake is eligible to be slashed at an interest rate of 2% per day. The 30 day intervals begin on the date of activation.
+
+As a concrete example
+
+```
+Jan 1: X1 = balance at 0 UTC, RATE1 = AQA-publisher effective rate, published onchain by validators 
+Jan 2: X2, RATE2 (analogously defined)
+...
+Jan 31: X31, RATE31
+Feb 1: X32, RATE32
+Feb 7: X38, RATE38
+Feb 28: X59, RATE59
+Mar 1: X60, RATE60
+
+System interest address pays X1 * RATE1 + X2 * RATE2 + ... X30 * RATE30 on Feb 7 at 0 UTC
+System interest address pays X31 * RATE31 + ... + X60 * RATE60 on Mar 9 at 0 UTC
+```
 
 ### AQAv1
 

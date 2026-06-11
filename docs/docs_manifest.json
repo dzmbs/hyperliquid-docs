@@ -183,8 +183,8 @@
     "for-developers/api/websocket/subscriptions.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/websocket/subscriptions",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/websocket/subscriptions.md",
-      "hash": "e02b20a9f74ed14cbe57a5980ed84c0a6fbb103fe64563b3d05f52ebbd9dde77",
-      "last_updated": "2026-06-09T07:28:18.488964"
+      "hash": "8c5f8bdc35138abe24bc1a825169f8169523c9963a09008af2bfd16c7f148922",
+      "last_updated": "2026-06-11T07:56:07.204158"
     },
     "for-developers/api/websocket/timeouts-and-heartbeats.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/websocket/timeouts-and-heartbeats",
@@ -273,8 +273,8 @@
     "hypercore/aligned-quote-assets.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets.md",
-      "hash": "65bdfa63f3733f50f6636227ebdfcdf54779da56bdc4dbbff446846e9623ba51",
-      "last_updated": "2026-06-05T10:27:19.432687"
+      "hash": "f28b74095c60d41d3f4cc94a866ae63ecc02b8e351f615bc4c456ff5fce5b0ab",
+      "last_updated": "2026-06-11T07:56:19.300817"
     },
     "hypercore/api-servers.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/api-servers",
@@ -872,14 +872,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-06-11T04:38:43.069409",
-    "duration_seconds": 112.956367,
+    "completed_at": "2026-06-11T07:57:42.217014",
+    "duration_seconds": 124.314686,
     "pages_discovered": 145,
     "pages_fetched": 145,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-06-11T04:38:43.069431",
+  "last_updated": "2026-06-11T07:57:42.217036",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
