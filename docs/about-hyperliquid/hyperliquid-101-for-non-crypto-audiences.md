@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/about-hyperliquid/hyperliquid-101-for-non-crypto-audiences.md).
+
 # Hyperliquid 101 for non-crypto audiences
 
 Hyperliquid is a blockchain designed to upgrade the existing financial system. Just as electronic trading dramatically improved markets in the 2000s, Hyperliquid offers an opportunity for a massive technical upgrade of the existing financial system through a transparent, open, and performant blockchain.&#x20;

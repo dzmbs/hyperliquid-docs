@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-graphs.md).
+
 # Portfolio graphs
 
 The portfolio page shows account value and P\&L graphs on 24 hour, 7 day, and 30 day time horizons.&#x20;

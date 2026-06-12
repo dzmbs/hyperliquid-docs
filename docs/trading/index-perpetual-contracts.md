@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/index-perpetual-contracts.md).
+
 # Index perpetual contracts
 
 Index contracts track a formula instead of a spot asset price as the underlying index, but otherwise function exactly the same as normal perpetual contracts.

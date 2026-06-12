@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/validators/running-a-validator.md).
+
 # Running a validator
 
 GitHub repository for detailed instructions on how to run a non-validator and validator: <https://github.com/hyperliquid-dex/node>

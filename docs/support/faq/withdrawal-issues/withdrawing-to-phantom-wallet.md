@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/withdrawal-issues/withdrawing-to-phantom-wallet.md).
+
 # Withdrawing to Phantom Wallet
 
 ### Situation 1: You need 1 USDC for withdrawals and cannot deposit USDC via Phantom wallet, since Phantom does not support Arbitrum <a href="#need-usdc" id="need-usdc"></a>

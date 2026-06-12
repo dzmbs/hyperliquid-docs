@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-solana-network.md).
+
 # Deposited via Solana network
 
 * The Solana address can only receive SOL/2Z/BONK/FARTCOIN/PUMP/SPX on the Solana network. Deposits other than the assets listed above or on other networks will fail and not be credited, e.g., Depositing USDC on Solana will fail and not be credited.

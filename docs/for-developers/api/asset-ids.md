@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/asset-ids.md).
+
 # Asset IDs
 
 Asset IDs are the integer representation for sending orders and cancels via actions. See [here](/hyperliquid-docs/for-developers/api/exchange-endpoint.md) for more details.

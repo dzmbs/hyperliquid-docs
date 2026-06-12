@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-ethereum-network.md).
+
 # Deposited via Ethereum network
 
 * The Ethereum address can only receive ETH/ENA on the Ethereum network. Deposits other than ETH/ENA or on other networks will fail and not be credited, e.g., Depositing USDC on Ethereum or ETH on Base will fail and not be credited.

@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/transfer-or-deposit-to-usdc-perps-missing.md).
+
 # Transfer or deposit to USDC (Perps) missing
 
 Situation 1: Transferred 1,000 from USDC (Spot) to USDC (Perps). When I checked, I see <1,000 USDC in my Available Balance. Where did it go?

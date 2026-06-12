@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/protocol-vaults.md).
+
 # Protocol vaults
 
 Hyperliquidity Provider (HLP) is a protocol vault that provides liquidity to Hyperliquid through multiple market making strategies, performs liquidations, supplies USDC in Earn, and accrues a portion of trading fees.

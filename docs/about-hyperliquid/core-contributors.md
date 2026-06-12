@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/about-hyperliquid/core-contributors.md).
+
 # Core contributors
 
 Hyperliquid Labs is a core contributor supporting the growth of Hyperliquid, led by [Jeff](https://twitter.com/chameleon_jeff) and iliensinc, who are classmates from Harvard. Other members of the team are from Caltech and MIT and previously worked at Airtable, Citadel, Hudson River Trading, and Nuro.&#x20;

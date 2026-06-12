@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/points.md).
+
 # Points
 
 The points program began on November 1, 2023. 1,000,000 points were distributed weekly to users for 6 months, ending May 1, 2024. Points are meant to reward users who contribute to the protocol’s success.

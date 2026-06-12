@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/unstaking-and-link-staking-issues/staking-and-trading-account-linking-issues.md).
+
 # Staking and trading account linking issues
 
 ### Do I need to link a trading and staking account if I trade and stake on the same account?&#x20;

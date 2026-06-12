@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/hyperevm-issues/gas-problem-on-evm.md).
+
 # Gas problem on EVM
 
 ### **What is used for gas for HyperEVM?** <a href="#gas-on-hyperevm" id="gas-on-hyperevm"></a>

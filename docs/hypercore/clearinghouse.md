@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/clearinghouse.md).
+
 # Clearinghouse
 
 The perps clearinghouse is a component of the execution state on HyperCore. It manages the perps margin state for each address, which includes balance and positions.&#x20;

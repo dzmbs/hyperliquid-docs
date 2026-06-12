@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-avalanche-network.md).
+
 # Deposited via Avalanche network
 
 * The Avalanche address can only receive AVAX on the Avalanche network. Deposits other than AVAX or on other networks will fail and not be credited, e.g., Depositing USDC on Avalanche will fail and not be credited.

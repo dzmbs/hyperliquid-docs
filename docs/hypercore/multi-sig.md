@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/multi-sig.md).
+
 # Multi-sig
 
 HyperCore supports native multi-sig actions. This allows multiple private keys to control a single account for additional security. Unlike other chains, multi-sig is available as a built-in primitive on HyperCore as opposed to relying on smart contracts.&#x20;

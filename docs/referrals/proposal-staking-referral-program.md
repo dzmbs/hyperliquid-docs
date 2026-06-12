@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/referrals/proposal-staking-referral-program.md).
+
 # Proposal: Staking referral program
 
 *At this time, there is no definitive implementation for the staking referral program ready for mainnet. Based on extensive user and builder feedback, it is being re-evaluated to ensure fairness for all builders and a healthy builder ecosystem.*&#x20;

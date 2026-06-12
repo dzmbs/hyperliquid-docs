@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees.md).
+
 # Fees
 
 Fees are based on your rolling 14 day volume and are assessed at the end of each day in UTC. Sub-account volume counts toward the master account and all sub-accounts share the same fee tier. Vault volume is treated separately from the master account. Referral rewards apply for a user's first $1B in volume and referral discounts apply for a user's first $25M in volume.

@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/websocket/subscriptions.md).
+
 # Subscriptions
 
 ### Subscription messages
@@ -102,7 +104,7 @@ The subscription object contains the details of the specific feed you want to su
        4\. Example to test your implementation\
        payload: `"q1ZyCnFWsqpWyk0syg6oULJSsjQ3NTDQM1Wq1VFyDfFAkTI2MzXQMwJLVVRWWfmFuTiiyBuamOoZKdXWAgA="`\
        decoded: `{ "BTC": { "markPx": "97500.5" }, "ETH": { "markPx": "3650.25" }, "xyz:NVDA": { markPx": "145.2" }}`
-    4. The first message is a snapshot, subsequent messages contain only coins that have updated.
+    4. The first message is a snapshot, subsequent messages contain only coins that have updated. Fields that have no updates are omitted.
 
 ### Data formats
 
@@ -455,7 +457,8 @@ type QuestionSpec = {
 };
 
 type FFastAssetCtx = {
-  markPx: number;
+  markPx?: number;
+  midPx?: number | null;
 };
 type WsFastAssetCtxs = Record<string, FFastAssetCtx>;
 ```

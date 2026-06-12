@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes.md).
+
 # Account abstraction modes
 
 A user's *account abstraction mode* determines how spot and perps balances interact, and whether various assets are used as collateral for perps trading.&#x20;

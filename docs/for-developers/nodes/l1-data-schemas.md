@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/nodes/l1-data-schemas.md).
+
 # L1 data schemas
 
 The node writes data to `~/hl/data`. With default settings, the network will generate around 100 GB of logs per day, so it is recommended to archive or delete old files.

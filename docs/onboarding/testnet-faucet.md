@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/testnet-faucet.md).
+
 # Testnet faucet
 
 To use the testnet faucet, you need to have deposited on mainnet with the same address. You can then claim 1,000 mock USDC from the testnet faucet: <https://app.hyperliquid-testnet.xyz/drip>

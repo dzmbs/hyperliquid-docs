@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/support/read-me-support-guide.md).
+
 # Read Me - Support Guide
 
 Read this page before you open a ticket. Tickets may take up to 48 hours for a response, with longer wait time on the weekend.

@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/how-does-margining-work.md).
+
 # How does margining work?
 
 Situation: Why didn’t my margin become available after I closed a Perps position? I closed a Perps position that showed 1,000 USDC in margin, but after closing, my Available Balance increased by <1,000 USDC. Where did the rest go?

@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/my-tp-sl-did-not-execute-correctly.md).
+
 # My TP/SL did not execute correctly
 
 ### Situation 1: My TP executed and made a loss although it was triggered at a profitable price. <a href="#tp-made-a-loss" id="tp-made-a-loss"></a>

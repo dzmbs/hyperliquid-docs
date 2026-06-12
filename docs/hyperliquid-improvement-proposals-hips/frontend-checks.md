@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/frontend-checks.md).
+
 # Frontend checks
 
 There are many ways to reach invalid configurations during the spot deploy process. To avoid this, deployers can try intended deployments on testnet first. For automated deployment integrations, the following is a list of client-side checks that may be helpful.

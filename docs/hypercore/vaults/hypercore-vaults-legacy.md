@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/hypercore-vaults-legacy.md).
+
 # HyperCore vaults (legacy)
 
 HyperCore supports a limited set of functionality for onchain vaults, but additional features should be built permissionlessly by builders on the HyperEVM. See [here](/hyperliquid-docs/hypercore/vaults.md) for more details.

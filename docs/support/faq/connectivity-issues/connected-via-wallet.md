@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/connectivity-issues/connected-via-wallet.md).
+
 # Connected via wallet
 
 If you’re experiencing issues connecting your wallet to Hyperliquid, such as a recursive "Establish Connection" loop, failed transaction signing, or your wallet extension not loading, try the following troubleshooting steps.&#x20;

@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/delisting.md).
+
 # Delisting
 
 Validators vote on whether to delist validator-operated perps. If validators vote to delist an asset, the perps will settle to the 1 hour time weighted spot oracle price before the scheduled delisting voting time. This is a settlement mechanism used by many centralized exchanges.&#x20;

@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/oracle.md).
+
 # Oracle
 
 The validators are responsible for publishing spot oracle prices for each perp asset every 3 seconds. The oracle prices are used to compute funding rates. They are also a component in the `mark price` which is used for margining, liquidations, and triggering TP/SL orders.

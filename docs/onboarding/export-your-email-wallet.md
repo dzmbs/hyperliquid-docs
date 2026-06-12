@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/export-your-email-wallet.md).
+
 # Export your email wallet
 
 As a reminder, the Hyperliquid bridge contract only accepts Arbitrum USDC sent over Arbitrum. If you accidentally send the wrong asset to your defi wallet:&#x20;

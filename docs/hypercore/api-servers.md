@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/api-servers.md).
+
 # API servers
 
 API servers listen to updates from a node and maintain the blockchain state locally. The API server serves information about this state and also forwards user transactions to the node. The API serves two sources of data: REST and WebSocket.&#x20;

@@ -1,3 +1,5 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/wrapped-hype.md).
+
 # Wrapped HYPE
 
 A canonical system contract for wrapped HYPE is deployed at `0x555...5`. The contract is immutable, with the same source code as wrapped ETH on Ethereum, apart from the token name and symbol.&#x20;
