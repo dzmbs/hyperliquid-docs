@@ -177,9 +177,9 @@ Client Order ID (cloid) is an optional 128 bit hex string, e.g. `0x1234567890abc
 {% endtab %}
 {% endtabs %}
 
-Both cancel and cancelByCloid actions include an optional `fast` flag, encoded as `f` in the action. Currently `fast` has no effect, other than being rejected for canceling trigger orders. In a future network upgrade, cancel actions will be prioritized in the mempool if and only if `fast = true`.
+Both `cancel` and `cancelByCloid` actions include an optional `fast` flag, encoded as `f` in the action. Orders with `f: true` are rejected if they refer to trigger orders. Currently `fast` has no other effect. In a future network upgrade, cancel actions will be prioritized in the mempool if and only if `fast = true`.
 
-Note that `a` must be skipped if false, i.e. actions hashed with `a: false` will be rejected.&#x20;
+Note that `f` must be skipped if false, i.e. actions hashed with `f: false` will be rejected.&#x20;
 
 ## Cancel order(s) by cloid
 
