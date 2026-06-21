@@ -9,7 +9,7 @@
 - [Contract specifications](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/contract-specifications.md)
 - [Margining](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margining.md)
 - [Account abstraction modes](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes.md)
-- [Portfolio margin](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin.md): Alpha mode
+- [Portfolio margin](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin.md)
 - [Margin tiers](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers.md)
 - [Robust price indices](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/robust-price-indices.md)
 - [Liquidations](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/liquidations.md)
