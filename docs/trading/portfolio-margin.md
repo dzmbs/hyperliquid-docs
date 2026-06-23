@@ -11,11 +11,11 @@ Users can supply eligible quote assets to earn yield. This synergizes and compos
 IMPORTANT: Portfolio margin is a complex technical upgrade and requires bootstrapping the supply side for borrowable assets. Portfolio margin accounts will fall back to non-portfolio margin behavior when caps are hit. The following requirements apply:&#x20;
 
 * Master account >$5M in weighted volume or account value >$10k
-* Account value <$5M
+* Account value <$25M
 * USDT: 50M USDT global supply cap, 10M USDT global borrow cap, 5M USDT user supply cap, 1M USDT user borrow cap
-* USDC: 1B USDC global supply cap, 200M USDC global borrow cap, 50M USDC user supply cap, 10M USDC user borrow cap
-* HYPE: 10M HYPE global supply cap, 500k HYPE user supply cap
-* BTC: 4k BTC global supply cap, 200 BTC user supply cap
+* USDC: 1B USDC global supply cap, 500M USDC global borrow cap, 250M USDC user supply cap, 50M USDC user borrow cap
+* HYPE: 10M HYPE global supply cap, 1M HYPE user supply cap
+* BTC: 2k BTC global supply cap, 200 BTC user supply cap
 
 ### LTV and borrowing
 
