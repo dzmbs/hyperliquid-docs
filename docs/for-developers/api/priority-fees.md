@@ -22,6 +22,8 @@ The current empirical effect of gossip priority on mainnet is approximately 25 m
 
 Orders can be sent with grouping of the form `{"p": 12345}` where the rate is interpreted as a fraction `p / 100000000.0`. The rate is charged from undelegated staking balance as a fraction of the filled notional, converted to HYPE using the spot mark price. Currently, priority grouping is only supported for order actions where every order is IOC and on a non-outcome asset. The max priority rate is 8bps, i.e. `p = 80000`. Under order priority, all cancels are prioritized before all immediately executable orders. However, higher priority orders are prioritized before lower priority orders as a linear function of priority rate.&#x20;
 
+Although blocks are discrete, order prioritization is continuous with respect to order write priority fee. The mempool transactions are effectively sorted by `effective_time = arrival_time + f(action, priority_fee)` where `f` is a strictly decreasing function of priority fee, and zero for prioritized actions such as cancels. For a given action type, boundaries between blocks are not relevant for relative prioritization, as the transactions within a block are still sorted according to `effective_time` .
+
 Order priority reduces the need for market makers to hyper-optimize their order entry and connectivity, and instead focus on the strategy itself. It further protects makers and allows responsiveness to price moves driven by traditional venues.
 
 Order priority applies only to sending data. For prioritization of reading data, see the previous section on gossip priority. Similar to gossip priority auctions, order priority fees are burned.
