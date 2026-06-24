@@ -3,883 +3,883 @@
     "README.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs.md",
-      "hash": "4035e2da2ee7fe4609292be0cbbce5ccb751e15b7780e7d860f253947c653de7",
-      "last_updated": "2026-06-12T16:07:10.479210"
+      "hash": "1e52034e6fdab439cd862738de8008c2562cacaf45bb657a270bd7e794dc267e",
+      "last_updated": "2026-06-24T10:09:35.183726"
     },
     "about-hyperliquid/core-contributors.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/about-hyperliquid/core-contributors",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/about-hyperliquid/core-contributors.md",
-      "hash": "72d698116b9dff2d797e9a439310b7c3c1acd1d2b36100b820f45eaa64e6ea25",
-      "last_updated": "2026-06-12T16:07:11.065266"
+      "hash": "ad32c1e976d4c6cfc6b873b13ca56cb6c7908ab86b2dc6fdb48ba8c7527e5385",
+      "last_updated": "2026-06-24T10:09:36.054783"
     },
     "about-hyperliquid/hyperliquid-101-for-non-crypto-audiences.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/about-hyperliquid/hyperliquid-101-for-non-crypto-audiences",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/about-hyperliquid/hyperliquid-101-for-non-crypto-audiences.md",
-      "hash": "bef623de6bbc1505103bd567dfdeec7f983522f7ac6ae91edb9f840653f26db5",
-      "last_updated": "2026-06-12T16:07:11.655950"
+      "hash": "d5e83c08e94bef856639de4498bbd22a45164a6a9cb0c335ad25e6fd33f4d79e",
+      "last_updated": "2026-06-24T10:09:36.919579"
     },
     "audits.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/audits",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/audits.md",
-      "hash": "732263e4583188efd8533f5ae216cea9286aade8b4b66e8324870a465ac5b82e",
-      "last_updated": "2026-06-12T16:07:12.242111"
+      "hash": "33c9e3b192684239bc824bb8590966a5c6047b1be377abdbd95a24ad843a1529",
+      "last_updated": "2026-06-24T10:09:38.049809"
     },
     "brand-kit.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/brand-kit",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/brand-kit.md",
-      "hash": "ca23c4f35d46d40bbfabd410544c9afcdfcea347226284ba6b306e1e0c005af8",
-      "last_updated": "2026-06-12T16:07:12.827876"
+      "hash": "3362bbbf3dc54b0b574779eb5676f8bd19b8063839c7bce7ca155cbfc4402e1c",
+      "last_updated": "2026-06-24T10:09:38.904038"
     },
     "bug-bounty-program.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/bug-bounty-program",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/bug-bounty-program.md",
-      "hash": "816a983c59140dbdb25c0128ae512d4e5020e9b6bc6d51770df79a28b4ea7bfc",
-      "last_updated": "2026-06-12T16:07:13.406407"
+      "hash": "8dbc1a318ac0c1ae8d9913364232583009b17de8b3afe4db3aa2534dfda279d3",
+      "last_updated": "2026-06-24T10:09:39.654797"
     },
     "builder-tools/README.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/builder-tools",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/builder-tools.md",
-      "hash": "d3a271c144130185f44da530a7e76c31512062ff2f96e0ed0188c232fbd949bd",
-      "last_updated": "2026-06-12T16:07:13.967999"
+      "hash": "b67f2611f776574760f26f552904bf434c44aef9d899de0c9e29b9b73a5234d1",
+      "last_updated": "2026-06-24T10:09:40.511633"
     },
     "builder-tools/hypercore-tools.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/builder-tools/hypercore-tools",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/builder-tools/hypercore-tools.md",
-      "hash": "c502cf97b52725525319f5edf80d8cfdbf460e30f1bf220b0cf72eb0e0add9c3",
-      "last_updated": "2026-06-12T16:07:14.536839"
+      "hash": "58d526656eebd4532e4aac0f79c797134120a8502785615ba8ad8cf0557664a4",
+      "last_updated": "2026-06-24T10:09:41.519692"
     },
     "builder-tools/hyperevm-tools.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/builder-tools/hyperevm-tools",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/builder-tools/hyperevm-tools.md",
-      "hash": "a637483c0a0e3959d55940e0d4f2e4eaef57f2fa872b93a4b50df481deb2b926",
-      "last_updated": "2026-06-12T16:07:15.118940"
+      "hash": "f3a650325874af8688c5e024847c664235f0419269e3c3ea9aca91ba359ce569",
+      "last_updated": "2026-06-24T10:09:42.361616"
     },
     "for-developers/api.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api.md",
-      "hash": "69b36e5b85c8f9f91f840d1929670b0341ec270466883efddd09e1beec284f68",
-      "last_updated": "2026-06-12T16:07:15.700682"
+      "hash": "e926326039c3cd1dd5bae6e6c34f194af92290a1003447143fe2a8a94d77c08e",
+      "last_updated": "2026-06-24T10:09:43.265265"
     },
     "for-developers/api/activation-gas-fee.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/activation-gas-fee",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/activation-gas-fee.md",
-      "hash": "a1ab3e85750d626df781d481c63444d67f97e8cced6573dff754655fa230f920",
-      "last_updated": "2026-06-12T16:07:16.272020"
+      "hash": "a469866f30a5508eb387c8695b55dfc0e6c8b26f5c04cc19e76fcdf751da7b8e",
+      "last_updated": "2026-06-24T10:09:44.071549"
     },
     "for-developers/api/asset-ids.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/asset-ids",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/asset-ids.md",
-      "hash": "1538f83c26f15f26a343dc2ef5c4c0d2a1b576aef6e546de9b5383377f156da4",
-      "last_updated": "2026-06-12T16:07:16.842681"
+      "hash": "704a509a23da511440885ae519dbd90a7a0376f0e4e60a4886d39d25af9275fe",
+      "last_updated": "2026-06-24T10:09:44.661954"
     },
     "for-developers/api/bridge2.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/bridge2",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/bridge2.md",
-      "hash": "5c2fca1b7ea9a87a7c797747e10fa3d6448602eddd723f263dac197e0db239e4",
-      "last_updated": "2026-06-12T16:07:17.429084"
+      "hash": "bd506f3533a112d0395af597ec31372d8d2963671a9bbf50d3ab9b658e908d3f",
+      "last_updated": "2026-06-24T10:09:45.417525"
     },
     "for-developers/api/deploying-hip-1-and-hip-2-assets.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/deploying-hip-1-and-hip-2-assets",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/deploying-hip-1-and-hip-2-assets.md",
-      "hash": "743bc43d6a5e0f111cf91302137bb9519a6a6568fc878b92d0f2f3d21cb27042",
-      "last_updated": "2026-06-12T16:07:18.000683"
+      "hash": "dfed5103c84e60168ea52b9de2aca1bd2538f63ddeec5018e6fa48a396791c2b",
+      "last_updated": "2026-06-24T10:09:46.211329"
     },
     "for-developers/api/error-responses.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/error-responses",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/error-responses.md",
-      "hash": "184c38fe65fc06e28bff2079ee45fc3254839963b15d32af1416897ff5e8f825",
-      "last_updated": "2026-06-12T16:07:18.585583"
+      "hash": "40da863f501434c36ec70acd1cdccb17cfee40aa0582b186ba065f029b2049f5",
+      "last_updated": "2026-06-24T10:09:46.934002"
     },
     "for-developers/api/exchange-endpoint.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/exchange-endpoint",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/exchange-endpoint.md",
-      "hash": "91f17d494cdf1b6688a9558051b52b21e3888c9461564df60813d718a0479319",
-      "last_updated": "2026-06-15T11:15:27.027647"
+      "hash": "478548a01ac3a9faaa2f4b633082e5fe2cba0388ecbe63abd6d9b846d6498fcf",
+      "last_updated": "2026-06-24T10:09:47.530889"
     },
     "for-developers/api/hip-3-deployer-actions.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions.md",
-      "hash": "f0b95d1d9eae56c9d595edd16714d224d3d222abf3651e2d17b3743b31b53d04",
-      "last_updated": "2026-06-12T16:07:19.778535"
+      "hash": "6080045ad55de30c537d9ad880fa884a06bc7542577f7b1937bb83cd1144bcbd",
+      "last_updated": "2026-06-24T10:09:48.343606"
     },
     "for-developers/api/hip-3-deployer-actions-1.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions-1",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions-1.md",
-      "hash": "924d8d3716b15aebfa5b8c194a486f4ab32dfd541924a564294ec121f3aefe00",
-      "last_updated": "2026-06-12T16:07:20.375294"
+      "hash": "ec724ee77c857cc5005eb0e7a1d20e96207521ca7893a19c98b69c469e2e3731",
+      "last_updated": "2026-06-24T10:09:49.342594"
     },
     "for-developers/api/info-endpoint.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint.md",
-      "hash": "0001eee7e05e0a5ff51ab6e0dc0c20a4b3fed9b96ac5f67577a3a7b8b4f0f541",
-      "last_updated": "2026-06-12T16:07:20.949717"
+      "hash": "ace83fde80e91c0fe5abe160ff8503aef7e3216617e8c40ae0ead1de767469d2",
+      "last_updated": "2026-06-24T10:09:49.914302"
     },
     "for-developers/api/info-endpoint/perpetuals.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint/perpetuals",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint/perpetuals.md",
-      "hash": "566bdc0d6d2f089b8f676dfab87ac84e9fee534a3dfb873c438b6011ca430167",
-      "last_updated": "2026-06-12T16:07:21.543864"
+      "hash": "5223427d4c91bcc5d82955cad605f5955b2915a9e95121ede13684751b368d06",
+      "last_updated": "2026-06-24T10:09:50.482268"
     },
     "for-developers/api/info-endpoint/spot.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint/spot",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint/spot.md",
-      "hash": "317da2aaf88bbbae2a863cb1101eda9f973f8c32bb1145c7be6521301d6625a5",
-      "last_updated": "2026-06-12T16:07:22.115659"
+      "hash": "6d5b6f4e9ef302bb9ff46d0eec4a723a42b6af7b706964cff0a5125e12467733",
+      "last_updated": "2026-06-24T10:09:51.055521"
     },
     "for-developers/api/nonces-and-api-wallets.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/nonces-and-api-wallets",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/nonces-and-api-wallets.md",
-      "hash": "8a886ceb31f1a9fbc5d3f373199e8311f4c913f3f4c70503e814bad4cd76cfcb",
-      "last_updated": "2026-06-12T16:07:22.692418"
+      "hash": "f879d4933bc568eaf5bf91c2762898b354a2a51a95c6e554db3c980ceaa42fc6",
+      "last_updated": "2026-06-24T10:09:51.628674"
     },
     "for-developers/api/notation.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/notation",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/notation.md",
-      "hash": "da3c705d3f59336eb5594f0885139098dde5261f20e26a77baf3f2b5db08f3fe",
-      "last_updated": "2026-06-12T16:07:23.308266"
+      "hash": "2e4fe23e36142c9cd9341df78c5a845adf5568f1bf06b34ce6ceb7d9f2624512",
+      "last_updated": "2026-06-24T10:09:52.477094"
     },
     "for-developers/api/optimizing-latency.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/optimizing-latency",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/optimizing-latency.md",
-      "hash": "022e9471a77618c1cb41b9838f2fd3e6f411001982e20c9fa87f3f5103848551",
-      "last_updated": "2026-06-12T16:07:23.885178"
+      "hash": "88a92b11c66f439fc82231d1f1d94c7928a7a6adcb7817c6ae5c32e3f821cf70",
+      "last_updated": "2026-06-24T10:09:53.054810"
     },
     "for-developers/api/priority-fees.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees.md",
-      "hash": "60ae56b155f4002c7820a85beb1cf39cb3b4f6a86145836f029841e6c3ec7a4b",
-      "last_updated": "2026-06-18T10:36:06.457009"
+      "hash": "cd7d635ab3254ea68742ed38aa8a0f4410cfade3986171d82b0c68054826c6b5",
+      "last_updated": "2026-06-24T10:09:53.855728"
     },
     "for-developers/api/rate-limits-and-user-limits.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/rate-limits-and-user-limits",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/rate-limits-and-user-limits.md",
-      "hash": "0d9a008e4c4d2ad36acc6e701afacb18cfceb71fb5c1998b12d40fe56785a3d6",
-      "last_updated": "2026-06-12T16:07:25.036236"
+      "hash": "e8a5aa7868eb92b4d9424343baeb6131cb4fe592c1e2fc81c0ca43b19068ff97",
+      "last_updated": "2026-06-24T10:09:54.425165"
     },
     "for-developers/api/signing.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/signing",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/signing.md",
-      "hash": "e1fa50e875b2d3d8e61342fd916a256a34fa5a74b500bf3cf9b1c98460ce2a63",
-      "last_updated": "2026-06-12T16:07:25.608948"
+      "hash": "259ca1dffa868dfd729db2dff36b555a46f743bc84c9c40fab33c19742913084",
+      "last_updated": "2026-06-24T10:09:54.990181"
     },
     "for-developers/api/tick-and-lot-size.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/tick-and-lot-size",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/tick-and-lot-size.md",
-      "hash": "174c5e8c9ac3d1c970c72a79b56b1e1a80379ecf93fc54a470b8005ecb0ade29",
-      "last_updated": "2026-06-12T16:07:26.180323"
+      "hash": "f70638438723e6624059bdb55452b054444aca314ed92ff318f83618e4feb44e",
+      "last_updated": "2026-06-24T10:09:55.831831"
     },
     "for-developers/api/websocket.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/websocket",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/websocket.md",
-      "hash": "0c946cbe732349ade5f78fb98fe9ea9617ef5a3a8a2f96a1e109775fe2d89b7c",
-      "last_updated": "2026-06-12T16:07:26.759827"
+      "hash": "aa8c0b8a8306a75e7b33e3e54a1e914a8192497ad977b25f4c3655ec5010b90c",
+      "last_updated": "2026-06-24T10:09:56.545946"
     },
     "for-developers/api/websocket/post-requests.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/websocket/post-requests",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/websocket/post-requests.md",
-      "hash": "d01ade1a367b58b40df96b844dfe666b0181a45edc203a453b14db653b2949a1",
-      "last_updated": "2026-06-12T16:07:27.333428"
+      "hash": "0a05abd773746496bb393bf873915436ef75113125156c9a1ac1bf9cb387e59f",
+      "last_updated": "2026-06-24T10:09:57.113136"
     },
     "for-developers/api/websocket/subscriptions.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/websocket/subscriptions",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/websocket/subscriptions.md",
-      "hash": "fbdfbe36fcb02e1b8cdfaa8243b15f7f8eed968eab7bb5fca17a72758abe9294",
-      "last_updated": "2026-06-12T16:07:27.903988"
+      "hash": "8d6942c3c0cd7fba226303aa8bbfb8d1ce9c6b4a4ae091091eea7ea511648c58",
+      "last_updated": "2026-06-24T10:09:57.673695"
     },
     "for-developers/api/websocket/timeouts-and-heartbeats.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/websocket/timeouts-and-heartbeats",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/websocket/timeouts-and-heartbeats.md",
-      "hash": "62781ccf5b5fcf69c89ec8beb4983914b8f48ae370110256fcdb64fb4a9bdfc8",
-      "last_updated": "2026-06-12T16:07:28.480567"
+      "hash": "95271359b1606de56577f85fe09fbe63b0eef2326c505bd9889519184b7ba5b7",
+      "last_updated": "2026-06-24T10:09:58.301434"
     },
     "for-developers/hyperevm.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm.md",
-      "hash": "c95a3ffd6c83c80a5e914ada5e01889df6a828c8be8149492f0350642baa26ae",
-      "last_updated": "2026-06-12T16:07:29.054664"
+      "hash": "45defcf67708fadd08460016034a9cd43f341ca4b083b19137459dc14ac439f0",
+      "last_updated": "2026-06-24T10:09:59.029380"
     },
     "for-developers/hyperevm/dual-block-architecture.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/dual-block-architecture",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/dual-block-architecture.md",
-      "hash": "85fefed111989eaab65bd3ac71aa905fcfe14d8f8848f00fb8603b135ab6ae41",
-      "last_updated": "2026-06-12T16:07:29.635961"
+      "hash": "9c095980dfa3203e9daef9b02c1683a2ce8580171f20d3b9c2c7f806378c439b",
+      "last_updated": "2026-06-24T10:09:59.812848"
     },
     "for-developers/hyperevm/hypercore-less-than-greater-than-hyperevm-transfers.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/hypercore-less-than-greater-than-hyperevm-transfers",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/hypercore-less-than-greater-than-hyperevm-transfers.md",
-      "hash": "6005147f09850735f09d51058ffe16442901f1636192995f0f79a721889863d2",
-      "last_updated": "2026-06-12T16:07:30.220551"
+      "hash": "2aebc6e3277b3a59168d41166ffb85fb417acfca5bf6d16cda830494a98b0dbc",
+      "last_updated": "2026-06-24T10:10:00.590763"
     },
     "for-developers/hyperevm/interacting-with-hypercore.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore.md",
-      "hash": "30a2d78936465fb4f605d892d41c93e61d8559ef7396ee9f9924e868708fadb5",
-      "last_updated": "2026-06-12T16:07:30.804025"
+      "hash": "be7bcb2a9b1b1e01c80628f99cda92dff68c4f612f4ab2cf24306f5a322f150f",
+      "last_updated": "2026-06-24T10:10:01.163233"
     },
     "for-developers/hyperevm/interaction-timings.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interaction-timings",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interaction-timings.md",
-      "hash": "cde3d3067c7b9f2dcd3ccface90a404e60fa48829a71f4e038fce5aaa7e8bc0f",
-      "last_updated": "2026-06-12T16:07:31.377156"
+      "hash": "d4ff5bf552717bc969840caa5a83668c02472854fc47fb52d7d4ed6754883782",
+      "last_updated": "2026-06-24T10:10:02.421700"
     },
     "for-developers/hyperevm/json-rpc.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/json-rpc",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/json-rpc.md",
-      "hash": "92e05b122d99d8ae3b3245ad13bacf174c4ea4610300ff59eb9ded8881f8ae28",
-      "last_updated": "2026-06-12T16:07:31.953109"
+      "hash": "aa223c0120f3a2cd1c704c22dc00c7fc799864acbc6a232ca41a9303a2df7df1",
+      "last_updated": "2026-06-24T10:10:03.298793"
     },
     "for-developers/hyperevm/raw-hyperevm-block-data.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/raw-hyperevm-block-data",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/raw-hyperevm-block-data.md",
-      "hash": "f86caafeea68f1cec522069b8627a20738550c4f28ca6ffa7e183d10bdf285eb",
-      "last_updated": "2026-06-12T16:07:32.543935"
+      "hash": "8ba98290cbfdd59cbb1bb7baf355849f8d7966ebb5fe670e5c1fe8367b810ef1",
+      "last_updated": "2026-06-24T10:10:04.098117"
     },
     "for-developers/hyperevm/wrapped-hype.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/wrapped-hype",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/wrapped-hype.md",
-      "hash": "97fd05681b3c4a57d887b9e984621a79493570044f175929b6a5244e4284ea53",
-      "last_updated": "2026-06-12T16:07:33.147804"
+      "hash": "a8dcdfc475d74baf5b3ce8097bf7bd4f8d4d6b49f8efe0460b8f5ca7b5858745",
+      "last_updated": "2026-06-24T10:10:05.294892"
     },
     "for-developers/nodes.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/nodes",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/nodes.md",
-      "hash": "4e83245a08007d8413dd8d30c24b3c7d165fc31a74b2b40f4ab2bc0e1563c786",
-      "last_updated": "2026-06-12T16:07:33.728287"
+      "hash": "5eb81780084aa5127b1184bc3416859a74aa6c4454b2d7d6cdef1ece67bee3cf",
+      "last_updated": "2026-06-24T10:10:06.027352"
     },
     "for-developers/nodes/foundation-non-validating-node.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/nodes/foundation-non-validating-node",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/nodes/foundation-non-validating-node.md",
-      "hash": "0d69b17fa2c361db17a57c650ad8909ae3158725e33999b0916f523b13fa8465",
-      "last_updated": "2026-06-12T16:07:34.322177"
+      "hash": "2a3c4c95fc3f83a2f96acad12fc9fad6e1838dfbbee6bae4347c780d44a4ba35",
+      "last_updated": "2026-06-24T10:10:06.810476"
     },
     "for-developers/nodes/l1-data-schemas.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/nodes/l1-data-schemas",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/nodes/l1-data-schemas.md",
-      "hash": "40a5db1b4e1155cc69e0429164b71590e84c47e31412b8b4b8d72c7ef8885d91",
-      "last_updated": "2026-06-12T16:07:34.891693"
+      "hash": "2fa0a70d0b4e5fcb67046fef7a1c5a740cf05076648c7abd708de54e6578951f",
+      "last_updated": "2026-06-24T10:10:07.384074"
     },
     "historical-data.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/historical-data",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/historical-data.md",
-      "hash": "ffb279b36a450a5c57f16caccd5d63e90be85725e0e866ff3c22bbd50338eb4c",
-      "last_updated": "2026-06-12T16:07:35.461062"
+      "hash": "da8051d79006fe7010e3c85a9090268b79d7bb3405cfb645f328cae59cab1187",
+      "last_updated": "2026-06-24T10:10:08.176768"
     },
     "hypercore.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore.md",
-      "hash": "f32e858c65618c977e99c61eab33e773990034556fceba28a4d6298e5567154c",
-      "last_updated": "2026-06-12T16:07:36.042749"
+      "hash": "ad2d1ed88c3cbfc409ad632256c71df0d4a1d9f90ff3e82e172e5cd1c8b5e6b8",
+      "last_updated": "2026-06-24T10:10:08.969242"
     },
     "hypercore/aligned-quote-assets.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets.md",
-      "hash": "db9bcd46fb2925d7e5851c16e44464a2f753a3031cbe71297cf9c8a3e749df23",
-      "last_updated": "2026-06-12T16:07:36.615314"
+      "hash": "a49f4f9a6aecaa3327edb8d0d2e2fa13cbb31360211bd216c286484ba88dfef0",
+      "last_updated": "2026-06-24T10:10:09.649309"
     },
     "hypercore/api-servers.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/api-servers",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/api-servers.md",
-      "hash": "6fe83d8e9696854f30619a39904072f205d8e9a3e20981b52c37015a0ee54101",
-      "last_updated": "2026-06-12T16:07:37.206234"
+      "hash": "72e84b6bd96d8a6cb339fdfcc599afdf4fdb211ce5b8ea080fa0cccfd0498c3e",
+      "last_updated": "2026-06-24T10:10:10.831388"
     },
     "hypercore/bridge.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/bridge",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/bridge.md",
-      "hash": "35c2a9488ca541974cf982f64e41282a6cdc842ab331b5afb45aa98f2d9156fc",
-      "last_updated": "2026-06-12T16:07:37.778661"
+      "hash": "c40ee7ee5df6a8073eb1964cbc726d0c7c0e4783a6600ebf2e79776c1f9cb23b",
+      "last_updated": "2026-06-24T10:10:11.398024"
     },
     "hypercore/clearinghouse.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/clearinghouse",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/clearinghouse.md",
-      "hash": "580fa9ff2810584940fd44379e0ec1c6f3cbb16b4a52767ec23c494dbe2492f6",
-      "last_updated": "2026-06-12T16:07:38.362681"
+      "hash": "a010550c9bd3ad9071bbdaf81e0406222382f3ec5d41cb6756902db1b637c7b0",
+      "last_updated": "2026-06-24T10:10:12.195586"
     },
     "hypercore/multi-sig.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/multi-sig",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/multi-sig.md",
-      "hash": "a7411808f37a883f39d4cc2beafdc2ecb339c6012701e56c1cf0a2f588178fea",
-      "last_updated": "2026-06-12T16:07:38.953993"
+      "hash": "c5bcd1df593b5ed5384d7ab580b49ee46035508591d7e506cb218b73efad24eb",
+      "last_updated": "2026-06-24T10:10:12.898340"
     },
     "hypercore/oracle.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/oracle",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/oracle.md",
-      "hash": "26b75e9b00ab40ca61c711e98421b6e2fa5fba1e1eef0882bdd2348e6fa33504",
-      "last_updated": "2026-06-12T16:07:39.524962"
+      "hash": "4e09390a37a6dfe74c258654e792da676ca0274b40546a0fed653d8c465fdbe0",
+      "last_updated": "2026-06-24T10:10:13.677544"
     },
     "hypercore/order-book.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/order-book",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/order-book.md",
-      "hash": "457d6da80ba398fb01e8233970fd69c85f568a15221df7097ef8b33ee3a0bdd8",
-      "last_updated": "2026-06-12T16:07:40.123707"
+      "hash": "1867abdd4f97a84d0132657233113ac8d203391868ffedcf51d6c8162057b563",
+      "last_updated": "2026-06-24T10:10:14.532002"
     },
     "hypercore/overview.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/overview",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/overview.md",
-      "hash": "4696b43fab5b01918deb3aee5de2f09419b2c3b9c8b73f4dfcd3fc3d6254ebd3",
-      "last_updated": "2026-06-12T16:07:40.726841"
+      "hash": "7210ba1bc52b8fe40ecd5840accb80f976cfa84da911a16a68ee900dfbef9c25",
+      "last_updated": "2026-06-24T10:10:15.286267"
     },
     "hypercore/permissionless-spot-quote-assets.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets.md",
-      "hash": "b8198f97d83d8a94024ac48f30c37d4b4ad25d3c88be9ba0f8129e934cf768ff",
-      "last_updated": "2026-06-12T16:07:41.292769"
+      "hash": "c12df1f58e4db76110b45259c3048be5a50dadc638d8add56358f276d857f702",
+      "last_updated": "2026-06-24T10:10:16.175048"
     },
     "hypercore/staking.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/staking",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/staking.md",
-      "hash": "d6b4d896ef90c7b2310e02d4043b2c726a8610f73ef0464b687e0c50d08760d8",
-      "last_updated": "2026-06-12T16:07:41.867495"
+      "hash": "4d5ae29ff58d0f30d68deea990f5ea12d6a238b50e69db6ef145c6edfb21c8fd",
+      "last_updated": "2026-06-24T10:10:16.937594"
     },
     "hypercore/vaults.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults.md",
-      "hash": "b85963483b039e2f2fe0556f9a272eaacb16be686e238834864072e999f12fdf",
-      "last_updated": "2026-06-12T16:07:42.437833"
+      "hash": "0a6438df3d46b0f74f863b6bdcf04dfe65504aa59f0ed8536235719ba8917e6a",
+      "last_updated": "2026-06-24T10:10:17.709348"
     },
     "hypercore/vaults/for-vault-depositors-legacy.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/for-vault-depositors-legacy",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/for-vault-depositors-legacy.md",
-      "hash": "de8bdb2bfb461448d35ddc124c2e66889b0e4a1fb501ac048cfadba7e563235d",
-      "last_updated": "2026-06-12T16:07:43.006099"
+      "hash": "3acabf4b9b94327128fb3f75552ee79f9b70b27d647942c33e20f0f3490cdc32",
+      "last_updated": "2026-06-24T10:10:18.686964"
     },
     "hypercore/vaults/for-vault-leaders-legacy.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/for-vault-leaders-legacy",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/for-vault-leaders-legacy.md",
-      "hash": "498c1c50f348b6e530eb6e19e7487d02db37fb440f7e39b08d76bb145724ae43",
-      "last_updated": "2026-06-12T16:07:43.597088"
+      "hash": "27d0a03c83fbcce4ced8a1060b51d8b0279897f96f5915187a7130175b982791",
+      "last_updated": "2026-06-24T10:10:19.368122"
     },
     "hypercore/vaults/hypercore-vaults-legacy.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/hypercore-vaults-legacy",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/hypercore-vaults-legacy.md",
-      "hash": "1dbde13c9b2e94e21435b832509f539d6a5081b2283d6bf1d251c02571451b2d",
-      "last_updated": "2026-06-12T16:07:44.178285"
+      "hash": "3f0231694f2ef7b373efe62eaf4b060ef96fd19fd79665097fecfce07a615e0c",
+      "last_updated": "2026-06-24T10:10:20.153356"
     },
     "hypercore/vaults/protocol-vaults.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/protocol-vaults",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/protocol-vaults.md",
-      "hash": "a123fd2845cf49672bb9dc2b3b3633f8148caea2356db0bb2448c615c737b7b0",
-      "last_updated": "2026-06-12T16:07:44.740665"
+      "hash": "9a506ce22cb07c2948dfb381c90cc0ada7f2db00d8fe99d52e5c4493471d3a62",
+      "last_updated": "2026-06-24T10:10:20.948915"
     },
     "hyperevm.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm.md",
-      "hash": "7bb9a767307cd02e96fa50ad38ff4eb869b1124bb1a9f4cd932a8d321e996455",
-      "last_updated": "2026-06-12T16:07:45.322576"
+      "hash": "f41eac612f60820c14262a163a90e4a496c17bb820643b11977306288c582012",
+      "last_updated": "2026-06-24T10:10:21.788709"
     },
     "hyperevm/tools-for-hyperevm-builders.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm/tools-for-hyperevm-builders",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm/tools-for-hyperevm-builders.md",
-      "hash": "e6599ddb221307d64c4ba839f4538ad0fe993c3d41f6da3d59620a41994e0bc6",
-      "last_updated": "2026-06-12T16:07:45.892677"
+      "hash": "1883e6ea8f88448db8c5e0d248435dd5f19ee83687538a2b2181fb091e8e409e",
+      "last_updated": "2026-06-24T10:10:22.606064"
     },
     "hyperliquid-improvement-proposals-hips.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips.md",
-      "hash": "5f515fdfc2af538782c501a5bccdf90c2b598ba4c730d392f6cd3a364b1897e1",
-      "last_updated": "2026-06-12T16:07:46.455626"
+      "hash": "ceb16a3c64d0db8ed84a6e7e6009811a6b1fe3233dfbee5b1601d4d35ba3cf33",
+      "last_updated": "2026-06-24T10:10:23.457679"
     },
     "hyperliquid-improvement-proposals-hips/frontend-checks.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/frontend-checks",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/frontend-checks.md",
-      "hash": "08bdd38867a495376c0434eb2ae350d29894e54d3fc796d48eec220084fee575",
-      "last_updated": "2026-06-12T16:07:47.064284"
+      "hash": "4259dd83744ec6f5c3a5ca436a79a7af3b5670041edae5202c246ca05174ebe3",
+      "last_updated": "2026-06-24T10:10:24.270575"
     },
     "hyperliquid-improvement-proposals-hips/hip-1-native-token-standard.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-1-native-token-standard",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-1-native-token-standard.md",
-      "hash": "31247c4ef04e30ffc389c8a996aa8e332dce5533de3724a167b4c1e3866df939",
-      "last_updated": "2026-06-12T16:07:47.698664"
+      "hash": "f3f148991160ab92e230d22a8250559cdbadbfc786458fe08391b749099d9b65",
+      "last_updated": "2026-06-24T10:10:24.840316"
     },
     "hyperliquid-improvement-proposals-hips/hip-2-hyperliquidity.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-2-hyperliquidity",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-2-hyperliquidity.md",
-      "hash": "5eed53ae7dea868c138ec5de879ac341d9f355dbc5e7d91ce778c5d529b7d39f",
-      "last_updated": "2026-06-12T16:07:48.344940"
+      "hash": "d2caf746ebd57b288052413eb3d0ca53c10585e2b9251079511c36da9139d0d6",
+      "last_updated": "2026-06-24T10:10:25.741163"
     },
     "hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals.md",
-      "hash": "45268150762b50d5c91f2f44969315e0c8ce0ed787fe9855ee1aa3bc4b059b7e",
-      "last_updated": "2026-06-12T16:07:48.947936"
+      "hash": "892d5d64306bbbd9c25a5658c7d1580bb7780d3d8cdbbc52f3736f15513a88f9",
+      "last_updated": "2026-06-24T10:10:26.309311"
     },
     "hyperliquid-improvement-proposals-hips/hip-4-outcome-markets.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets.md",
-      "hash": "0674d58e128778d5e7f3153ac9a49151a6ba40742c9f12c8e3b9094bc24eb0f3",
-      "last_updated": "2026-06-12T16:07:49.597088"
+      "hash": "43e886832e8d541dd8d2ddddf7c7f3f60ad7bbedcb78aeb49833ebc350f8a66f",
+      "last_updated": "2026-06-24T10:10:26.882529"
     },
     "onboarding.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding.md",
-      "hash": "b514b9f3bf21e398cb1c51e971f495b414322bee91a7f78887070d5a415d4d32",
-      "last_updated": "2026-06-12T16:07:50.238944"
+      "hash": "c7d19a7a4e01184d1dee44463c653a35ce99d0a712552c10c71b57b0e27b3840",
+      "last_updated": "2026-06-24T10:10:27.702975"
     },
     "onboarding/connect-mobile-via-qr-code.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/connect-mobile-via-qr-code",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/connect-mobile-via-qr-code.md",
-      "hash": "ca9c5a277bc4d9c272dacb53beafbb16ab1656f6df7526875103b09c4ec7d01c",
-      "last_updated": "2026-06-12T16:07:50.866655"
+      "hash": "6f5519077fe7722823d64b130c5a67c0197f296214fc4daab0b295b53b9d13ae",
+      "last_updated": "2026-06-24T10:10:28.431619"
     },
     "onboarding/export-your-email-wallet.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/export-your-email-wallet",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/export-your-email-wallet.md",
-      "hash": "a2565852e042601a697162bf8c235db671d172084f896015ac706a73085c4c81",
-      "last_updated": "2026-06-12T16:07:51.475207"
+      "hash": "a1fd56bb960a3762f92438228f543096bf661ff6c4d179abceaa1ac52c436e42",
+      "last_updated": "2026-06-24T10:10:29.225127"
     },
     "onboarding/how-to-stake-hype.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/how-to-stake-hype",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/how-to-stake-hype.md",
-      "hash": "47c3fdec9e521ce7923ace658a95de4142ebd0f2bb0b5816db5f6af7f6840427",
-      "last_updated": "2026-06-12T16:07:52.061824"
+      "hash": "4d8544980e6e5bcc159df6bbbf553bdcc54b04e3d87b6e24be8521fa859dc227",
+      "last_updated": "2026-06-24T10:10:30.153419"
     },
     "onboarding/how-to-start-trading.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/how-to-start-trading",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/how-to-start-trading.md",
-      "hash": "68612f9381c0ccb7411c54a5f0718724c4f21bda9383ed1c07e2339f3b29cf48",
-      "last_updated": "2026-06-12T16:07:52.660136"
+      "hash": "4263b16dcbf62067efa6a938c2718e87ca36cde7585bed612ec5aab1d0fd61b9",
+      "last_updated": "2026-06-24T10:10:30.727021"
     },
     "onboarding/how-to-use-the-hyperevm.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/how-to-use-the-hyperevm",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/how-to-use-the-hyperevm.md",
-      "hash": "7ca36fa8716a2d5d83a054062510279efc5f63bf08d9d2a0aa2a655ea47bdbc5",
-      "last_updated": "2026-06-12T16:07:53.262123"
+      "hash": "d9cdc83a5edba561690491eb7f560507333bfc95a6a92804d4300d3a8c5662d7",
+      "last_updated": "2026-06-24T10:10:31.464891"
     },
     "onboarding/testnet-faucet.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/testnet-faucet",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/testnet-faucet.md",
-      "hash": "1365d9dad18649d5e45950a3abff52073932086f0d739a8ec3b3fa0d4600c2d5",
-      "last_updated": "2026-06-12T16:07:53.887638"
+      "hash": "589478bed112e015ca8eee81ce9fbc11695745803534be72669ba42969beec87",
+      "last_updated": "2026-06-24T10:10:32.029461"
     },
     "points.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/points",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/points.md",
-      "hash": "4762bf491753fe22cda003d5dd89957253303d413a1712ebdaaca46db9e8cb86",
-      "last_updated": "2026-06-12T16:07:54.480894"
+      "hash": "d653aee4665d3e8081fa88fa0d0ddac0d984570e77ca1e60fd7b1ac3dd6411f7",
+      "last_updated": "2026-06-24T10:10:32.841015"
     },
     "referrals.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/referrals",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/referrals.md",
-      "hash": "65ccb49acd077eb8267cc53ff196daf2331a320f33ff1ba2418ba700fdb3b265",
-      "last_updated": "2026-06-12T16:07:55.082969"
+      "hash": "0c6d7fa771bec4618d43c1f88ead77c174d2042487f32477353d9f5ce23d7f0c",
+      "last_updated": "2026-06-24T10:10:33.418933"
     },
     "referrals/proposal-staking-referral-program.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/referrals/proposal-staking-referral-program",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/referrals/proposal-staking-referral-program.md",
-      "hash": "99b0f601ec0284ad736465dcdc90c320eab759de6cbd0dc4e2219093747ea3d4",
-      "last_updated": "2026-06-12T16:07:55.660002"
+      "hash": "d9d1f4a5cf6f930553c54277165da26ce63a3fcd640640d128c0e2c0cc7b6923",
+      "last_updated": "2026-06-24T10:10:34.351346"
     },
     "risks.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/risks",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/risks.md",
-      "hash": "70436bf30c0fde26b123252ef1de4285df897a007c16f597a7989571fd3d4b8b",
-      "last_updated": "2026-06-12T16:07:56.236126"
+      "hash": "3229b62014a6079dce633d3dbd9629f6874a34ae7c62ee1b825b4f41b00045a0",
+      "last_updated": "2026-06-24T10:10:35.067860"
     },
     "support/README.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support.md",
-      "hash": "3cf9b81554725e8b99ab34ff3363526836accf5813434e59491629e9f45a04d1",
-      "last_updated": "2026-06-12T16:07:56.807603"
+      "hash": "842b915b2e41fe653041dd29f8abef9bb5f8b4409b710e11bcc3ffe85ff85060",
+      "last_updated": "2026-06-24T10:10:36.064923"
     },
     "support/faq/building-on-hyperliquid.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/building-on-hyperliquid",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/building-on-hyperliquid.md",
-      "hash": "6d5fc55ba30970454c4e8b082001add8c0d76675c5732083dac8817f7c8c9c55",
-      "last_updated": "2026-06-12T16:07:57.388136"
+      "hash": "7780b2d5aa8ad45680c79f1e0881b1bec0c854605a634dab3cf5f30d640bd1ac",
+      "last_updated": "2026-06-24T10:10:36.857991"
     },
     "support/faq/building-on-hyperliquid/i-have-api-related-questions.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/building-on-hyperliquid/i-have-api-related-questions",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/building-on-hyperliquid/i-have-api-related-questions.md",
-      "hash": "6df4e44c9d131d4354c1539ba5d4e55aefe1114ffcb54741cf1ab96e422b8365",
-      "last_updated": "2026-06-12T16:07:57.971441"
+      "hash": "7e4a433d0b3e7f13f28d575a5aeabe835b698fccf872c0e6e6265466500f78f4",
+      "last_updated": "2026-06-24T10:10:37.504650"
     },
     "support/faq/building-on-hyperliquid/i-want-to-deploy-a-spot-token-or-list-a-perp.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/building-on-hyperliquid/i-want-to-deploy-a-spot-token-or-list-a-perp",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/building-on-hyperliquid/i-want-to-deploy-a-spot-token-or-list-a-perp.md",
-      "hash": "eeada81e6d61e8710f19d312ce97bf9a210be1a79135bdb6b79e49764ee052bb",
-      "last_updated": "2026-06-12T16:07:58.567675"
+      "hash": "f30aa5ef8ec30a9a6db83b38265cee3486be02c090fc4b217ce94e946f7c1bc5",
+      "last_updated": "2026-06-24T10:10:38.126370"
     },
     "support/faq/connectivity-issues.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/connectivity-issues",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/connectivity-issues.md",
-      "hash": "417ef82f4941912fd40c8714d88f3180a295dbd0fc6b0ac00e2f999214bfe02d",
-      "last_updated": "2026-06-12T16:07:59.155204"
+      "hash": "a47491af4ad7c9e5e8b428c5c6aada268a2b74835801aeb9ae8fb70d7e397261",
+      "last_updated": "2026-06-24T10:10:38.945585"
     },
     "support/faq/connectivity-issues/connected-via-email.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/connectivity-issues/connected-via-email",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/connectivity-issues/connected-via-email.md",
-      "hash": "d51345ab416b2a8c8f43b72fcf0aefc50eac1feedd80c2baff8aeae5f1d31f3f",
-      "last_updated": "2026-06-12T16:07:59.754838"
+      "hash": "5623cfac67de63aae551dd1b8ff797c1d08bbeb847b830dfb16a98eb8cb65d4e",
+      "last_updated": "2026-06-24T10:10:39.597045"
     },
     "support/faq/connectivity-issues/connected-via-wallet.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/connectivity-issues/connected-via-wallet",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/connectivity-issues/connected-via-wallet.md",
-      "hash": "594e12d85a5df6bf1ef739b78cd9083fa34b0b05e1107aa13c609b5899410a5e",
-      "last_updated": "2026-06-12T16:08:00.339553"
+      "hash": "f97950246a502b1750d1da4d9705b6bf8665e9f72fc24dd3cfb5a198aa71aa1f",
+      "last_updated": "2026-06-24T10:10:40.163831"
     },
     "support/faq/deposit-or-transfer-issues-missing-lost.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost.md",
-      "hash": "e76d2d5c55a38405903e71f1cb617987ec52dfdad03443f96d6540c2b9eece92",
-      "last_updated": "2026-06-12T16:08:00.924482"
+      "hash": "6a8e956bdbc686c2ac0dbdcd8a0eeabb8d6a74565e157ce6242bfc20cc2617b7",
+      "last_updated": "2026-06-24T10:10:40.871217"
     },
     "support/faq/deposit-or-transfer-issues-missing-lost/deposited-fiat.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-fiat",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-fiat.md",
-      "hash": "43e048de54de4e6fda4cf36b88d424d7a37c81ef51fbd15e60e84a9c190ecfeb",
-      "last_updated": "2026-06-12T16:08:01.520868"
+      "hash": "e2807a24e94267c54aad27e5d2ee4161011041701c711ff4175c3aac4013a33b",
+      "last_updated": "2026-06-24T10:10:41.525674"
     },
     "support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-arbitrum-network-usdc.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-arbitrum-network-usdc",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-arbitrum-network-usdc.md",
-      "hash": "2e989dafa7dcc1bb21934d087e519b77ec537eb21afd7bcb26352d38a1f7f4d9",
-      "last_updated": "2026-06-12T16:08:02.092989"
+      "hash": "1972e7b54d9e6f603265aa93fb0bae0ea67ca22de7d8c80e74fbd423a0bee060",
+      "last_updated": "2026-06-24T10:10:42.096801"
     },
     "support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-avalanche-network.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-avalanche-network",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-avalanche-network.md",
-      "hash": "b3b5db170239a6c3fc2c065f741e5102545ab26b82f9b1956e535442428d43fc",
-      "last_updated": "2026-06-12T16:08:02.668211"
+      "hash": "6188deff82731cf49519e41b038742a86143884e8e7f9a2c485c87d624878d96",
+      "last_updated": "2026-06-24T10:10:42.736661"
     },
     "support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-base-network.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-base-network",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-base-network.md",
-      "hash": "28a2f82132cf10df172baa890924664d2ef573f811e512176d7374407b9241d3",
-      "last_updated": "2026-06-12T16:08:03.248962"
+      "hash": "35b661051ed4215108cd99643da1af7f72d1eee36f40010dc694b760faaeec49",
+      "last_updated": "2026-06-24T10:10:43.364770"
     },
     "support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-bitcoin-network.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-bitcoin-network",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-bitcoin-network.md",
-      "hash": "598015226aac0388b928d25a720ae302202cdcda579e931f842da150cd91504d",
-      "last_updated": "2026-06-12T16:08:03.828884"
+      "hash": "9583223c2cc6eea0da736e7b5c3db5c30c22a1b15e5fbc15e8d36b921ee43777",
+      "last_updated": "2026-06-24T10:10:43.980969"
     },
     "support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-ethereum-network.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-ethereum-network",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-ethereum-network.md",
-      "hash": "95106a0627c6dfc56fd735758184b1435892fc86dd157020570221f9a2002c75",
-      "last_updated": "2026-06-12T16:08:04.430642"
+      "hash": "35aa6debf474349a75f983ad7109c83638dfdfe5381caca01f774d779636a72d",
+      "last_updated": "2026-06-24T10:10:44.547793"
     },
     "support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-monad-network.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-monad-network",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-monad-network.md",
-      "hash": "34eaaf8fd5522589d5427b22f73133b14fcb534588131e94d2caa9ea1058e38f",
-      "last_updated": "2026-06-12T16:08:05.014898"
+      "hash": "e5fa1be4800201003abe08a4071d0fb14556b3cd79485310f11cc8933ac4fb9f",
+      "last_updated": "2026-06-24T10:10:45.179164"
     },
     "support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-plasma-network.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-plasma-network",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-plasma-network.md",
-      "hash": "51dc4d8b862254595a3bc6199b1c67920ab9a33fd674c942dcf86e011f9f07ef",
-      "last_updated": "2026-06-12T16:08:05.610717"
+      "hash": "29d544f9e365e4538c67edb371d4c73990732aec5392ba9e9b9b81634be01c0c",
+      "last_updated": "2026-06-24T10:10:45.754579"
     },
     "support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-solana-network.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-solana-network",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-solana-network.md",
-      "hash": "257a4d47bfc806f5634ec2daf6a0c9dc8e59d88686ace394b3f21707d159c229",
-      "last_updated": "2026-06-12T16:08:06.241362"
+      "hash": "1eaac874671bf827e7e3525a7ae29487bde9b826995b9c0b01596e96107e5ec1",
+      "last_updated": "2026-06-24T10:10:46.333819"
     },
     "support/faq/deposit-or-transfer-issues-missing-lost/transfer-or-deposit-to-usdc-perps-missing.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/transfer-or-deposit-to-usdc-perps-missing",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/transfer-or-deposit-to-usdc-perps-missing.md",
-      "hash": "2d6498104d356c3d5fc6b7397c87dd0eb0aa8bcfef2729d3b5080e3cd107d6c9",
-      "last_updated": "2026-06-12T16:08:06.844185"
+      "hash": "65efc323892dbc00545f92f24faa06bd7da5f3faf65ff0aa51c624f34da9ce06",
+      "last_updated": "2026-06-24T10:10:46.896770"
     },
     "support/faq/hyperevm-issues.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/hyperevm-issues",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/hyperevm-issues.md",
-      "hash": "909205b22c8ff8ea81aea68bd68812a2570904805dd2a65d42a773e89625ca65",
-      "last_updated": "2026-06-12T16:08:07.445406"
+      "hash": "4702114e624f334e9b81469593a7be584f14e87473ad000974f1ecd70b2a7197",
+      "last_updated": "2026-06-24T10:10:47.788263"
     },
     "support/faq/hyperevm-issues/accidentally-transferred-to-hyperevm.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/hyperevm-issues/accidentally-transferred-to-hyperevm",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/hyperevm-issues/accidentally-transferred-to-hyperevm.md",
-      "hash": "47023e9d9b0b7c62c4111633be187dcc05bf6fd0243a87e97c83496a27c8c57b",
-      "last_updated": "2026-06-12T16:08:08.059807"
+      "hash": "56bcc2432461e0d0b7ec238171d1ace570b1efbadd1baf1239defc3edec1360e",
+      "last_updated": "2026-06-24T10:10:48.408432"
     },
     "support/faq/hyperevm-issues/cant-see-my-hyperevm-assets-in-wallet-extension.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/hyperevm-issues/cant-see-my-hyperevm-assets-in-wallet-extension",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/hyperevm-issues/cant-see-my-hyperevm-assets-in-wallet-extension.md",
-      "hash": "66ad613342c6886c7b3d1dae6ed52160cd4ed93ec20fc1d426881f688a3f4e42",
-      "last_updated": "2026-06-12T16:08:08.639003"
+      "hash": "5d639cced41da88852513ff3367c5dd3fb39f5e87e25bf4f4dcea6245a399e88",
+      "last_updated": "2026-06-24T10:10:49.056715"
     },
     "support/faq/hyperevm-issues/gas-problem-on-evm.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/hyperevm-issues/gas-problem-on-evm",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/hyperevm-issues/gas-problem-on-evm.md",
-      "hash": "ce7ad3eb7f08c893ebe61f29853d917c684fe7a44a0a97a499d3f2319f394251",
-      "last_updated": "2026-06-12T16:08:09.225833"
+      "hash": "8b2fa33229576762c0b1198af1a92924a813fb2e03a3efa2028b8b0f581281aa",
+      "last_updated": "2026-06-24T10:10:49.621624"
     },
     "support/faq/i-got-scammed-hacked.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/i-got-scammed-hacked",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/i-got-scammed-hacked.md",
-      "hash": "75d2772b71c76738c099817f8220225eeb00fccb7c9805a82db4d5a2f92592b2",
-      "last_updated": "2026-06-12T16:08:09.806636"
+      "hash": "4ca3e09c4897aa7f72aef06b3181e4094c876bb4b1424b7823f5c849c4c300a7",
+      "last_updated": "2026-06-24T10:10:50.452186"
     },
     "support/faq/portfolio-margin.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/portfolio-margin",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/portfolio-margin.md",
-      "hash": "fb0bbf6d9217ed3ca67c81d92432db119ba3969c92595d10d031be597fea580b",
-      "last_updated": "2026-06-12T16:08:10.388787"
+      "hash": "0ffafc9da0b34ce00ec2118effd9811135470ac9b3b04415dc1f69a4d5d96904",
+      "last_updated": "2026-06-24T10:10:51.018756"
     },
     "support/faq/trade-outcome-looks-incorrect.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect.md",
-      "hash": "1c28fb98254534867d6a8a68d246a296622fafc1e6e7141b90b0c448accc912a",
-      "last_updated": "2026-06-12T16:08:10.964274"
+      "hash": "ff6f450b8dec18ca7d5242daa09fef72f1426e5719c545e4920363cfa5856959",
+      "last_updated": "2026-06-24T10:10:51.857009"
     },
     "support/faq/trade-outcome-looks-incorrect/how-does-margining-work.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/how-does-margining-work",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/how-does-margining-work.md",
-      "hash": "8ed571aa1716921a6f3289bb151eb5be5e6100b53daa5aa65e609e0ba983546b",
-      "last_updated": "2026-06-12T16:08:11.591741"
+      "hash": "b8cfcd5f640ba144e53fd512c911c848468130a901a00b69b104d1b845d2815b",
+      "last_updated": "2026-06-24T10:10:52.585169"
     },
     "support/faq/trade-outcome-looks-incorrect/i-cant-sell-leftover-spot-assets.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/i-cant-sell-leftover-spot-assets",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/i-cant-sell-leftover-spot-assets.md",
-      "hash": "0b3dd6b37bc62e4ae812534de114c2046fc73132989abba4c13687d22850c40f",
-      "last_updated": "2026-06-12T16:08:12.183398"
+      "hash": "ae2d86270c8137eaa15b71704b02ffb0f4e2ae0c41196d6c4fe9692bbd2048c0",
+      "last_updated": "2026-06-24T10:10:53.238399"
     },
     "support/faq/trade-outcome-looks-incorrect/my-tp-sl-did-not-execute-correctly.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/my-tp-sl-did-not-execute-correctly",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/my-tp-sl-did-not-execute-correctly.md",
-      "hash": "49ce9d1a57d7e2a72d4a35737e02b89b666c0d186f8e782ffa170176fa664bf3",
-      "last_updated": "2026-06-12T16:08:12.777450"
+      "hash": "ddcbadf3c4ae46067fe479888f6115d68737cfe8e1ebec08050ff03d118f89a0",
+      "last_updated": "2026-06-24T10:10:53.805202"
     },
     "support/faq/trade-outcome-looks-incorrect/what-does-action-already-expired-mean.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/what-does-action-already-expired-mean",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/what-does-action-already-expired-mean.md",
-      "hash": "e0b4f5b86f3853a80c461803ef3131ebc2e811fdd1e6d9e31fe2234014c01987",
-      "last_updated": "2026-06-12T16:08:13.354921"
+      "hash": "94448db59008a618348d85be8a91e7c6869d05b71b579895279bfcd85c16613f",
+      "last_updated": "2026-06-24T10:10:54.465948"
     },
     "support/faq/trade-outcome-looks-incorrect/why-was-i-liquidated.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/why-was-i-liquidated",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/why-was-i-liquidated.md",
-      "hash": "8f67832e41641dab6dc1b356e551a46282b10537531f98343878813ff52df74f",
-      "last_updated": "2026-06-12T16:08:13.945771"
+      "hash": "01d23770516a897a257d514db5ab92d23d1eb2b066436ab7dfd28eb92d34d97a",
+      "last_updated": "2026-06-24T10:10:55.031154"
     },
     "support/faq/unstaking-and-link-staking-issues.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/unstaking-and-link-staking-issues",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/unstaking-and-link-staking-issues.md",
-      "hash": "94199cb174943c7d22e0c6227a4c151f600d49571488ac5819878a2430c63574",
-      "last_updated": "2026-06-12T16:08:14.528180"
+      "hash": "c069d012fa99efb5e14d9ee75c6b87960435b6f7e9a11737c06681c545ab3148",
+      "last_updated": "2026-06-24T10:10:55.795023"
     },
     "support/faq/unstaking-and-link-staking-issues/staking-and-trading-account-linking-issues.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/unstaking-and-link-staking-issues/staking-and-trading-account-linking-issues",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/unstaking-and-link-staking-issues/staking-and-trading-account-linking-issues.md",
-      "hash": "63068663954e9002fd5dace24d0d18753ba0fa602c404b2795b0c5d2f67d8528",
-      "last_updated": "2026-06-12T16:08:15.111881"
+      "hash": "eabc727cb79285f26a03ea97613975668ee66609ff897c90eee2ae1d3eae20da",
+      "last_updated": "2026-06-24T10:10:56.411528"
     },
     "support/faq/unstaking-and-link-staking-issues/unstaking-transfer-taking-more-than-7-days.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/unstaking-and-link-staking-issues/unstaking-transfer-taking-more-than-7-days",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/unstaking-and-link-staking-issues/unstaking-transfer-taking-more-than-7-days.md",
-      "hash": "628bd43f5cbe89ccc15add78b48c1b7d2ce46adbda76813b85877cad026c7137",
-      "last_updated": "2026-06-12T16:08:15.688944"
+      "hash": "6391d3fa0cb7bf4dbd2ba24f36083bb36d97ef730d032eec74b4cbf9b36de55f",
+      "last_updated": "2026-06-24T10:10:56.977910"
     },
     "support/faq/withdrawal-issues.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/withdrawal-issues",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/withdrawal-issues.md",
-      "hash": "a537520c45685e8f239f71f2d63e7df1cc124cda6adb9cf97a07ddb5cab810d1",
-      "last_updated": "2026-06-12T16:08:16.266001"
+      "hash": "61efcdabc8f6dfe31d0c1d4acf87b7c0b19e5a566099d1ad7ce3d911d733f969",
+      "last_updated": "2026-06-24T10:10:57.742872"
     },
     "support/faq/withdrawal-issues/my-withdrawal-keeps-getting-re-deposited.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/withdrawal-issues/my-withdrawal-keeps-getting-re-deposited",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/withdrawal-issues/my-withdrawal-keeps-getting-re-deposited.md",
-      "hash": "7981bb09586b57b2879b67b1366fe807195379d4e427f11a70fcdcdc275465ed",
-      "last_updated": "2026-06-12T16:08:16.851471"
+      "hash": "4cd6291f0f02c5930787e002cf313d50be463d4f9724a370a9d77681b8ed39a7",
+      "last_updated": "2026-06-24T10:10:58.313955"
     },
     "support/faq/withdrawal-issues/withdrawal-has-not-arrived-in-my-wallet.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/withdrawal-issues/withdrawal-has-not-arrived-in-my-wallet",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/withdrawal-issues/withdrawal-has-not-arrived-in-my-wallet.md",
-      "hash": "59639c64cfb5ab48684d9241a1afa781c9163e4697efbb15b8375141e712309e",
-      "last_updated": "2026-06-12T16:08:17.424193"
+      "hash": "215f86d1bfe1fe01fd05f658587dedfa10d01da5e6aca0fbf832a1bffda9eff0",
+      "last_updated": "2026-06-24T10:10:58.876718"
     },
     "support/faq/withdrawal-issues/withdrawing-to-phantom-wallet.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/withdrawal-issues/withdrawing-to-phantom-wallet",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/withdrawal-issues/withdrawing-to-phantom-wallet.md",
-      "hash": "72dc75bbcb2da550d8bb6d0ecd8a4043d91164faa4df31c6a757c63f20b66f89",
-      "last_updated": "2026-06-12T16:08:18.006586"
+      "hash": "36c3c6e5f5ce5fe14befde3443e048fc07feb425e7d0a7cddba687bcf3eec0c2",
+      "last_updated": "2026-06-24T10:10:59.440762"
     },
     "trading.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading.md",
-      "hash": "4471f35fa45d6f80c1ef00a64c8259d07ff0f1e55d62e5a3e15c64b3af682882",
-      "last_updated": "2026-06-21T15:41:56.821326"
+      "hash": "2e1e7a6b345a56d18bacce76d70fb8d89a2532c9b66c4f8535e451d2ea695105",
+      "last_updated": "2026-06-24T10:11:00.372634"
     },
     "trading/account-abstraction-modes.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes.md",
-      "hash": "ad9bae44615adc39fa10faa6000b5de476c7540911ef73825d0679dd1bf31530",
-      "last_updated": "2026-06-12T16:08:19.215636"
+      "hash": "68fc3be46c15ca1cbaaf7c8b1c452d8aeecea9af6193bafeb8d443f58ae5293e",
+      "last_updated": "2026-06-24T10:11:00.939371"
     },
     "trading/auto-deleveraging.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/auto-deleveraging",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/auto-deleveraging.md",
-      "hash": "f9567915fe6f84c494ec4c9cb5dfb3e9091b1ca7e76375a6179ff67a763eb5ac",
-      "last_updated": "2026-06-12T16:08:19.818816"
+      "hash": "44fc4830ec17d1349e0998ee7101057d96d35139b36796f2424b578a29873c29",
+      "last_updated": "2026-06-24T10:11:01.669141"
     },
     "trading/builder-codes.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/builder-codes",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/builder-codes.md",
-      "hash": "0fe48c5232a3a487f74177a96c6dc08e134b2b250434b2adcf3f959e32d6cf94",
-      "last_updated": "2026-06-12T16:08:20.420538"
+      "hash": "87fbea067bbcacf4ead52a8ed7849dffd6e8386896e19199be19f13ba5ef7df8",
+      "last_updated": "2026-06-24T10:11:02.234635"
     },
     "trading/contract-specifications.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/contract-specifications",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/contract-specifications.md",
-      "hash": "d475704e6a9eb5c7d2fd23e0230a47c720d5ad94ac8ba1b377626a58dd8d39fd",
-      "last_updated": "2026-06-12T16:08:21.026325"
+      "hash": "053cf75e5d33e95cb206a7d2f6ac3c834a9e403101cfde47ce29b90238e65c6f",
+      "last_updated": "2026-06-24T10:11:03.108877"
     },
     "trading/delisting.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/delisting",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/delisting.md",
-      "hash": "8eaef926e930ac59351d50fc4a17ae07faa2c451ce983dec7215ae8147b49856",
-      "last_updated": "2026-06-12T16:08:21.638560"
+      "hash": "2906a7783a067cb0826997258e45658499e1bde8be6fa2973f18df1a161e8bf9",
+      "last_updated": "2026-06-24T10:11:03.943395"
     },
     "trading/entry-price-and-pnl.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/entry-price-and-pnl",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/entry-price-and-pnl.md",
-      "hash": "f75d2d61ca1b84bcb53a1a3964672ccada9b8440c8518fb3f11cc1622b669600",
-      "last_updated": "2026-06-12T16:08:22.250625"
+      "hash": "0e481deff0fc5db4a68c1698fe81028e306b29a2fe849cc06a84eddf4752d193",
+      "last_updated": "2026-06-24T10:11:04.809303"
     },
     "trading/fees.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees.md",
-      "hash": "f87e0aec853fe5fe5af69d7e584897abe9d17057c0b00518f70ecfa77894810f",
-      "last_updated": "2026-06-12T16:08:22.855269"
+      "hash": "49e23e5534ddb400e942373cc41e86ea955a90e6e34738f7290ffe420ab4ff53",
+      "last_updated": "2026-06-24T10:11:05.374896"
     },
     "trading/funding.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/funding",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/funding.md",
-      "hash": "32f799c3ca76d116c38312f1fb7a38602669dc2dbea15d21be492555c1ddf7ab",
-      "last_updated": "2026-06-12T16:08:23.440488"
+      "hash": "ecd3a72a1c3e3e7937d9579a63feaaf1a0014b023497ee4852cf6fc68409850f",
+      "last_updated": "2026-06-24T10:11:06.068870"
     },
     "trading/hyperps.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/hyperps",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/hyperps.md",
-      "hash": "2f4523a75417e96dbc64f3adc6a4539850e1ceb7fcb0137ae0a4bb45e92e12ea",
-      "last_updated": "2026-06-12T16:08:24.039887"
+      "hash": "a4960784b2fb630a178d12798dc394c1ba4f81002b13a4c89e926c4b45f5b0a7",
+      "last_updated": "2026-06-24T10:11:07.130242"
     },
     "trading/index-perpetual-contracts.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/index-perpetual-contracts",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/index-perpetual-contracts.md",
-      "hash": "1ea13bded1cc7e5b23f83e7f9598fd28710a93ca31e49e3e11a974d463789598",
-      "last_updated": "2026-06-12T16:08:24.611570"
+      "hash": "7635db71a8f7913d313dcdbb8699ba8430efda0a0b842229d289478b32b6b7a5",
+      "last_updated": "2026-06-24T10:11:07.829289"
     },
     "trading/liquidations.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/liquidations",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/liquidations.md",
-      "hash": "c281c0c5d7923661f06306074122210682489b3224be661ac64d36bdaecffc90",
-      "last_updated": "2026-06-12T16:08:25.211237"
+      "hash": "a0fbefd597fc1e47c786d5a2c11eef568e81e8c8a7d38cc0e727ced3a36393de",
+      "last_updated": "2026-06-24T10:11:08.517975"
     },
     "trading/margin-tiers.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers.md",
-      "hash": "c7c47872a671aa40ea4293cd74847844a80c2557c1b858555e810db35c2dd2cd",
-      "last_updated": "2026-06-12T16:08:25.812257"
+      "hash": "14828194895a896f642c70e46921e65daffde958d2254cf10f533172a8f763f1",
+      "last_updated": "2026-06-24T10:11:09.586593"
     },
     "trading/margining.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margining",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margining.md",
-      "hash": "37e84d96904bcbf51982126394aa4a4ccb172a1ff8257204c8974015a81e4a2f",
-      "last_updated": "2026-06-12T16:08:26.404456"
+      "hash": "39a52cd7e4feefcccab5b66507d546b43f3b243d4c720e8c052f0210a46ef5a9",
+      "last_updated": "2026-06-24T10:11:10.156360"
     },
     "trading/market-making.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/market-making",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/market-making.md",
-      "hash": "7dbe0ddceb98cfea14b5c3fd091e868fa6bae10d5bc9c9503cd8494187d75b4a",
-      "last_updated": "2026-06-12T16:08:27.004676"
+      "hash": "4e495718b1476074635846b288db3bdd60cc9edba98b8cefdbf5b3205e5ec2e0",
+      "last_updated": "2026-06-24T10:11:11.121620"
     },
     "trading/miscellaneous-ui.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/miscellaneous-ui",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/miscellaneous-ui.md",
-      "hash": "a1757309b14e568ec5940917e9a2219462eef9027ae88b9c79eeaa441dadce5a",
-      "last_updated": "2026-06-12T16:08:27.592584"
+      "hash": "ee232c89958bb93ddb06e75223f71bde9ef77f260a49e7d53c3a4c3adb285415",
+      "last_updated": "2026-06-24T10:11:12.048169"
     },
     "trading/order-book.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/order-book",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/order-book.md",
-      "hash": "dc451b2a9d21be0b1a62579496afe488c62d0297ef50443b67dc421c7fedc817",
-      "last_updated": "2026-06-12T16:08:28.174336"
+      "hash": "7e0006bee1cfb7a3a421ca80cf9b7cc7cda2b5c4d824dad7e3a5dfd1dbad03ea",
+      "last_updated": "2026-06-24T10:11:12.866795"
     },
     "trading/order-types.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/order-types",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/order-types.md",
-      "hash": "f5962cc9960e2c9e2188aaa611a4dcfe3c5e25c2763929136ef03776f7fbe62e",
-      "last_updated": "2026-06-12T16:08:28.740879"
+      "hash": "9ab9b6d0a1150335e737f9d7455609276e01e36570b7359b7baecd156023782d",
+      "last_updated": "2026-06-24T10:11:13.579196"
     },
     "trading/perpetual-assets.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/perpetual-assets",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/perpetual-assets.md",
-      "hash": "9647da1bea14e0ae703bdd250e24fc21a279d74d78dc8815f5a2489c4127c372",
-      "last_updated": "2026-06-12T16:08:29.327159"
+      "hash": "f579116cafe873e2e63d985696cd8704b6d63dba577ec35c1562c503c862b61b",
+      "last_updated": "2026-06-24T10:11:14.330381"
     },
     "trading/portfolio-graphs.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-graphs",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-graphs.md",
-      "hash": "747e6ebf01417452935e8a68523d4e04de15d3aab8a52857d510ad55e3b2c729",
-      "last_updated": "2026-06-12T16:08:29.919146"
+      "hash": "0c95d2074a4fe652ab2a7a3fbf6fa670fd42630bc68eb88775a464ec3dddce89",
+      "last_updated": "2026-06-24T10:11:15.209120"
     },
     "trading/portfolio-margin.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin.md",
-      "hash": "426c7ae295d342718284ec3a69276b9f7f47cbf9a96d515f31c24a071507155e",
-      "last_updated": "2026-06-23T13:12:44.610742"
+      "hash": "554e3a4fa9862dc6e37bcfb31bd3eaa9c6cbd74fee4041e8946d9ff8b145618c",
+      "last_updated": "2026-06-24T10:11:15.770136"
     },
     "trading/robust-price-indices.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/robust-price-indices",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/robust-price-indices.md",
-      "hash": "0c94fe1b7d29cdd99257facc19d9771c07e53daf7d689f44648e2c19039a3a76",
-      "last_updated": "2026-06-12T16:08:31.100558"
+      "hash": "9b6b66ac085fe2fc43a56db590b6a8a403078023fe4f93e82f9703aaf330dcdc",
+      "last_updated": "2026-06-24T10:11:16.510932"
     },
     "trading/self-trade-prevention.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/self-trade-prevention",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/self-trade-prevention.md",
-      "hash": "4cd86acd5dc39aa3c95bc817cd43de8ddb8ff374025b63157ddf9479a2b71f38",
-      "last_updated": "2026-06-12T16:08:31.698513"
+      "hash": "b9840c857bc2f8bc9aee7b6fa4ace66e9f0d26c94325d8258e63175370b8070f",
+      "last_updated": "2026-06-24T10:11:17.257134"
     },
     "trading/sub-accounts.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/sub-accounts",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/sub-accounts.md",
-      "hash": "938d7d14e6dcc56cbbd6352d6d37caad393645b9e00b0a3a388c5ca0a56b5a8b",
-      "last_updated": "2026-06-12T16:08:32.268391"
+      "hash": "97ea43d2296f98b5527fc0df714dacb8f95ea7bdf020bb2b16cba7951cd0b1ed",
+      "last_updated": "2026-06-24T10:11:18.007496"
     },
     "trading/take-profit-and-stop-loss-orders-tp-sl.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/take-profit-and-stop-loss-orders-tp-sl",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/take-profit-and-stop-loss-orders-tp-sl.md",
-      "hash": "d499972ff1a55424f0b4fc92795ba7d53fa7dcb755a5119cbb5452d2169689f1",
-      "last_updated": "2026-06-12T16:08:32.853883"
+      "hash": "ab38e720c937c76a8c0395a9fe482c3d36da16ab4717596bbe1fac988d963763",
+      "last_updated": "2026-06-24T10:11:18.586386"
     },
     "trading/uniswap-perpetuals.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/uniswap-perpetuals",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/uniswap-perpetuals.md",
-      "hash": "aa23f7da6bf34ddcc2378b35e90075468ba90225c6db0de08f181a0cfe8d0c84",
-      "last_updated": "2026-06-12T16:08:33.454615"
+      "hash": "b786866f6ede13aca23a9f6ccad9e9bb21e09316227ba01f2aa1a36278056305",
+      "last_updated": "2026-06-24T10:11:19.440879"
     },
     "validators.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/validators",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/validators.md",
-      "hash": "1e19ae316da0b79a4b98bba33a40c093d2c463753051be196ec72042c3197ccc",
-      "last_updated": "2026-06-12T16:08:34.029291"
+      "hash": "57765b280e9a669e97c546ce4512dd5a862720ef4e742523b2fc7c484cbae98e",
+      "last_updated": "2026-06-24T10:11:20.314644"
     },
     "validators/delegation-program.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/validators/delegation-program",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/validators/delegation-program.md",
-      "hash": "efb25e42cc83c5fa2a009a191fa58804da1c29530253a4b0b073fbd934c86511",
-      "last_updated": "2026-06-12T16:08:34.623824"
+      "hash": "b9078ac8100014a342184d31998df535f9ee289a501f2765447712f9b7f45be5",
+      "last_updated": "2026-06-24T10:11:21.156764"
     },
     "validators/running-a-validator.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/validators/running-a-validator",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/validators/running-a-validator.md",
-      "hash": "3379663e29a8287503afaad103f188ec1a500e42ff680f0157c2e05540c076e4",
-      "last_updated": "2026-06-12T16:08:35.209843"
+      "hash": "f762da94659bcfa7f284e1f51de80e11ee77034e6c79932f40e2865f73994a84",
+      "last_updated": "2026-06-24T10:11:21.978811"
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-06-24T07:25:29.308044",
-    "duration_seconds": 88.943708,
+    "completed_at": "2026-06-24T10:11:21.979819",
+    "duration_seconds": 109.133709,
     "pages_discovered": 145,
     "pages_fetched": 145,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-06-24T07:25:29.308066",
+  "last_updated": "2026-06-24T10:11:21.979850",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
