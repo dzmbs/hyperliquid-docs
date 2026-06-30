@@ -309,8 +309,8 @@
     "hypercore/order-book.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/order-book",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/order-book.md",
-      "hash": "1867abdd4f97a84d0132657233113ac8d203391868ffedcf51d6c8162057b563",
-      "last_updated": "2026-06-24T10:10:14.532002"
+      "hash": "f5d3ab2032b2d519755407887a4cfe44021300589fed71cf725a61e21268d877",
+      "last_updated": "2026-06-30T07:32:29.722013"
     },
     "hypercore/overview.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/overview",
@@ -872,14 +872,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-06-30T04:32:36.768618",
-    "duration_seconds": 87.30351,
+    "completed_at": "2026-06-30T07:33:44.029449",
+    "duration_seconds": 135.217426,
     "pages_discovered": 145,
     "pages_fetched": 145,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-06-30T04:32:36.768641",
+  "last_updated": "2026-06-30T07:33:44.029472",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
