@@ -18,25 +18,3 @@
 * Export your Phantom wallet’s Ethereum private key and import it to another wallet like Rabby that supports the Arbitrum network.
   * Export: <https://help.phantom.com/hc/en-us/articles/28355165637011-Exporting-Your-Private-Key>
   * Migrate to Rabby (optional): <https://support.rabby.io/en/articles/14120403-migrating-from-metamask-or-other-wallets>
-
-
----
-
-# Agent Instructions
-This documentation is published with GitBook. GitBook is the documentation platform designed so that both humans and AI agents can read, navigate, and reason over technical content effectively. Learn more at gitbook.com.
-
-## Querying This Documentation
-If you need additional information that is not directly available in this page, you can query the documentation dynamically by asking a question.
-
-Perform an HTTP GET request on the current page URL with the `ask` query parameter, and the optional `goal` query parameter:
-
-```
-GET https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/withdrawal-issues/withdrawing-to-phantom-wallet.md?ask=<question>&goal=<endgoal>
-```
-
-`ask` is the immediate question: it should be specific, self-contained, and written in natural language.
-`goal` is optional and describes the broader end goal you are ultimately trying to accomplish on behalf of the user. GitBook uses it to tailor the answer towards what is most useful for that goal.
-
-The response will contain a direct answer to the question and relevant excerpts and sources from the documentation.
-
-Use this mechanism when the answer is not explicitly present in the current page, you need clarification or additional context, or you want to retrieve related documentation sections.
