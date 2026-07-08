@@ -20,7 +20,7 @@ The current empirical effect of gossip priority on mainnet is approximately 25 m
 
 ### Order (write) priority
 
-Orders can be sent with grouping of the form `{"p": 12345}` where the rate is interpreted as a fraction `p / 100000000.0`. The rate is charged from undelegated staking balance as a fraction of the filled notional, converted to HYPE using the spot mark price. Currently, priority grouping is only supported for order actions where every order is IOC and on a non-outcome asset. The max priority rate is 8bps, i.e. `p = 80000`. Under order priority, all cancels are prioritized before all immediately executable orders. However, higher priority orders are prioritized before lower priority orders as a linear function of priority rate.&#x20;
+Orders can be sent with grouping of the form `{"p": 12345}` where the rate is interpreted as a fraction `p / 100000000.0`. The rate is charged from undelegated staking balance as a fraction of the filled notional, converted to HYPE using the spot mark price. On mainnet, priority grouping is only supported for order actions where every order is IOC and on a non-outcome asset. The max priority rate is 8bps, i.e. `p = 80000`. Under order priority, all cancels are prioritized before all immediately executable orders. However, higher priority orders are prioritized before lower priority orders as a linear function of priority rate.&#x20;
 
 Although blocks are discrete, order prioritization is continuous with respect to order write priority fee. The mempool transactions are effectively sorted by `effective_time = arrival_time + f(action, priority_fee)` where `f` is a strictly decreasing function of priority fee, and zero for prioritized actions such as cancels. For a given action type, boundaries between blocks are not relevant for relative prioritization, as the transactions within a block are still sorted according to `effective_time` .
 
@@ -31,3 +31,7 @@ Order priority applies only to sending data. For prioritization of reading data,
 Priority fee paid can be read from the `user_fills` file written by the nodes as field `priorityGas` .
 
 The current empirical effect of order priority fees on mainnet is approximately 45 ms reduction in end-to-end latency per 1 bp of priority fee paid.
+
+#### ALO priority (testnet only)
+
+Actions where every order is ALO and non-reduce-only also support the same priority grouping format as above. On the timescale of `T = 400ms`, ALO orders will be sorted by priority. More precisely, the tail of the queue at each level consisting of orders placed within the past `T` will be sorted in decreasing order of priority rate. As a consequence, any slot in the queue is eligible for priority fee bidding for a window of duration `T`.  ALO priority fees are deducted at time of placing the order regardless of whether the order fills.&#x20;
