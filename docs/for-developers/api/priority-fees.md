@@ -35,3 +35,7 @@ The current empirical effect of order priority fees on mainnet is approximately 
 #### ALO priority (testnet only)
 
 Actions where every order is ALO and non-reduce-only also support the same priority grouping format as above. On the timescale of `T = 400ms`, ALO orders will be sorted by priority. More precisely, the tail of the queue at each level consisting of orders placed within the past `T` will be sorted in decreasing order of priority rate. As a consequence, any slot in the queue is eligible for priority fee bidding for a window of duration `T`.  ALO priority fees are deducted at time of placing the order regardless of whether the order fills.&#x20;
+
+Unlike for IOC orders, ALO priority fees do not effect mempool prioritization. ALO orders are processed FIFO as transactions, but the priority fee implementation affects place in queue across transactions.&#x20;
+
+A concrete example: a new level `L` opens and is empty at time `t`. The first order  `A`  at level `L` is applied onchain at time `t' > t` with zero priority fee. The next order `B` is applied onchain at time `t' + T - 1ms` with priority `p > 0`. Assuming `A` and `B` are the only orders at level `L`, the ordering at time `t' + T` will have `B` in front of `A`. A third order `C` is applied at time `t' + T + 1ms` with priority `p' > p`. The ordering at time `t' + T + 1ms` is `B > A > C` . Even though `C` has higher priority, `B` has already locked in its place in queue after 400ms.
