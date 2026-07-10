@@ -141,14 +141,14 @@
     "for-developers/api/optimizing-latency.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/optimizing-latency",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/optimizing-latency.md",
-      "hash": "06d473ed3b622bb90f884e4be3deecee0b1d70b4ab5a7c2fd78f3699643fdb8d",
-      "last_updated": "2026-07-03T14:23:01.150409"
+      "hash": "e0d1e1194cd286d52bd63b76cbefcfd8d86d2e21a60cccd1573c3c2872132404",
+      "last_updated": "2026-07-10T17:02:31.173223"
     },
     "for-developers/api/priority-fees.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees.md",
-      "hash": "68a8d8836ad04c7e6f9a5f872f58777d2708659e16aea55bccb7fd1129c607a1",
-      "last_updated": "2026-07-10T09:46:35.815251"
+      "hash": "210894bfea71572cede657a6ef4a167d0be0aa698ca6c168f406c89fbbff8d20",
+      "last_updated": "2026-07-10T17:02:31.957830"
     },
     "for-developers/api/rate-limits-and-user-limits.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/rate-limits-and-user-limits",
@@ -872,14 +872,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-07-10T14:43:32.473811",
-    "duration_seconds": 121.850255,
+    "completed_at": "2026-07-10T17:04:14.333063",
+    "duration_seconds": 126.016384,
     "pages_discovered": 145,
     "pages_fetched": 145,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-07-10T14:43:32.473833",
+  "last_updated": "2026-07-10T17:04:14.333085",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
