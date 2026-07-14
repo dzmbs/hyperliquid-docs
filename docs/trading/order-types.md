@@ -6,6 +6,7 @@
 
 * Market: An order that executes immediately at the current market price
 * Limit: An order that executes at the selected limit price or better
+* Chase: A Post Only (ALO) limit order that automatically re-prices to track the best bid or ask until it is filled or terminated. The order rests one tick above the best bid (for buys) or one tick below the best ask (for sells), or at the best bid/ask when the spread is a single tick. Chase orders run in the browser tab where they are created, and up to 5 can be active at once.
 * Stop Market: A market order that is activated when the price reaches the selected trigger price. For long orders, the trigger price needs to be higher than the mid price. For short orders, the trigger price needs to be lower than the mid price
 * Stop Limit: A limit order that is activated when the price reaches the selected trigger price
 * Take Market:  A market order that is activated when the price reaches the selected trigger price. For long orders, the trigger price needs to be lower than the mid price. For short orders, the trigger price needs to be higher than the mid price

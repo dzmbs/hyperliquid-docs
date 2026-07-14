@@ -654,6 +654,12 @@
       "hash": "2393ff6f90a79c155c649e703354f7f04a22e48379da937b9de2d8cfb358eac3",
       "last_updated": "2026-07-03T14:24:10.936794"
     },
+    "support/faq/trade-outcome-looks-incorrect/why-was-my-chase-order-canceled.md": {
+      "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/why-was-my-chase-order-canceled",
+      "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/why-was-my-chase-order-canceled.md",
+      "hash": "5e9cef56ca3c085063bd17913639f72bcbc6485916e9040d78554901a0ba9c46",
+      "last_updated": "2026-07-14T14:00:33.109027"
+    },
     "support/faq/unstaking-and-link-staking-issues.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/unstaking-and-link-staking-issues",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/unstaking-and-link-staking-issues.md",
@@ -801,8 +807,8 @@
     "trading/order-types.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/order-types",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/order-types.md",
-      "hash": "cb24a7e86c92876be1ba43f593b6d807af69d2870d61c891b2d7fe30870d3281",
-      "last_updated": "2026-07-03T14:24:27.520878"
+      "hash": "246611008291ec1eff8d6d52142dc9499a5ea356ad1a9e762ae30fc5c961e5db",
+      "last_updated": "2026-07-14T14:00:53.964263"
     },
     "trading/perpetual-assets.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/perpetual-assets",
@@ -872,14 +878,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-07-14T10:53:00.175824",
-    "duration_seconds": 85.599276,
-    "pages_discovered": 145,
-    "pages_fetched": 145,
+    "completed_at": "2026-07-14T14:01:03.596102",
+    "duration_seconds": 131.033309,
+    "pages_discovered": 146,
+    "pages_fetched": 146,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-07-14T10:53:00.175849",
+  "last_updated": "2026-07-14T14:01:03.596121",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
