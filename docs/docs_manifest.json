@@ -573,8 +573,8 @@
     "support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-solana-network.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-solana-network",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-solana-network.md",
-      "hash": "7f5c0ce0f54f82a7aeb2e7605743332a79e72d399e6f7ac2f8c0ad4299a1fb59",
-      "last_updated": "2026-07-03T14:24:01.456433"
+      "hash": "81adf07567d99444cc4dee1a6d7f4a5bd0905c50328fe01819dd4735dccb2c7b",
+      "last_updated": "2026-07-15T10:57:07.058044"
     },
     "support/faq/deposit-or-transfer-issues-missing-lost/transfer-or-deposit-to-usdc-perps-missing.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/transfer-or-deposit-to-usdc-perps-missing",
@@ -878,14 +878,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-07-15T08:26:17.333940",
-    "duration_seconds": 121.613472,
+    "completed_at": "2026-07-15T10:57:48.767242",
+    "duration_seconds": 123.867157,
     "pages_discovered": 146,
     "pages_fetched": 146,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-07-15T08:26:17.333964",
+  "last_updated": "2026-07-15T10:57:48.767274",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
