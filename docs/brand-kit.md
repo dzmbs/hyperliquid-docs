@@ -2,11 +2,9 @@
 
 # Brand kit
 
-{% file src="/files/T8NeIiN5pb727AmbFfAu" %}
+{% file src="/files/EzOFmeeKBXC7Xsjn6Zwq" %}
 
-{% file src="/files/T0FDh3K3AlAAmMMZTwrQ" %}
-
-{% file src="/files/fdqkV3HguYG0A47dGZSL" %}
+{% file src="/files/JoOZWbKnL5qEc3ZMHFQo" %}
 
 {% file src="/files/WXEVWQzUEBzsLA9cPPF8" %}
 

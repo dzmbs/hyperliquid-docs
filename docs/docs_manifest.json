@@ -27,8 +27,8 @@
     "brand-kit.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/brand-kit",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/brand-kit.md",
-      "hash": "7ad925511af8382e5aea7e67292083a9846ed12cd885295644edc16ec4aa4e5e",
-      "last_updated": "2026-07-03T14:22:47.285456"
+      "hash": "710172148da865bbb1517c4981b2b293cf56c09d248dfd1d5f0ff79a70c27e4b",
+      "last_updated": "2026-07-15T08:24:22.812068"
     },
     "bug-bounty-program.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/bug-bounty-program",
@@ -878,14 +878,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-07-15T05:38:48.432019",
-    "duration_seconds": 84.614129,
+    "completed_at": "2026-07-15T08:26:17.333940",
+    "duration_seconds": 121.613472,
     "pages_discovered": 146,
     "pages_fetched": 146,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-07-15T05:38:48.432045",
+  "last_updated": "2026-07-15T08:26:17.333964",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
