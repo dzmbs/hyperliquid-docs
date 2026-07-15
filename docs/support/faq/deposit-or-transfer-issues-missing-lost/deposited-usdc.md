@@ -1,0 +1,15 @@
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-usdc.md).
+
+# Deposited USDC
+
+### Connected via an email account
+
+Supports USDC deposits via Arbitrum, Base, Ethereum, and Polygon. If you sent a different asset, or sent USDC on any other network, it will not be credited. The USDC deposit flow is managed by Across Protocol, you can access your transfer history [here](https://across.to/transfers)
+
+* Wrong deposit: If you deposited anything other than USDC on supported networks to the Across deposit address, your funds are automatically redirected to your Privy wallet within 10 minutes.
+* Deposited below 5 USDC: Your funds will not be credited, and are automatically redirected to your Privy wallet. Deposits below 1 USDC are lost.
+* For both cases, you can retrieve the funds from your Privy wallet by following the steps here: <https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/export-your-email-wallet>
+
+### Connected via a wallet
+
+Supports USDC deposits via Arbitrum only. Deposits below 5 USDC are lost.

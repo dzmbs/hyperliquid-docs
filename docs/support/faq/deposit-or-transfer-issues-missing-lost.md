@@ -3,7 +3,7 @@
 # Deposit or transfer issues (missing / lost)
 
 {% content-ref url="/pages/ZD2l4FZVBoGO5OYdD93z" %}
-[Deposited via Arbitrum network (USDC)](/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-arbitrum-network-usdc.md)
+[Deposited USDC](/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-usdc.md)
 {% endcontent-ref %}
 
 {% content-ref url="/pages/4qkCsASxUrY4vLcLv7mC" %}

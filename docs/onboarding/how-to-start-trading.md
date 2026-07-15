@@ -29,13 +29,15 @@ There are many different interfaces and apps you can use, including
 If you choose to log in to app.hyperliquid.xyz with email:&#x20;
 
 1. Click the "Connect" button and enter your email address. After you press "Submit," within a few seconds, a 6 digit code will be sent to your email. Type in the 6 digit code to login.&#x20;
-2. Now you're connected. All that's left is to deposit. A new blockchain address is created for your email address. You can send USDC over Arbitrum, BTC on Bitcoin, ETH/ENA on Ethereum, SOL/2Z/BONK/FARTCOIN/PUMP/SPX on Solana, MON on Monad, or XPL on Plasma. It’s easy to do from a centralized exchange or another defi wallet.&#x20;
+2. Now you're connected. All that's left is to deposit. Click Deposit to open the deposit window:
+   1. You can send USDC on Arbitrum/Ethereum/Base/Polygon to the deposit address shown (or scan the QR code) from a centralized exchange or another defi wallet. Your deposit arrives as USDC on HyperCore.&#x20;
+   2. You can also send BTC on Bitcoin, ETH/ENA on Ethereum, SOL/2Z/ANSEM/BONK/FARTCOIN/PUMP/SPX on Solana, MON on Monad, XPL on Plasma, AVAX on Avalanche, or ZEC on Zcash.
 
 If you choose to connect to app.hyperliquid.xyz with a defi wallet:&#x20;
 
 1. Click the “Connect” button and choose a wallet to connect. A pop-up will appear in your wallet extension asking you to connect to Hyperliquid. Press “Connect.”
 2. Click the “Enable Trading” button. A pop-up will appear in your wallet extension asking you to sign a gas-less transaction. Press "Sign." &#x20;
-3. Deposit to Hyperliquid, choosing from USDC on Arbitrum, BTC on Bitcoin, ETH/ENA on Ethereum, SOL/2Z/BONK/FARTCOIN/PUMP/SPX on Solana, MON on Monad, or XPL on Plasma.
+3. Deposit to Hyperliquid, choosing from USDC on Arbitrum, BTC on Bitcoin, ETH/ENA on Ethereum, SOL/2Z/ANSEM/BONK/FARTCOIN/PUMP/SPX on Solana, MON on Monad, XPL on Plasma, AVAX on Avalanche, or ZEC on Zcash.
    1. For USDC: enter the amount you want to deposit and click “Deposit.” Confirm the transaction in your EVM wallet.&#x20;
    2. For the others: send the spot asset to the destination address shown. Note that you will have to sell this asset for USDC, USDT, or whichever quote asset is used for the assets you're interested in trading.&#x20;
 4. You're now ready to trade.

@@ -435,8 +435,8 @@
     "onboarding/how-to-start-trading.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/how-to-start-trading",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/how-to-start-trading.md",
-      "hash": "67da23da94df4389d375aea727594bdcf9980c3d141772c02e7d20776b2d20d0",
-      "last_updated": "2026-07-03T14:23:43.808595"
+      "hash": "7b44e61d82d547e35cdad781af930a8d8d99a11fbb13030979e2deaf32b29761",
+      "last_updated": "2026-07-15T13:56:34.898236"
     },
     "onboarding/how-to-use-the-hyperevm.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/how-to-use-the-hyperevm",
@@ -519,8 +519,8 @@
     "support/faq/deposit-or-transfer-issues-missing-lost.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost.md",
-      "hash": "4d8ab8733009964107653ce7edfab98eceb511e81ef083692cbfaad0e8bd153b",
-      "last_updated": "2026-07-03T14:23:55.507875"
+      "hash": "f9ca467ce70da147795338857645d46a9036403b92c1e73e6b153946db5fc162",
+      "last_updated": "2026-07-15T13:56:46.903037"
     },
     "support/faq/deposit-or-transfer-issues-missing-lost/deposited-fiat.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-fiat",
@@ -528,11 +528,11 @@
       "hash": "ffb20ba3af3b3264d0f50768634c4918561b045d09966d952de0930a36331c43",
       "last_updated": "2026-07-03T14:23:56.174793"
     },
-    "support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-arbitrum-network-usdc.md": {
-      "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-arbitrum-network-usdc",
-      "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-arbitrum-network-usdc.md",
-      "hash": "7e881b7805c16c3100584c99c4e572f85ae60f64b7bea18f2dfedfd6d78352c5",
-      "last_updated": "2026-07-03T14:23:56.835492"
+    "support/faq/deposit-or-transfer-issues-missing-lost/deposited-usdc.md": {
+      "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-usdc",
+      "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-usdc.md",
+      "hash": "567d8fb451047b7a4253672888161cb8e47e2506a2fb57c196de99a21de768fa",
+      "last_updated": "2026-07-15T13:56:48.450901"
     },
     "support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-avalanche-network.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-avalanche-network",
@@ -878,14 +878,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-07-15T10:57:48.767242",
-    "duration_seconds": 123.867157,
+    "completed_at": "2026-07-15T13:57:36.986946",
+    "duration_seconds": 128.86441,
     "pages_discovered": 146,
     "pages_fetched": 146,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-07-15T10:57:48.767274",
+  "last_updated": "2026-07-15T13:57:36.986967",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
