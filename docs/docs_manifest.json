@@ -147,8 +147,8 @@
     "for-developers/api/priority-fees.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees.md",
-      "hash": "e4c1ae2cdffe392a781d113b8c81ad936a2cd442968b6125789e7b7d8d27516f",
-      "last_updated": "2026-07-12T08:26:09.929533"
+      "hash": "3e548f446b74cf9eb9cd24377fe022c80b37372fcf045b251cef980d10652cc4",
+      "last_updated": "2026-07-18T08:01:53.382620"
     },
     "for-developers/api/rate-limits-and-user-limits.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/rate-limits-and-user-limits",
@@ -213,8 +213,8 @@
     "for-developers/hyperevm/interacting-with-hypercore.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore.md",
-      "hash": "6ff527deb41334b7544bf7dd06e78fa6532e5f4bfca33d66ede9deefab06903f",
-      "last_updated": "2026-07-03T14:23:09.998366"
+      "hash": "8c26e9815ef15a57c1f7f3d044fab193a6e5a9ef54c938ee48170e9800ebbc2f",
+      "last_updated": "2026-07-18T08:02:01.198251"
     },
     "for-developers/hyperevm/interaction-timings.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interaction-timings",
@@ -878,14 +878,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-07-18T05:34:48.290962",
-    "duration_seconds": 89.090887,
+    "completed_at": "2026-07-18T08:03:25.925926",
+    "duration_seconds": 117.344435,
     "pages_discovered": 146,
     "pages_fetched": 146,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-07-18T05:34:48.290988",
+  "last_updated": "2026-07-18T08:03:25.925952",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
