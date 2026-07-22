@@ -35,6 +35,7 @@
 * DeBridge: <https://docs.debridge.com/dmp-details/dmp/deployed-contracts>
 * LayerZero: <https://docs.layerzero.network/v2/deployments/deployed-contracts?chains=hyperliquid>
 * Reactive: <https://dev.reactive.network/origins-and-destinations>
+* Wormhole: <https://wormhole.com/docs/products/token-transfers/native-token-transfers/guides/deploy-to-hyperliquid/>
 
 ### DEX aggregator
 
