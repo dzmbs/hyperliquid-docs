@@ -531,8 +531,8 @@
     "support/faq/deposit-or-transfer-issues-missing-lost/deposited-usdc.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-usdc",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-usdc.md",
-      "hash": "9a8fcc2c5b107094f0f548668a244e3aa35d4403debdff6c0502a158141fbd11",
-      "last_updated": "2026-07-16T08:24:46.905519"
+      "hash": "afb3df7c790bf86bc8cfdd4233d1002185e4cc65077b12766a3491559c0c5093",
+      "last_updated": "2026-07-25T10:38:44.036674"
     },
     "support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-avalanche-network.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-via-avalanche-network",
@@ -807,8 +807,8 @@
     "trading/order-types.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/order-types",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/order-types.md",
-      "hash": "246611008291ec1eff8d6d52142dc9499a5ea356ad1a9e762ae30fc5c961e5db",
-      "last_updated": "2026-07-14T14:00:53.964263"
+      "hash": "131f0de65204fb809ecd6aa773ef8db87daeb07cb02341b20aba61b92ad9a9d3",
+      "last_updated": "2026-07-25T10:39:08.800899"
     },
     "trading/perpetual-assets.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/perpetual-assets",
@@ -878,14 +878,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-07-25T08:16:36.863345",
-    "duration_seconds": 85.348469,
+    "completed_at": "2026-07-25T10:39:14.762287",
+    "duration_seconds": 80.748855,
     "pages_discovered": 146,
     "pages_fetched": 146,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-07-25T08:16:36.863366",
+  "last_updated": "2026-07-25T10:39:14.762308",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
