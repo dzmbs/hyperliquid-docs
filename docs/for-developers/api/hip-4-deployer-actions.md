@@ -29,7 +29,7 @@ The following actions are involved in deployment:
 { "type": "activateOutcomeDeployer", "isDeactivate": <boolean> }
 ```
 
-* **Staking requirement**: active deployers must maintain the staking requirement (100 HYPE on testnet) for as long as it remains an outcome deployer. Requirements stack with the deployer's other staking requirements (e.g., HIP-3 DEX, quote token).
+* **Staking requirement**: active deployers must maintain the staking requirement for as long as it remains an outcome deployer. Requirements stack with the deployer's other staking requirements. For example, stake that counts towards HIP-3 deployment does not double-count towards outcome deployment.
 * Deployers must use Standard account abstraction.
 
 Deactivate with `"isDeactivate": true`. Deactivation requires that the minimum deployer staking duration (183 days, restarted on re-activation) has elapsed and that the deployer has no active outcomes.
