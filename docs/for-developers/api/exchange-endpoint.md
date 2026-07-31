@@ -974,6 +974,8 @@ Approve a maximum fee rate for a builder.
 
 Instead of trading to increase the address based rate limits, this action allows reserving additional actions for 0.0005 USDC per request. The cost is paid from the Perps balance.&#x20;
 
+`destination` may be set to pay for another L1 user. The destination user must already exist. This field is skipped in hashing if it is unset.
+
 #### Headers
 
 | Name                                           | Type   | Description        |
@@ -982,12 +984,12 @@ Instead of trading to increase the address based rate limits, this action allows
 
 #### Request Body
 
-| Name                                        | Type   | Description                                                                        |
-| ------------------------------------------- | ------ | ---------------------------------------------------------------------------------- |
-| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "reserveRequestWeight",</p><p>   "weight": Number</p><p>}</p> |
-| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                           |
-| signature<mark style="color:red;">\*</mark> | Object |                                                                                    |
-| expiresAfter                                | Number | Timestamp in milliseconds                                                          |
+| Name                                        | Type   | Description                                                                                             |                  |
+| ------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------- | ---------------- |
+| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "reserveRequestWeight",</p><p>   "weight": Number,</p><p>   "destination": Address | null</p><p>}</p> |
+| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                                |                  |
+| signature<mark style="color:red;">\*</mark> | Object |                                                                                                         |                  |
+| expiresAfter                                | Number | Timestamp in milliseconds                                                                               |                  |
 
 {% tabs %}
 {% tab title="200: OK Successful Response" %}

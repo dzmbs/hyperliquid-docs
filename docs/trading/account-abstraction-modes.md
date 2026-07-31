@@ -10,9 +10,9 @@ The supported modes are:
 2. Portfolio margin (most capital efficient): single portfolio unifying all eligible assets, which are currently HYPE, BTC, USDC, USDT. See [Portfolio margin](/hyperliquid-docs/trading/portfolio-margin.md) for more details.&#x20;
 3. Manual / Standard (recommended for market makers, high volume automated users, and deployers/builders): separate perp and spot balances, separate DEX balances. Cross margin applies to each DEX separately.&#x20;
 
-There is one more mode that is not relevant to most users, included here for completeness:
+There is one more mode that was discontinued, included here for completeness:
 
-4. DEX abstraction (to be discontinued): USDC balances default to perps balance, all other collateral defaults to spot balance. IMPORTANT: Cross margin on HIP-3 DEXs does not behave intuitively for DEX abstraction users. Interfaces should deprecate DEX abstraction support going forward.
+4. DEX abstraction (discontinued): USDC balances default to perps balance, all other collateral defaults to spot balance. IMPORTANT: Cross margin on HIP-3 DEXs does not behave intuitively for DEX abstraction users.&#x20;
 
 Important details:
 
