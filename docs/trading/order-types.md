@@ -12,14 +12,19 @@
 * Take Market:  A market order that is activated when the price reaches the selected trigger price. For long orders, the trigger price needs to be lower than the mid price. For short orders, the trigger price needs to be higher than the mid price
 * Take Limit: A limit order that is activated when the price reaches the selected trigger price
 * Scale: Multiple limit orders in a set price range &#x20;
-* TWAP: A large order divided into smaller suborders and executed in 30 second intervals. TWAP suborders have a maximum slippage of 3%&#x20;
+* TWAP: A large order divided into smaller suborders and executed at regular intervals, based on order size and running time inputs. Intervals are a minimum of 30 seconds. TWAP suborders have a maximum slippage of 3%
   * Randomize: If enabled, the size of each sub-order will be adjusted randomly up to ±20% of the original trade size
   * Trigger Price: The TWAP order will be activated when the mark price reaches the trigger price set
   * Max/Min Price: The TWAP order will be terminated when the mark price reaches the stop price set
 
 ### TWAP details:&#x20;
 
-During execution, a TWAP order attempts to meet an execution target which is defined as the elapsed time divided by the total time times the total size. A suborder is sent every 30 seconds during the course of the TWAP.&#x20;
+During execution, a TWAP order attempts to meet an execution target which is defined as the elapsed time divided by the total time times the total size. Suborders are sent at a fixed interval, calculated from the total size and running time inputs. Larger orders over shorter durations are split into suborders sent as often as every 30 seconds; smaller orders over longer durations are split into suborders spaced further apart. Running time can be set from 5 minutes to 7 days, with a $100 minimum total order size.\
+\
+Example:
+
+* A $10,000 order over 1 hour is split into \~121 suborders of \~$83, sent every 30 seconds
+* A $10,000 order over 4 days is split into \~1,000 suborders of \~$10, sent roughly every 6 minutes
 
 A suborder is constrained to have a max slippage of 3%. When suborders do not fully fill because of market conditions (e.g., wide spread, low liquidity, etc.), the TWAP may fall behind its execution target. In this case, the TWAP will try to catch up to this execution target during later suborders. These later suborders will be larger but subject to the constraint of 3 times the normal suborder size (defined as total TWAP size divided by number of suborders). It is possible that if too many suborders did not fill then the TWAP order may not fully catch up to the total size by the end. Like normal market orders, TWAP suborders do not fill during the post-only period of a network upgrade.
 

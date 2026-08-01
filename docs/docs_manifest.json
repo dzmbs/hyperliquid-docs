@@ -813,8 +813,8 @@
     "trading/order-types.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/order-types",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/order-types.md",
-      "hash": "131f0de65204fb809ecd6aa773ef8db87daeb07cb02341b20aba61b92ad9a9d3",
-      "last_updated": "2026-07-25T10:39:08.800899"
+      "hash": "d5873371283dc9ed3c3ff731bbd660014b71708b46913301a625acd0277f6a63",
+      "last_updated": "2026-08-01T10:45:38.935859"
     },
     "trading/perpetual-assets.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/perpetual-assets",
@@ -884,14 +884,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-08-01T08:29:52.051017",
-    "duration_seconds": 80.369491,
+    "completed_at": "2026-08-01T10:45:48.224896",
+    "duration_seconds": 133.547132,
     "pages_discovered": 147,
     "pages_fetched": 147,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-08-01T08:29:52.051042",
+  "last_updated": "2026-08-01T10:45:48.224919",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
