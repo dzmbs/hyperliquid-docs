@@ -80,7 +80,7 @@ type PerpDeployAction =
  * Currently, 7 reserve deployments are allowed. 
  * IMPORTANT: A reserve deployment will be used regardless of whether the auction has completed, so deployers should query the auction status first.
  * @param assetRequest - Contains new asset listing parameters. See RegisterAssetRequest2 below for details.
- * @param dex - Name of the perp dex (2-4 characters)
+ * @param dex - Name of the perp dex (2-4 lowercase characters)
  * @param schema - Contains new perp dex parameters. See PerpDexSchemaInput below for details.
  */
 type RegisterAsset2 = {
@@ -131,7 +131,7 @@ type RegisterAssetRequest {
  * All prices are clamped to 10x the start of day value.
  * markPx moves are clamped to 1% from previous markPx.
  * markPx cannot be updated such that open interest would be 10x the open interest cap.
- * @param dex - Name of the perp dex (<= 6 characters)
+ * @param dex - Name of the perp dex
  * @param oraclePxs - A list (sorted by key) of asset and oracle prices.
  * @param markPxs - An outer list of inner lists (inner list sorted by key) of asset and mark prices.
  * @param externalPerpPxs - A list (sorted by key) of asset and external prices which prevent sudden mark price deviations. 
