@@ -13,12 +13,11 @@ Deploying has no gas cost. Capacity is instead bounded by per-deployer limits (s
 The following actions are involved in deployment:
 
 ```json
-{ "type": "activateOutcomeDeployer", "venueNameIfActivate": "aa" }
+{ "type": "activateOutcomeDeployer", "isDeactivate": false }
 { "type": "spotDeploy", "outcome": { "<variant>": { ...variant fields... } } }
 ```
 
-* Outcomes and questions are referenced by the numeric index assigned at creation, e.g. `"outcome": 7`.
-* Venue name follow same rule as HIP-3 dex name: 2-4 lowercase characters. This cannot be changed after creation and must be unique.
+* Outcomes and questions are referenced by the numeric index assigned at creation (from the outcome metadata feed), e.g. `"outcome": 7`.
 * As with HIP-3, all lists of tuples should be lexographically sorted before signing
 * `keywordToValue` is a sorted list of tuples mapping each template keyword to its value. For example, `[["expiry","20260801-0600"],["target","100"],["underlying","ABC"]]`.
 * Name-and-description values are two-element arrays: `["<name>", "<description>"]`.
@@ -175,7 +174,7 @@ Settles all remaining named outcomes of a question in one action. Note: The orig
 
 ### Read API
 
-* `{"type": "outcomeMeta"}` info request includes outcome deployer information.
+* `{"type": "outcomeMeta"}` info request includes non-null outcome deployers.
 * `{"type": "outcomeTemplates"}` info request returns all templates.
 
 ### Limits
