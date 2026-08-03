@@ -13,11 +13,13 @@ Deploying has no gas cost. Capacity is instead bounded by per-deployer limits (s
 The following actions are involved in deployment:
 
 ```json
-{ "type": "activateOutcomeDeployer", "isDeactivate": false }
+{ "type": "activateOutcomeDeployer", "activate": { "venueName": <venue> } }
+{ "type": "activateOutcomeDeployer", "deactivate": null }
 { "type": "spotDeploy", "outcome": { "<variant>": { ...variant fields... } } }
 ```
 
-* Outcomes and questions are referenced by the numeric index assigned at creation (from the outcome metadata feed), e.g. `"outcome": 7`.
+* Outcomes and questions are referenced by the numeric index assigned at creation, e.g. `"outcome": 7`.
+* **Venue name**: 2–4 lowercase ASCII letters, subject to the same rules as HIP-3 perp DEX names. The name must be unique across the venue names of all deployers — including deactivated ones, whose names stay reserved — and must not match an existing perp DEX name (nor `spot`). Conversely, a registered venue name cannot be claimed by a later perp DEX deployment.
 * As with HIP-3, all lists of tuples should be lexographically sorted before signing
 * `keywordToValue` is a sorted list of tuples mapping each template keyword to its value. For example, `[["expiry","20260801-0600"],["target","100"],["underlying","ABC"]]`.
 * Name-and-description values are two-element arrays: `["<name>", "<description>"]`.
@@ -47,12 +49,14 @@ A template fixes display name and description text containing `{keyword}` placeh
 
 Keyword value formats by hint type:
 
-| Hint       | Value format                                                             |
-| ---------- | ------------------------------------------------------------------------ |
-| `dateTime` | `%Y%m%d-%H%M`, e.g. `"20260712-1830"`; must be within the next year      |
-| `date`     | `YYYYMMDD`, e.g. `"20260712"` (end of day); must be within the next year |
-| `string`   | free text                                                                |
-| `hlPerp`   | coin name of an existing perp, e.g. `"ABC"` or `"test:ABC"`              |
+| Hint       | Value format                                                                                |
+| ---------- | ------------------------------------------------------------------------------------------- |
+| `dateTime` | `%Y%m%d-%H%M`, e.g. `"20260712-1830"`; must be within the next year                         |
+| `date`     | `YYYYMMDD`, e.g. `"20260712"` (end of day); must be within the next year                    |
+| `string`   | free text                                                                                   |
+| `hlPerp`   | coin name of an existing perp, e.g. `"ABC"` or `"test:ABC"`                                 |
+| `uInt`     | nonnegative integer that fits in a u64, e.g. `"250"` (no sign or leading zeros)             |
+| `uDecimal` | nonnegative decimal, e.g. `"0.5"` or `"250"` (no sign, exponent, or leading/trailing zeros) |
 
 Values are at most 100 characters and cannot contain `{`, `}`, or `|` (`:` is allowed, e.g. for HIP-3 coin names).
 
