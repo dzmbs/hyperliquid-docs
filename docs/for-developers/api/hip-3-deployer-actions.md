@@ -73,7 +73,7 @@ type PerpDeployAction =
  * @param maxGas - Max gas in native token wei. If not provided, then uses current deploy auction price.
  * If the max gas is 0, then a reserve deployment will be used.
  * A reserve deployment allows deployment at the current price of the gas auction, even if it has ended.
- * Currently, 7 reserve deployments are allowed.
+ * Currently, 7 + 0.2 * n_auction_deployments reserve deployments are allowed.
  * IMPORTANT: A reserve deployment will be used regardless of whether the auction has completed, so deployers should query the auction status first.
  * @param assetRequest - Contains new asset listing parameters. See RegisterAssetRequest2 below for details.
  * @param dex - Name of the perp dex (2-4 lowercase characters)
