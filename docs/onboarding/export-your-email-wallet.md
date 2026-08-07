@@ -2,7 +2,7 @@
 
 # Export your email wallet
 
-As a reminder, the Hyperliquid bridge contract only accepts Arbitrum USDC sent over Arbitrum. If you accidentally send the wrong asset to your defi wallet:&#x20;
+If you accidentally send an unsupported asset to your defi wallet:&#x20;
 
 1. Make sure you are logged in with the same email address
 2. Click "Export Email Wallet" in the settings dropdown in the navigation bar

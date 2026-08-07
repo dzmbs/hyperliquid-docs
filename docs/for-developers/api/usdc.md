@@ -1,18 +1,22 @@
-> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/bridge2.md).
+> For the complete documentation index, see [llms.txt](https://hyperliquid.gitbook.io/hyperliquid-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/usdc.md).
 
-# Bridge2
+# USDC
 
-### General Information
+CCTP is the preferred method for minting USDC natively on the Hyperliquid L1. See <https://github.com/circlefin/hyperevm-circle-contracts> for Circle's published contracts and flows.
 
-The bridge between Hyperliquid and Arbitrum: <https://arbiscan.io/address/0x2df1c51e09aecf9cacb7bc98cb1742757f163df7>
+### Legacy Bridge
 
-The bridge code: <https://github.com/hyperliquid-dex/contracts/blob/master/Bridge2.sol>
+CCTP supports more chains and functionality. The legacy bridge is deprecated.
 
-### Deposit
+Contract: <https://arbiscan.io/address/0x2df1c51e09aecf9cacb7bc98cb1742757f163df7>
+
+Source: <https://github.com/hyperliquid-dex/contracts/blob/master/Bridge2.sol>
+
+#### Deposit
 
 The deposit flow for the bridge is simple. The user sends native USDC to the bridge, and it is credited to the account that sent it in less than 1 minute. The minimum deposit amount is 5 USDC. If you send an amount less than this, it will not be credited and be lost forever.&#x20;
 
-### Withdraw
+#### Withdraw
 
 The withdrawal flow requires a user wallet signature on Hyperliquid only, and no Arbitrum transaction. The withdrawal from Arbitrum is handled entirely by validators, and the funds arrive in the user wallet in 3-4 minutes. This payload for signTypedData is
 
@@ -78,7 +82,7 @@ Example signed Hyperliquid action:
 }
 ```
 
-### Deposit with permit
+#### Deposit with permit
 
 The bridge supports depositing on behalf of another user via the `batchedDepositWithPermit`function. Example code for how the user can sign the PermitPayload
 

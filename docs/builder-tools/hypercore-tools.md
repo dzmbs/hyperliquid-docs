@@ -15,11 +15,6 @@
 * Laevitas: <https://app.laevitas.ch/exchanges/perpswaps/HYPERLIQUID/screener>
 * Velo: <https://velo.xyz/futures/>
 
-### Analytics - USDC Arbitrum bridge
-
-* Dune dashboards by community members: [Mogie](https://dune.com/mogie/hyperliquid-flows), [KamBenbrik](https://dune.com/kambenbrik/hyperliquid), [Hashed](https://dune.com/hashed_official/usdc-on-hyperliquid), and [X3Research](https://dune.com/x3research/hyperliquid)
-* Parsec: <https://parsec.fi/arb/address/0x2df1c51e09aecf9cacb7bc98cb1742757f163df7>
-
 ### APIs
 
 * API Docs: <https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api>
@@ -52,3 +47,7 @@
 * HyperSig (multisig): <https://www.hypersig.xyz/>
 * Komainu (custodian): <https://komainu.com/komainu-announces-institutional-grade-custody-and-staking-support-for-hyperliquid-hype/>
 * Tholos (MPC): <https://www.tholos.app/>&#x20;
+
+### Node peers
+
+* Hydromancer: <https://docs.hydromancer.xyz/peering>

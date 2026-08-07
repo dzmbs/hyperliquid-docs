@@ -2,7 +2,9 @@
 
 # Audits
 
-The Hyperliquid bridge contract has been audited by Zellic.
+The Hyperliquid legacy bridge contract has been audited by Zellic.&#x20;
+
+Circle's contracts are audited independently: <https://github.com/circlefin/hyperevm-circle-contracts>
 
 {% file src="/files/6HQImWlcAsjk8f6xJnEy" %}
 Final report
