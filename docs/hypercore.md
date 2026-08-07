@@ -3,7 +3,7 @@
 # HyperCore
 
 - [Overview](https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/overview.md)
-- [Bridge](https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/bridge.md)
+- [USDC](https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/usdc.md)
 - [API servers](https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/api-servers.md)
 - [Clearinghouse](https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/clearinghouse.md)
 - [Oracle](https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/oracle.md)
