@@ -2,13 +2,13 @@
 
 # HIP-4 deployer actions
 
-### Overview
+#### Overview
 
 To ensure markets are high quality and well-defined, validators vote on outcome templates, which HIP-4 deployers use as the basis for permissionless deployments. Templates fix the structure of the specification's display text, side names, and the set of typed keywords.
 
 Deploying has no gas cost. Capacity is instead bounded by per-deployer limits (see Limits).
 
-### Action format
+#### Action format
 
 The following actions are involved in deployment:
 
@@ -26,7 +26,7 @@ The following actions are involved in deployment:
 * `sideNames` arrays are `["<YES side name>", "<NO side name>"]`.
 * Amounts and settlement fractions are decimal strings (`"1"`, `"0.25"`).
 
-### Activation
+#### Activation
 
 ```json
 { "type": "activateOutcomeDeployer", "isDeactivate": <boolean> }
@@ -37,7 +37,7 @@ The following actions are involved in deployment:
 
 Deactivate with `"isDeactivate": true`. Deactivation requires that the minimum deployer staking duration (183 days, restarted on re-activation) has elapsed and that the deployer has no active outcomes.
 
-### Templates
+#### Templates
 
 Every deployer-created market comes from a template. A template has one of three roles:
 
@@ -67,11 +67,30 @@ The onchain outcome descriptions are derived from the instantiation:
 * **Side names**: for standalone outcomes, `template:` plus the template's side names (e.g. `template:Over` / `template:Under`); question named outcomes use the defaults `Yes` / `No`.
 * **Question fallback**: named `template fallback` with description `other` and side names `Yes` / `No`.
 
-### Action reference
+#### Deployer fee scale
 
-The `outcome` family of `spotDeploy` has four deployer variants.
+Template instances (`registerStandaloneOutcomeFromTemplate` and the `questionTemplateInstance` of `registerQuestionFromTemplate`) carry a required `deployerFeeScale`, a decimal string in `[0, 10]` (`Deployer fee scale cannot be negative or greater than 10.`).
 
-#### `registerStandaloneOutcomeFromTemplate`
+* Users trading the outcome's markets pay the base outcome trading fee rate times `scale + max(scale, 1)`: the deployer receives the `scale` component and the protocol the rest. With `"0"`, users pay the base rate and the deployer receives nothing. Maker rebates are never paid on outcome markets.
+* A question's scale applies uniformly to its fallback and every named outcome, including ones associated later; named outcome template instances carry no scale of their own.
+* Per-outcome scales are returned in the `outcomeMeta` info request.
+
+Examples, expressed as multiples of the user's base outcome trading fee rate:
+
+| `deployerFeeScale` | Total user fee | Deployer receives | Protocol receives |
+| ------------------ | -------------- | ----------------- | ----------------- |
+| `"1"`              | 2x             | 1x                | 1x                |
+| `"3"`              | 6x             | 3x                | 3x                |
+| `"10"`             | 20x            | 10x               | 10x               |
+| `"0.5"`            | 1.5x           | 0.5x              | 1x                |
+| `"0.25"`           | 1.25x          | 0.25x             | 1x                |
+| `"0"`              | 1x             | 0x                | 1x                |
+
+#### Action reference
+
+The `outcome` family of `spotDeploy` has five deployer variants.
+
+**`registerStandaloneOutcomeFromTemplate`**
 
 Deploys a standalone YES/NO market from a standalone outcome template.
 
@@ -85,13 +104,14 @@ Deploys a standalone YES/NO market from a standalone outcome template.
         "expiry": "20260801-0600",
         "target": "100",
         "underlying": "ABC"
-      }
+      },
+      "deployerFeeScale": "1"
     }
   }
 }
 ```
 
-#### `registerQuestionFromTemplate`
+**`registerQuestionFromTemplate`**
 
 Deploys a question and its named outcomes in one action.
 
@@ -102,7 +122,8 @@ Deploys a question and its named outcomes in one action.
     "registerQuestionFromTemplate": {
       "questionTemplateInstance": {
         "id": "abc",
-        "keywordToValue": { "expiry": "20260801-1830" }
+        "keywordToValue": { "expiry": "20260801-1830" },
+        "deployerFeeScale": "1"
       },
       "namedOutcomeTemplateInstances": [
         { "id": "abc-outcome", "keywordToValue": { "choice": "A" } },
@@ -116,9 +137,29 @@ Deploys a question and its named outcomes in one action.
 
 * Each named outcome template must declare the question template as its parent. The same named outcome template may be instantiated multiple times with different values.
 * A question with N named outcomes registers N + 1 outcomes (the fallback is created automatically). All count toward the deployer's active-outcome cap.
-* **The named outcome set is fixed at creation**. A future upgrade will support adding outcomes to a live question. Bounded to at most 100 named outcomes per question.
+* More named outcomes can be added to the live question with `registerAndAssociateNamedOutcomeFromTemplate`. Bounded to at most 100 named outcomes per question.
 
-#### `settleOutcome`
+**`registerAndAssociateNamedOutcomeFromTemplate`**
+
+Adds one named outcome to a live question of the deployer.
+
+```json
+{
+  "type": "spotDeploy",
+  "outcome": {
+    "registerAndAssociateNamedOutcomeFromTemplate": {
+      "question": 3,
+      "namedOutcomeTemplateInstance": { "id": "abc-outcome", "keywordToValue": { "choice": "C" } }
+    }
+  }
+}
+```
+
+* The question must have been deployed from a template, and the named outcome template must declare the question's template as its parent.
+* The new outcome inherits the question's `deployerFeeScale` and counts toward the deployer's active-outcome and daily caps.
+* Holders of the question's fallback YES token receive an equal balance of the new outcome's YES token, so existing "other" positions keep their meaning.
+
+**`settleOutcome`**
 
 Settles one outcome of the deployer.
 
@@ -142,7 +183,7 @@ Settles one outcome of the deployer.
 * `details` must be empty.
 * For question outcomes, settlement is sequential: named outcomes may settle to `"0"` in any order. A single outcome settles to `"1"` after it is the last active named outcome, which automatically settles the fallback to 0 and settles the question.
 
-#### `settleQuestion2`
+**`settleQuestion2`**
 
 Settles all remaining named outcomes of a question in one action. Note: The original `settleQuestion` variant is discontinued.
 
@@ -176,12 +217,12 @@ Settles all remaining named outcomes of a question in one action. Note: The orig
 
 * `outcomeSettlements` must cover exactly the question's remaining active named outcomes, with exactly one settling to `"1"` and all others to `"0"`. The fallback settles to 0 automatically.
 
-### Read API
+#### Read API
 
 * `{"type": "outcomeMeta"}` info request includes non-null outcome deployers.
 * `{"type": "outcomeTemplates"}` info request returns all templates.
 
-### Limits
+#### Limits
 
 * At most `N` active outcomes per deployer (N=10 on testnet). Settling outcomes frees capacity.
 * A deployer can deploy `M` outcomes per day (M=50 on testnet).
