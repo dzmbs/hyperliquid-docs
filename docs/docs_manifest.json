@@ -878,14 +878,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-08-12T21:53:56.289412",
-    "duration_seconds": 82.52811,
+    "completed_at": "2026-08-13T02:29:27.273901",
+    "duration_seconds": 119.130818,
     "pages_discovered": 146,
     "pages_fetched": 146,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-08-12T21:53:56.289436",
+  "last_updated": "2026-08-13T02:29:27.273927",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
