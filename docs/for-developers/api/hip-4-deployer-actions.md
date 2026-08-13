@@ -20,7 +20,7 @@ The following actions are involved in deployment:
 
 * Outcomes and questions are referenced by the numeric index assigned at creation, e.g. `"outcome": 7`.
 * **Venue name**: 2–4 lowercase ASCII letters, subject to the same rules as HIP-3 perp DEX names. The name must be unique across the venue names of all deployers — including deactivated ones, whose names stay reserved — and must not match an existing perp DEX name (nor `spot`). Conversely, a registered venue name cannot be claimed by a later perp DEX deployment.
-* As with HIP-3, all lists of tuples should be lexographically sorted before signing
+* As with HIP-3, all lists of tuples should be lexicographically sorted before signing
 * `keywordToValue` is a sorted list of tuples mapping each template keyword to its value. For example, `[["expiry","20260801-0600"],["target","100"],["underlying","ABC"]]`.
 * Name-and-description values are two-element arrays: `["<name>", "<description>"]`.
 * `sideNames` arrays are `["<YES side name>", "<NO side name>"]`.
@@ -104,11 +104,11 @@ Deploys a standalone YES/NO market from a standalone outcome template.
   "outcome": {
     "registerStandaloneOutcomeFromTemplate": {
       "id": "abc",
-      "keywordToValue": {
-        "expiry": "20260801-0600",
-        "target": "100",
-        "underlying": "ABC"
-      },
+      "keywordToValue": [
+        ["expiry", "20260801-0600"],
+        ["target", "100"],
+        ["underlying", "ABC"]
+      ],
       "deployerFeeScale": "1"
     }
   }
@@ -126,13 +126,13 @@ Deploys a question and its question outcomes in one action.
     "registerQuestionFromTemplate": {
       "questionTemplateInstance": {
         "id": "abc",
-        "keywordToValue": { "expiry": "20260801-1830" },
+        "keywordToValue": [["expiry", "20260801-1830"]],
         "deployerFeeScale": "1"
       },
       "namedOutcomeTemplateInstances": [
-        { "id": "abc-outcome", "keywordToValue": { "choice": "A" } },
-        { "id": "abc-outcome", "keywordToValue": { "choice": "B" } },
-        { "id": "abc-other", "keywordToValue": {} }
+        { "id": "abc-outcome", "keywordToValue": [["choice", "A"]] },
+        { "id": "abc-outcome", "keywordToValue": [["choice", "B"]] },
+        { "id": "abc-other", "keywordToValue": [] }
       ]
     }
   }
@@ -153,7 +153,7 @@ Adds one question outcome to a live question of the deployer.
   "outcome": {
     "registerAndAssociateNamedOutcomeFromTemplate": {
       "question": 3,
-      "namedOutcomeTemplateInstance": { "id": "abc-outcome", "keywordToValue": { "choice": "C" } }
+      "namedOutcomeTemplateInstance": { "id": "abc-outcome", "keywordToValue": [["choice", "C"]] }
     }
   }
 }
