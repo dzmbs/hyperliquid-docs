@@ -28,14 +28,17 @@ The following actions are involved in deployment:
 
 #### Activation
 
+`activateOutcomeDeployer` is an enum with `activate` and `deactivate` variants:
+
 ```json
-{ "type": "activateOutcomeDeployer", "isDeactivate": <boolean> }
+{ "type": "activateOutcomeDeployer", "activate": { "venueName": "ab" } }
+{ "type": "activateOutcomeDeployer", "deactivate": null }
 ```
 
 * **Staking requirement**: active deployers must maintain the staking requirement for as long as it remains an outcome deployer. Requirements stack with the deployer's other staking requirements. For example, stake that counts towards HIP-3 deployment does not double-count towards outcome deployment.
 * Deployers must use Standard account abstraction.
 
-Deactivate with `"isDeactivate": true`. Deactivation requires that the minimum deployer staking duration (183 days, restarted on re-activation) has elapsed and that the deployer has no active outcomes.
+Deactivation requires that the minimum deployer staking duration (183 days) has elapsed and that the deployer has no active outcomes. Deactivation is permanent: the account cannot activate again, and its venue name stays reserved.
 
 #### Templates
 
@@ -43,20 +46,21 @@ Every deployer-created market comes from a template. A template has one of three
 
 * **Standalone outcome**: deploys a single YES/NO market; the template fixes the side names.
 * **Question**: deploys a question (the container).
-* **Question outcome**: deploys one named outcome of a question; each question-outcome template declares its parent question template, and instantiations are only accepted under that parent.
+* **Question outcome**: deploys one outcome of a question; each question-outcome template declares its parent question template, and instantiations are only accepted under that parent.
 
 A template fixes display name and description text containing `{keyword}` placeholders (e.g., `"{underlying} above {target} at {expiry}"`) together with a typed `hint` per keyword. An instantiation supplies exactly one value per keyword.
 
 Keyword value formats by hint type:
 
-| Hint       | Value format                                                                                |
-| ---------- | ------------------------------------------------------------------------------------------- |
-| `dateTime` | `%Y%m%d-%H%M`, e.g. `"20260712-1830"`; must be within the next year                         |
-| `date`     | `YYYYMMDD`, e.g. `"20260712"` (end of day); must be within the next year                    |
-| `string`   | free text                                                                                   |
-| `hlPerp`   | coin name of an existing perp, e.g. `"ABC"` or `"test:ABC"`                                 |
-| `uInt`     | nonnegative integer that fits in a u64, e.g. `"250"` (no sign or leading zeros)             |
-| `uDecimal` | nonnegative decimal, e.g. `"0.5"` or `"250"` (no sign, exponent, or leading/trailing zeros) |
+| Hint          | Value format                                                                                |
+| ------------- | ------------------------------------------------------------------------------------------- |
+| `dateTime`    | `%Y%m%d-%H%M`, e.g. `"20260712-1830"`; must be within the next year                         |
+| `date`        | `YYYYMMDD`, e.g. `"20260712"` (end of day); must be within the next year                    |
+| `string`      | free text                                                                                   |
+| `shortString` | free text of at most 10 characters                                                          |
+| `hlPerp`      | coin name of an existing perp, e.g. `"ABC"` or `"test:ABC"`                                 |
+| `uInt`        | nonnegative integer that fits in a u64, e.g. `"250"` (no sign or leading zeros)             |
+| `uDecimal`    | nonnegative decimal, e.g. `"0.5"` or `"250"` (no sign, exponent, or leading/trailing zeros) |
 
 Values are at most 100 characters and cannot contain `{`, `}`, or `|` (`:` is allowed, e.g. for HIP-3 coin names).
 
@@ -64,7 +68,7 @@ The onchain outcome descriptions are derived from the instantiation:
 
 * **Name**: `template:<template_id>`, e.g. `template:aaa`. The `template:` prefix is reserved. Only template deployments can produce it.
 * **Description**: the keyword-value pairs sorted by keyword and joined as `keyword:value|keyword:value`, e.g. `expiry:20260801-0600|target:100|underlying:BTC`.
-* **Side names**: for standalone outcomes, `template:` plus the template's side names (e.g. `template:Over` / `template:Under`); question named outcomes use the defaults `Yes` / `No`.
+* **Side names**: for standalone outcomes, `template:` plus the template's side names (e.g. `template:Over` / `template:Under`); question outcomes use the defaults `Yes` / `No`.
 * **Question fallback**: named `template fallback` with description `other` and side names `Yes` / `No`.
 
 #### Deployer fee scale
@@ -72,7 +76,7 @@ The onchain outcome descriptions are derived from the instantiation:
 Template instances (`registerStandaloneOutcomeFromTemplate` and the `questionTemplateInstance` of `registerQuestionFromTemplate`) carry a required `deployerFeeScale`, a decimal string in `[0, 10]` (`Deployer fee scale cannot be negative or greater than 10.`).
 
 * Users trading the outcome's markets pay the base outcome trading fee rate times `scale + max(scale, 1)`: the deployer receives the `scale` component and the protocol the rest. With `"0"`, users pay the base rate and the deployer receives nothing. Maker rebates are never paid on outcome markets.
-* A question's scale applies uniformly to its fallback and every named outcome, including ones associated later; named outcome template instances carry no scale of their own.
+* A question's scale applies uniformly to its fallback and every question outcome, including ones associated later; question outcome template instances carry no scale of their own.
 * Per-outcome scales are returned in the `outcomeMeta` info request.
 
 Examples, expressed as multiples of the user's base outcome trading fee rate:
@@ -113,7 +117,7 @@ Deploys a standalone YES/NO market from a standalone outcome template.
 
 **`registerQuestionFromTemplate`**
 
-Deploys a question and its named outcomes in one action.
+Deploys a question and its question outcomes in one action.
 
 ```json
 {
@@ -135,13 +139,13 @@ Deploys a question and its named outcomes in one action.
 }
 ```
 
-* Each named outcome template must declare the question template as its parent. The same named outcome template may be instantiated multiple times with different values.
-* A question with N named outcomes registers N + 1 outcomes (the fallback is created automatically). All count toward the deployer's active-outcome cap.
-* More named outcomes can be added to the live question with `registerAndAssociateNamedOutcomeFromTemplate`. Bounded to at most 100 named outcomes per question.
+* Each question outcome template must declare the question template as its parent. The same question outcome template may be instantiated multiple times with different values.
+* A question with N question outcomes registers N + 1 outcomes (the fallback is created automatically). All count toward the deployer's active-outcome cap.
+* More question outcomes can be added to the live question with `registerAndAssociateNamedOutcomeFromTemplate`. Bounded to at most 100 question outcomes per question.
 
 **`registerAndAssociateNamedOutcomeFromTemplate`**
 
-Adds one named outcome to a live question of the deployer.
+Adds one question outcome to a live question of the deployer.
 
 ```json
 {
@@ -155,7 +159,7 @@ Adds one named outcome to a live question of the deployer.
 }
 ```
 
-* The question must have been deployed from a template, and the named outcome template must declare the question's template as its parent.
+* The question must have been deployed from a template, and the question outcome template must declare the question's template as its parent.
 * The new outcome inherits the question's `deployerFeeScale` and counts toward the deployer's active-outcome and daily caps.
 * Holders of the question's fallback YES token receive an equal balance of the new outcome's YES token, so existing "other" positions keep their meaning.
 
@@ -181,11 +185,11 @@ Settles one outcome of the deployer.
 * `nameAndDescription` and `sideNames` must exactly match the outcome being settled.
 * `settleFraction` is a decimal in `[0, 1]`. Standalone outcomes may settle to any fraction (e.g. `"0.66"` for scalar payouts); outcomes that belong to a question must settle to exactly `"0"` or `"1"`.
 * `details` must be empty.
-* For question outcomes, settlement is sequential: named outcomes may settle to `"0"` in any order. A single outcome settles to `"1"` after it is the last active named outcome, which automatically settles the fallback to 0 and settles the question.
+* For question outcomes, settlement is sequential: question outcomes may settle to `"0"` in any order. A single outcome settles to `"1"` after it is the last active question outcome, which automatically settles the fallback to 0 and settles the question.
 
 **`settleQuestion2`**
 
-Settles all remaining named outcomes of a question in one action. Note: The original `settleQuestion` variant is discontinued.
+Settles all remaining question outcomes of a question in one action. Note: The original `settleQuestion` variant is discontinued.
 
 ```json
 {
@@ -215,7 +219,7 @@ Settles all remaining named outcomes of a question in one action. Note: The orig
 }
 ```
 
-* `outcomeSettlements` must cover exactly the question's remaining active named outcomes, with exactly one settling to `"1"` and all others to `"0"`. The fallback settles to 0 automatically.
+* `outcomeSettlements` must cover exactly the question's remaining active question outcomes, with exactly one settling to `"1"` and all others to `"0"`. The fallback settles to 0 automatically.
 
 #### Read API
 
