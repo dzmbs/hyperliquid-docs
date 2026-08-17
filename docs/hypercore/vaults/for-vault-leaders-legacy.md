@@ -4,7 +4,7 @@
 
 ### What are the benefits of creating a vault as a leader?
 
-Vault leaders receive a 10% profit share for managing the vault. Vaults can be a great way for a trader to share strategies with his or her community.&#x20;
+Vault leaders receive a 10% profit share for managing the vault. Traders can share their approach to trading with their community via vaults. &#x20;
 
 ### How do I create a vault?
 

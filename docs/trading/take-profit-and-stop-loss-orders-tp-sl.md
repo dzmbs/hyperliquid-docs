@@ -20,8 +20,6 @@ As a concrete example, a SL order to close a long with trigger price $10 and lim
 
 TP/SL opened from the position form will have a size equal to the entire position by default. These orders will attempt to close the entire position at the time of trigger. If a specific size is configured on these TP/SL orders, they will be fixed-sized (i.e. they will not resize with the position after being placed).
 
-Position TP/SL orders are the most beginner-friendly because they have simple placement and cancelation criteria.
-
 ### TP/SL associated with a parent order (a.k.a one-cancels-other, OCO)&#x20;
 
 This style of TP/SL is more complicated. Read the below carefully to avoid unexpected outcomes.

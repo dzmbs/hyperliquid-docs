@@ -92,4 +92,4 @@ Cancun without blobs.
 Functionality is largely the same, which makes it easy to build similar tooling and applications. The main differences are:
 
 1. Dual block system: fast small blocks and slow big blocks
-2. Interactions with the native side of the Hyperliquid state, providing a seamless onboarding for all Hyperliquid users to the HyperEVM
+2. Interactions with HyperCore: allowing HyperEVM users to access the order book liquidity, etc.

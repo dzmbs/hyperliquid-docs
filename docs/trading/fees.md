@@ -4,7 +4,7 @@
 
 Fees are based on your rolling 14 day volume and are assessed at the end of each day in UTC. Sub-account volume counts toward the master account and all sub-accounts share the same fee tier. Vault volume is treated separately from the master account. Referral rewards apply for a user's first $1B in volume and referral discounts apply for a user's first $25M in volume.
 
-Maker rebates are paid out continuously on each trade directly to the trading wallet. Users can claim referral rewards from the Referrals page.&#x20;
+Maker rebates are paid out continuously on each trade directly to the trading wallet.&#x20;
 
 There are separate fee schedules for perps vs spot. Perps and spot volume will be counted together to determine your fee tier, and spot volume will count double toward your fee tier. i.e., `(14d weighted volume) = (14d perps volume) + 2 * (14d spot volume)`.
 

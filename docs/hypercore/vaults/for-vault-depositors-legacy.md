@@ -4,7 +4,7 @@
 
 ### What are the benefits of depositing into a vault?
 
-By depositing, you earn a share of the profits, or losses, of the vault. If there are specific traders you admire or support, you can deposit into their vault to get exposure to their trading strategies.&#x20;
+By depositing, you earn a share of the profits, or losses, of the vault. You can deposit into the vault of a specific trader to get exposure to their trading approach. &#x20;
 
 Let’s say you deposit 100 USDC into a vault, whose total deposits are 900 USDC. The vault total is now 1,000 USDC, and you represent 10% of the vault. Over time, the vault grows to be 2,000 USDC, while no one else has deposited or withdrawn from the vault. You withdraw 200 USDC (10%) less 10 USDC (10% profit share to the leader), which totals 190 USDC. There may be some slippage as you withdraw and open positions are closed.&#x20;
 
@@ -18,7 +18,7 @@ You can click on a specific vault to see more information, such as pnl, max draw
 
 ### How do I deposit into a vault?
 
-Depositing into a vault is simple. On a vault’s dedicated page, enter the amount you would like to deposit and click “Deposit.”
+On a vault’s dedicated page, click the Deposit button, then enter the amount you would like to deposit and click “Deposit.”
 
 ### How do I check the performance of vaults I’ve deposited into?
 
@@ -28,6 +28,6 @@ On the Portfolio page, you’ll find your total balance across all vaults.&#x20;
 
 ### How do I withdraw from a vault?
 
-Withdrawing is as simple as depositing. On a vault’s dedicated page, click the Withdraw heading, then enter the amount you’d like to withdraw and click “Withdraw.”
+On a vault’s dedicated page, click the Withdraw button, then enter the amount you would like to withdraw and click “Withdraw.”
 
 HLP has a lock-up period of 4 days. User vaults have a lock-up period of 1 day.&#x20;

@@ -4,7 +4,7 @@
 
 ### High level summary
 
-*Hyperps* (Hyperliquid-only perps) trade like perpetual contracts that users are familiar with, but do not require an underlying spot or index oracle price. Instead, the funding rate is determined relative to a moving average hyperp mark price in place of the usual spot price. This makes the hyperp price more stable and less susceptible to manipulation, unlike usual pre-launch futures.&#x20;
+*Hyperps* (Hyperliquid-only perps) trade like vanilla perpetual contracts, but do not require an underlying spot or index oracle price. Instead, the funding rate is determined relative to a moving average hyperp mark price in place of the usual spot price. This makes the hyperp price more stable and less susceptible to manipulation, unlike usual pre-launch futures.&#x20;
 
 This new derivative design does not require an underlying asset or index that exists at all points of the hyperp's lifetime, only that the underlying asset or index eventually exists for settlement or conversion.&#x20;
 

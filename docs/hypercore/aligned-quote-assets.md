@@ -32,7 +32,7 @@ System interest address pays X31 * RATE31 + ... + X60 * RATE60 on Mar 9 at 0 UTC
 
 ### AQAv1
 
-AQAv1 offers lower trading fees, better market maker rebates, and higher volume contribution toward fee tiers when used as the quote asset for a spot pair or the collateral asset for HIP-3 perps.&#x20;
+AQAv1 offers lower trading fees, larger market maker rebates, and higher volume contribution toward fee tiers when used as the quote asset for a spot pair or the collateral asset for HIP-3 perps.&#x20;
 
 **Onchain requirements:**
 
@@ -50,7 +50,7 @@ AQAv1 offers lower trading fees, better market maker rebates, and higher volume 
 **AQAv1 benefits, applied to spot and perp trading:**
 
 1. 20% lower taker fees&#x20;
-2. 50% better maker rebates
+2. 50% larger maker rebates
 3. 20% more volume contribution toward fee tiers
 
 Offchain conditions are ultimately voted upon by validator quorum, as any such conditions are not able to be reflected directly in protocol execution. Like on most other blockchains, independent validators on Hyperliquid achieve consensus on a self-contained state machine’s execution. This state machine’s evolution is entirely onchain. In the case of the offchain conditions for an aligned stablecoin, this evolution is driven by validator vote.
