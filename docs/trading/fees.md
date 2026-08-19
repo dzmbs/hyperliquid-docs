@@ -65,7 +65,7 @@ On most other protocols, the team or insiders are the main beneficiaries of fees
 
 When a deployer activates growth mode, there is a ≥90% reduction on the all-in fees. Rebates and volume contributions will also be ≥90% lower. Growth mode applies on top of other multipliers, such as staking discounts. The following two conditions apply for growth mode:
 
-1. The deployer fee scale must be set between 0 and 1. As a reminder, deployer fee scale is the amount the deployer keeps as a percentage of the user’s fees before applying aligned stablecoin collateral discount, if applicable. For more information, see: [HIP-3 deployer actions](https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions). Setting growth mode has a 30 day cooldown per asset.
+1. The deployer fee scale must be set between 0 and 10. As a reminder, deployer fee scale is the amount the deployer keeps as a percentage of the user’s fees before applying aligned stablecoin collateral discount, if applicable. For more information, see: [HIP-3 deployer actions](https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions). Setting growth mode has a 30 day cooldown per asset.
 2. The markets must be entirely disjoint from existing validator-operated perps to prevent parasitic volume. For example, the below are not eligible for growth mode. This list of examples is illustrative and not comprehensive. Similar to delistings, the ultimate decider for disabling ineligible growth mode perps is onchain validator vote.
    1. Crypto perps against any collateral&#x20;
    2. Perps on crypto indexes, ETFs, or other baskets of crypto assets&#x20;

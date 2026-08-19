@@ -747,8 +747,8 @@
     "trading/fees.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees.md",
-      "hash": "7c94c0de9632af77ad349a3b58636fd878dbc5af9ff4722851be9f0fc7d117e7",
-      "last_updated": "2026-08-17T07:07:31.681537"
+      "hash": "75e55504b1b887a89e1668a9544d09b013242747bcc29f8648a5410142a71258",
+      "last_updated": "2026-08-19T09:40:30.179494"
     },
     "trading/funding.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/funding",
@@ -825,8 +825,8 @@
     "trading/portfolio-margin.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin.md",
-      "hash": "37165d0191f0db9c00e04a53bc640c4e171bfdb564d1d85178c304cc207a441c",
-      "last_updated": "2026-08-01T16:06:38.364631"
+      "hash": "158c507396d91ee17ecf5abe36a80519442ad3a912698056f3fc3281bb757926",
+      "last_updated": "2026-08-19T09:40:39.976754"
     },
     "trading/robust-price-indices.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/robust-price-indices",
@@ -878,14 +878,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-08-19T06:55:15.188840",
-    "duration_seconds": 116.54259,
+    "completed_at": "2026-08-19T09:40:46.204860",
+    "duration_seconds": 108.493916,
     "pages_discovered": 146,
     "pages_fetched": 146,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-08-19T06:55:15.188864",
+  "last_updated": "2026-08-19T09:40:46.204878",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",

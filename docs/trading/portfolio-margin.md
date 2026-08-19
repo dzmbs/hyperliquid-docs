@@ -19,7 +19,7 @@ IMPORTANT: Portfolio margin is a complex technical upgrade and requires bootstra
 
 ### LTV and borrowing
 
-Under portfolio margin, eligible collateral assets have an LTV (loan-to-value) ratio between 0 and 1. HYPE and BTC have an LTV of 0.5. When placing spot and perp orders under portfolio margin, insufficient balance will automatically borrowed against eligible collateral up to `token_balance * borrow_oracle_price * ltv` , where price is denominated in the asset being borrowed.
+Under portfolio margin, eligible collateral assets have an LTV (loan-to-value) ratio between 0 and 1. HYPE has an LTV of 0.65 and BTC has an LTV of 0.5. When placing spot and perp orders under portfolio margin, insufficient balance will automatically borrowed against eligible collateral up to `token_balance * borrow_oracle_price * ltv` , where price is denominated in the asset being borrowed.
 
 Borrowed assets accrue interest continuously, and are indexed hourly to match the perp funding interval. Portfolio margin users pay interest on borrowed assets and earn interest on idle assets according to the same rate. The borrow interest rate for stablecoins is set at `0.05 + 4.75 * max(0, utilization - 0.8)` APY, compounded continuously depending on the instantaneous value of `utilization = total_borrowed_value / total_supplied_value` . Earned interest is accrued proportionally to all suppliers. The protocol retains 10% of borrowed interest as a buffer for future liquidations.
 
