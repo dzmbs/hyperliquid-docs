@@ -447,8 +447,8 @@
     "onboarding/how-to-start-trading.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/how-to-start-trading",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/how-to-start-trading.md",
-      "hash": "e534c590928091ddf262daa197d030d17a6db8c285fdfa8a0478e19590bc70f8",
-      "last_updated": "2026-08-07T10:06:16.738029"
+      "hash": "11f3c200e4d50edbca9c2961128460b4be8f168064b4a6bb4db26829c2889bda",
+      "last_updated": "2026-08-24T03:59:06.936407"
     },
     "onboarding/how-to-use-the-hyperevm.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/how-to-use-the-hyperevm",
@@ -884,14 +884,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-08-24T01:45:08.576859",
-    "duration_seconds": 90.297907,
+    "completed_at": "2026-08-24T03:59:50.423631",
+    "duration_seconds": 89.279795,
     "pages_discovered": 147,
     "pages_fetched": 147,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-08-24T01:45:08.576884",
+  "last_updated": "2026-08-24T03:59:50.423656",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
