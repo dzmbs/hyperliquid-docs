@@ -2,10 +2,10 @@
 
 # Deploying HIP-1 and HIP-2 assets
 
-The API for deploying HIP-1 and HIP-2 assets is a five-step process which involves sending the first 5 variants (the last two are optional) of the enum in the order below.
+The API for deploying HIP-1 and HIP-2 assets is a five-step process which involves sending the first 5 variants (the remaining variants are optional) of the enum in the order below.
 
 ```typescript
-type SpotDeployAction = 
+type SpotDeployAction =
   | {
       type: "spotDeploy";
       registerToken2: RegisterToken2;
@@ -42,9 +42,17 @@ type SpotDeployAction =
       type: "spotDeploy";
       disableQuoteToken: { token: number };
     }
-  | { /* note: must be sent after disableQuoteToken */ 
+  | { /* note: must be sent after disableQuoteToken */
       type: "spotDeploy";
       disableAlignedQuoteToken: { token: number };
+    }
+  | {
+      type: "spotDeploy";
+      setTokenAnnotation: SetTokenAnnotation;
+    }
+  | {
+      type: "spotDeploy";
+      setDeployerLabel: SetDeployerLabel;
     };
 
 type RegisterToken2 = {
@@ -87,7 +95,7 @@ type Genesis = {
 /**
  * @param tokens - [base index, quote index]
  * This is also the action used to deploy pairs between an existing base and existing quote asset.
- * Deployments between pairs of existing assets follow an independent Dutch auction. 
+ * Deployments between pairs of existing assets follow an independent Dutch auction.
  * This auction's status is available from the `spotPairDeployAuctionStatus` info request.
  */
 type RegisterSpot = {
@@ -110,7 +118,7 @@ type RegisterHyperliquidity = {
 }
 
 /**
- * This is an optional action that can be performed at any time after 
+ * This is an optional action that can be performed at any time after
  * RegisterToken2. While the fee share defaults to 100%, this action
  * can be resent multiple times as long as the fee share is not increasing.
  * @param token - The token
@@ -119,6 +127,32 @@ type RegisterHyperliquidity = {
 type SetDeployerTradingFeeShare {
   token: number;
   share: string;
+}
+
+/**
+ * This is an optional action that can be performed at any time after
+ * RegisterToken2. The annotation can be changed at most once per day.
+ * @param token - The token
+ * @param annotation - The annotation to display for the token.
+ */
+type SetTokenAnnotation = {
+  token: number;
+  annotation: {
+    category: string; // <= 15 characters
+    description: string; // <= 400 characters
+    displayName: string | null; // <= 9 characters
+    keywords: Array<string>; // <= 2 keywords, each keyword <= 10 characters
+  };
+}
+
+/**
+ * This is an optional action that sets a label displayed for the deployer's tokens.
+ * The label can only be set once per deployer.
+ * @param label - The deployer label (2-4 lowercase characters). Must be unique
+ * across perp dexs and other deployer labels.
+ */
+type SetDeployerLabel = {
+  label: string;
 }
 
 ```
