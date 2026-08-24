@@ -83,7 +83,7 @@ type UserGenesis = {
 
 /**
  * Genesis denotes the initial creation of a token with a maximum supply.
- * @param maxSupply - Checksum ensureing all calls to UserGenesis succeeded
+ * @param maxSupply - Checksum ensuring all calls to UserGenesis succeeded
  * @param noHyperliquidity - Set hyperliquidity balance to 0.
  */
 type Genesis = {
@@ -124,7 +124,7 @@ type RegisterHyperliquidity = {
  * @param token - The token
  * @param share - The deployer trading fee share. Range: ["0%", "100%"]. Examples: "0.012%", "99.4%"
  */
-type SetDeployerTradingFeeShare {
+type SetDeployerTradingFeeShare = {
   token: number;
   share: string;
 }

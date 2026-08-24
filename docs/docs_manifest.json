@@ -75,8 +75,8 @@
     "for-developers/api/deploying-hip-1-and-hip-2-assets.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/deploying-hip-1-and-hip-2-assets",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/deploying-hip-1-and-hip-2-assets.md",
-      "hash": "4f2c72be94b2fd67ec0bdd4cc5a0fe0e581bc9322893066d200e38bc4306542d",
-      "last_updated": "2026-08-24T09:54:03.932260"
+      "hash": "90a498bd007d46c409f59aea4d879d1ed11f788e99aa05b42749e46ceb2c3d8b",
+      "last_updated": "2026-08-24T15:44:40.691917"
     },
     "for-developers/api/error-responses.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/error-responses",
@@ -884,14 +884,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-08-24T13:02:51.477070",
-    "duration_seconds": 96.899544,
+    "completed_at": "2026-08-24T15:46:39.939604",
+    "duration_seconds": 134.641798,
     "pages_discovered": 147,
     "pages_fetched": 147,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-08-24T13:02:51.477094",
+  "last_updated": "2026-08-24T15:46:39.939629",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
