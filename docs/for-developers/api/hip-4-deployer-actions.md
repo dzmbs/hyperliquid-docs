@@ -15,7 +15,7 @@ The following actions are involved in deployment:
 ```json
 { "type": "activateOutcomeDeployer", "activate": { "venueName": <venue> } }
 { "type": "activateOutcomeDeployer", "deactivate": null }
-{ "type": "spotDeploy", "outcome": { "<variant>": { ...variant fields... } } }
+{ "type": "outcomeDeploy", "<variant>": { ...variant fields... } }
 ```
 
 * Outcomes and questions are referenced by the numeric index assigned at creation, e.g. `"outcome": 7`.
@@ -64,10 +64,12 @@ Keyword value formats by hint type:
 
 Values are at most 100 characters and cannot contain `{`, `}`, or `|` (`:` is allowed, e.g. for HIP-3 coin names).
 
+The interpolated display text (template text with the values substituted) is also bounded: names are at most 70 characters for standalone outcomes and questions and at most 25 characters for question outcomes, and standalone side names are at most 10 characters.
+
 The onchain outcome descriptions are derived from the instantiation:
 
-* **Name**: `template:<template_id>`, e.g. `template:aaa`. The `template:` prefix is reserved. Only template deployments can produce it.
-* **Description**: the keyword-value pairs sorted by keyword and joined as `keyword:value|keyword:value`, e.g. `expiry:20260801-0600|target:100|underlying:BTC`.
+* **Name**: `template:<template_id>`, e.g. `template:aaa`. The `template:` prefix is reserved. Only template deployments can produce it. Names are at most 100 characters.
+* **Description**: the keyword-value pairs sorted by keyword and joined as `keyword:value|keyword:value`, e.g. `expiry:20260801-0600|target:100|underlying:BTC`. Descriptions are at most 2000 characters.
 * **Side names**: for standalone outcomes, `template:` plus the template's side names (e.g. `template:Over` / `template:Under`); question outcomes use the defaults `Yes` / `No`.
 * **Question fallback**: named `template fallback` with description `other` and side names `Yes` / `No`.
 
@@ -92,25 +94,21 @@ Examples, expressed as multiples of the user's base outcome trading fee rate:
 
 #### Action reference
 
-The `outcome` family of `spotDeploy` has five deployer variants.
-
 **`registerStandaloneOutcomeFromTemplate`**
 
 Deploys a standalone YES/NO market from a standalone outcome template.
 
 ```json
 {
-  "type": "spotDeploy",
-  "outcome": {
-    "registerStandaloneOutcomeFromTemplate": {
-      "id": "abc",
-      "keywordToValue": [
-        ["expiry", "20260801-0600"],
-        ["target", "100"],
-        ["underlying", "ABC"]
-      ],
-      "deployerFeeScale": "1"
-    }
+  "type": "outcomeDeploy",
+  "registerStandaloneOutcomeFromTemplate": {
+    "id": "abc",
+    "keywordToValue": [
+      ["expiry", "20260801-0600"],
+      ["target", "100"],
+      ["underlying", "ABC"]
+    ],
+    "deployerFeeScale": "1"
   }
 }
 ```
@@ -121,20 +119,18 @@ Deploys a question and its question outcomes in one action.
 
 ```json
 {
-  "type": "spotDeploy",
-  "outcome": {
-    "registerQuestionFromTemplate": {
-      "questionTemplateInstance": {
-        "id": "abc",
-        "keywordToValue": [["expiry", "20260801-1830"]],
-        "deployerFeeScale": "1"
-      },
-      "namedOutcomeTemplateInstances": [
-        { "id": "abc-outcome", "keywordToValue": [["choice", "A"]] },
-        { "id": "abc-outcome", "keywordToValue": [["choice", "B"]] },
-        { "id": "abc-other", "keywordToValue": [] }
-      ]
-    }
+  "type": "outcomeDeploy",
+  "registerQuestionFromTemplate": {
+    "questionTemplateInstance": {
+      "id": "abc",
+      "keywordToValue": [["expiry", "20260801-1830"]],
+      "deployerFeeScale": "1"
+    },
+    "namedOutcomeTemplateInstances": [
+      { "id": "abc-outcome", "keywordToValue": [["choice", "A"]] },
+      { "id": "abc-outcome", "keywordToValue": [["choice", "B"]] },
+      { "id": "abc-other", "keywordToValue": [] }
+    ]
   }
 }
 ```
@@ -149,12 +145,10 @@ Adds one question outcome to a live question of the deployer.
 
 ```json
 {
-  "type": "spotDeploy",
-  "outcome": {
-    "registerAndAssociateNamedOutcomeFromTemplate": {
-      "question": 3,
-      "namedOutcomeTemplateInstance": { "id": "abc-outcome", "keywordToValue": [["choice", "C"]] }
-    }
+  "type": "outcomeDeploy",
+  "registerAndAssociateNamedOutcomeFromTemplate": {
+    "question": 3,
+    "namedOutcomeTemplateInstance": { "id": "abc-outcome", "keywordToValue": [["choice", "C"]] }
   }
 }
 ```
@@ -169,15 +163,13 @@ Settles one outcome of the deployer.
 
 ```json
 {
-  "type": "spotDeploy",
-  "outcome": {
-    "settleOutcome": {
-      "outcome": 7,
-      "settleFraction": "1",
-      "details": "",
-      "nameAndDescription": ["template:abc", "expiry:20260801-0600|target:100|underlying:ABC"],
-      "sideNames": ["template:Over", "template:Under"]
-    }
+  "type": "outcomeDeploy",
+  "settleOutcome": {
+    "outcome": 7,
+    "settleFraction": "1",
+    "details": "",
+    "nameAndDescription": ["template:abc", "expiry:20260801-0600|target:100|underlying:ABC"],
+    "sideNames": ["template:Over", "template:Under"]
   }
 }
 ```
@@ -193,33 +185,50 @@ Settles all remaining question outcomes of a question in one action. Note: The o
 
 ```json
 {
-  "type": "spotDeploy",
-  "outcome": {
-    "settleQuestion2": {
-      "question": 3,
-      "outcomeSettlements": [
-        {
-          "outcome": 11,
-          "settleFraction": "1",
-          "details": "",
-          "nameAndDescription": ["template:abc-outcome", "choice:A"],
-          "sideNames": ["Yes", "No"]
-        },
-        {
-          "outcome": 12,
-          "settleFraction": "0",
-          "details": "",
-          "nameAndDescription": ["template:abc-outcome", "choice:B"],
-          "sideNames": ["Yes", "No"]
-        }
-      ],
-      "nameAndDescription": ["template:abc", "expiry:20260801-1830"]
-    }
+  "type": "outcomeDeploy",
+  "settleQuestion2": {
+    "question": 3,
+    "outcomeSettlements": [
+      {
+        "outcome": 11,
+        "settleFraction": "1",
+        "details": "",
+        "nameAndDescription": ["template:abc-outcome", "choice:A"],
+        "sideNames": ["Yes", "No"]
+      },
+      {
+        "outcome": 12,
+        "settleFraction": "0",
+        "details": "",
+        "nameAndDescription": ["template:abc-outcome", "choice:B"],
+        "sideNames": ["Yes", "No"]
+      }
+    ],
+    "nameAndDescription": ["template:abc", "expiry:20260801-1830"]
   }
 }
 ```
 
 * `outcomeSettlements` must cover exactly the question's remaining active question outcomes, with exactly one settling to `"1"` and all others to `"0"`. The fallback settles to 0 automatically.
+
+**`setSubDeployers`**
+
+Grants or revokes sub-deployer permissions.
+
+```json
+{
+  "type": "outcomeDeploy",
+  "setSubDeployers": [
+    { "variant": "registerStandaloneOutcomeFromTemplate", "user": "0xSUB_DEPLOYER", "allowed": true },
+    { "variant": "settleOutcome", "user": "0xSUB_DEPLOYER", "allowed": true },
+    { "variant": "settleQuestion", "user": "0xFORMER_OPERATOR", "allowed": false }
+  ]
+}
+```
+
+* A sub-deployer granted a variant can send that action on the deployer's behalf: registrations are created under the deployer's venue and count toward the deployer's limits, and settlements can only target the deployer's own outcomes and questions.
+* `variant` is one of `registerStandaloneOutcomeFromTemplate`, `registerQuestionFromTemplate`, `registerAndAssociateNamedOutcomeFromTemplate`, `settleOutcome`, or `settleQuestion`. The `settleQuestion` grant authorizes the `settleQuestion2` action.
+* `allowed` adds or removes the user from the authorized set for the variant.
 
 #### Read API
 
