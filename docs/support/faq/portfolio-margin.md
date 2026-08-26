@@ -14,7 +14,7 @@ Portfolio margin (PM) unifies spot and perps trading for greater flexibility and
 
 #### Auto borrowing
 
-Eligible collateral assets have a Loan-to-Value (LTV) ratio that determines how much can be borrowed against them. Currently, HYPE and BTC each have an LTV of 50%.
+Eligible collateral assets have a Loan-to-Value (LTV) ratio that determines how much can be borrowed against them. Currently, HYPE has an LTV of 65% and BTC has an LTV of 50%.
 
 When placing spot or perps orders using PM, insufficient balance is automatically borrowed against eligible collateral up to `borrowable_amount = token_balance × oracle_price × LTV`
 
@@ -92,7 +92,7 @@ Quote assets: When trading across the DEXs simultaneously, available balance fig
 
 The collateral amount available to withdraw is determined by how much collateral can be removed without reducing your Health Factor below 100%.
 
-* Example: A user borrowing 100 USDC with only HYPE as collateral (50% LTV, $40 per HYPE) requires a minimum of 5 HYPE locked as collateral (100 / (0.5 × 40) = 5 HYPE). `Available balance = total balance − locked collateral`
+* Example: A user borrowing 100 USDC with only HYPE as collateral (65% LTV, $40 per HYPE) requires a minimum of 5 HYPE locked as collateral (100 / (0.65 × 40) = \~3.85 HYPE). `Available balance = total balance − locked collateral`
 
 Where multiple collateral types are held, available balance is calculated as `Total balance − minimum collateral required` to keep Health Factor ≥ 100%
 
@@ -104,9 +104,9 @@ Health Factor indicates how much additional borrow capacity remains in the accou
 
 Calculation example:
 
-<table data-header-hidden><thead><tr><th width="275.5400390625">Asset</th><th>Balance</th><th>LTV</th><th>Weighted Value</th></tr></thead><tbody><tr><td><strong>Asset</strong></td><td><strong>Balance</strong></td><td><strong>LTV</strong></td><td><strong>Weighted Value</strong></td></tr><tr><td>BTC</td><td>1 @ $80,000</td><td>50%</td><td>$40,000</td></tr><tr><td>HYPE</td><td>200 @ $50</td><td>50%</td><td>$5,000</td></tr><tr><td><strong>Account value weighted by LTV</strong></td><td> </td><td> </td><td><strong>$45,000</strong></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="275.5400390625">Asset</th><th>Balance</th><th>LTV</th><th>Weighted Value</th></tr></thead><tbody><tr><td><strong>Asset</strong></td><td><strong>Balance</strong></td><td><strong>LTV</strong></td><td><strong>Weighted Value</strong></td></tr><tr><td>BTC</td><td>1 @ $80,000</td><td>50%</td><td>$40,000</td></tr><tr><td>HYPE</td><td>200 @ $50</td><td>65%</td><td>$6,500</td></tr><tr><td><strong>Account value weighted by LTV</strong></td><td> </td><td> </td><td><strong>$46,500</strong></td></tr></tbody></table>
 
-If Borrowed Amount: $42,000, Health Factor = 45,000 / 42,000 = 107.14%&#x20;
+If Borrowed Amount: $42,000, Health Factor = 46,500 / 42,000 = 110.71%&#x20;
 
 #### Your Borrowed
 
@@ -137,6 +137,6 @@ Spot collateral liquidations are classified as one of two types:
   * A full borrow liquidation is triggered when the borrowed amount exceeds ⅔ between the LTV and 100% of the collateral value. This threshold is defined as: `collateral_value × (LTV + (1 - LTV) × ⅔)` .
   * The entire remaining collateral and debt position is liquidated.
 
-  <table data-header-hidden><thead><tr><th width="326.1376953125">Parameter</th><th>Value</th></tr></thead><tbody><tr><td><strong>Parameter</strong></td><td><strong>Value</strong></td></tr><tr><td>HYPE held</td><td>10</td></tr><tr><td>Initial HYPE price</td><td>$50</td></tr><tr><td>LTV</td><td>50%</td></tr><tr><td>Borrowed amount</td><td>10 × $50 × 0.5 = $250</td></tr><tr><td><strong>Scenario 1: HYPE price drops to $33</strong></td><td></td></tr><tr><td>Collateral value</td><td>10 × $33 = $330</td></tr><tr><td>Partial liquidation threshold</td><td>$330 × (0.5 + (1 - 0.5) × ½ ) = $330 × 75% = $247.50</td></tr><tr><td>Outcome (Scenario 1)</td><td>Borrowed $250 > threshold $247.50, partial borrow liquidation triggered</td></tr><tr><td><strong>Scenario 2: HYPE price drops to $30</strong></td><td></td></tr><tr><td>Collateral value</td><td>10 × $30 = $300</td></tr><tr><td>Full liquidation threshold</td><td>$300 × (0.5 + (1 - 0.5) × ⅔ ) = $300 × 83.3% = $249.90</td></tr><tr><td>Outcome (Scenario 2)</td><td>Borrowed $250 > threshold $249.90, full borrow liquidation triggered</td></tr></tbody></table>
+  <table data-header-hidden><thead><tr><th width="326.1376953125">Parameter</th><th>Value</th></tr></thead><tbody><tr><td><strong>Parameter</strong></td><td><strong>Value</strong></td></tr><tr><td>HYPE held</td><td>10</td></tr><tr><td>Initial HYPE price</td><td>$50</td></tr><tr><td>LTV</td><td>65%</td></tr><tr><td>Borrowed amount</td><td>10 × $50 × 0.65 = $325</td></tr><tr><td><strong>Scenario 1: HYPE price drops to $38</strong></td><td></td></tr><tr><td>Collateral value</td><td>10 × $38 = $380</td></tr><tr><td>Partial liquidation threshold</td><td>$380 × (0.65 + (1 - 0.65) × ½ ) = $380 × 82.5% = $313.50</td></tr><tr><td>Outcome (Scenario 1)</td><td>Borrowed $325 > threshold $313.50, partial borrow liquidation triggered</td></tr><tr><td><strong>Scenario 2: HYPE price drops to $36</strong></td><td></td></tr><tr><td>Collateral value</td><td>10 × $36 = $360</td></tr><tr><td>Full liquidation threshold</td><td>$360 × (0.65 + (1 - 0.65) × ⅔ ) = $360 × 88.33% = $318</td></tr><tr><td>Outcome (Scenario 2)</td><td>Borrowed $325 > threshold $318, full borrow liquidation triggered</td></tr></tbody></table>
 
 When a borrow liquidation occurs, the protocol takes over the user’s collateral (e.g. HYPE or BTC) along with the associated debt. For a full technical breakdown of PM liquidation mechanics, refer to the Portfolio Margin [liquidations](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin#liquidations) section.

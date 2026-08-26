@@ -621,8 +621,8 @@
     "support/faq/portfolio-margin.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/portfolio-margin",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/portfolio-margin.md",
-      "hash": "7837c55df1506b18650c2aa090335561686c233f75f7513bc877895acfbc9a4b",
-      "last_updated": "2026-07-03T14:24:06.725360"
+      "hash": "4b2d874cf776369f409e1f94c7872ccfd46c11b16608079630dc3f9f51a31f3b",
+      "last_updated": "2026-08-26T16:23:33.440834"
     },
     "support/faq/trade-outcome-looks-incorrect.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect",
@@ -884,14 +884,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-08-26T13:04:36.233474",
-    "duration_seconds": 84.394024,
+    "completed_at": "2026-08-26T16:24:03.966201",
+    "duration_seconds": 103.372335,
     "pages_discovered": 147,
     "pages_fetched": 147,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-08-26T13:04:36.233502",
+  "last_updated": "2026-08-26T16:24:03.966226",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
