@@ -105,8 +105,8 @@
     "for-developers/api/hip-4-deployer-actions.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-4-deployer-actions",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-4-deployer-actions.md",
-      "hash": "c9950ede0af54f3658a3069701d34a253c05de6f526014be02d433cac838eaa1",
-      "last_updated": "2026-08-25T12:57:36.086216"
+      "hash": "131c100271f31b9f194c2e6ede77f897ae01858e4434e4751b5f1599cf642654",
+      "last_updated": "2026-08-27T14:01:00.399078"
     },
     "for-developers/api/info-endpoint.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint",
@@ -261,8 +261,8 @@
     "for-developers/nodes/foundation-non-validating-node-for-infra-providers.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/nodes/foundation-non-validating-node-for-infra-providers",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/nodes/foundation-non-validating-node-for-infra-providers.md",
-      "hash": "85a64f8bfe5e677b02f79f17c70c31133d1cd6e9cf10cf228117954510a543b1",
-      "last_updated": "2026-08-20T09:40:17.606390"
+      "hash": "7d9a940f8fcdb4be6f45d2a08e2aff70d62a7e9e085c452497f3deb3d61a6019",
+      "last_updated": "2026-08-27T14:01:15.239208"
     },
     "for-developers/nodes/l1-data-schemas.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/nodes/l1-data-schemas",
@@ -884,14 +884,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-08-27T00:38:37.370846",
-    "duration_seconds": 127.348634,
+    "completed_at": "2026-08-27T14:02:14.181407",
+    "duration_seconds": 85.638109,
     "pages_discovered": 147,
     "pages_fetched": 147,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-08-27T00:38:37.370872",
+  "last_updated": "2026-08-27T14:02:14.181429",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",

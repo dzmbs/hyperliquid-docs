@@ -6,7 +6,9 @@ Builders should be able to connect to any of the infrastructure providers' peeri
 
 ### Available peers for builders to connect to
 
+* Alchemy - [https://www.alchemy.com/docs/chains/hypercore-peering/overview](<https://www.alchemy.com/docs/chains/hypercore-peering/overview >)
 * Allium - <https://docs.allium.so/nodes/hyperliquid-sentry-peer>
+* ASXN - <https://hyperscreener.asxn.xyz/direct-sentry-peering>
 * Dwellir - <https://www.dwellir.com/docs/hyperliquid/peering>
 * Hydromancer - <https://docs.hydromancer.xyz/peering>
 * Hyperdash - <https://docs.hyperdash.com/data/direct-sentry-peering>&#x20;

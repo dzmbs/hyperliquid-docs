@@ -15,10 +15,11 @@ The following actions are involved in deployment:
 ```json
 { "type": "activateOutcomeDeployer", "activate": { "venueName": <venue> } }
 { "type": "activateOutcomeDeployer", "deactivate": null }
-{ "type": "outcomeDeploy", "<variant>": { ...variant fields... } }
+{ "type": "outcomeDeploy", "venue": <venue>, "operation": { "<variant>": { ...variant fields... } } }
 ```
 
 * Outcomes and questions are referenced by the numeric index assigned at creation, e.g. `"outcome": 7`.
+* **Venue**: every `outcomeDeploy` action carries a required top-level `venue` field, which must be the deployer's venue name (similar to the `dex` field on HIP-3 deployer actions). Sub-deployer actions pass the venue of the deployer they act for, and settlements must target outcomes and questions of that venue's deployer.
 * **Venue name**: 2–4 lowercase ASCII letters, subject to the same rules as HIP-3 perp DEX names. The name must be unique across the venue names of all deployers — including deactivated ones, whose names stay reserved — and must not match an existing perp DEX name (nor `spot`). Conversely, a registered venue name cannot be claimed by a later perp DEX deployment.
 * As with HIP-3, all lists of tuples should be lexicographically sorted before signing
 * `keywordToValue` is a sorted list of tuples mapping each template keyword to its value. For example, `[["expiry","20260801-0600"],["target","100"],["underlying","ABC"]]`.
@@ -49,6 +50,8 @@ Every deployer-created market comes from a template. A template has one of three
 * **Question outcome**: deploys one outcome of a question; each question-outcome template declares its parent question template, and instantiations are only accepted under that parent.
 
 A template fixes display name and description text containing `{keyword}` placeholders (e.g., `"{underlying} above {target} at {expiry}"`) together with a typed `hint` per keyword. An instantiation supplies exactly one value per keyword.
+
+Template metadata includes a `semanticRestriction` field, which broadly defines the intended semantics of the markets instantiated from the template. Markets that contradict their template's semantic restriction are considered malformed and slashable by validators.
 
 Keyword value formats by hint type:
 
@@ -92,6 +95,10 @@ Examples, expressed as multiples of the user's base outcome trading fee rate:
 | `"0.25"`           | 1.25x          | 0.25x             | 1x                |
 | `"0"`              | 1x             | 0x                | 1x                |
 
+#### Builder codes
+
+Builder codes inherit spot behavior for sell orders. Builder codes can also be applied to buy orders for outcome orders, and are also charged in the quote token. These builder fees are charged by the protocol on a best-effort basis. Builder interfaces may validate sufficient quote token balance when computing the maximum order size.
+
 #### Action reference
 
 **`registerStandaloneOutcomeFromTemplate`**
@@ -101,14 +108,17 @@ Deploys a standalone YES/NO market from a standalone outcome template.
 ```json
 {
   "type": "outcomeDeploy",
-  "registerStandaloneOutcomeFromTemplate": {
-    "id": "abc",
-    "keywordToValue": [
-      ["expiry", "20260801-0600"],
-      ["target", "100"],
-      ["underlying", "ABC"]
-    ],
-    "deployerFeeScale": "1"
+  "venue": "ab",
+  "operation": {
+    "registerStandaloneOutcomeFromTemplate": {
+      "id": "abc",
+      "keywordToValue": [
+        ["expiry", "20260801-0600"],
+        ["target", "100"],
+        ["underlying", "ABC"]
+      ],
+      "deployerFeeScale": "1"
+    }
   }
 }
 ```
@@ -120,17 +130,20 @@ Deploys a question and its question outcomes in one action.
 ```json
 {
   "type": "outcomeDeploy",
-  "registerQuestionFromTemplate": {
-    "questionTemplateInstance": {
-      "id": "abc",
-      "keywordToValue": [["expiry", "20260801-1830"]],
-      "deployerFeeScale": "1"
-    },
-    "namedOutcomeTemplateInstances": [
-      { "id": "abc-outcome", "keywordToValue": [["choice", "A"]] },
-      { "id": "abc-outcome", "keywordToValue": [["choice", "B"]] },
-      { "id": "abc-other", "keywordToValue": [] }
-    ]
+  "venue": "ab",
+  "operation": {
+    "registerQuestionFromTemplate": {
+      "questionTemplateInstance": {
+        "id": "abc",
+        "keywordToValue": [["expiry", "20260801-1830"]],
+        "deployerFeeScale": "1"
+      },
+      "namedOutcomeTemplateInstances": [
+        { "id": "abc-outcome", "keywordToValue": [["choice", "A"]] },
+        { "id": "abc-outcome", "keywordToValue": [["choice", "B"]] },
+        { "id": "abc-other", "keywordToValue": [] }
+      ]
+    }
   }
 }
 ```
@@ -146,9 +159,12 @@ Adds one question outcome to a live question of the deployer.
 ```json
 {
   "type": "outcomeDeploy",
-  "registerAndAssociateNamedOutcomeFromTemplate": {
-    "question": 3,
-    "namedOutcomeTemplateInstance": { "id": "abc-outcome", "keywordToValue": [["choice", "C"]] }
+  "venue": "ab",
+  "operation": {
+    "registerAndAssociateNamedOutcomeFromTemplate": {
+      "question": 3,
+      "namedOutcomeTemplateInstance": { "id": "abc-outcome", "keywordToValue": [["choice", "C"]] }
+    }
   }
 }
 ```
@@ -164,12 +180,15 @@ Settles one outcome of the deployer.
 ```json
 {
   "type": "outcomeDeploy",
-  "settleOutcome": {
-    "outcome": 7,
-    "settleFraction": "1",
-    "details": "",
-    "nameAndDescription": ["template:abc", "expiry:20260801-0600|target:100|underlying:ABC"],
-    "sideNames": ["template:Over", "template:Under"]
+  "venue": "ab",
+  "operation": {
+    "settleOutcome": {
+      "outcome": 7,
+      "settleFraction": "1",
+      "details": "",
+      "nameAndDescription": ["template:abc", "expiry:20260801-0600|target:100|underlying:ABC"],
+      "sideNames": ["template:Over", "template:Under"]
+    }
   }
 }
 ```
@@ -186,25 +205,28 @@ Settles all remaining question outcomes of a question in one action. Note: The o
 ```json
 {
   "type": "outcomeDeploy",
-  "settleQuestion2": {
-    "question": 3,
-    "outcomeSettlements": [
-      {
-        "outcome": 11,
-        "settleFraction": "1",
-        "details": "",
-        "nameAndDescription": ["template:abc-outcome", "choice:A"],
-        "sideNames": ["Yes", "No"]
-      },
-      {
-        "outcome": 12,
-        "settleFraction": "0",
-        "details": "",
-        "nameAndDescription": ["template:abc-outcome", "choice:B"],
-        "sideNames": ["Yes", "No"]
-      }
-    ],
-    "nameAndDescription": ["template:abc", "expiry:20260801-1830"]
+  "venue": "ab",
+  "operation": {
+    "settleQuestion2": {
+      "question": 3,
+      "outcomeSettlements": [
+        {
+          "outcome": 11,
+          "settleFraction": "1",
+          "details": "",
+          "nameAndDescription": ["template:abc-outcome", "choice:A"],
+          "sideNames": ["Yes", "No"]
+        },
+        {
+          "outcome": 12,
+          "settleFraction": "0",
+          "details": "",
+          "nameAndDescription": ["template:abc-outcome", "choice:B"],
+          "sideNames": ["Yes", "No"]
+        }
+      ],
+      "nameAndDescription": ["template:abc", "expiry:20260801-1830"]
+    }
   }
 }
 ```
@@ -218,11 +240,14 @@ Grants or revokes sub-deployer permissions.
 ```json
 {
   "type": "outcomeDeploy",
-  "setSubDeployers": [
-    { "variant": "registerStandaloneOutcomeFromTemplate", "user": "0xSUB_DEPLOYER", "allowed": true },
-    { "variant": "settleOutcome", "user": "0xSUB_DEPLOYER", "allowed": true },
-    { "variant": "settleQuestion", "user": "0xFORMER_OPERATOR", "allowed": false }
-  ]
+  "venue": "ab",
+  "operation": {
+    "setSubDeployers": [
+      { "variant": "registerStandaloneOutcomeFromTemplate", "user": "0xSUB_DEPLOYER", "allowed": true },
+      { "variant": "settleOutcome", "user": "0xSUB_DEPLOYER", "allowed": true },
+      { "variant": "settleQuestion", "user": "0xFORMER_OPERATOR", "allowed": false }
+    ]
+  }
 }
 ```
 
