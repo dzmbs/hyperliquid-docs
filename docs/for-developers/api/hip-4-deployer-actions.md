@@ -57,8 +57,8 @@ Keyword value formats by hint type:
 
 | Hint          | Value format                                                                                |
 | ------------- | ------------------------------------------------------------------------------------------- |
-| `dateTime`    | `%Y%m%d-%H%M`, e.g. `"20260712-1830"`; must be within the next year                         |
-| `date`        | `YYYYMMDD`, e.g. `"20260712"` (end of day); must be within the next year                    |
+| `dateTime`    | UTC time `%Y%m%d-%H%M`, e.g. `"20260712-1830"`; must be within the next year                |
+| `date`        | UTC date `YYYYMMDD`, e.g. `"20260712"` (end of day); must be within the next year           |
 | `string`      | free text                                                                                   |
 | `shortString` | free text of at most 10 characters                                                          |
 | `hlPerp`      | coin name of an existing perp, e.g. `"ABC"` or `"test:ABC"`                                 |
