@@ -26,6 +26,7 @@
 * Dwellir (gRPC): <https://www.dwellir.com/docs/hyperliquid/grpc/>
 * Dwellir (websocket): <https://www.dwellir.com/docs/hyperliquid/websocket-api>
 * Hydromancer (non-rate-limited APIs and indexing): <https://docs.hydromancer.xyz/>
+* Uniblock (non-rate-limited APIs): <https://docs.uniblock.dev/guides/hyperliquid/overview>
 
 ### Explorers
 
