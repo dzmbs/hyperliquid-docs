@@ -261,8 +261,8 @@
     "for-developers/nodes/foundation-non-validating-node-for-infra-providers.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/nodes/foundation-non-validating-node-for-infra-providers",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/nodes/foundation-non-validating-node-for-infra-providers.md",
-      "hash": "7d9a940f8fcdb4be6f45d2a08e2aff70d62a7e9e085c452497f3deb3d61a6019",
-      "last_updated": "2026-08-27T14:01:15.239208"
+      "hash": "3ce7ca04b07ffba88102c3f43d62559acf63cfb497296900efbc820f5aace1fa",
+      "last_updated": "2026-09-02T16:23:17.742456"
     },
     "for-developers/nodes/l1-data-schemas.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/nodes/l1-data-schemas",
@@ -884,14 +884,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-09-02T11:03:20.122068",
-    "duration_seconds": 100.397545,
+    "completed_at": "2026-09-02T16:24:38.640887",
+    "duration_seconds": 117.202915,
     "pages_discovered": 147,
     "pages_fetched": 147,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-09-02T11:03:20.122096",
+  "last_updated": "2026-09-02T16:24:38.640909",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
