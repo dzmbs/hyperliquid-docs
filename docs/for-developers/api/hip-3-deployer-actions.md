@@ -265,3 +265,48 @@ Builder-deployed perp markets are subject to two types of open interest caps: no
 Notional open interest caps are enforced on the total open interest summed over all assets within the DEX, as well as per-asset. Perp deployers can set a custom open interest cap per asset, which is documented in <https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions>.
 
 Size-denominated open interest caps are only enforced per-asset. Size-denominated open interest caps are currently a constant 1B per asset, so a reasonable default would be to set `szDecimals` such that the minimal size increment is $1-10 at the initial mark price.
+
+### HIP-3\* (testnet-only)
+
+#### **Star actions**
+
+A HIP-3 venue can be designated HIP-3\* at time of creation. This enables several features on top of the HIP-3 spec, including an allowlist and proxied user actions.
+
+#### **Operations**
+
+```json
+{
+  "type": "perpDeploy",
+  "star": {
+    "dex": "test",
+    "operation": { "proxy": ["0xUSER_A", { "modifyApproval": true }] }
+  }
+}
+{
+  "type": "perpDeploy",
+  "star": {
+    "dex": "test",
+    "operation": { "proxy": ["0xUSER_B", "cancelAll"] }
+  }
+}
+```
+
+* **`proxy`** — a pair of a user address and one proxy operation applied to that user.
+
+#### Proxy operations
+
+* **`modifyApproval`** — `{ "modifyApproval": true }` adds the user to the allowlist, `false` removes them. Removing a user who is not approved is a no-op, as is re-approving an approved user.
+* **`cancel`** — `{ "cancel": { "cancels": [{ "a": <asset>, "o": <oid> }] } }`, the standard `cancel` exchange-action payload. Cancels the user's resting orders by oid.
+* **`cancelAll`** — `"cancelAll"`. Cancels all of the user's resting orders and TWAPs on this venue. Orders and TWAPs on other DEXs are unaffected.
+* **`order`** — `{ "order": { "orders": [...], "grouping": "na" } }`, the standard `order` exchange-action payload. Every order must be reduce-only (`"r": true`).
+* **`sendAsset`** — `{ "sendAsset": { "destination": "0xUSER_C", "amount": "100.0" } }`. Moves collateral from the proxied user's account on the DEX to `destination`'s account on the same venue.
+
+#### Permissions
+
+| Operation        | Deployer | Sub-deployer grant                 |
+| ---------------- | -------- | ---------------------------------- |
+| `modifyApproval` | yes      | `{ "hip3Star": "modifyApproval" }` |
+| `cancel`         | yes      | `{ "hip3Star": "cancel" }`         |
+| `cancelAll`      | yes      | `{ "hip3Star": "cancelAll" }`      |
+| `order`          | yes      | `{ "hip3Star": "order" }`          |
+| `sendAsset`      | yes      | `{ "hip3Star": "sendAsset" }`      |
