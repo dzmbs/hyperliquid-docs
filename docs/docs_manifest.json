@@ -123,8 +123,8 @@
     "for-developers/api/info-endpoint/spot.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint/spot",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint/spot.md",
-      "hash": "13b48c5779603271b27f791b644f208a9ec57b04137beccebb9bf5cb4f45dc4c",
-      "last_updated": "2026-07-03T14:22:59.122142"
+      "hash": "523d5e4fc1527db17142b7d569e3294cc48ef2567621007d9b7e8732cbc51d5d",
+      "last_updated": "2026-09-04T16:08:22.800022"
     },
     "for-developers/api/nonces-and-api-wallets.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/nonces-and-api-wallets",
@@ -884,14 +884,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-09-04T11:02:12.213860",
-    "duration_seconds": 122.014157,
+    "completed_at": "2026-09-04T16:10:02.829532",
+    "duration_seconds": 118.371717,
     "pages_discovered": 147,
     "pages_fetched": 147,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-09-04T11:02:12.213883",
+  "last_updated": "2026-09-04T16:10:02.829560",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",

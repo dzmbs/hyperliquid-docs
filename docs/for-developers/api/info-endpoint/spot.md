@@ -431,3 +431,35 @@ Note: This returns the status of the Dutch auction for spot pair deployments bet
 
 {% endtab %}
 {% endtabs %}
+
+## Retrieve outcome deployer limits
+
+<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/info`
+
+**Headers**
+
+| Name                                           | Value              |
+| ---------------------------------------------- | ------------------ |
+| Content-Type<mark style="color:red;">\*</mark> | "application/json" |
+
+**Body**
+
+| Name                                    | Type   | Description             |
+| --------------------------------------- | ------ | ----------------------- |
+| type<mark style="color:red;">\*</mark>  | String | "outcomeDeployerLimits" |
+| venue<mark style="color:red;">\*</mark> | String | venue name              |
+
+**Response**
+
+{% tabs %}
+{% tab title="200: OK Successful Response" %}
+
+```json
+{
+  "nDailyOutcomesRemaining": 50,
+  "nActiveOutcomesRemaining": 14
+}
+```
+
+{% endtab %}
+{% endtabs %}
