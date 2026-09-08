@@ -2,6 +2,8 @@
 
 # My withdrawal keeps getting re-deposited
 
+Description: You made a withdrawal, but your funds have been re-deposited.
+
 ### Why is this happening
 
 * If you’re trying to withdraw using a wallet that’s connected to a Telegram bot, note that most of the Telegram bots are configured to automatically deposit any balance.

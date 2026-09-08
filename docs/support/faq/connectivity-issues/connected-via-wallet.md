@@ -2,6 +2,8 @@
 
 # Connected via wallet
 
+Description: I can’t connect my wallet to Hyperliquid / I'm stuck in a loop when trying to sign / My wallet isn’t responding. What should I do?
+
 If you’re experiencing issues connecting your wallet to Hyperliquid, such as a recursive "Establish Connection" loop, failed transaction signing, or your wallet extension not loading, try the following troubleshooting steps.&#x20;
 
 ### Quick fixes

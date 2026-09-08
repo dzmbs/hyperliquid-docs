@@ -2,6 +2,8 @@
 
 # Subscriptions
 
+This page describes subscribing to data streams using the WebSocket API.
+
 ### Subscription messages
 
 To subscribe to specific data feeds, you need to send a subscription message. The subscription message format is as follows:

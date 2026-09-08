@@ -2,6 +2,8 @@
 
 # I got scammed/hacked
 
+Description: Your account was compromised / you see transactions you did not authorize / your funds are missing.
+
 If you notice unauthorized transactions, missing funds, or an unknown multi-sig on your Hyperliquid account, your wallet was likely compromised.&#x20;
 
 Hyperliquid is non-custodial. Only someone with access to your private key or seed phrase can sign transactions on your address’ behalf. If you see activity you didn’t initiate, it’s highly likely that your key was compromised, meaning someone else has control of your address.

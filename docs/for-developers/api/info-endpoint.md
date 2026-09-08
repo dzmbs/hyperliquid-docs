@@ -2,6 +2,8 @@
 
 # Info endpoint
 
+The info endpoint is used to fetch information about the exchange and specific users. The different request bodies result in different corresponding response body schemas.
+
 ### Pagination
 
 Responses that take a time range will only return 500 elements or distinct blocks of data. To query larger ranges, use the last returned timestamp as the next `startTime` for pagination.

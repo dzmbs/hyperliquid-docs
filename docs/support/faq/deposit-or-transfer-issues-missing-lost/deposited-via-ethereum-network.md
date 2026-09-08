@@ -2,6 +2,8 @@
 
 # Deposited via Ethereum network
 
+Description: You deposited via the Ethereum network, which is managed by Unit Protocol.
+
 * The Ethereum address can only receive ETH/ENA on the Ethereum network. Deposits other than ETH/ENA or on other networks will fail and not be credited, e.g., Depositing USDC on Ethereum or ETH on Base will fail and not be credited.
   * If you accidentally sent USDC, USDT, or WETH on Ethereum or ETH on Arbitrum, you can try Unit's revert feature: <https://app.hyperunit.xyz/revert>. Instructions can be found here: <https://docs.hyperunit.xyz/how-to/revert>.&#x20;
   * If you accidentally sent another asset that is not supported on Ethereum or sent ETH/ENA on a chain other than Ethereum, there isn't a way to retrieve these assets currently, unless Unit adds support for them.

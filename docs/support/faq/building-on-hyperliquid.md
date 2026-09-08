@@ -2,6 +2,8 @@
 
 # Building on Hyperliquid
 
+Here are the guides in this section:
+
 {% content-ref url="/pages/DWgjek9Kv8t20P32LxaE" %}
 [I have API related questions](/hyperliquid-docs/support/faq/building-on-hyperliquid/i-have-api-related-questions.md)
 {% endcontent-ref %}

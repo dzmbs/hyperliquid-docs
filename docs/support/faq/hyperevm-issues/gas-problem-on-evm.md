@@ -2,6 +2,8 @@
 
 # Gas problem on EVM
 
+Description: You are having issues paying for gas or getting transactions through on the HyperEVM
+
 ### **What is used for gas for HyperEVM?** <a href="#gas-on-hyperevm" id="gas-on-hyperevm"></a>
 
 * The gas for EVM transfers and transactions on the HyperEVM is HYPE

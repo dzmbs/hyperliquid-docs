@@ -21,7 +21,7 @@
 * HypeRPC: <https://hyperpc.app/>
 * Nanoreth (how to build an archive node): <https://github.com/hl-archive-node/nanoreth/blob/51c43d6dbdf71e277da67bf618a71fe304aae372/README.md>
 * OnFinality: <https://onfinality.io/en/networks/hyperliquid>
-* Quicknode: <https://www.quicknode.com/>
+* Quicknode: <https://www.quicknode.com/chains/hyperliquid>
 
 ### Big blocks, small blocks
 

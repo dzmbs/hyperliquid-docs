@@ -2,6 +2,8 @@
 
 # Staking and trading account linking issues
 
+Description: You have questions after linking a staking and trading account
+
 ### Do I need to link a trading and staking account if I trade and stake on the same account?&#x20;
 
 * No, this linking feature is only for users who want to trade and stake on separate accounts&#x20;

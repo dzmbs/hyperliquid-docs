@@ -2,6 +2,8 @@
 
 # I can't sell leftover spot assets
 
+Description:  I have a small amount of a spot asset that I can’t sell
+
 ### Reasoning&#x20;
 
 * Each spot deployer sets the minimum lot size for trading.&#x20;

@@ -2,6 +2,8 @@
 
 # Deposit or transfer issues (missing / lost)
 
+Here are the guides in this section:
+
 {% content-ref url="/pages/ZD2l4FZVBoGO5OYdD93z" %}
 [Deposited USDC](/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost/deposited-usdc.md)
 {% endcontent-ref %}

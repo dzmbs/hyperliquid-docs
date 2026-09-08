@@ -2,6 +2,8 @@
 
 # API
 
+Documentation for the Hyperliquid public API
+
 Python SDK: <https://github.com/hyperliquid-dex/hyperliquid-python-sdk>
 
 Rust SDK written by community member, Infinite Field: <https://github.com/infinitefield/hypersdk>

@@ -2,6 +2,8 @@
 
 # Trade outcome looks incorrect
 
+Here are the guides in this section:
+
 {% content-ref url="/pages/Y3MOtJdtJJGuIoqxeKd2" %}
 [Why was I liquidated?](/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/why-was-i-liquidated.md)
 {% endcontent-ref %}

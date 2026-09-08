@@ -2,6 +2,8 @@
 
 # HyperEVM issues
 
+Here are the guides in this section:
+
 {% content-ref url="/pages/yM5Wdf4MOmf8G4Ru3bX0" %}
 [Accidentally transferred to HyperEVM](/hyperliquid-docs/support/faq/hyperevm-issues/accidentally-transferred-to-hyperevm.md)
 {% endcontent-ref %}

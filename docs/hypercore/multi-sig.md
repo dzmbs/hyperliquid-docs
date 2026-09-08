@@ -2,6 +2,8 @@
 
 # Multi-sig
 
+Advanced Feature
+
 HyperCore supports native multi-sig actions. This allows multiple private keys to control a single account for additional security. Unlike other chains, multi-sig is available as a built-in primitive on HyperCore as opposed to relying on smart contracts.&#x20;
 
 The multi-sig workflow is described below:

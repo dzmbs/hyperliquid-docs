@@ -2,6 +2,8 @@
 
 # Deposited via Monad network
 
+Description: You deposited via the Monad network, which is managed by Unit Protocol.
+
 * The Monad address can only receive MON on the Monad network. Deposits other than MON or on other networks will fail and not be credited, e.g., Depositing USDC on Monad will fail and not be credited.
   * If you accidentally sent an asset that is not supported on Monad or sent MON on a chain other than Monad, there isn't a way to retrieve these assets currently, unless Unit adds support for them.
   * If you sent the right token on the right chain and deposited more than the minimum amount, but your MON still shows up as “Failed", reach out to the Unit team, which manages Monad network deposits & withdrawals: [https://app.hyperunit.xyz/support](<https://app.hyperunit.xyz/support >)​

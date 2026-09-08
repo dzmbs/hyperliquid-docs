@@ -2,6 +2,8 @@
 
 # Connected via email
 
+Description: I no longer receive verification codes to login with email
+
 ### What to do
 
 * If you flagged Privy messages as spam in the past, that would lead to your address being removed from their whitelist. You can reach out directly to Privy’s support team to ask them to check why your email isn’t receiving verification codes at <support@privy.io> and re-enable them.

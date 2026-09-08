@@ -2,6 +2,8 @@
 
 # Withdrawal has not arrived in my wallet
 
+Description: You made a withdrawal, but your funds have not arrived in your wallet or intended destination.
+
 ### How to check where your withdrawal went <a href="#withdrawal-check" id="withdrawal-check"></a>
 
 {% stepper %}

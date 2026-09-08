@@ -2,6 +2,8 @@
 
 # I have API related questions
 
+Description: You are building on HyperCore or HyperEVM
+
 Here are the API docs: <https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api>
 
 Please do not open any tickets about API related questions. If you have questions about the API, you can ask in the #api-traders channel in the Discord server: <https://discord.gg/hyperliquid>. You can also search the message history since many people have similar questions.&#x20;

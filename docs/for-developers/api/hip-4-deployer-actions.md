@@ -2,6 +2,8 @@
 
 # HIP-4 deployer actions
 
+Testnet-only
+
 #### Overview
 
 To ensure markets are high quality and well-defined, validators vote on outcome templates, which HIP-4 deployers use as the basis for permissionless deployments. Templates fix the structure of the specification's display text, side names, and the set of typed keywords.

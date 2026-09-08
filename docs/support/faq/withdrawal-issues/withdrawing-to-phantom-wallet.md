@@ -2,6 +2,8 @@
 
 # Withdrawing to Phantom Wallet
 
+Description: You are connected using Phantom Wallet and face issues with withdrawal
+
 ### Situation 1: You need 1 USDC for withdrawals and cannot deposit USDC via Phantom wallet, since Phantom does not support Arbitrum <a href="#need-usdc" id="need-usdc"></a>
 
 * **Option 1**&#x20;

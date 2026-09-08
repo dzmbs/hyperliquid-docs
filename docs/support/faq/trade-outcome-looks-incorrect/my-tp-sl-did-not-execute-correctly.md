@@ -2,6 +2,8 @@
 
 # My TP/SL did not execute correctly
 
+Description: You set a TP/SL and believe it was not executed correctly
+
 ### Situation 1: My TP executed and made a loss although it was triggered at a profitable price. <a href="#tp-made-a-loss" id="tp-made-a-loss"></a>
 
 * Take Profit (TP) and Stop Loss (SL) orders can be set as market or limit orders. TP/SL are triggered by mark price, and then executed. Trade price and mark price are different&#x20;

@@ -23,7 +23,7 @@ Block explorer URL (optional):&#x20;
 
 Currency Symbol: HYPE
 
-<figure><img src="/files/LskykzrVNR4ujRcNMC6t" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="https://2356094849-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FyUdp569E6w18GdfqlGvJ%2Fuploads%2Fv6qDC8gb3VDKlyizuuY9%2Fimage.png?alt=media&amp;token=d84bee95-9b5c-4dda-b395-6b4464ff78fc" alt="" width="375"><figcaption></figcaption></figure>
 
 ### How do I move assets to and from the HyperEVM?
 
@@ -33,7 +33,7 @@ You can also send your HYPE to 0x2222222222222222222222222222222222222222 from e
 
 Sending from the HyperEVM to your Spot balances costs gas in HYPE on the HyperEVM. Sending from your Spot balances to the HyperEVM cost gas in HYPE on HyperCore (Spot). &#x20;
 
-<figure><img src="/files/YA6pPZxJyhtnJNNBhAJf" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="https://2356094849-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FyUdp569E6w18GdfqlGvJ%2Fuploads%2FBYObU8WVK89lpgV9OkO9%2Fimage.png?alt=media&amp;token=5a752e35-39f8-4dc6-a6ef-2950d8c0ccdf" alt="" width="375"><figcaption></figcaption></figure>
 
 ### What can I do on the HyperEVM?
 

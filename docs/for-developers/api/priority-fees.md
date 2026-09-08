@@ -2,6 +2,8 @@
 
 # Priority fees
 
+Advanced feature for latency-sensitive users
+
 ### Gossip (read) priority
 
 There are 2 independent Dutch auctions synced to the same 3 minute schedule. The auction indices are optionally interpreted by nodes as an ordering for their peers when sending data. The priority ordering affects both split client blocks and normal client blocks that include responses. The foundation non-validator will opt into respecting the gossip priority auction ordering.&#x20;

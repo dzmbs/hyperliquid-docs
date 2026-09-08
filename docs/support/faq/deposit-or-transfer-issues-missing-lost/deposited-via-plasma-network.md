@@ -2,6 +2,8 @@
 
 # Deposited via Plasma network
 
+Description: You deposited via the Plasma network, which is managed by Unit Protocol.
+
 * The Plasma address can only receive XPL on the Plasma network. Deposits other than XPL or on other networks will fail and not be credited, e.g., Depositing USDC on Plasma will fail and not be credited.
   * If you accidentally sent USDT0 on Plasma, you can try Unit's revert feature: <https://app.hyperunit.xyz/revert>. Instructions can be found here: <https://docs.hyperunit.xyz/how-to/revert>.&#x20;
   * If you accidentally sent another asset that is not supported on Plasma or sent XPL on a chain other than Plasma, there isn't a way to retrieve these assets currently, unless Unit adds support for them.

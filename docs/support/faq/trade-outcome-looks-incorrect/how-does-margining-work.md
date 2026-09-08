@@ -2,6 +2,8 @@
 
 # How does margining work?
 
+Description: You have open cross margin positions and don’t understand how margin is attributed to positions
+
 Situation: Why didn’t my margin become available after I closed a Perps position? I closed a Perps position that showed 1,000 USDC in margin, but after closing, my Available Balance increased by <1,000 USDC. Where did the rest go?
 
 ### Reasoning

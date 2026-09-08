@@ -2,6 +2,8 @@
 
 # Accidentally transferred to HyperEVM
 
+Description: You clicked the “Transfer to/from EVM” button and can’t figure out what happened
+
 ### How do I transfer it back to Spot? <a href="#transfer-back-to-spot" id="transfer-back-to-spot"></a>
 
 * Your funds are not lost. They went from HyperCore to the HyperEVM. HyperCore and the HyperEVM are two parts of the Hyperliquid blockchain. You can visualize what that means here: <https://hyperliquid.gitbook.io/hyperliquid-docs>

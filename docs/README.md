@@ -16,4 +16,4 @@ Hyperliquid state execution is split into two broad components: HyperCore and th
 
 The HyperEVM brings the familiar general-purpose smart contract platform pioneered by Ethereum to the Hyperliquid blockchain. With the HyperEVM, the performant liquidity and financial primitives of HyperCore are available as permissionless building blocks for all users and builders. See the HyperEVM documentation section for more technical details.
 
-<figure><img src="/files/06fhFwlvyufYvqdhjiUs" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="https://2356094849-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FyUdp569E6w18GdfqlGvJ%2Fuploads%2FPgVwhFtylBB2kaxhQtZz%2FStack.png?alt=media&amp;token=fb5b86d0-95be-41bb-91d3-d08c8603c284" alt="" width="563"><figcaption></figcaption></figure>

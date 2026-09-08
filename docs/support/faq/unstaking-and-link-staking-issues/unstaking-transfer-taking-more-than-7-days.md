@@ -2,6 +2,8 @@
 
 # Unstaking transfer taking more than 7 days
 
+Description: You believe that you unstaked HYPE and the transfer has taken >7 days. Your unstaked HYPE has not reached your Spot balance
+
 ### Troubleshoot
 
 1. Check that you have initiated the transfer from your Staking balance to your Spot balance, not just unstaked. The 7 day unstaking queue begins after you initiate the transfer. Unstaking and transferring to Spot balance are two separate actions

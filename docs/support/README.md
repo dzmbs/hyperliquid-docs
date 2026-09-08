@@ -2,6 +2,8 @@
 
 # Read Me - Support Guide
 
+This Support Guide is meant to help you resolve common issues that users face on Hyperliquid.
+
 Read this page before you open a ticket. Tickets may take up to 48 hours for a response, with longer wait time on the weekend.
 
 ### Recommendations

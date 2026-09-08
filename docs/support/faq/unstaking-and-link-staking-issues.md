@@ -2,6 +2,8 @@
 
 # Unstaking & link staking issues
 
+Here are the guides in this section:
+
 {% content-ref url="/pages/1JKaMuIWympI5a1oTvY2" %}
 [Unstaking transfer taking more than 7 days](/hyperliquid-docs/support/faq/unstaking-and-link-staking-issues/unstaking-transfer-taking-more-than-7-days.md)
 {% endcontent-ref %}

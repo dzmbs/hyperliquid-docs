@@ -2,6 +2,8 @@
 
 # Post requests
 
+This page describes posting requests using the WebSocket API.
+
 ### Request format
 
 The WebSocket API supports posting requests that you can normally post through the HTTP API. These requests are either info requests or signed actions. For examples of info request payloads, please refer to the Info endpoint section. For examples of signed action payloads, please refer to the Exchange endpoint section.

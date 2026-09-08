@@ -2,6 +2,8 @@
 
 # Withdrawal issues
 
+Here are the guides in this section:
+
 {% content-ref url="/pages/cxViyskg0wWX6SJ4nXeo" %}
 [Withdrawal has not arrived in my wallet](/hyperliquid-docs/support/faq/withdrawal-issues/withdrawal-has-not-arrived-in-my-wallet.md)
 {% endcontent-ref %}

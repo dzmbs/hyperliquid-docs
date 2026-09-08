@@ -2,6 +2,8 @@
 
 # Perpetuals
 
+The section documents the info endpoints that are specific to perpetuals. See Rate limits section for rate limiting logic and weights.
+
 ## Retrieve all perpetual dexs
 
 <mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/info`

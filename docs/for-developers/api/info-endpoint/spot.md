@@ -2,6 +2,8 @@
 
 # Spot
 
+The section documents the info endpoints that are specific to spot.
+
 ## Retrieve spot metadata
 
 <mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/info`

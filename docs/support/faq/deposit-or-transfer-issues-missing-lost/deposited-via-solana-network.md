@@ -2,6 +2,8 @@
 
 # Deposited via Solana network
 
+Description: You deposited via the Solana network, which is managed by Unit Protocol.
+
 * The Solana address can only receive SOL/2Z/ANSEM/BONK/FARTCOIN/PUMP/SPX on the Solana network. Deposits other than the assets listed above or on other networks will fail and not be credited, e.g., Depositing USDC on Solana will fail and not be credited.
   * If you accidentally sent USDC, USDT, or WSOL on Solana, you can try Unit's revert feature: <https://app.hyperunit.xyz/revert>. Instructions can be found here: <https://docs.hyperunit.xyz/how-to/revert>.&#x20;
   * If you accidentally sent an asset that is not supported on Solana or sent SOL/2Z/ANSEM/BONK/FARTCOIN/PUMP/SPX on a chain other than Solana, there isn't a way to retrieve these assets currently, unless Unit adds support for them.

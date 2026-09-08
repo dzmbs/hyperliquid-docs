@@ -2,6 +2,8 @@
 
 # Deposited via Bitcoin network
 
+Description: You deposited via the Bitcoin network, which is managed by Unit Protocol.
+
 * The Bitcoin address can only receive BTC on the Bitcoin network. Deposits other than BTC or on other networks will fail and not be credited.
   * If you have accidentally sent BTC on another network, there isn't a way to retrieve these funds currently.
   * If you sent the right token on the right chain and deposited more than the minimum amount, but your BTC still shows up as “Failed”, reach out to the Unit team, which manages Bitcoin network deposits & withdrawals: [https://app.hyperunit.xyz/support](<https://app.hyperunit.xyz/support >)
