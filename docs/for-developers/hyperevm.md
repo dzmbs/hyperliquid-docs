@@ -21,3 +21,7 @@ JSON-RPC endpoint: `https://rpc.hyperliquid.xyz/evm` for mainnet&#x20;
 Chain ID: 998&#x20;
 
 JSON-RPC endpoint: `https://rpc.hyperliquid-testnet.xyz/evm`
+
+### Additional notes
+
+Pre-EIP-155 transactions are accepted as with many EVM chains. Users generally should not use wallets that have previously sent pre-EIP-155 transactions.

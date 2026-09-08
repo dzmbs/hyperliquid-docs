@@ -201,8 +201,8 @@
     "for-developers/hyperevm.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm.md",
-      "hash": "f5ac7b1f8219789c7f764e0b91eb1334b533312a150bd03ad2fbb23ccc392fea",
-      "last_updated": "2026-07-03T14:23:07.237801"
+      "hash": "7b7592ce5220b9f379b3dbffc84b1cc42c5deecfcf4f02a844ef598885839662",
+      "last_updated": "2026-09-08T04:05:49.230418"
     },
     "for-developers/hyperevm/dual-block-architecture.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/dual-block-architecture",
@@ -884,14 +884,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-09-07T23:24:18.220282",
-    "duration_seconds": 94.803749,
+    "completed_at": "2026-09-08T04:07:09.369031",
+    "duration_seconds": 105.594406,
     "pages_discovered": 147,
     "pages_fetched": 147,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-09-07T23:24:18.220302",
+  "last_updated": "2026-09-08T04:07:09.369052",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
