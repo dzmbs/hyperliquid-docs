@@ -29,7 +29,15 @@ type PerpDeployAction =
     }
   | {
       type: "perpDeploy";
+      setFundingClamps: SetFundingClamps;
+    }
+  | {
+      type: "perpDeploy";
       haltTrading: { coin: string; isHalted: boolean };
+    }
+  | {
+      type: "perpDeploy";
+      insertMarginTable: InsertMarginTable;
     }
   | {
       type: "perpDeploy";
@@ -73,7 +81,7 @@ type PerpDeployAction =
  * @param maxGas - Max gas in native token wei. If not provided, then uses current deploy auction price.
  * If the max gas is 0, then a reserve deployment will be used.
  * A reserve deployment allows deployment at the current price of the gas auction, even if it has ended.
- * Currently, 7 + 0.2 * n_auction_deployments reserve deployments are allowed.
+ * Currently, 7 reserve deployments are allowed.
  * IMPORTANT: A reserve deployment will be used regardless of whether the auction has completed, so deployers should query the auction status first.
  * @param assetRequest - Contains new asset listing parameters. See RegisterAssetRequest2 below for details.
  * @param dex - Name of the perp dex (2-4 lowercase characters)
@@ -167,6 +175,13 @@ type SetFundingMultipliers = Array<[string, string]>;
 type SetFundingInterestRates = Array<[string, string]>;
 
 /**
+ * A sorted list of asset and 8 hour funding clamp.
+ * Clamps must be between 0 and 0.01 and bound how far the funding rate can move away from the
+ * average premium toward the interest rate. Defaults to 0.0003.
+ */
+type SetFundingClamps = Array<[string, string]>;
+
+/**
  * A sorted of asset and margin table ids.
  * Margin table ids must be non-zero.
  */
@@ -254,7 +269,17 @@ type SetPerpAnnotation = {
 
 For the following examples, `feeScale` is the `scale` field in `SetDeployerFees`. Assume a positive normal user fee of 1 unit and non-aligned collateral (`x = y = 1`). `userFeeToProtocol` and `userFeeToDeployer` are the resulting fee units charged to the user.
 
-<table data-header-hidden data-search="false"><thead><tr><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td><code>growthMode</code></td><td><code>feeScale</code></td><td><code>userFeeToProtocol</code></td><td><code>userFeeToDeployer</code></td></tr><tr><td><code>false</code></td><td><code>"0"</code></td><td><code>1</code></td><td><code>0</code></td></tr><tr><td><code>false</code></td><td><code>"0.5"</code></td><td><code>1</code></td><td><code>0.5</code></td></tr><tr><td><code>false</code></td><td><code>"1"</code></td><td><code>1</code></td><td><code>1</code></td></tr><tr><td><code>false</code></td><td><code>"3"</code></td><td><code>3</code></td><td><code>3</code></td></tr><tr><td><code>true</code></td><td><code>"0"</code></td><td><code>0.1</code></td><td><code>0</code></td></tr><tr><td><code>true</code></td><td><code>"0.5"</code></td><td><code>0.1</code></td><td><code>0.05</code></td></tr><tr><td><code>true</code></td><td><code>"1"</code></td><td><code>0.1</code></td><td><code>0.1</code></td></tr><tr><td><code>true</code></td><td><code>"3.01"</code></td><td><code>0.301</code></td><td><code>0.301</code></td></tr><tr><td><code>true</code></td><td><code>"9.99"</code></td><td><code>0.999</code></td><td><code>0.999</code></td></tr></tbody></table>
+| `growthMode` | `feeScale` | `userFeeToProtocol` | `userFeeToDeployer` |
+| ------------ | ---------- | ------------------- | ------------------- |
+| `false`      | `"0"`      | `1`                 | `0`                 |
+| `false`      | `"0.5"`    | `1`                 | `0.5`               |
+| `false`      | `"1"`      | `1`                 | `1`                 |
+| `false`      | `"3"`      | `3`                 | `3`                 |
+| `true`       | `"0"`      | `0.1`               | `0`                 |
+| `true`       | `"0.5"`    | `0.1`               | `0.05`              |
+| `true`       | `"1"`      | `0.1`               | `0.1`               |
+| `true`       | `"3.01"`   | `0.301`             | `0.301`             |
+| `true`       | `"9.99"`   | `0.999`             | `0.999`             |
 
 See <https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint/perpetuals#retrieve-information-about-the-perp-deploy-auction> for how to query for the perp deploy auction status.
 
@@ -266,13 +291,13 @@ Notional open interest caps are enforced on the total open interest summed over 
 
 Size-denominated open interest caps are only enforced per-asset. Size-denominated open interest caps are currently a constant 1B per asset, so a reasonable default would be to set `szDecimals` such that the minimal size increment is $1-10 at the initial mark price.
 
-### HIP-3\* (testnet-only)
+## HIP-3\* (testnet-only)
 
-#### **Star actions**
+### Star actions
 
-A HIP-3 venue can be designated HIP-3\* at time of creation. This enables several features on top of the HIP-3 spec, including an allowlist and proxied user actions.
+A HIP-3 venue can be designated HIP-3\* at time of creation. This enables several features on top of the HIP-3 spec, including an allow-list and proxied user actions.
 
-#### **Operations**
+#### Operations
 
 ```json
 {
@@ -286,7 +311,7 @@ A HIP-3 venue can be designated HIP-3\* at time of creation. This enables severa
   "type": "perpDeploy",
   "star": {
     "dex": "test",
-    "operation": { "proxy": ["0xUSER_B", "cancelAll"] }
+    "operation": { "proxy": ["0xUSER_B", { "cancelAll": { "assets": [100001, 100002] } }] }
   }
 }
 ```
@@ -297,7 +322,7 @@ A HIP-3 venue can be designated HIP-3\* at time of creation. This enables severa
 
 * **`modifyApproval`** — `{ "modifyApproval": true }` adds the user to the allowlist, `false` removes them. Removing a user who is not approved is a no-op, as is re-approving an approved user.
 * **`cancel`** — `{ "cancel": { "cancels": [{ "a": <asset>, "o": <oid> }] } }`, the standard `cancel` exchange-action payload. Cancels the user's resting orders by oid.
-* **`cancelAll`** — `"cancelAll"`. Cancels all of the user's resting orders and TWAPs on this venue. Orders and TWAPs on other DEXs are unaffected.
+* **`cancelAll`** — `{ "cancelAll": { "assets": null } }` cancels all of the user's resting orders and TWAPs on this venue. `{ "cancelAll": { "assets": [<asset>, ...] } }` cancels only the user's resting orders and TWAPs for the listed assets. The list must contain 1-10 entries. Every listed asset must be a perp on this venue, otherwise the whole operation is rejected. Orders and TWAPs on other DEXs are unaffected.
 * **`order`** — `{ "order": { "orders": [...], "grouping": "na" } }`, the standard `order` exchange-action payload. Every order must be reduce-only (`"r": true`).
 * **`sendAsset`** — `{ "sendAsset": { "destination": "0xUSER_C", "amount": "100.0" } }`. Moves collateral from the proxied user's account on the DEX to `destination`'s account on the same venue.
 
