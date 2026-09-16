@@ -2,7 +2,7 @@
 
 # HIP-3 deployer actions
 
-The API for deploying and operating builder-deployed perpetual dexs involves the following L1 action:
+The API for deploying and operating builder-deployed perpetual dexs involves the following L1 actions:
 
 ```typescript
 // IMPORTANT: All lists of tuples should be lexographically sorted before signing
@@ -71,9 +71,16 @@ type PerpDeployAction =
       type: "perpDeploy";
       disableDex: string;
     };
-```
 
-```typescript
+// User-signed action to transfer collateral between the user's DEX account and its backstop liquidator.
+// ntl must be positive and a multiple of 1_000_000_000.
+type Hip3LiquidatorTransferAction = {
+  type: "hip3LiquidatorTransfer";
+  dex: string;
+  ntl: number; // Integer amount in millionths of a collateral token: 1_000_000_000 = 1,000 tokens
+  isDeposit: boolean; // true deposits; false withdraws
+};
+
 /**
  * RegisterAsset2 can be called to initialize a new dex and register an asset at the same time.
  * If schema is not provided, then RegisterAsset can be called multiple times to register additional assets
@@ -117,9 +124,7 @@ type RegisterAssetRequest = {
   marginTableId: number;
   onlyIsolated: boolean;
 };
-```
 
-```typescript
 /**
  * The markPxs outer list can be length 0, 1, or 2. The median of these inputs
  * along with the local mark price (median(best bid, best ask, last trade price))
@@ -147,9 +152,7 @@ type SetOracle = {
   markPxs: Array<Array<[string, string]>>;
   externalPerpPxs: Array<[string, string]>;
 };
-```
 
-```typescript
 /**
  * @param fullName - Full name of the perp dex
  * @param collateralToken - Collateral token index
@@ -220,8 +223,9 @@ type MaxLeverage = number;
 /**
  * A sorted list of asset and open interest cap notionals.
  * Open interest caps must be at least the maximum of 1_000_000 (1 size unit of collateral asset) or half of the current open interest.
+ * null removes the custom cap for an asset.
  */
-type SetOpenInterestCaps = Array<[string, number]>;
+type SetOpenInterestCaps = Array<[string, number | null]>;
 
 /**
  * A modification to sub-deployer permissions
@@ -233,7 +237,7 @@ type SubDeployerInput = {
 };
 
 // A sorted list of (coin, marginMode). See RegisterAssetRequest2 for margin mode definitions.
-type SetMarginModes = Array<[string, "strictIsolated" | "noCross"]>;
+type SetMarginModes = Array<[string, "strictIsolated" | "noCross" | "normal"]>;
 
 // Let the user normal rate be `x`. Let the user rate be `y` after accounting for aligned quote collateral.
 // In other words, `x = y` for non-aligned collateral.
@@ -291,13 +295,48 @@ Notional open interest caps are enforced on the total open interest summed over 
 
 Size-denominated open interest caps are only enforced per-asset. Size-denominated open interest caps are currently a constant 1B per asset, so a reasonable default would be to set `szDecimals` such that the minimal size increment is $1-10 at the initial mark price.
 
+#### Backstop liquidator
+
+The backstop liquidator address is `0x4000000000000000000000000000000000000000 + {dex_index}`. For example, the first HIP-3 DEX has backstop liquidator address `0x4000000000000000000000000000000000000001`.
+
+#### Node user account summaries
+
+The node flag `--write-user-account-summaries <dex>` writes account summaries for the named HIP-3 DEX on oracle updates to `~/hl/data/dex_user_account_summaries/<dexIndex>/<date>/<hour>/<timestamp>.json`, where `timestamp` is Unix time in milliseconds. Each file has the following format:
+
+```json
+{
+  "is_snapshot": true,
+  "user_to_account_summary": {
+    "0x0000000000000000000000000000000000000001": { "a": "100.0" }
+  }
+}
+```
+
+`a` is account value in the DEX's collateral token. The first file is a full snapshot. A new snapshot is written on the first oracle update more than 10 minutes after the previous snapshot. Intervening files have `is_snapshot: false` and contain only new or changed users. Consumers replace their state on snapshots and merge intervening updates by user address.
+
 ## HIP-3\* (testnet-only)
 
 ### Star actions
 
-A HIP-3 venue can be designated HIP-3\* at time of creation. This enables several features on top of the HIP-3 spec, including an allow-list and proxied user actions.
+A HIP-3 venue can be designated HIP-3\* at time of creation by setting `isStar: true` in `PerpDexSchemaInput`. This optional boolean defaults to `false`. HIP-3\* enables several features on top of the HIP-3 spec, including an allow-list and proxied user actions.
 
 #### Operations
+
+```typescript
+type Hip3StarAction = {
+  type: "perpDeploy";
+  star: { dex: string; operation: { proxy: [address, Hip3StarProxyOperation] } };
+};
+
+// CancelAction and OrderAction are the standard exchange actions.
+type Hip3StarProxyOperation =
+  | { modifyApproval: boolean }
+  | { modifyBackstopLiquidatorApproval: boolean }
+  | { cancel: Omit<CancelAction, "type"> }
+  | { cancelAll: { assets?: Array<number> | null } }
+  | { order: Omit<OrderAction, "type"> }
+  | { sendAsset: { destination: address; amount: string } };
+```
 
 ```json
 {
@@ -321,6 +360,7 @@ A HIP-3 venue can be designated HIP-3\* at time of creation. This enables severa
 #### Proxy operations
 
 * **`modifyApproval`** — `{ "modifyApproval": true }` adds the user to the allowlist, `false` removes them. Removing a user who is not approved is a no-op, as is re-approving an approved user.
+* **`modifyBackstopLiquidatorApproval`** — `{ "modifyBackstopLiquidatorApproval": true }` allows the user to deposit into and withdraw from the venue's backstop liquidator; `false` revokes this approval. This allowlist is separate from `modifyApproval`.
 * **`cancel`** — `{ "cancel": { "cancels": [{ "a": <asset>, "o": <oid> }] } }`, the standard `cancel` exchange-action payload. Cancels the user's resting orders by oid.
 * **`cancelAll`** — `{ "cancelAll": { "assets": null } }` cancels all of the user's resting orders and TWAPs on this venue. `{ "cancelAll": { "assets": [<asset>, ...] } }` cancels only the user's resting orders and TWAPs for the listed assets. The list must contain 1-10 entries. Every listed asset must be a perp on this venue, otherwise the whole operation is rejected. Orders and TWAPs on other DEXs are unaffected.
 * **`order`** — `{ "order": { "orders": [...], "grouping": "na" } }`, the standard `order` exchange-action payload. Every order must be reduce-only (`"r": true`).
@@ -328,10 +368,13 @@ A HIP-3 venue can be designated HIP-3\* at time of creation. This enables severa
 
 #### Permissions
 
-| Operation        | Deployer | Sub-deployer grant                 |
-| ---------------- | -------- | ---------------------------------- |
-| `modifyApproval` | yes      | `{ "hip3Star": "modifyApproval" }` |
-| `cancel`         | yes      | `{ "hip3Star": "cancel" }`         |
-| `cancelAll`      | yes      | `{ "hip3Star": "cancelAll" }`      |
-| `order`          | yes      | `{ "hip3Star": "order" }`          |
-| `sendAsset`      | yes      | `{ "hip3Star": "sendAsset" }`      |
+For HIP-3\*, `SubDeployerInput.variant` also accepts the objects shown below.
+
+| Operation                          | Deployer | Sub-deployer grant                                   |
+| ---------------------------------- | -------- | ---------------------------------------------------- |
+| `modifyApproval`                   | yes      | `{ "hip3Star": "modifyApproval" }`                   |
+| `modifyBackstopLiquidatorApproval` | yes      | `{ "hip3Star": "modifyBackstopLiquidatorApproval" }` |
+| `cancel`                           | yes      | `{ "hip3Star": "cancel" }`                           |
+| `cancelAll`                        | yes      | `{ "hip3Star": "cancelAll" }`                        |
+| `order`                            | yes      | `{ "hip3Star": "order" }`                            |
+| `sendAsset`                        | yes      | `{ "hip3Star": "sendAsset" }`                        |
