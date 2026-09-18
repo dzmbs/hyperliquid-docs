@@ -2,6 +2,8 @@
 
 # HIP-3 deployer actions
 
+## HIP-3 deployer actions
+
 The API for deploying and operating builder-deployed perpetual dexs involves the following L1 actions:
 
 ```typescript
@@ -316,7 +318,7 @@ The node flag `--write-user-account-summaries <dex>` writes account summaries fo
 
 ## HIP-3\* (testnet-only)
 
-### Star actions
+### Actions
 
 A HIP-3 venue can be designated HIP-3\* at time of creation by setting `isStar: true` in `PerpDexSchemaInput`. This optional boolean defaults to `false`. HIP-3\* enables several features on top of the HIP-3 spec, including an allow-list and proxied user actions.
 
@@ -332,6 +334,7 @@ type Hip3StarAction = {
 type Hip3StarProxyOperation =
   | { modifyApproval: boolean }
   | { modifyBackstopLiquidatorApproval: boolean }
+  | { setReduceOnly: boolean }
   | { cancel: Omit<CancelAction, "type"> }
   | { cancelAll: { assets?: Array<number> | null } }
   | { order: Omit<OrderAction, "type"> }
@@ -359,10 +362,11 @@ type Hip3StarProxyOperation =
 
 #### Proxy operations
 
-* **`modifyApproval`** — `{ "modifyApproval": true }` adds the user to the allowlist, `false` removes them. Removing a user who is not approved is a no-op, as is re-approving an approved user.
-* **`modifyBackstopLiquidatorApproval`** — `{ "modifyBackstopLiquidatorApproval": true }` allows the user to deposit into and withdraw from the venue's backstop liquidator; `false` revokes this approval. This allowlist is separate from `modifyApproval`.
+* **`modifyApproval`** — `{ "modifyApproval": true }` adds the user to the allowlist, `false` removes them. Removing a user who is not approved is a no-op. Re-approving an approved user is a no-op and keeps the user's flags.
+* **`modifyBackstopLiquidatorApproval`** — `{ "modifyBackstopLiquidatorApproval": true }` allows the user to deposit into and withdraw from the venue's backstop liquidator via `hip3LiquidatorTransfer`; `false` revokes this. The user must already be approved via `modifyApproval`.
+* **`setReduceOnly`** — `{ "setReduceOnly": true }` restricts an approved user to reducing their positions on the venue. The user can only place reduce-only orders and TWAPs, modify orders into reduce-only orders, and cancel. `{ "setReduceOnly": false }` restores full trading.
 * **`cancel`** — `{ "cancel": { "cancels": [{ "a": <asset>, "o": <oid> }] } }`, the standard `cancel` exchange-action payload. Cancels the user's resting orders by oid.
-* **`cancelAll`** — `{ "cancelAll": { "assets": null } }` cancels all of the user's resting orders and TWAPs on this venue. `{ "cancelAll": { "assets": [<asset>, ...] } }` cancels only the user's resting orders and TWAPs for the listed assets. The list must contain 1-10 entries. Every listed asset must be a perp on this venue, otherwise the whole operation is rejected. Orders and TWAPs on other DEXs are unaffected.
+* **`cancelAll`** — `{ "cancelAll": { "assets": null } }` cancels all of the user's resting orders and TWAPs on this venue. `{ "cancelAll": { "assets": [<asset>, ...] } }` cancels only the user's resting orders and TWAPs for the listed assets. The list must contain 1-10 entries.
 * **`order`** — `{ "order": { "orders": [...], "grouping": "na" } }`, the standard `order` exchange-action payload. Every order must be reduce-only (`"r": true`).
 * **`sendAsset`** — `{ "sendAsset": { "destination": "0xUSER_C", "amount": "100.0" } }`. Moves collateral from the proxied user's account on the DEX to `destination`'s account on the same venue.
 
@@ -374,7 +378,29 @@ For HIP-3\*, `SubDeployerInput.variant` also accepts the objects shown below.
 | ---------------------------------- | -------- | ---------------------------------------------------- |
 | `modifyApproval`                   | yes      | `{ "hip3Star": "modifyApproval" }`                   |
 | `modifyBackstopLiquidatorApproval` | yes      | `{ "hip3Star": "modifyBackstopLiquidatorApproval" }` |
+| `setReduceOnly`                    | yes      | `{ "hip3Star": "setReduceOnly" }`                    |
 | `cancel`                           | yes      | `{ "hip3Star": "cancel" }`                           |
 | `cancelAll`                        | yes      | `{ "hip3Star": "cancelAll" }`                        |
 | `order`                            | yes      | `{ "hip3Star": "order" }`                            |
 | `sendAsset`                        | yes      | `{ "hip3Star": "sendAsset" }`                        |
+
+Each grant only covers its own operation. For example, the `modifyApproval` grant does not allow `modifyBackstopLiquidatorApproval`, `setReduceOnly`, or `sendAsset`.
+
+### Reading state
+
+The `userStarState` info request returns a user's approval state on every HIP-3\* venue where the user is currently approved.
+
+```json
+{ "type": "userStarState", "user": "0xUSER_A" }
+```
+
+```json
+{
+  "dexToState": {
+    "test": {
+      "isReduceOnly": false,
+      "isBackstopLiquidatorDepositAllowed": true
+    }
+  }
+}
+```
