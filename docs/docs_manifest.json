@@ -672,6 +672,12 @@
       "hash": "5e9cef56ca3c085063bd17913639f72bcbc6485916e9040d78554901a0ba9c46",
       "last_updated": "2026-07-14T14:00:33.109027"
     },
+    "support/faq/trailing-stops.md": {
+      "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trailing-stops",
+      "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trailing-stops.md",
+      "hash": "9e3c45f020c3c982d97bd9e29f9e6c689c7f415aab8ce6212e02f43beced4ca4",
+      "last_updated": "2026-09-19T10:42:39.418991"
+    },
     "support/faq/unstaking-and-link-staking-issues.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/unstaking-and-link-staking-issues",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/unstaking-and-link-staking-issues.md",
@@ -819,8 +825,8 @@
     "trading/order-types.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/order-types",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/order-types.md",
-      "hash": "d5873371283dc9ed3c3ff731bbd660014b71708b46913301a625acd0277f6a63",
-      "last_updated": "2026-08-01T10:45:38.935859"
+      "hash": "9153f790a0d45f6de7334bad6c98f880241577c4168b66d661d6204dafae3512",
+      "last_updated": "2026-09-19T10:42:55.808727"
     },
     "trading/perpetual-assets.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/perpetual-assets",
@@ -890,14 +896,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-09-19T04:11:10.818712",
-    "duration_seconds": 83.945222,
-    "pages_discovered": 148,
-    "pages_fetched": 148,
+    "completed_at": "2026-09-19T10:43:02.954541",
+    "duration_seconds": 99.496978,
+    "pages_discovered": 149,
+    "pages_fetched": 149,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-09-19T04:11:10.818735",
+  "last_updated": "2026-09-19T10:43:02.954564",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
