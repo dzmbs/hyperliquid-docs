@@ -14,8 +14,8 @@ IMPORTANT: Portfolio margin is a complex technical upgrade and requires bootstra
 * Account value <$25M
 * USDT: 50M USDT global supply cap, 10M USDT global borrow cap, 5M USDT user supply cap, 1M USDT user borrow cap
 * USDC: 1B USDC global supply cap, 500M USDC global borrow cap, 250M USDC user supply cap, 50M USDC user borrow cap
-* HYPE: 10M HYPE global supply cap, 1M HYPE user supply cap
-* BTC: 2k BTC global supply cap, 200 BTC user supply cap
+* HYPE: 25M HYPE global supply cap, 1M HYPE user supply cap
+* BTC: 5k BTC global supply cap, 200 BTC user supply cap
 
 ### LTV and borrowing
 
