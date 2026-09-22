@@ -22,3 +22,9 @@ If you’re experiencing issues connecting your wallet to Hyperliquid, such as a
 * Reinstall your wallet extension: Make sure you have your seed phrase or private key backed up before doing this
 
 Lastly, you can try switching to Rabby Wallet, which often works more smoothly with Hyperliquid. Your trades, history, and address remain the same even if you use a new wallet extension. <https://support.rabby.io/en/articles/14120403-migrating-from-metamask-or-other-wallets>
+
+### WalletConnect stale session
+
+If you're connecting through WalletConnect and the connection request or sign prompts do not appear in your mobile wallet app, the session has likely gone stale.&#x20;
+
+Reset it by disconnecting your wallet from the interface you're using and removing the interface from the connected apps / sessions list. Then try reconnecting.&#x20;
