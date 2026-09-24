@@ -50,6 +50,7 @@
 
 * Blockscout: <https://www.hyperscan.com/>
 * Etherscan: <https://hyperevmscan.io/>
+* Hyperscan: <https://hyperscan.com/>
 * Owlscan: <https://owlscan.org/>
 
 ### Faucet (testnet HYPE for gas)
