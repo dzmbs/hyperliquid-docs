@@ -93,14 +93,14 @@
     "for-developers/api/hip-3-deployer-actions.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions.md",
-      "hash": "bbd228094d478f1ed2dbef766e3948fb7cd68b4389206e735036b3b69bb55c6e",
-      "last_updated": "2026-09-18T10:57:56.530887"
+      "hash": "846d2e82fe870a6024ce98801404fe55528fc9292ff901078420522eff55febc",
+      "last_updated": "2026-09-24T11:29:33.088595"
     },
     "for-developers/api/hip-3-deployer-actions-1.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions-1",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions-1.md",
-      "hash": "fa8d4e1c1dca6da231cc88769c6d1a5d1dbfd7924e5749228232a6ce7d3bd2dc",
-      "last_updated": "2026-07-03T14:22:57.351400"
+      "hash": "7f186521e3e60ee64ff82c28f7e0d629f6cb9bee18a2c72cb9825cb5668936be",
+      "last_updated": "2026-09-24T11:29:33.821405"
     },
     "for-developers/api/hip-4-deployer-actions.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-4-deployer-actions",
@@ -896,14 +896,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-09-24T04:17:41.903261",
-    "duration_seconds": 106.862703,
+    "completed_at": "2026-09-24T11:31:15.196558",
+    "duration_seconds": 116.484401,
     "pages_discovered": 149,
     "pages_fetched": 149,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-09-24T04:17:41.903283",
+  "last_updated": "2026-09-24T11:31:15.196589",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",

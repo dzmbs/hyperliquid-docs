@@ -2,8 +2,6 @@
 
 # HIP-3 deployer actions
 
-## HIP-3 deployer actions
-
 The API for deploying and operating builder-deployed perpetual dexs involves the following L1 actions:
 
 ```typescript
@@ -303,22 +301,18 @@ The backstop liquidator address is `0x4000000000000000000000000000000000000000 +
 
 #### Node user account summaries
 
-The node flag `--write-user-account-summaries <dex>` writes account summaries for the named HIP-3 DEX on oracle updates to `~/hl/data/dex_user_account_summaries/<dexIndex>/<date>/<hour>/<timestamp>.json`, where `timestamp` is Unix time in milliseconds. Each file has the following format:
+The node flag `--write-user-account-summaries <dex>` writes account summaries for the named HIP-3 DEX to hourly files at `~/hl/data/dex_user_account_summaries/hourly/<date>/<hour>`, where `date` is `YYYYMMDD`. Each line is a JSON array `[time, messages]`, where `time` is the block time and `messages` is either a single snapshot of every user on the DEX or a list of per-user diffs:
 
 ```json
-{
-  "is_snapshot": true,
-  "user_to_account_summary": {
-    "0x0000000000000000000000000000000000000001": { "a": "100.0" }
-  }
-}
+["2026-09-24T09:00:00.123", [{ "Snapshot": { "0xUSER_A": { "a": "100.0", "b": "90.0" } } }]]
+["2026-09-24T09:00:03.456", [{ "Diff": ["0xUSER_A", { "a": "105.0", "b": "90.0" }] }]]
 ```
 
-`a` is account value in the DEX's collateral token. The first file is a full snapshot. A new snapshot is written on the first oracle update more than 10 minutes after the previous snapshot. Intervening files have `is_snapshot: false` and contain only new or changed users. Consumers replace their state on snapshots and merge intervening updates by user address.
+`a` is account value and `b` is `balance = accountValue - unrealizedPnl`, both denominated in the venue's collateral token. The first line of each file, and the first line written after the node starts, is a snapshot. Other lines contain diffs for users whose summary changed: every such user on an oracle update for the venue, or only the users involved in a fill, liquidation, funding payment, or transfer into or out of the venue.
 
 ## HIP-3\* (testnet-only)
 
-### Actions
+### Star actions
 
 A HIP-3 venue can be designated HIP-3\* at time of creation by setting `isStar: true` in `PerpDexSchemaInput`. This optional boolean defaults to `false`. HIP-3\* enables several features on top of the HIP-3 spec, including an allow-list and proxied user actions.
 
@@ -327,8 +321,12 @@ A HIP-3 venue can be designated HIP-3\* at time of creation by setting `isStar: 
 ```typescript
 type Hip3StarAction = {
   type: "perpDeploy";
-  star: { dex: string; operation: { proxy: [address, Hip3StarProxyOperation] } };
+  star: { dex: string; operation: Hip3StarOperation };
 };
+
+type Hip3StarOperation =
+  | { proxy: [address, Hip3StarProxyOperation] }
+  | { setOracle: { oraclePxs: Array<[string, string]> } };
 
 // CancelAction and OrderAction are the standard exchange actions.
 type Hip3StarProxyOperation =
@@ -356,19 +354,40 @@ type Hip3StarProxyOperation =
     "operation": { "proxy": ["0xUSER_B", { "cancelAll": { "assets": [100001, 100002] } }] }
   }
 }
+{
+  "type": "perpDeploy",
+  "star": {
+    "dex": "test",
+    "operation": { "setOracle": { "oraclePxs": [["test:BTC", "100000.0"], ["test:ETH", "4000.0"]] } }
+  }
+}
 ```
 
 * **`proxy`** — a pair of a user address and one proxy operation applied to that user.
+* **`setOracle`** — updates oracle prices, as described under Oracle below.
 
 #### Proxy operations
 
-* **`modifyApproval`** — `{ "modifyApproval": true }` adds the user to the allowlist, `false` removes them. Removing a user who is not approved is a no-op. Re-approving an approved user is a no-op and keeps the user's flags.
+* **`modifyApproval`** — `{ "modifyApproval": true }` adds the user to the allowlist, `false` removes them and clears their flags. Removing a user who is not approved is a no-op. Re-approving an approved user is a no-op and keeps the user's flags. A removed user who is approved again starts with default flags.
 * **`modifyBackstopLiquidatorApproval`** — `{ "modifyBackstopLiquidatorApproval": true }` allows the user to deposit into and withdraw from the venue's backstop liquidator via `hip3LiquidatorTransfer`; `false` revokes this. The user must already be approved via `modifyApproval`.
 * **`setReduceOnly`** — `{ "setReduceOnly": true }` restricts an approved user to reducing their positions on the venue. The user can only place reduce-only orders and TWAPs, modify orders into reduce-only orders, and cancel. `{ "setReduceOnly": false }` restores full trading.
 * **`cancel`** — `{ "cancel": { "cancels": [{ "a": <asset>, "o": <oid> }] } }`, the standard `cancel` exchange-action payload. Cancels the user's resting orders by oid.
 * **`cancelAll`** — `{ "cancelAll": { "assets": null } }` cancels all of the user's resting orders and TWAPs on this venue. `{ "cancelAll": { "assets": [<asset>, ...] } }` cancels only the user's resting orders and TWAPs for the listed assets. The list must contain 1-10 entries.
 * **`order`** — `{ "order": { "orders": [...], "grouping": "na" } }`, the standard `order` exchange-action payload. Every order must be reduce-only (`"r": true`).
 * **`sendAsset`** — `{ "sendAsset": { "destination": "0xUSER_C", "amount": "100.0" } }`. Moves collateral from the proxied user's account on the DEX to `destination`'s account on the same venue.
+
+#### Oracle
+
+HIP-3\* venues update prices with the `setOracle` star operation deploy action. `oraclePxs` is a list (sorted by key) of asset and spot oracle prices. External perp prices and mark prices are derived onchain based on the deployer's spot oracle price inputs.
+
+* **External perp prices** are derived from the main dex asset with the same name, with the denomination converted to USDC. For example, `test:BTC` uses the external perp price of `BTC`.
+* **Mark prices** are computed onchain as the median of:
+
+  1. the oracle price adjusted by an exponential moving average of the mid price's premium over the oracle price,
+  2. the external perp price, and
+  3. the local mark price (median(best bid, best ask, last trade price)).
+
+  If only two of these prices are available, an exponential moving average of the local mark price is added as a third input.
 
 #### Permissions
 
@@ -383,12 +402,13 @@ For HIP-3\*, `SubDeployerInput.variant` also accepts the objects shown below.
 | `cancelAll`                        | yes      | `{ "hip3Star": "cancelAll" }`                        |
 | `order`                            | yes      | `{ "hip3Star": "order" }`                            |
 | `sendAsset`                        | yes      | `{ "hip3Star": "sendAsset" }`                        |
+| `setOracle`                        | yes      | `{ "hip3Star": "setOracle" }`                        |
 
-Each grant only covers its own operation. For example, the `modifyApproval` grant does not allow `modifyBackstopLiquidatorApproval`, `setReduceOnly`, or `sendAsset`.
+Each grant only covers its own operation. For example, the `modifyApproval` grant does not allow `modifyBackstopLiquidatorApproval`, `setReduceOnly`, or `sendAsset`. Likewise, the regular `"setOracle"` grant, including the one given to `oracleUpdater`, does not allow the `setOracle` star operation.
 
-### Reading state
+### User star state
 
-The `userStarState` info request returns a user's approval state on every HIP-3\* venue where the user is currently approved.
+The `userStarState` info request returns a user's approval state on every HIP-3\* venue where the user has been approved. The state is `null` on venues that have since removed the user's approval.
 
 ```json
 { "type": "userStarState", "user": "0xUSER_A" }
@@ -400,7 +420,8 @@ The `userStarState` info request returns a user's approval state on every HIP-3\
     "test": {
       "isReduceOnly": false,
       "isBackstopLiquidatorDepositAllowed": true
-    }
+    },
+    "demo": null
   }
 }
 ```
