@@ -970,6 +970,44 @@ Approve a maximum fee rate for a builder.
 {% endtab %}
 {% endtabs %}
 
+## Place a trailing stop order
+
+<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
+
+#### Headers
+
+| Name                                           | Type   | Description        |
+| ---------------------------------------------- | ------ | ------------------ |
+| Content-Type<mark style="color:red;">\*</mark> | String | "application/json" |
+
+#### Request Body
+
+| Name                                        | Type   | Description                                                                                                                                                                                                                                                       |                  |
+| ------------------------------------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "trailingStop",</p><p>  "asset": Number,</p><p>  "isBuy": Boolean,</p><p>  "sz": String,</p><p>  "reduceOnly": Boolean,</p><p>  "retracement": {"pct": as a percent string; e.g. "1.234%"} or {"px": String},</p><p>  "activationPx": String | null</p><p>}</p> |
+| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                                                                                                                                                                                          |                  |
+| signature<mark style="color:red;">\*</mark> | Object |                                                                                                                                                                                                                                                                   |                  |
+| vaultAddress                                | String | If trading on behalf of a vault or subaccount, its address in 42-character hexadecimal format; e.g. 0x0000000000000000000000000000000000000000                                                                                                                    |                  |
+| expiresAfter                                | Number | Timestamp in milliseconds                                                                                                                                                                                                                                         |                  |
+
+{% tabs %}
+{% tab title="200: OK Successful Response" %}
+
+```
+{
+   "status":"ok",
+   "response":{
+      "type":"trailingStop",
+      "data":{
+         "oid":77738308
+      }
+   }
+}
+```
+
+{% endtab %}
+{% endtabs %}
+
 ## Reserve Additional Actions
 
 <mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`&#x20;
