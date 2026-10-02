@@ -150,7 +150,7 @@ The section documents the info endpoints that are specific to spot.
 
 <mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/info`
 
-See a user's token balances.&#x20;
+See a user's token balances.
 
 Under unified account or portfolio margin, this is the source of truth for trading account balance across spot and perps.
 

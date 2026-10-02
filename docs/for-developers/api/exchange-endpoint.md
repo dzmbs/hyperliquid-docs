@@ -14,9 +14,9 @@ Subaccounts and vaults do not have private keys. To perform actions on behalf of
 
 ### Expires After
 
-Some actions support an optional field `expiresAfter` which is a timestamp in milliseconds after which the action will be rejected. User-signed actions such as Core USDC transfer do not support the `expiresAfter` field. Note that actions consume 5x the usual address-based rate limit when canceled due to a stale `expiresAfter` field.&#x20;
+Some actions support an optional field `expiresAfter` which is a timestamp in milliseconds after which the action will be rejected. User-signed actions such as Core USDC transfer do not support the `expiresAfter` field. Note that actions consume 5x the usual address-based rate limit when canceled due to a stale `expiresAfter` field.
 
-See the Python SDK for details on how to incorporate this field when signing.&#x20;
+See the Python SDK for details on how to incorporate this field when signing.
 
 ## Place an order
 
@@ -42,13 +42,13 @@ Client Order ID (cloid) is an optional 128 bit hex string, e.g. `0x1234567890abc
 
 #### Request Body
 
-| Name                                        | Type   | Description                                                                                                                                                                                                                              |       |                                                                                                                                                      |                                                                                                       |              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| ------------------------------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "order",<br>  "orders": \[{</p><p>    "a": Number,</p><p>    "b": Boolean,</p><p>    "p": String,</p><p>    "s": String,</p><p>    "r": Boolean,</p><p>    "t": {</p><p>      "limit": {</p><p>        "tif": "Alo" | "Ioc" | "Gtc" </p><p>      } or</p><p>      "trigger": {</p><p>         "isMarket": Boolean,</p><p>         "triggerPx": String,</p><p>         "tpsl": "tp" | "sl"</p><p>       }</p><p>    },</p><p>    "c": Cloid (optional)</p><p>  }],</p><p>  "grouping": "na" | "normalTpsl" | "positionTpsl",</p><p>  "builder": Optional({"b": "address", "f": Number})</p><p>}<br><br>Meaning of keys:<br>a is asset<br>b is isBuy<br>p is price<br>s is size<br>r is reduceOnly<br>t is type<br>c is cloid (client order id)<br><br>Meaning of keys in optional builder argument:<br>b is the address the should receive the additional fee<br>f is the size of the fee in tenths of a basis point e.g. if f is 10, 1bp of the order notional  will be charged to the user and sent to the builder</p> |
-| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                                                                                                                                                                 |       |                                                                                                                                                      |                                                                                                       |              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| signature<mark style="color:red;">\*</mark> | Object |                                                                                                                                                                                                                                          |       |                                                                                                                                                      |                                                                                                       |              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| vaultAddress                                | String | If trading on behalf of a vault or subaccount, its Onchain address in 42-character hexadecimal format; e.g. 0x0000000000000000000000000000000000000000                                                                                   |       |                                                                                                                                                      |                                                                                                       |              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| expiresAfter                                | Number | Timestamp in milliseconds                                                                                                                                                                                                                |       |                                                                                                                                                      |                                                                                                       |              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Name                                        | Type   | Description                                                                                                                                                                                                                              |       |                                                                                                                                                     |                                                                                                       |              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| ------------------------------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "order",<br>  "orders": \[{</p><p>    "a": Number,</p><p>    "b": Boolean,</p><p>    "p": String,</p><p>    "s": String,</p><p>    "r": Boolean,</p><p>    "t": {</p><p>      "limit": {</p><p>        "tif": "Alo" | "Ioc" | "Gtc"</p><p>      } or</p><p>      "trigger": {</p><p>         "isMarket": Boolean,</p><p>         "triggerPx": String,</p><p>         "tpsl": "tp" | "sl"</p><p>       }</p><p>    },</p><p>    "c": Cloid (optional)</p><p>  }],</p><p>  "grouping": "na" | "normalTpsl" | "positionTpsl",</p><p>  "builder": Optional({"b": "address", "f": Number})</p><p>}<br><br>Meaning of keys:<br>a is asset<br>b is isBuy<br>p is price<br>s is size<br>r is reduceOnly<br>t is type<br>c is cloid (client order id)<br><br>Meaning of keys in optional builder argument:<br>b is the address the should receive the additional fee<br>f is the size of the fee in tenths of a basis point e.g. if f is 10, 1bp of the order notional will be charged to the user and sent to the builder</p> |
+| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                                                                                                                                                                 |       |                                                                                                                                                     |                                                                                                       |              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| signature<mark style="color:red;">\*</mark> | Object |                                                                                                                                                                                                                                          |       |                                                                                                                                                     |                                                                                                       |              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| vaultAddress                                | String | If trading on behalf of a vault or subaccount, its Onchain address in 42-character hexadecimal format; e.g. 0x0000000000000000000000000000000000000000                                                                                   |       |                                                                                                                                                     |                                                                                                       |              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| expiresAfter                                | Number | Timestamp in milliseconds                                                                                                                                                                                                                |       |                                                                                                                                                     |                                                                                                       |              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
 {% tabs %}
 {% tab title="200: OK Successful Response (resting)" %}
@@ -181,11 +181,11 @@ Client Order ID (cloid) is an optional 128 bit hex string, e.g. `0x1234567890abc
 
 Both `cancel` and `cancelByCloid` actions include an optional `fast` flag, encoded as `f` in the action. Orders with `f: true` are rejected if they refer to trigger orders. Currently `fast` has no other effect. In a future network upgrade, cancel actions will be prioritized in the mempool if and only if `fast = true`.
 
-Note that `f` must be skipped if false, i.e. actions hashed with `f: false` will be rejected.&#x20;
+Note that `f` must be skipped if false, i.e. actions hashed with `f: false` will be rejected.
 
 ## Cancel order(s) by cloid
 
-<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`&#x20;
+<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
 
 #### Headers
 
@@ -215,7 +215,7 @@ Note that `f` must be skipped if false, i.e. actions hashed with `f: false` will
 
 ## Schedule cancel (dead man's switch)
 
-<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`&#x20;
+<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
 
 #### Headers
 
@@ -237,7 +237,7 @@ Schedule a cancel-all operation at a future time. Not including time will remove
 
 ## Modify an order
 
-<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange` &#x20;
+<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
 
 #### Headers
 
@@ -247,13 +247,13 @@ Schedule a cancel-all operation at a future time. Not including time will remove
 
 #### Request Body
 
-| Name                                        | Type   | Description                                                                                                                                            |                                                                                                                                                                                                                   |       |                                                                                                                                                      |                                                                                                                                                                                                                                                                              |
-| ------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "modify",</p><p>  "oid": Number                                                                                                   | Cloid,</p><p>  "order": {</p><p>    "a": Number,</p><p>    "b": Boolean,</p><p>    "p": String,</p><p>    "s": String,</p><p>    "r": Boolean,</p><p>    "t": {</p><p>      "limit": {</p><p>        "tif": "Alo" | "Ioc" | "Gtc" </p><p>      } or</p><p>      "trigger": {</p><p>         "isMarket": Boolean,</p><p>         "triggerPx": String,</p><p>         "tpsl": "tp" | "sl"</p><p>       }</p><p>    },</p><p>    "c": Cloid (optional)</p><p>  },</p><p>  "a": Boolean // always\_place</p><p>}<br><br>Meaning of keys:<br>a is asset<br>b is isBuy<br>p is price<br>s is size<br>r is reduceOnly<br>t is type<br>c is cloid (client order id)</p> |
-| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                                                                               |                                                                                                                                                                                                                   |       |                                                                                                                                                      |                                                                                                                                                                                                                                                                              |
-| signature<mark style="color:red;">\*</mark> | Object |                                                                                                                                                        |                                                                                                                                                                                                                   |       |                                                                                                                                                      |                                                                                                                                                                                                                                                                              |
-| vaultAddress                                | String | If trading on behalf of a vault or subaccount, its Onchain address in 42-character hexadecimal format; e.g. 0x0000000000000000000000000000000000000000 |                                                                                                                                                                                                                   |       |                                                                                                                                                      |                                                                                                                                                                                                                                                                              |
-| expiresAfter                                | Number | Timestamp in milliseconds                                                                                                                              |                                                                                                                                                                                                                   |       |                                                                                                                                                      |                                                                                                                                                                                                                                                                              |
+| Name                                        | Type   | Description                                                                                                                                            |                                                                                                                                                                                                                   |       |                                                                                                                                                     |                                                                                                                                                                                                                                                                              |
+| ------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "modify",</p><p>  "oid": Number                                                                                                   | Cloid,</p><p>  "order": {</p><p>    "a": Number,</p><p>    "b": Boolean,</p><p>    "p": String,</p><p>    "s": String,</p><p>    "r": Boolean,</p><p>    "t": {</p><p>      "limit": {</p><p>        "tif": "Alo" | "Ioc" | "Gtc"</p><p>      } or</p><p>      "trigger": {</p><p>         "isMarket": Boolean,</p><p>         "triggerPx": String,</p><p>         "tpsl": "tp" | "sl"</p><p>       }</p><p>    },</p><p>    "c": Cloid (optional)</p><p>  },</p><p>  "a": Boolean // always\_place</p><p>}<br><br>Meaning of keys:<br>a is asset<br>b is isBuy<br>p is price<br>s is size<br>r is reduceOnly<br>t is type<br>c is cloid (client order id)</p> |
+| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                                                                               |                                                                                                                                                                                                                   |       |                                                                                                                                                     |                                                                                                                                                                                                                                                                              |
+| signature<mark style="color:red;">\*</mark> | Object |                                                                                                                                                        |                                                                                                                                                                                                                   |       |                                                                                                                                                     |                                                                                                                                                                                                                                                                              |
+| vaultAddress                                | String | If trading on behalf of a vault or subaccount, its Onchain address in 42-character hexadecimal format; e.g. 0x0000000000000000000000000000000000000000 |                                                                                                                                                                                                                   |       |                                                                                                                                                     |                                                                                                                                                                                                                                                                              |
+| expiresAfter                                | Number | Timestamp in milliseconds                                                                                                                              |                                                                                                                                                                                                                   |       |                                                                                                                                                     |                                                                                                                                                                                                                                                                              |
 
 {% tabs %}
 {% tab title="200: OK Successful Response" %}
@@ -267,7 +267,7 @@ Schedule a cancel-all operation at a future time. Not including time will remove
 
 Both single and batch modify actions include an optional `always_place` flag, encoded as `a` in the action. When `always_place = true` will place the new order regardless of whether the cancel succeeded. When `always_place = false` the new order must be a non-trigger order, and must have TIF = ALO or a non-executable order with TIF = GTC. In the latter case, TIF of the new order is overridden to ALO.
 
-Note that `a` must be skipped if false, i.e. actions hashed with `a: false` will be rejected.&#x20;
+Note that `a` must be skipped if false, i.e. actions hashed with `a: false` will be rejected.
 
 ## Modify multiple orders
 
@@ -281,19 +281,19 @@ Note that `a` must be skipped if false, i.e. actions hashed with `a: false` will
 
 #### Request Body
 
-| Name                                        | Type   | Description                                                                                                                                            |                                                                                                                                                                                                                                     |       |                                                                                                                                                                |                                                                                                                                                                                                                                                                                                  |
-| ------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "batchModify",</p><p>  "modifies": \[{</p><p>    "oid": Number                                                                    | Cloid,</p><p>    "order": {</p><p>      "a": Number,</p><p>      "b": Boolean,</p><p>      "p": String,</p><p>      "s": String,</p><p>      "r": Boolean,</p><p>      "t": {</p><p>        "limit": {</p><p>          "tif": "Alo" | "Ioc" | "Gtc" </p><p>        } or</p><p>        "trigger": {</p><p>           "isMarket": Boolean,</p><p>           "triggerPx": String,</p><p>           "tpsl": "tp" | "sl"</p><p>         }</p><p>      },</p><p>      "c": Cloid (optional)</p><p>    }</p><p>  }], </p><p>  "a": Boolean // always\_place</p><p>}<br><br>Meaning of keys:<br>a is asset<br>b is isBuy<br>p is price<br>s is size<br>r is reduceOnly<br>t is type<br>c is cloid (client order id)</p> |
-| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                                                                               |                                                                                                                                                                                                                                     |       |                                                                                                                                                                |                                                                                                                                                                                                                                                                                                  |
-| signature<mark style="color:red;">\*</mark> | Object |                                                                                                                                                        |                                                                                                                                                                                                                                     |       |                                                                                                                                                                |                                                                                                                                                                                                                                                                                                  |
-| vaultAddress                                | String | If trading on behalf of a vault or subaccount, its Onchain address in 42-character hexadecimal format; e.g. 0x0000000000000000000000000000000000000000 |                                                                                                                                                                                                                                     |       |                                                                                                                                                                |                                                                                                                                                                                                                                                                                                  |
-| expiresAfter                                | Number | Timestamp in milliseconds                                                                                                                              |                                                                                                                                                                                                                                     |       |                                                                                                                                                                |                                                                                                                                                                                                                                                                                                  |
+| Name                                        | Type   | Description                                                                                                                                            |                                                                                                                                                                                                                                     |       |                                                                                                                                                               |                                                                                                                                                                                                                                                                                                 |
+| ------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "batchModify",</p><p>  "modifies": \[{</p><p>    "oid": Number                                                                    | Cloid,</p><p>    "order": {</p><p>      "a": Number,</p><p>      "b": Boolean,</p><p>      "p": String,</p><p>      "s": String,</p><p>      "r": Boolean,</p><p>      "t": {</p><p>        "limit": {</p><p>          "tif": "Alo" | "Ioc" | "Gtc"</p><p>        } or</p><p>        "trigger": {</p><p>           "isMarket": Boolean,</p><p>           "triggerPx": String,</p><p>           "tpsl": "tp" | "sl"</p><p>         }</p><p>      },</p><p>      "c": Cloid (optional)</p><p>    }</p><p>  }],</p><p>  "a": Boolean // always\_place</p><p>}<br><br>Meaning of keys:<br>a is asset<br>b is isBuy<br>p is price<br>s is size<br>r is reduceOnly<br>t is type<br>c is cloid (client order id)</p> |
+| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                                                                               |                                                                                                                                                                                                                                     |       |                                                                                                                                                               |                                                                                                                                                                                                                                                                                                 |
+| signature<mark style="color:red;">\*</mark> | Object |                                                                                                                                                        |                                                                                                                                                                                                                                     |       |                                                                                                                                                               |                                                                                                                                                                                                                                                                                                 |
+| vaultAddress                                | String | If trading on behalf of a vault or subaccount, its Onchain address in 42-character hexadecimal format; e.g. 0x0000000000000000000000000000000000000000 |                                                                                                                                                                                                                                     |       |                                                                                                                                                               |                                                                                                                                                                                                                                                                                                 |
+| expiresAfter                                | Number | Timestamp in milliseconds                                                                                                                              |                                                                                                                                                                                                                                     |       |                                                                                                                                                               |                                                                                                                                                                                                                                                                                                 |
 
 ## Update leverage
 
 <mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
 
-Update cross or isolated leverage on a coin.&#x20;
+Update cross or isolated leverage on a coin.
 
 #### Headers
 
@@ -423,7 +423,7 @@ Similar to send asset, but can be signed by an agent. Destination must match the
 
 <mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
 
-Specialized action for Core to EVM transfer that includes an additional data payload. See [HyperCore <> HyperEVM transfers](/hyperliquid-docs/for-developers/hyperevm/hypercore-less-than-greater-than-hyperevm-transfers.md) for more details. When used coreReceiveWithData will be called on the linked contract instead of transfer. IMPORTANT: it is the caller's responsibility to ensure that the token is properly linked and the linked contract supports the following interface:<br>
+Specialized action for Core to EVM transfer that includes an additional data payload. See [HyperCore <> HyperEVM transfers](https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/hypercore-less-than-greater-than-hyperevm-transfers) for more details. When used coreReceiveWithData will be called on the linked contract instead of transfer. IMPORTANT: it is the caller's responsibility to ensure that the token is properly linked and the linked contract supports the following interface:<br>
 
 ```
 interface ICoreReceiveWithData {
@@ -630,7 +630,7 @@ This method is used to transfer USDC from the user's spot wallet to perp wallet 
 
 <mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
 
-This method is used to transfer native token from the user's spot account into staking for delegating to validators.&#x20;
+This method is used to transfer native token from the user's spot account into staking for delegating to validators.
 
 #### Headers
 
@@ -761,7 +761,7 @@ Add or remove funds from a vault.
 
 Add or remove funds from HIP-3 backstop liquidator address. `ntl` is an integer in units of 1e-6 quote tokens. Amount must be a multiple of 1000 quote tokens (i.e. `ntl % 1000000000 == 0`).
 
-Only principal amount is withdrawable, not pnl.&#x20;
+Only principal amount is withdrawable, not pnl.
 
 **Headers**
 
@@ -1010,9 +1010,9 @@ Approve a maximum fee rate for a builder.
 
 ## Reserve Additional Actions
 
-<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`&#x20;
+<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
 
-Instead of trading to increase the address based rate limits, this action allows reserving additional actions for 0.0005 USDC per request. The cost is paid from the Perps balance.&#x20;
+Instead of trading to increase the address based rate limits, this action allows reserving additional actions for 0.0005 USDC per request. The cost is paid from the Perps balance.
 
 `destination` may be set to pay for another L1 user. The destination user must already exist. This field is skipped in hashing if it is unset.
 
@@ -1043,7 +1043,7 @@ Instead of trading to increase the address based rate limits, this action allows
 
 ## Invalidate Pending Nonce (noop)
 
-<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`&#x20;
+<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
 
 This action does not do anything (no operation), but causes the nonce to be marked as used. This can be a more effective way to cancel in-flight orders than the cancel action.
 
@@ -1074,9 +1074,9 @@ This action does not do anything (no operation), but causes the nonce to be mark
 
 ## Enable HIP-3 DEX abstraction
 
-<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`&#x20;
+<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
 
-NOTE: deprecrated. Prefer `userSetAbstraction`.&#x20;
+NOTE: deprecrated. Prefer `userSetAbstraction`.
 
 If set, actions on HIP-3 perps will automatically transfer collateral from validator-operated USDC perps balance for HIP-3 DEXs where USDC is the collateral token, and spot otherwise. When HIP-3 DEX abstraction is active, collateral is returned to the same source (validator-operated USDC perps or spot balance) when released from positions or open orders.
 
@@ -1102,7 +1102,7 @@ If set, actions on HIP-3 perps will automatically transfer collateral from valid
 
 ## Enable HIP-3 DEX abstraction (agent)
 
-NOTE: deprecrated. Prefer `agentSetAbstraction`.&#x20;
+NOTE: deprecrated. Prefer `agentSetAbstraction`.
 
 Same effect as UserDexAbstraction above, but only works if setting the value from `null` to `true`.
 
@@ -1188,7 +1188,7 @@ Same effect as UserDexAbstraction above, but only works if setting the value fro
 
 ## Split outcome
 
-Split `X` quote tokens into `X` Yes and `X` No shares.&#x20;
+Split `X` quote tokens into `X` Yes and `X` No shares.
 
 <mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
 
@@ -1200,11 +1200,11 @@ Split `X` quote tokens into `X` Yes and `X` No shares.&#x20;
 
 #### Request Body
 
-| Name                                        | Type   | Description                                                                                                                    |
-| ------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "userOutcome",</p><p>  "splitOutcome": { "outcome": Number,  amount: String (e.g., "123.0") }</p><p>}</p> |
-| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                                                       |
-| signature<mark style="color:red;">\*</mark> | Object |                                                                                                                                |
+| Name                                        | Type   | Description                                                                                                                   |
+| ------------------------------------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "userOutcome",</p><p>  "splitOutcome": { "outcome": Number, amount: String (e.g., "123.0") }</p><p>}</p> |
+| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                                                      |
+| signature<mark style="color:red;">\*</mark> | Object |                                                                                                                               |
 
 {% tabs %}
 {% tab title="200: OK Successful Response" %}
@@ -1218,7 +1218,7 @@ Split `X` quote tokens into `X` Yes and `X` No shares.&#x20;
 
 ## Merge outcome
 
-Merge `X` Yes and `X` No shares into `X` quote tokens.&#x20;
+Merge `X` Yes and `X` No shares into `X` quote tokens.
 
 <mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
 
@@ -1230,11 +1230,11 @@ Merge `X` Yes and `X` No shares into `X` quote tokens.&#x20;
 
 #### Request Body
 
-| Name                                        | Type   | Description                                                                                      |                                     |
-| ------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------ | ----------------------------------- |
-| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "userOutcome",</p><p>  "mergeOutcome": { "outcome": Number,  amount: String | null (null means max) }</p><p>}</p> |
-| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                         |                                     |
-| signature<mark style="color:red;">\*</mark> | Object |                                                                                                  |                                     |
+| Name                                        | Type   | Description                                                                                     |                                     |
+| ------------------------------------------- | ------ | ----------------------------------------------------------------------------------------------- | ----------------------------------- |
+| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "userOutcome",</p><p>  "mergeOutcome": { "outcome": Number, amount: String | null (null means max) }</p><p>}</p> |
+| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                        |                                     |
+| signature<mark style="color:red;">\*</mark> | Object |                                                                                                 |                                     |
 
 {% tabs %}
 {% tab title="200: OK Successful Response" %}
@@ -1248,7 +1248,7 @@ Merge `X` Yes and `X` No shares into `X` quote tokens.&#x20;
 
 ## Merge question
 
-Merge `X` Yes shares from each outcome associated to the same question into `X` quote tokens.&#x20;
+Merge `X` Yes shares from each outcome associated to the same question into `X` quote tokens.
 
 <mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
 
@@ -1260,11 +1260,11 @@ Merge `X` Yes shares from each outcome associated to the same question into `X` 
 
 #### Request Body
 
-| Name                                        | Type   | Description                                                                                        |                                     |
-| ------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "userOutcome",</p><p>  "mergeQuestion": { "question": Number,  amount: String | null (null means max) }</p><p>}</p> |
-| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                           |                                     |
-| signature<mark style="color:red;">\*</mark> | Object |                                                                                                    |                                     |
+| Name                                        | Type   | Description                                                                                       |                                     |
+| ------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "userOutcome",</p><p>  "mergeQuestion": { "question": Number, amount: String | null (null means max) }</p><p>}</p> |
+| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                          |                                     |
+| signature<mark style="color:red;">\*</mark> | Object |                                                                                                   |                                     |
 
 {% tabs %}
 {% tab title="200: OK Successful Response" %}
@@ -1278,7 +1278,7 @@ Merge `X` Yes shares from each outcome associated to the same question into `X` 
 
 ## Negate outcome
 
-Convert `X` No shares from an outcome associated with a question into `X` Yes shares of every other outcome associated with the question.&#x20;
+Convert `X` No shares from an outcome associated with a question into `X` Yes shares of every other outcome associated with the question.
 
 <mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
 
@@ -1290,11 +1290,11 @@ Convert `X` No shares from an outcome associated with a question into `X` Yes sh
 
 #### Request Body
 
-| Name                                        | Type   | Description                                                                                                                         |
-| ------------------------------------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------- |
-| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "userOutcome",</p><p>  "negateOutcome": { "question": Number, "outcome": Number,  amount: String }</p><p>}</p> |
-| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                                                            |
-| signature<mark style="color:red;">\*</mark> | Object |                                                                                                                                     |
+| Name                                        | Type   | Description                                                                                                                        |
+| ------------------------------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "userOutcome",</p><p>  "negateOutcome": { "question": Number, "outcome": Number, amount: String }</p><p>}</p> |
+| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                                                           |
+| signature<mark style="color:red;">\*</mark> | Object |                                                                                                                                    |
 
 {% tabs %}
 {% tab title="200: OK Successful Response" %}
@@ -1318,11 +1318,11 @@ Convert `X` No shares from an outcome associated with a question into `X` Yes sh
 
 #### Request Body
 
-| Name                                        | Type   | Description                                                                                                 |
-| ------------------------------------------- | ------ | ----------------------------------------------------------------------------------------------------------- |
-| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "validatorL1Stream",</p><p>  "riskFreeRate": String // e.g. "0.04" for 4% </p><p>}</p> |
-| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                                    |
-| signature<mark style="color:red;">\*</mark> | Object |                                                                                                             |
+| Name                                        | Type   | Description                                                                                                |
+| ------------------------------------------- | ------ | ---------------------------------------------------------------------------------------------------------- |
+| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "validatorL1Stream",</p><p>  "riskFreeRate": String // e.g. "0.04" for 4%</p><p>}</p> |
+| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                                   |
+| signature<mark style="color:red;">\*</mark> | Object |                                                                                                            |
 
 {% tabs %}
 {% tab title="200: OK Successful Response" %}

@@ -87,8 +87,8 @@
     "for-developers/api/exchange-endpoint.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/exchange-endpoint",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/exchange-endpoint.md",
-      "hash": "d65af9c2fe3e3cd8bf77a46d1cffeb3623b38816b1d2a868862c27e9928272b9",
-      "last_updated": "2026-10-01T05:20:41.023454"
+      "hash": "6df658a502e587db9cd5ae4bbe30c4e7cfde8e8a96cd5b11d6ca1ea39928c687",
+      "last_updated": "2026-10-02T09:34:12.027607"
     },
     "for-developers/api/hip-3-deployer-actions.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions",
@@ -123,8 +123,8 @@
     "for-developers/api/info-endpoint/spot.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint/spot",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint/spot.md",
-      "hash": "e478dbc53d5853a16a1494f66c3c61fdab5eaae658f08522636628f6f574ec14",
-      "last_updated": "2026-09-08T16:25:47.412362"
+      "hash": "2790494f02e91dea175643bc803d8659406c5aea213c6382e9a2bb8090c9a679",
+      "last_updated": "2026-10-02T09:34:16.348560"
     },
     "for-developers/api/nonces-and-api-wallets.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/nonces-and-api-wallets",
@@ -896,14 +896,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-10-02T00:38:46.119828",
-    "duration_seconds": 85.396568,
+    "completed_at": "2026-10-02T09:35:47.121541",
+    "duration_seconds": 108.402642,
     "pages_discovered": 149,
     "pages_fetched": 149,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-10-02T00:38:46.119851",
+  "last_updated": "2026-10-02T09:35:47.121566",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
