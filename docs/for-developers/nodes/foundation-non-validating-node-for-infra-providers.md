@@ -6,6 +6,7 @@ Builders should be able to connect to any of the infrastructure providers' peeri
 
 ### Available peers for builders to connect to
 
+* 0xArchive - <https://docs.0xarchive.io/peering>
 * Alchemy - [https://www.alchemy.com/docs/chains/hypercore-peering/overview](<https://www.alchemy.com/docs/chains/hypercore-peering/overview >)
 * Allium - <https://docs.allium.so/nodes/hyperliquid-sentry-peer>
 * Altitude - <https://docs.reachaltitude.xyz/rpc/hyperliquid-node-peering>
@@ -13,6 +14,7 @@ Builders should be able to connect to any of the infrastructure providers' peeri
 * DoubleZero - <https://docs.doublezero.xyz/hyperliquid>
 * Dwellir - <https://www.dwellir.com/docs/hyperliquid/peering>
 * Hydromancer - <https://docs.hydromancer.xyz/peering>
+* Hypedexer - <https://docs.hypedexer.com/peering/overview>
 * Hyperdash - <https://docs.hyperdash.com/data/direct-sentry-peering>&#x20;
 * HyperTracker - <https://docs.coinmarketman.com/endpoints/rate-limits-and-pricing>
 * Luganodes - <https://docs.luganodes.com/tools-and-services/hyperliquid/hyperliquid-node-peering>
