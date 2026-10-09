@@ -20,7 +20,6 @@ If you choose to use a normal defi wallet, you need: &#x20;
 
 There are many different interfaces and apps you can use, including
 
-* [Based](https://based.one/) (web, iOS, Android)
 * [Dexari](https://dexari.com/) (iOS, Android)
 * [MetaMask](https://metamask.io/) (iOS, Android)
 * [Phantom](https://phantom.com/) (web extension, iOS, Android)
