@@ -20,6 +20,6 @@ Read this page before you open a ticket. Tickets may take up to 48 hours for a r
 1. Never share your wallet, seed phrase, password, or private key with anyone or any website. If someone directly reaches out to you, assume they are a scammer.
 2. Always check the full URL of any website you interact with. Scammers often use similar looking domains, e.g., “hyperliguid.xyz,” to prompt users to sign a malicious transaction.
    1. The official Hyper Foundation website is <https://hyperfoundation.org/>
-   2. You can trade on <https://app.hyperliquid.xyz/trade>, in addition to other apps and websites&#x20;
+   2. You can trade on <https://app.hyperliquid.xyz/trade> and <https://play.google.com/store/apps/details?id=xyz.hyperliquid.app&hl>, in addition to other apps and websites
    3. The official X (Twitter) accounts are <https://x.com/HyperliquidX> and <https://x.com/HyperFND>
-   4. The official Telegram announcements channel is <https://t.me/hyperliquid_announcements>&#x20;
+   4. The official Telegram announcements channel is <https://t.me/hyperliquid_announcements>

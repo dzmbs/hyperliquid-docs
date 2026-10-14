@@ -12,16 +12,15 @@ If you’re experiencing issues connecting your wallet to Hyperliquid, such as a
 * Hard refresh your browser (on most browsers: Ctrl+Shift+R or Cmd+Shift+R) and clear cache
 * Disconnect and reconnect your wallet
 * Switch networks (e.g., to Ethereum) and then switch back to Arbitrum if you’re trying to deposit USDC on Arbitrum or the HyperEVM if you’re trying to use the HyperEVM
+* Reinstall your wallet extension: Make sure you have your seed phrase or private key backed up before doing this
 
 ### Wallet specific compatibility issues with Hyperliquid <a href="#wallet-specific-issues" id="wallet-specific-issues"></a>
 
 * Coinbase: Users on mobile may face connection problems. Try using the Coinbase Chrome extension instead
-* Metamask: Some users face issues with MetaMask on the HyperEVM. If this persists, consider migrating to a more compatible wallet like Rabby
 * Trezor forbidden keypath error: This is related to privacy settings within Trezor. In Trezor Suite's Security / Safety Checks change from "Strict" to "Prompt"&#x20;
 * Ledger "Transfer Failed" error on the HyperEVM: Update to the latest Ledger software/firmware
-* Reinstall your wallet extension: Make sure you have your seed phrase or private key backed up before doing this
 
-Lastly, you can try switching to Rabby Wallet, which often works more smoothly with Hyperliquid. Your trades, history, and address remain the same even if you use a new wallet extension. <https://support.rabby.io/en/articles/14120403-migrating-from-metamask-or-other-wallets>
+Lastly, you can try switching to Rabby Wallet, which often works more smoothly with Hyperliquid. Your trades, history, and address remain the same even if you use a new wallet extension. <https://support.rabby.io/en/collections/19061104-moving-to-rabby>
 
 ### WalletConnect stale session
 

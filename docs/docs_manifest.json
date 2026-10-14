@@ -483,8 +483,8 @@
     "support/README.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support.md",
-      "hash": "f06e3fb2ef1cd119ba4ad6540cb5fe05459fd4f049029c3a99ef0bbcc19a98e8",
-      "last_updated": "2026-09-08T16:26:21.126958"
+      "hash": "79eb036a559a7b8812e3140a58495b5368265de3729478f04bdbe1f329e3c040",
+      "last_updated": "2026-10-14T04:27:50.749866"
     },
     "support/faq/building-on-hyperliquid.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/building-on-hyperliquid",
@@ -519,8 +519,8 @@
     "support/faq/connectivity-issues/connected-via-wallet.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/connectivity-issues/connected-via-wallet",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/connectivity-issues/connected-via-wallet.md",
-      "hash": "da80bad2bb459cdb6a83538fc58d94ca9d3169db581f9d70d61af088d67b6cac",
-      "last_updated": "2026-09-22T11:20:58.492709"
+      "hash": "a9cc19e3165126c5a30490187046587ac7f01ed8cb57d2436ca055cddb8388d8",
+      "last_updated": "2026-10-14T04:27:55.169181"
     },
     "support/faq/deposit-or-transfer-issues-missing-lost.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/deposit-or-transfer-issues-missing-lost",
@@ -896,14 +896,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-10-13T22:31:58.088697",
-    "duration_seconds": 90.974432,
+    "completed_at": "2026-10-14T04:28:40.466541",
+    "duration_seconds": 109.334673,
     "pages_discovered": 149,
     "pages_fetched": 149,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-10-13T22:31:58.088719",
+  "last_updated": "2026-10-14T04:28:40.466563",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
