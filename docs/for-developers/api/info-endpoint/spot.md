@@ -183,9 +183,15 @@ Under unified account or portfolio margin, this is the source of truth for tradi
         {
             "coin": "PURR",
             "token": 1,
-            "hold": "0",
-            "total": "2000",
-            "entryNtl": "1234.56",
+            "hold": "0.0",
+            "total": "2000.0",
+            "entryNtl": "1234.56"
+        },
+        {
+            "coin": "+1230",
+            "hold": "0.0",
+            "total": "25.0",
+            "entryNtl": "12.5"
         }
     ]
 }
@@ -348,6 +354,16 @@ Note: This returns the status of the Dutch auction for spot pair deployments bet
 
 <mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/info`
 
+See the Asset IDs section for the format the API uses to refer to outcomes. Outcomes and questions deployed from a template have the `name` `template:<id>`, where `<id>` is the template's `id` in the `outcomeTemplates` response. See the HIP-4 deployment docs for their description format.
+
+Recurring standalone outcomes and questions are named `Recurring`, and their `description` is `|`-separated `key:value` pairs starting with `class`. `expiry` is a UTC time in the format `YYYYMMDD-HHMM`, and `underlying` is a perp coin name. Descriptions may contain other keys, which can be ignored.
+
+* `class:priceBinary` is a standalone outcome, e.g. `class:priceBinary|underlying:BTC|expiry:20260526-0600|targetPrice:77363|period:1d`. It resolves to Yes if the `underlying` mark price at `expiry` is above `targetPrice`.
+* `class:priceBucket` is a question, e.g. `class:priceBucket|underlying:BTC|expiry:20260615-0600|priceThresholds:63250,65831|period:1d`, where `priceThresholds` is `<lower>,<upper>`. Based on the `underlying` mark price at `expiry`:
+  * The outcome with description `index:0` resolves to Yes if the price is below `lower`.
+  * The outcome with description `index:1` resolves to Yes if the price is at least `lower` and below `upper`.
+  * The outcome with description `index:2` resolves to Yes if the price is at least `upper`.
+
 **Headers**
 
 | Name                                           | Value              |
@@ -383,6 +399,58 @@ Note: This returns the status of the Dutch auction for spot pair deployments bet
     }
   ]
 }
+```
+
+{% endtab %}
+{% endtabs %}
+
+## Retrieve outcome templates
+
+<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/info`
+
+**Headers**
+
+| Name                                           | Value              |
+| ---------------------------------------------- | ------------------ |
+| Content-Type<mark style="color:red;">\*</mark> | "application/json" |
+
+**Body**
+
+| Name                                   | Type   | Description        |
+| -------------------------------------- | ------ | ------------------ |
+| type<mark style="color:red;">\*</mark> | String | "outcomeTemplates" |
+
+Returns all outcome templates. `role` is one of `{"standaloneOutcome": {"sideNames": [...]}}`, `"question"`, or `{"questionOutcome": {"parent": <question template id>}}`. `name` and `description` contain `{keyword}` placeholders, and `keywords` lists each keyword with its type as `[keyword, type]` pairs. See the HIP-4 deployment docs for the value format of each type.
+
+**Response**
+
+{% tabs %}
+{% tab title="200: OK Successful Response" %}
+
+```json
+[
+  {
+    "id": "binaryPrice",
+    "role": { "standaloneOutcome": { "sideNames": ["Yes", "No"] } },
+    "name": "{perp} above {threshold} at {time}?",
+    "description": "The market resolves to Yes if the {perp} price is above {threshold} at {time}, and otherwise resolves to No. Settlement is according to the {seconds}-second TWAP of {priceDescription} price ending at {time}. If {perp} is delisted before this market settles, settlement is instead according to the {perp} settlement price at delisting. metadata=category:price|subCategory:N/A|semanticRestriction:This market must refer to the price of a Hyperliquid perp.",
+    "keywords": [["perp", "hlPerp"], ["priceDescription", "string"], ["seconds", "uInt"], ["threshold", "uDecimal"], ["time", "dateTime"]]
+  },
+  {
+    "id": "policyRateDecision",
+    "role": "question",
+    "name": "{institution} {decisionLabel} rate decision",
+    "description": "This market has three possible results: No change, Decrease, or Increase. Exactly one corresponding named outcome resolves to Yes; the other two and the protocol-created fallback resolve to No. It covers the {decisionLabel} {institution} decision concerning {policyMeasure}, scheduled for {scheduledDecision} UTC (the \"Decision\"). The Decision Value is the numeric value of {policyMeasure} announced by {officialSource}. The Prior Value is the value of that same measure in effect immediately before the Decision. No change resolves to Yes if the Decision Value equals the Prior Value. Decrease resolves to Yes if the Decision Value is lower. Increase resolves to Yes if the Decision Value is higher. If the Decision is rescheduled, the rescheduled decision applies if {officialSource} publishes it by {decisionDeadline} UTC. If the Decision is canceled or postponed without a replacement decision, or no official Decision Value is published by {decisionDeadline} UTC, No change resolves to Yes. Policy changes outside the scheduled Decision are ignored except when establishing the Prior Value. If {institution} replaces {policyMeasure}, the closest official successor measure identified by {officialSource} is used. Resolution uses the initially published decision; later revisions do not change the resolution. {officialSource} is the primary resolution source; independent reputable reporting may be used if it has not published the relevant decision. No change resolves to Yes under the deadline rule above only if neither {officialSource} nor independent reputable reporting establishes a Decision Value by {decisionDeadline} UTC. metadata=category:economics|subCategory:N/A|semanticRestriction:This market must refer to a scheduled policy rate decision by an official institution.",
+    "keywords": [["decisionDeadline", "dateTime"], ["decisionLabel", "string"], ["institution", "string"], ["officialSource", "string"], ["policyMeasure", "string"], ["scheduledDecision", "dateTime"]]
+  },
+  {
+    "id": "policyRateDecrease",
+    "role": { "questionOutcome": { "parent": "policyRateDecision" } },
+    "name": "Decrease",
+    "description": "This outcome resolves to Yes if the Decision Value is lower than the Prior Value under the parent question's rules.",
+    "keywords": []
+  }
+]
 ```
 
 {% endtab %}

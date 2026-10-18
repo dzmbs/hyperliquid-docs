@@ -4,7 +4,7 @@
 
 WebSocket endpoints are available for real-time data streaming and as an alternative to HTTP request sending on the Hyperliquid exchange. The WebSocket URLs by network are:
 
-* Mainnet: `wss://api.hyperliquid.xyz/ws`&#x20;
+* Mainnet: `wss://api.hyperliquid.xyz/ws`
 * Testnet: `wss://api.hyperliquid-testnet.xyz/ws`.
 
 ### Connecting
