@@ -299,16 +299,16 @@ Size-denominated open interest caps are only enforced per-asset. Size-denominate
 
 The backstop liquidator address is `0x4000000000000000000000000000000000000000 + {dex_index}`. For example, the first HIP-3 DEX has backstop liquidator address `0x4000000000000000000000000000000000000001`.
 
-#### Node user account summaries
+#### Node user clearinghouse states
 
-The node flag `--write-user-account-summaries <dex>` writes account summaries for the named HIP-3 DEX to hourly files at `~/hl/data/dex_user_account_summaries/hourly/<date>/<hour>`, where `date` is `YYYYMMDD`. Each line is a JSON array `[time, messages]`, where `time` is the block time and `messages` is either a single snapshot of every user on the DEX or a list of per-user diffs:
+The node flag `--write-user-clearinghouse-states <dex>` writes clearinghouse states for the named HIP-3 DEX to hourly files at `~/hl/data/dex_user_clearinghouse_states/hourly/<date>/<hour>`, where `date` is `YYYYMMDD`. Each line is a JSON array `[time, messages]`, where `time` is the block time and `messages` is either a single snapshot of every user on the DEX or a list of per-user diffs:
 
 ```json
-["2026-09-24T09:00:00.123", [{ "Snapshot": { "0xUSER_A": { "a": "100.0", "b": "90.0" } } }]]
-["2026-09-24T09:00:03.456", [{ "Diff": ["0xUSER_A", { "a": "105.0", "b": "90.0" }] }]]
+["2026-09-24T09:00:00.123", [{ "Snapshot": { "0xUSER_A": <clearinghouseState> } }]]
+["2026-09-24T09:00:03.456", [{ "Diff": ["0xUSER_A", <clearinghouseState>] }]]
 ```
 
-`a` is account value and `b` is `balance = accountValue - unrealizedPnl`, both denominated in the venue's collateral token. The first line of each file, and the first line written after the node starts, is a snapshot. Other lines contain diffs for users whose summary changed: every such user on an oracle update for the venue, or only the users involved in a fill, liquidation, funding payment, or transfer into or out of the venue.
+Each `<clearinghouseState>` has the same format as the `clearinghouseState` info request response for that DEX, denominated in the venue's collateral token. It only accounts for the user's state on the named DEX, so collateral shared across DEXes (e.g. through user abstraction) is not included, and `liquidationPx` is always `null`. The first line of each file, and the first line written after the node starts, is a snapshot. Other lines contain diffs for users whose clearinghouse state changed, ignoring `time`: every such user on an oracle update for the venue, or only the users involved in a fill, liquidation, funding payment, or transfer into or out of the venue.
 
 ## HIP-3\* (testnet-only)
 
