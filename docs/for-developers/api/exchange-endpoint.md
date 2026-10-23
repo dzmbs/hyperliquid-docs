@@ -658,6 +658,39 @@ This method is used to transfer native token from the user's spot account into s
 {% endtab %}
 {% endtabs %}
 
+## Deposit into staking (agent)
+
+<mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
+
+Similar to deposit into staking, but can be signed by an agent.
+
+#### Headers
+
+| Name                                           | Value              |
+| ---------------------------------------------- | ------------------ |
+| Content-Type<mark style="color:red;">\*</mark> | `application/json` |
+
+#### Body
+
+| Name                                        | Type   | Description                                                                                        |
+| ------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------- |
+| action<mark style="color:red;">\*</mark>    | Object | <p>{</p><p>  "type": "cDeposit2",</p><p>  "wei": amount of wei to transfer as a number</p><p>}</p> |
+| nonce<mark style="color:red;">\*</mark>     | Number | Recommended to use the current timestamp in milliseconds                                           |
+| signature<mark style="color:red;">\*</mark> | Object |                                                                                                    |
+| expiresAfter                                | Number | Timestamp in milliseconds                                                                          |
+
+#### Response
+
+{% tabs %}
+{% tab title="200: OK" %}
+
+```json
+{'status': 'ok', 'response': {'type': 'default'}}
+```
+
+{% endtab %}
+{% endtabs %}
+
 ## Withdraw from staking
 
 <mark style="color:green;">`POST`</mark> `https://api.hyperliquid.xyz/exchange`
