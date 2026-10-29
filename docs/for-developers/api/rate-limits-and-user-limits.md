@@ -30,7 +30,7 @@ The rate limiting logic allows 1 request per 1 USDC traded cumulatively since ad
 
 Each user has a default open order limit of 1000 plus one additional order for every 5M USDC of volume, capped at a total of 5000 open orders. When an order is placed with at least 1000 other open orders by the same user, it will be rejected if it is reduce-only or a trigger order.&#x20;
 
-During high congestion, addresses are limited to use 2x their previous day maker share percentage of the block space. The maker share is scaled by the same factor as the volume contribution of that asset towards fee tiers. For example, HIP-3 assets under growth mode count less towards this rate limit. The maker share is computed once per UTC date. During high traffic, it can therefore be helpful to not resend cancels whose results have already been returned via the API.&#x20;
+During high congestion, addresses are limited to use 2x their previous day maker share percentage of the block space. The maker share is scaled by the same factor as the volume contribution of that asset towards fee tiers. For example, HIP-3 assets under growth mode count less towards this rate limit. The maker share is computed once per UTC date. During high traffic, it can therefore be helpful to not resend cancels whose results have already been returned via the API. During congestion, the weight of a batched action is proportional both to its batch size and a constant per-action weight. Therefore, batching cancels or orders together will strictly decrease their weighting and reduce rate limit usage.&#x20;
 
 ### Batched Requests
 
