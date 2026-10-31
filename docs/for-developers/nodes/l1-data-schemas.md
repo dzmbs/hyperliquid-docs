@@ -62,6 +62,46 @@ Trades data is saved to&#x20;
 }
 ```
 
+#### Fills
+
+Fills data is saved to&#x20;
+
+```
+~/hl/data/node_fills/hourly/{date}/{hour}
+```
+
+```json
+// Example fill
+[                                                                              18:18:32 [11/1124]
+  "0x1111111111111111111111111111111111111111",
+  {
+    "coin": "BTC",
+    "px": "100000.0",
+    "sz": "0.01",
+    "side": "B",
+    "time": 1721982385899,
+    "startPosition": "0.0",
+    "dir": "Open Long",
+    "closedPnl": "0.0",
+    "hash": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "oid": 123456789,
+    "crossed": true,
+    "fee": "0.55",
+    "builderFee": "0.10",
+    "builder": "0x2222222222222222222222222222222222222222",
+    "subBuilders": [
+      {
+        "b": "0x3333333333333333333333333333333333333333",
+        "s": 25000
+      }
+    ],
+    "tid": 123456789012345,
+    "feeToken": "USDC",
+    "twapId": null
+  }
+]
+```
+
 #### Order statuses
 
 Order status data is saved to
