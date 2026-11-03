@@ -147,8 +147,8 @@
     "for-developers/api/priority-fees.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees.md",
-      "hash": "eff44b0a805b7c318d2804e42746ae668401268cd0be4f35bdb447784f72f722",
-      "last_updated": "2026-09-08T16:25:49.651591"
+      "hash": "6a616e3ce46dfab40cb50b8008e1bee561485ef0945f8b41ef44cb4e210a10a8",
+      "last_updated": "2026-11-03T06:10:24.902110"
     },
     "for-developers/api/rate-limits-and-user-limits.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/rate-limits-and-user-limits",
@@ -771,8 +771,8 @@
     "trading/funding.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/funding",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/funding.md",
-      "hash": "126d1a0489517bad351787542d555a0de25339c69fd544a0d8d283ae172d234c",
-      "last_updated": "2026-07-03T14:24:21.813660"
+      "hash": "160efe2b29df736c303698635fcba2ff23b4ef13b136e2bab0c63bbdd9f83005",
+      "last_updated": "2026-11-03T06:11:33.382048"
     },
     "trading/hyperps.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/hyperps",
@@ -861,8 +861,8 @@
     "trading/sub-accounts.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/sub-accounts",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/sub-accounts.md",
-      "hash": "236377babb6b3503a5c5b0113c0a9cbf93e1265bba242ac5c3dbec3e49bb7fe3",
-      "last_updated": "2026-07-03T14:24:31.404814"
+      "hash": "2a10daa096c14c2c100ab26a6a71f959b5428a917ae5f60402e83cced622fd03",
+      "last_updated": "2026-11-03T06:11:42.849624"
     },
     "trading/take-profit-and-stop-loss-orders-tp-sl.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/take-profit-and-stop-loss-orders-tp-sl",
@@ -896,14 +896,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-11-02T21:38:38.501985",
-    "duration_seconds": 106.076845,
+    "completed_at": "2026-11-03T06:11:45.895153",
+    "duration_seconds": 98.863571,
     "pages_discovered": 149,
     "pages_fetched": 149,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-11-02T21:38:38.502008",
+  "last_updated": "2026-11-03T06:11:45.895174",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",

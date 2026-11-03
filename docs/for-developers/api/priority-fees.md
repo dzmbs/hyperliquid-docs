@@ -6,7 +6,7 @@ Advanced feature for latency-sensitive users
 
 ### Gossip (read) priority
 
-There are 2 independent Dutch auctions synced to the same 3 minute schedule. The auction indices are optionally interpreted by nodes as an ordering for their peers when sending data. The priority ordering affects both split client blocks and normal client blocks that include responses. The foundation non-validator will opt into respecting the gossip priority auction ordering.&#x20;
+There are 3 independent Dutch auctions synced to the same 3 minute schedule. The auction indices are optionally interpreted by nodes as an ordering for their peers when sending data. The priority ordering affects both split client blocks and normal client blocks that include responses. The foundation non-validator will opt into respecting the gossip priority auction ordering.&#x20;
 
 The independent slot auctions are not additive, so an IP bidding multiple slots will be prioritized according to its lowest slot. For the auction to affect latency, the onchain IP must exactly match the IP seen by the peer sending data. Each auction's results only affect the duration of the following auction. For nodes that are connected via a chain of nodes to the validating network, note that each network hop may or may not respect the priority auction depending on how the parent node is configured.&#x20;
 

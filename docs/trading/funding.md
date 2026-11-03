@@ -38,7 +38,7 @@ For HIP-3 perps, a more responsive premium formula is used to allow deployers to
 
 `premium = (0.5 * (impact_bid_px + impact_ask_px) / oracle_px) - 1` .
 
-Funding on Hyperliquid is capped at 4%/hour. Note that this is much less aggressive capping than CEX counterparts. The funding cap and funding interval do not depend on the asset.&#x20;
+Funding on Hyperliquid is capped at 0.5%/hour. Note that this is much less aggressive capping than CEX counterparts. The funding cap and funding interval do not depend on the asset.&#x20;
 
 Note that the funding payment at the end of the interval is `position_size * oracle_price * funding_rate`. In particular, the spot oracle price is used to convert the position size to notional value, *not the mark price.*
 
