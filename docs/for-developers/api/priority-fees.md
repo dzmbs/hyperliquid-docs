@@ -16,7 +16,7 @@ The previous auction winners (i.e., current gossip priority ordering) and curren
 
 Gossip priority reduces the need for market makers to hyper-optimize their infrastructure to remain competitive. To participate in the auction, users send action `{"type": "gossipPriorityBid", "slotId": 0, "ip": "1.2.3.4", "maxGas": 100000000}` where gas is wei (i.e. units of `0.00000001` HYPE) of HYPE charged from spot balance. Each auction resets to 10 times the previous winning price of that slot, and have a minimum price of `0.1 HYPE`. Any address may bid on behalf of any IP address.&#x20;
 
-The current empirical effect of gossip priority on mainnet is approximately 25 ms reduction in latency per auction slot.
+The current empirical effect of gossip priority on mainnet is approximately 20 ms reduction in latency per auction slot.
 
 ### Order (write) priority
 
