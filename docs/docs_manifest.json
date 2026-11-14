@@ -27,8 +27,14 @@
     "brand-kit.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/brand-kit",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/brand-kit.md",
-      "hash": "710172148da865bbb1517c4981b2b293cf56c09d248dfd1d5f0ff79a70c27e4b",
-      "last_updated": "2026-07-15T08:24:22.812068"
+      "hash": "0232aef9b881557feeab6577469cee8bc75eb1cb765b4adbb81f6466ede70251",
+      "last_updated": "2026-11-14T10:00:00.074242"
+    },
+    "brand-kit/foundation-trademark-guidelines.md": {
+      "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/brand-kit/foundation-trademark-guidelines",
+      "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/brand-kit/foundation-trademark-guidelines.md",
+      "hash": "0721b897e199ccbab73c52af567fe05ca629e1b6aaa61d8e3d32e7124a861fcd",
+      "last_updated": "2026-11-14T10:00:00.740800"
     },
     "bug-bounty-program.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/bug-bounty-program",
@@ -896,14 +902,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-11-14T01:23:18.929153",
-    "duration_seconds": 112.412495,
-    "pages_discovered": 149,
-    "pages_fetched": 149,
+    "completed_at": "2026-11-14T10:01:34.086486",
+    "duration_seconds": 98.851623,
+    "pages_discovered": 150,
+    "pages_fetched": 150,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-11-14T01:23:18.929170",
+  "last_updated": "2026-11-14T10:01:34.086507",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
