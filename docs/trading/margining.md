@@ -12,7 +12,7 @@ Some assets are *strict isolated*, which functions the same as isolated margin w
 
 ### HIP-3 Margin Modes
 
-When users have perp positions across multiple DEXs, cross margin behaves different depending on the user's account abstraction. For unified account and portfolio margin, the user's cross margin positions in DEXs with the same collateral all share margin. For standard abstraction, cross margin only applies to the assets within the same DEX. See [here](/hyperliquid-docs/trading/account-abstraction-modes.md) for more details.
+When users have perp positions across multiple DEXs, cross margin behaves different depending on the user's account abstraction. For unified account and portfolio margin, the user's cross margin positions in DEXs with the same collateral all share margin. For standard abstraction, cross margin only applies to the assets within the same DEX. See [here](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes.md) for more details.
 
 HIP-3 DEXs also support "no cross" margin mode, which allows isolated margin with margin removal enabled, but does not allow cross margin.&#x20;
 

@@ -22,4 +22,4 @@ To unstake, follow the same process in reverse:
 2. Transfer from your Staking Balance to your Spot Balance. This takes 7 days.&#x20;
 3. After 7 days, the HYPE will appear in your Spot Balance.
 
-For further questions, you can refer to the [Staking](/hyperliquid-docs/hypercore/staking.md) section.
+For further questions, you can refer to the [Staking](https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/staking.md) section.

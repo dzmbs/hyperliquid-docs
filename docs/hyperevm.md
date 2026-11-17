@@ -6,11 +6,11 @@ The Hyperliquid blockchain features two key parts: HyperCore and HyperEVM. The H
 
 ### What can I do on the HyperEVM?&#x20;
 
-Explore directories of apps, tools, and more built by community members: [ASXN](https://hyperscreener.asxn.xyz/ecosystem), [HypurrCo](https://www.hypurr.co/ecosystem-projects), and [HL Eco](https://hl.eco/projects). Visit the [HyperEVM onboarding FAQ](/hyperliquid-docs/onboarding/how-to-use-the-hyperevm.md) for more questions.&#x20;
+Explore directories of apps, tools, and more built by community members: [ASXN](https://hyperscreener.asxn.xyz/ecosystem), [HypurrCo](https://www.hypurr.co/ecosystem-projects), and [HL Eco](https://hl.eco/projects). Visit the [HyperEVM onboarding FAQ](https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/how-to-use-the-hyperevm.md) for more questions.&#x20;
 
 ### Why build on the HyperEVM?
 
-Builders can plug into the onchain order book liquidity of HyperCore via the HyperEVM. In addition, many Hyperliquid users are early adopters and want to try new onchain financial applications. See the [HyperEVM developer section](/hyperliquid-docs/for-developers/hyperevm.md) for more technical details and [tools for HyperEVM builders](/hyperliquid-docs/hyperevm/tools-for-hyperevm-builders.md) for resources. &#x20;
+Builders can plug into the onchain order book liquidity of HyperCore via the HyperEVM. In addition, many Hyperliquid users are early adopters and want to try new onchain financial applications. See the [HyperEVM developer section](https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm.md) for more technical details and [tools for HyperEVM builders](https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm/tools-for-hyperevm-builders.md) for resources. &#x20;
 
 As one example, a project XYZ could deploy an ERC20 contract on the HyperEVM using standard EVM tooling and deploy a corresponding spot asset XYZ permissionlessly in the HyperCore spot auction. Once the HyperCore token and HyperEVM contract are linked, users can use the same XYZ token on HyperEVM applications and trade it on the native spot order book. This has two key improvements compared to CEX listings: 1) The entire process is permissionless, with no behind-the-scenes negotiations for preferential treatment and 2) There is no bridging risk between HyperCore and HyperEVM as one unified state.&#x20;
 

@@ -2,4 +2,4 @@
 
 # Tools for HyperEVM builders
 
-See the [Builder Tools section](/hyperliquid-docs/builder-tools/hyperevm-tools.md)
+See the [Builder Tools section](https://hyperliquid.gitbook.io/hyperliquid-docs/builder-tools/hyperevm-tools.md)

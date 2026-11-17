@@ -4,7 +4,7 @@
 
 TP/SL orders close your position when a certain profit (resp. loss) has realized on your position.
 
-The [mark price](/hyperliquid-docs/trading/robust-price-indices.md) is used to trigger TP/SL orders.&#x20;
+The [mark price](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/robust-price-indices.md) is used to trigger TP/SL orders.&#x20;
 
 TP/SL orders can be dragged on the TradingView chart. Note that dragging in a way that causes the order to immediately execute will lead to an error. Usually this prevents user mistakes, but if this is your desired behavior you can manually close the order from the position table or order form.&#x20;
 

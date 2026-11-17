@@ -7,7 +7,7 @@ A user's *account abstraction mode* determines how spot and perps balances inter
 The supported modes are:
 
 1. Unified account (recommended for most users): single balance for each asset. This balance collateralizes all cross margin positions in that asset and is unified with spot balance in that asset. For example, USDC balance is the single source for validator-operated perps, XYZ perps, and spot trading against USDC as a quote asset. USDT spot balance is the single source for CASH perps and spot trading against USDT as a quote asset.&#x20;
-2. Portfolio margin (most capital efficient): single portfolio unifying all eligible assets, which are currently HYPE, BTC, USDC, USDT. See [Portfolio margin](/hyperliquid-docs/trading/portfolio-margin.md) for more details.&#x20;
+2. Portfolio margin (most capital efficient): single portfolio unifying all eligible assets, which are currently HYPE, BTC, USDC, USDT. See [Portfolio margin](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin.md) for more details.&#x20;
 3. Manual / Standard (recommended for market makers, high volume automated users, and deployers/builders): separate perp and spot balances, separate DEX balances. Cross margin applies to each DEX separately.&#x20;
 
 There is one more mode that was discontinued, included here for completeness:
@@ -20,7 +20,7 @@ Important details:
 2. Portfolio margin and unified account are limited to 50k user actions per day. Standard mode has no such restrictions.
 3. For API users, unified account and portfolio margin show all balances and holds in the spot clearinghouse state. Individual perp dex user states are not meaningful. &#x20;
 
-See Python SDK and [API docs](/hyperliquid-docs/for-developers/api.md) for examples on the agent- and user-signed actions for changing account abstraction modes. &#x20;
+See Python SDK and [API docs](https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api.md) for examples on the agent- and user-signed actions for changing account abstraction modes. &#x20;
 
 ### Unified Account Ratio
 

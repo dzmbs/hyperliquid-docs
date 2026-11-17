@@ -15,7 +15,7 @@ Builders should be able to connect to any of the infrastructure providers' peeri
 * Dwellir - <https://www.dwellir.com/docs/hyperliquid/peering>
 * Hydromancer - <https://docs.hydromancer.xyz/peering>
 * Hypedexer - <https://docs.hypedexer.com/peering/overview>
-* Hyperdash - <https://docs.hyperdash.com/data/direct-sentry-peering>&#x20;
+* Hyperdash - <https://docs.hyperdash.com/data/hyperliquid-peering#hyperliquid-peering>
 * HyperTracker - <https://docs.coinmarketman.com/endpoints/rate-limits-and-pricing>
 * Luganodes - <https://docs.luganodes.com/tools-and-services/hyperliquid/hyperliquid-node-peering>
 * Proof Group - <https://www.purroofgroup.com/docs/peering>

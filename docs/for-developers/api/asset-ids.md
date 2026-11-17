@@ -2,7 +2,7 @@
 
 # Asset IDs
 
-Asset IDs are the integer representation for sending orders and cancels via actions. See [here](/hyperliquid-docs/for-developers/api/exchange-endpoint.md) for more details.
+Asset IDs are the integer representation for sending orders and cancels via actions. See [here](https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/exchange-endpoint.md) for more details.
 
 ### Perps
 

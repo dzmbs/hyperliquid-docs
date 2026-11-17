@@ -24,4 +24,4 @@ As an example: Alice has 100k staked HYPE, which gives a trading fee discount of
 
 <table><thead><tr><th width="140.3671875">VIP tier</th><th width="208.53515625">14d weighted volume ($)</th><th width="265.47265625">Amount kept by builder or referrer</th></tr></thead><tbody><tr><td>0</td><td></td><td>100%</td></tr><tr><td>1</td><td>>5M</td><td>90%</td></tr><tr><td>2</td><td>>25M</td><td>80%</td></tr><tr><td>3</td><td>>100M</td><td>70%</td></tr><tr><td>4</td><td>>500M</td><td>60%</td></tr><tr><td>5</td><td>>2B</td><td>50%</td></tr><tr><td>6</td><td>>7B</td><td>40%</td></tr></tbody></table>
 
-*Note these tiers correspond to the fee schedules in* [Fees](/hyperliquid-docs/trading/fees.md)
+*Note these tiers correspond to the fee schedules in* [Fees](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees.md)

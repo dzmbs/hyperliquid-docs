@@ -6,4 +6,4 @@ USDC is natively minted on the Hyperliquid L1. Circle's contracts on HyperEVM ca
 
 See <https://developers.circle.com/cctp/howtos/transfer-usdc-from-arbitrum-to-hypercore> for Circle's documentation on Arbitrum to HyperCore CCTP transfers.
 
-The legacy Arbitrum bridge holds less than 10% of the USDC supply on HyperCore. The legacy bridge and its logic in relation to the L1 staking have been audited by Zellic. See the Hyperliquid GitHub repository for the full bridge code, and the [Audits](/hyperliquid-docs/audits.md) section for the audit reports.
+The legacy Arbitrum bridge holds less than 10% of the USDC supply on HyperCore. The legacy bridge and its logic in relation to the L1 staking have been audited by Zellic. See the Hyperliquid GitHub repository for the full bridge code, and the [Audits](https://hyperliquid.gitbook.io/hyperliquid-docs/audits.md) section for the audit reports.

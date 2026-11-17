@@ -5,21 +5,21 @@
 Here are the guides in this section:
 
 {% content-ref url="/pages/Y3MOtJdtJJGuIoqxeKd2" %}
-[Why was I liquidated?](/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/why-was-i-liquidated.md)
+[Why was I liquidated?](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/why-was-i-liquidated.md)
 {% endcontent-ref %}
 
 {% content-ref url="/pages/jyUNICmaFUR04Tq9s3NF" %}
-[How does margining work?](/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/how-does-margining-work.md)
+[How does margining work?](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/how-does-margining-work.md)
 {% endcontent-ref %}
 
 {% content-ref url="/pages/f8Sn7FjnGTbckDajXrWb" %}
-[My TP/SL did not execute correctly](/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/my-tp-sl-did-not-execute-correctly.md)
+[My TP/SL did not execute correctly](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/my-tp-sl-did-not-execute-correctly.md)
 {% endcontent-ref %}
 
 {% content-ref url="/pages/WS53cnkHB8DwfHaUWfvs" %}
-[I can't sell leftover spot assets](/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/i-cant-sell-leftover-spot-assets.md)
+[I can't sell leftover spot assets](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/i-cant-sell-leftover-spot-assets.md)
 {% endcontent-ref %}
 
 {% content-ref url="/pages/nDMr6Nh9PWPRnteGsy7E" %}
-[What does "Action already expired" mean?](/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/what-does-action-already-expired-mean.md)
+[What does "Action already expired" mean?](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trade-outcome-looks-incorrect/what-does-action-already-expired-mean.md)
 {% endcontent-ref %}

@@ -12,7 +12,7 @@ For each user, there is one fee tier across all assets, including perps, HIP-3 p
 
 Spot pairs between two spot quote assets have 80% lower taker fees, maker rebates, and user volume contribution.
 
-[Aligned quote assets](/hyperliquid-docs/hypercore/aligned-quote-assets.md) benefit from 20% lower taker fees, 50% better maker rebates, and 20% more volume contribution toward fee tiers.
+[Aligned quote assets](https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets.md) benefit from 20% lower taker fees, 50% better maker rebates, and 20% more volume contribution toward fee tiers.
 
 ### Perps fee tiers
 

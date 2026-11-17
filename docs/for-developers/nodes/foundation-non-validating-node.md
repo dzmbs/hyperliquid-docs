@@ -12,7 +12,7 @@ The Foundation non-validating node runs in apne1-az1 on AWS.
 
 ### Potential use cases
 
-Automated traders can run a non-validating node pointing to the Foundation non-validating node. The local non-validating node can record fills and orders with output file buffering disabled for real-time streaming data. A local API server can also be pointed at this local non-validating node to provide real-time API data. For more details see: <https://github.com/hyperliquid-dex/node> and [L1 data schemas](/hyperliquid-docs/for-developers/nodes/l1-data-schemas.md)
+Automated traders can run a non-validating node pointing to the Foundation non-validating node. The local non-validating node can record fills and orders with output file buffering disabled for real-time streaming data. A local API server can also be pointed at this local non-validating node to provide real-time API data. For more details see: <https://github.com/hyperliquid-dex/node> and [L1 data schemas](https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/nodes/l1-data-schemas.md)
 
 ### Eligibility&#x20;
 

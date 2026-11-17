@@ -24,4 +24,4 @@ If `szDecimals = 1` , `0.01234` is valid but `0.012345` is not (more than `6 - s
 
 ### Signing
 
-Note that if implementing signing, trailing zeroes should be removed. See [Signing](/hyperliquid-docs/for-developers/api/signing.md) for more details.
+Note that if implementing signing, trailing zeroes should be removed. See [Signing](https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/signing.md) for more details.

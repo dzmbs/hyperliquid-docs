@@ -10,7 +10,7 @@
 * Coinalyze: <https://coinalyze.net/markets/?exchange=H>
 * DefiLlama (note that TVL is tracked differently on order books and AMMs): <https://defillama.com/perps/chains/hyperliquid>
 * Flowscan: <https://www.flowscan.xyz/>
-* HyperDash: <https://legacy.hyperdash.com/>
+* HyperDash: <https://hyperdash.com/products/data/api>
 * HyperTracker: <https://app.coinmarketman.com/hypertracker>
 * Laevitas: <https://app.laevitas.ch/exchanges/perpswaps/HYPERLIQUID/screener>
 * Velo: <https://velo.xyz/futures/>

@@ -9,7 +9,7 @@ The deployer of a perp market is responsible for
 1. Market definition, including the oracle definition and contract specifications
 2. Market operation, including setting oracle prices, leverage limits, and settling the market if needed
 
-HIP-3 inherits the HyperCore stack including its high performance margining and order books. For example, the API to trade HIP-3 perps is unified with other HyperCore actions. To trade HIP-3 assets, the asset ID simply needs to be set using the schema [here](/hyperliquid-docs/for-developers/api/asset-ids.md).
+HIP-3 inherits the HyperCore stack including its high performance margining and order books. For example, the API to trade HIP-3 perps is unified with other HyperCore actions. To trade HIP-3 assets, the asset ID simply needs to be set using the schema [here](https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/asset-ids.md).
 
 ### Spec
 

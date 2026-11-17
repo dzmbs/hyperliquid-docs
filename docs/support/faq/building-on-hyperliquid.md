@@ -5,9 +5,9 @@
 Here are the guides in this section:
 
 {% content-ref url="/pages/DWgjek9Kv8t20P32LxaE" %}
-[I have API related questions](/hyperliquid-docs/support/faq/building-on-hyperliquid/i-have-api-related-questions.md)
+[I have API related questions](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/building-on-hyperliquid/i-have-api-related-questions.md)
 {% endcontent-ref %}
 
 {% content-ref url="/pages/RW3RZgMngLWjFDSqCa1T" %}
-[I want to deploy a spot token or list a perp](/hyperliquid-docs/support/faq/building-on-hyperliquid/i-want-to-deploy-a-spot-token-or-list-a-perp.md)
+[I want to deploy a spot token or list a perp](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/building-on-hyperliquid/i-want-to-deploy-a-spot-token-or-list-a-perp.md)
 {% endcontent-ref %}

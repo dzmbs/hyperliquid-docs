@@ -5,13 +5,13 @@
 Here are the guides in this section:
 
 {% content-ref url="/pages/cxViyskg0wWX6SJ4nXeo" %}
-[Withdrawal has not arrived in my wallet](/hyperliquid-docs/support/faq/withdrawal-issues/withdrawal-has-not-arrived-in-my-wallet.md)
+[Withdrawal has not arrived in my wallet](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/withdrawal-issues/withdrawal-has-not-arrived-in-my-wallet.md)
 {% endcontent-ref %}
 
 {% content-ref url="/pages/4wdNYpomD2UM9qBZuSM9" %}
-[My withdrawal keeps getting re-deposited](/hyperliquid-docs/support/faq/withdrawal-issues/my-withdrawal-keeps-getting-re-deposited.md)
+[My withdrawal keeps getting re-deposited](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/withdrawal-issues/my-withdrawal-keeps-getting-re-deposited.md)
 {% endcontent-ref %}
 
 {% content-ref url="/pages/sbaoGGCQFw9m7blwMhh2" %}
-[Withdrawing to Phantom Wallet](/hyperliquid-docs/support/faq/withdrawal-issues/withdrawing-to-phantom-wallet.md)
+[Withdrawing to Phantom Wallet](https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/withdrawal-issues/withdrawing-to-phantom-wallet.md)
 {% endcontent-ref %}
