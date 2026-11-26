@@ -219,8 +219,8 @@
     "for-developers/hyperevm/hypercore-less-than-greater-than-hyperevm-transfers.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/hypercore-less-than-greater-than-hyperevm-transfers",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/hypercore-less-than-greater-than-hyperevm-transfers.md",
-      "hash": "f0cb8d9d6b2911331ada43faa58a0cf085fca10249953ca188a10ecc60537c20",
-      "last_updated": "2026-11-24T02:04:48.838100"
+      "hash": "0af24917b5f212df93d1a2a74838873aa64bffd175694e40e1a0ece56af4d2dd",
+      "last_updated": "2026-11-26T03:26:53.470836"
     },
     "for-developers/hyperevm/interacting-with-hypercore.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore",
@@ -902,14 +902,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-11-25T19:05:07.906916",
-    "duration_seconds": 105.88018,
+    "completed_at": "2026-11-26T03:28:09.218408",
+    "duration_seconds": 101.831682,
     "pages_discovered": 150,
     "pages_fetched": 150,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-11-25T19:05:07.906936",
+  "last_updated": "2026-11-26T03:28:09.218426",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",

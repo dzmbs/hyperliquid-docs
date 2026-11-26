@@ -24,7 +24,7 @@ Only once a token is linked, it can be converted between HyperCore and HyperEVM 
 
 Transferring tokens from HyperCore to HyperEVM can be done using a sendAsset action (or via the frontend) with the corresponding system address as the destination. The tokens are credited by a system transaction that calls `transfer(recipient, amount)` on the linked contract as the system address, where recipient is the sender of the sendAsset action.&#x20;
 
-Transferring tokens from HyperEVM to HyperCore can be done using an ERC20 transfer with the corresponding system address as the destination. The tokens are credited to the Core based on the emitted `Transfer(address from, address to, uint256 value)` from the linked contract.
+Transferring tokens from HyperEVM to HyperCore can be done using an ERC20 transfer with the corresponding system address as the destination. The tokens are credited to the Core based on the emitted `Transfer(address from, address to, uint256 value)` from the linked contract. The transfer on HyperCore is delayed until the next EVM block with timestamp at least 400ms later than the HyperCore block on which the transfer is triggered. &#x20;
 
 Do not blindly assume accurate fungibility between Core and EVM spot. See [#caveats](#caveats "mention") for more details.
 
