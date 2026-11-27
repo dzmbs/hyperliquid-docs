@@ -314,7 +314,15 @@ Each `<clearinghouseState>` has the same format as the `clearinghouseState` info
 
 ### Star actions
 
-A HIP-3 venue can be designated HIP-3\* at time of creation by setting `isStar: true` in `PerpDexSchemaInput`. This optional boolean defaults to `false`. HIP-3\* enables several features on top of the HIP-3 spec, including an allow-list and proxied user actions.
+A HIP-3 venue can be designated HIP-3\* at time of creation by setting `starSchema` in `PerpDexSchemaInput`. This optional field defaults to `null`, which creates a regular HIP-3 venue. HIP-3\* enables several features on top of the HIP-3 spec, including an allow-list and proxied user actions.
+
+```typescript
+type Hip3StarSchemaInput = {
+  allowPortfolioMargin: boolean;
+};
+```
+
+When `allowPortfolioMargin` is `false`, a user with portfolio margin enabled is restricted on the venue in the same way as a user with `setReduceOnly: true`: the user can only place reduce-only orders and TWAPs, modify orders into reduce-only orders, and cancel.
 
 #### Operations
 
@@ -388,6 +396,10 @@ HIP-3\* venues update prices with the `setOracle` star operation deploy action. 
   3. the local mark price (median(best bid, best ask, last trade price)).
 
   If only two of these prices are available, an exponential moving average of the local mark price is added as a third input.
+
+#### Deployment fees
+
+A venue can deploy its first 3 non-mirrored and first 20 mirrored assets for free. Free deployments are used regardless of `maxGas` and do not complete the deploy auction. Reserve deployments become available once the free deployments for that kind of asset are used up.
 
 #### Permissions
 

@@ -27,3 +27,5 @@ JSON-RPC endpoint: `https://rpc.hyperliquid-testnet.xyz/evm`
 Pre-EIP-155 transactions are accepted as with many EVM chains. Users generally should not use wallets that have previously sent pre-EIP-155 transactions.
 
 Error code 10055 represents errors occurring at the boundary between HyperCore and HyperEVM. Examples include nonce errors, insufficient funds, duplicate transaction hashes, or underpriced replacement transactions.
+
+HyperEVM transactions pass through RPC servers before being sent to the L1. This can add a few hundred milliseconds of latency to its inclusion in the next HyperEVM block.

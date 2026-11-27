@@ -99,8 +99,8 @@
     "for-developers/api/hip-3-deployer-actions.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions.md",
-      "hash": "2660c881741834d0d3f6950f327b86e8954572a8c35e2012f23bf9ca88f640e2",
-      "last_updated": "2026-11-24T02:04:36.484175"
+      "hash": "4c0ee7feb5f271e027415c9908d6ce62447c7cdbfb9e78bab3d9fdc1910f0429",
+      "last_updated": "2026-11-27T11:56:59.628762"
     },
     "for-developers/api/hip-3-deployer-actions-1.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions-1",
@@ -207,8 +207,8 @@
     "for-developers/hyperevm.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm",
       "md_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm.md",
-      "hash": "6e43915877d53952a0d5c131928e94ff5e02e0d682c0a0f7498de1d6c71703a2",
-      "last_updated": "2026-11-24T02:04:47.616005"
+      "hash": "205364badccac14f9ba464ddaa465d004fc0104cb641065d9a9b116a27cfd2ae",
+      "last_updated": "2026-11-27T11:57:10.325860"
     },
     "for-developers/hyperevm/dual-block-architecture.md": {
       "source_url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/dual-block-architecture",
@@ -902,14 +902,14 @@
     }
   },
   "fetch_metadata": {
-    "completed_at": "2026-11-27T01:38:36.722232",
-    "duration_seconds": 94.183251,
+    "completed_at": "2026-11-27T11:58:18.740941",
+    "duration_seconds": 90.46272,
     "pages_discovered": 150,
     "pages_fetched": 150,
     "pages_failed": 0,
     "failed_pages": []
   },
-  "last_updated": "2026-11-27T01:38:36.722249",
+  "last_updated": "2026-11-27T11:58:18.740956",
   "base_url": "https://raw.githubusercontent.com/dzmbs/hyperliquid-docs/main/docs/",
   "github_repository": "dzmbs/hyperliquid-docs",
   "github_ref": "main",
