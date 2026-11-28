@@ -21,5 +21,3 @@ The order books of Yes and No tokens for the same outcome are merged to share li
 Most operations abstract the dual book's liquidity from the user's perspective. However, there are a few examples whose ergonomics will be improved on a future network upgrade. For example, historical orders can return the primary and dual orders separately if a user sends an order that both matches and rests on the book.
 
 *Questions* are collections of outcomes where exactly one outcome will settle to Yes, and all others will settle to No. Each outcome trades on a separate order book, but is linked by `negate` and `merge` operations. See [here](https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/exchange-endpoint.md#negate-outcome) for API examples. In other words, users with No shares on different outcomes of the same question can redeem quote tokens before the underlying outcomes settle.
-
-Fees are currently zero for outcome markets for initial testing. However, builder codes do work the same as normal spot trading, where builders earn builder fees on sell orders that specify their builder code.&#x20;
